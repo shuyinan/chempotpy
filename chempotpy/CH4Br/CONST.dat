@@ -1,0 +1,28 @@
+ CH4+Br potential energy surface; units converted to int'n units in readt
+ units here are: kcal/mol; mdyn; Angstroms and radians
+ indices for atoms: nnc, nnb, nnh(i),i=1,4
+   2   6   3   4   5   1
+ morse parameters for ch bonds: r0ch, d1ch, d3ch (38.660)
+   1.09397   112.341    39.101
+ attenuation parameters for ach: a1ch, b1ch, c1ch (1.7030)
+   1.71000   0.12000   6.61404
+ morse parameters for clh bonds: r0hh, d1hh, d3hh and ahh (36.664,1.8700)
+   1.41443    90.226    43.309    1.8500
+ morse parameters for cb bonds: r0cb, d1cb, d3cb and acb (23.833,0.8650) 
+   1.89397    87.149    23.553  1.888555
+ out-of-plane bend: a3s, b3s, aphi, bphi, cphi, rphi
+ 0.1419147 -0.306845 0.5287903 0.4006638 1.9209937   1.09397
+ out-of-plane bend: atheta, btheta, ctheta
+ 0.9078714 0.3548859 1.8915497
+ out-of-plane bend: fch, hch3
+ 0.0957500 0.1915000
+ in-plane bend: fkinf, ak, bk, aa1, aa2, aa3, aa4, aa5 
+ 0.3215000 0.1560000   10.7132  0.313952  2.099963  3.265953 11.569977
+0.152629
+
+
+
+   1.78110    87.149    23.583 0.8650285
+
+
+

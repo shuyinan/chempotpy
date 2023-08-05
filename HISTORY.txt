@@ -1,0 +1,11 @@
+ChemPotPy is based on POTLIB
+
+POTLIB: 
+https://comp.chem.umn.edu/potlib/index.html
+
+POTLIB is an online Library of Potential Energy Surfaces. 
+
+ChemPotPy v2023.1 (Aug. 4, 2023) 
+YS, ZV, DGT - Creation of ChemPotPy
+
+

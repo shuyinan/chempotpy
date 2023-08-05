@@ -1,0 +1,1 @@
+for i in *.f; do name=`echo $i | sed 's/\.[^\.]*$//'`; cat head.tmp y3.8 -c -m Aln_${name} Aln_${name}.f; done
