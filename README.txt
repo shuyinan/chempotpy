@@ -26,4 +26,12 @@ to be submitted
 
 TO CONTRIBUTE YOUR POTENTIAL:
 
+Option 1:
+send email to one of the maintainers:
+Yinan Shu, yinan.shu.0728@gmail.com
+Zoltan Varga, zoltan78varga@gmail.com
+Donald G. Truhlar, truhlar@umn.edu
 
+Option 2:
+Report an issue on ChemPotPy github page:
+https://github.com/shuyinan/chempotpy
