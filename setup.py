@@ -13,7 +13,7 @@ setup(
     version=version,
     author="Yinan Shu, Zoltan Varga, Donald G. Truhlar",
     description="chempotpy: CHEMical library of POTential energy surfaces in PYthon",
-    python_requires="==3.8",
+    python_requires=">=3.8",
     packages=find_packages(),
     package_data={
         'chempotpy': ['*/*']
