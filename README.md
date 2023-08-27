@@ -20,10 +20,11 @@ How to install
   
         pip install chempotpy
 
-* The users can re-compile all .so modules by yourself for compatability reasons:
+* The users can re-compile all .so modules for compatability reasons:
 
-  1. all potential energy surface subroutines are located in chempotpy/chempotpy/
-  2. to re-compile each of these surface subroutines yourself, execute install.script
+  get into the parent directory of chempotpy 
+   
+        ./install.script  
 
 
 Citation
@@ -42,7 +43,7 @@ to be submitted
 
 TO CONTRIBUTE YOUR POTENTIAL or report a bug
 --------------------------------------------
-* Option1
+* Option 1
 send email to one of the maintainers:
 Yinan Shu, yinan.shu.0728@gmail.com
 Zoltan Varga, zoltan78varga@gmail.com
