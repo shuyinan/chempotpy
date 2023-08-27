@@ -18,6 +18,9 @@ setup(
     package_data={
         'chempotpy': ['*/*']
     },
-    install_requires=[],
+    install_requires=[
+        'numpy',
+        'gfortran',
+    ],
     zip_safe=True,
 )
