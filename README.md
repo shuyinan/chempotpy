@@ -16,22 +16,14 @@ All fortran source code are stored in folder chempotpy
 How to install
 --------------
 
-* The users can either compile all .so modules by yourself:
+* Install stable release:
+  
+        pip install chempotpy
+
+* The users can re-compile all .so modules by yourself for compatability reasons:
 
   1. all potential energy surface subroutines are located in chempotpy/chempotpy/
-  2. to compile each of these surface subroutines yourself, execute install.script
-
-* Or, the users can use pre-compiled all .so modules, Follow the following steps:
-
-  1. install Conda 
-  2. create a virtural environment that uses latest python and gfortran,
-     and call it, for example, chempotpy
-     "conda create -n chempotpy"
-  3. install gfortran 
-     "conda install -c conda-forge gfortran"
-  4. install numpy 
-     "conda install numpy"
-  5. "pip install chempotpy"
+  2. to re-compile each of these surface subroutines yourself, execute install.script
 
 
 Citation
@@ -48,8 +40,8 @@ to be submitted
 
 
 
-TO CONTRIBUTE YOUR POTENTIAL
-----------------------------
+TO CONTRIBUTE YOUR POTENTIAL or report a bug
+--------------------------------------------
 * Option1
 send email to one of the maintainers:
 Yinan Shu, yinan.shu.0728@gmail.com
