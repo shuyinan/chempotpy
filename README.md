@@ -45,14 +45,10 @@ TO CONTRIBUTE YOUR POTENTIAL or report a bug
 --------------------------------------------
 * Option 1
 Send email to one of the maintainers:
-    - Yinan Shu
-      - Email: yinan.shu.0728@gmail.comp;
-    - Zoltan Varga
-      - Email: zoltan78varga@gmail.com;
-    - Dayou Zhang
-      - Email: zhan6350@umn.edu;
-    - Donald G. Truhlar
-      - Email: truhlar@umn.edu
+  - Yinan Shu, yinan.shu.0728@gmail.com
+  - Zoltan Varga, zoltan78varga@gmail.com
+  - Dayou Zhang, zhan6350@umn.edu
+  - Donald G. Truhlar, truhlar@umn.edu
  
 * Option 2
 Submit tickets on the [issues](https://github.com/shuyinan/chempotpy/issues)
