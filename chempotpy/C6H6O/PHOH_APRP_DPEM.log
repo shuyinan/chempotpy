@@ -1,0 +1,1224 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "PHOH_APRP_DPEM" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmpaokuh_5j/src.linux-x86_64-3.11/PHOH_APRP_DPEMmodule.c
+creating /tmp/tmpaokuh_5j/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'PHOH_APRP_DPEM.f90' (format:fix)
+Line #10265 in PHOH_APRP_DPEM.f90:"      parameter(zero=0.0d0,pi=3.1415926535898d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10755 in PHOH_APRP_DPEM.f90:"      parameter(de=0.17596055d0,re=1.93206106d0,           beta=0.63822703d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10755 in PHOH_APRP_DPEM.f90:"      parameter(de=0.17596055d0,re=1.93206106d0,           beta=0.63822703d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10755 in PHOH_APRP_DPEM.f90:"      parameter(de=0.17596055d0,re=1.93206106d0,           beta=0.63822703d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10844 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.02371114d0,alpha1=0.96558083d0,r1=3.25505778d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10844 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.02371114d0,alpha1=0.96558083d0,r1=3.25505778d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10844 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.02371114d0,alpha1=0.96558083d0,r1=3.25505778d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10846 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10875 in PHOH_APRP_DPEM.f90:"      parameter(alpha=0.67269344d0,de=0.41866243d0,           re=1.95347670d0,v0=0.17280158d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10875 in PHOH_APRP_DPEM.f90:"      parameter(alpha=0.67269344d0,de=0.41866243d0,           re=1.95347670d0,v0=0.17280158d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10875 in PHOH_APRP_DPEM.f90:"      parameter(alpha=0.67269344d0,de=0.41866243d0,           re=1.95347670d0,v0=0.17280158d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10875 in PHOH_APRP_DPEM.f90:"      parameter(alpha=0.67269344d0,de=0.41866243d0,           re=1.95347670d0,v0=0.17280158d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10875 in PHOH_APRP_DPEM.f90:"      parameter(alpha=0.67269344d0,de=0.41866243d0,           re=1.95347670d0,v0=0.17280158d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10875 in PHOH_APRP_DPEM.f90:"      parameter(alpha=0.67269344d0,de=0.41866243d0,           re=1.95347670d0,v0=0.17280158d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10964 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.01925782d0,alpha1=5.00873578d0,r1=2.22678700d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10964 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.01925782d0,alpha1=5.00873578d0,r1=2.22678700d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10964 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.01925782d0,alpha1=5.00873578d0,r1=2.22678700d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10993 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10993 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10993 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10993 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10993 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10993 in PHOH_APRP_DPEM.f90:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10994 in PHOH_APRP_DPEM.f90:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10996 in PHOH_APRP_DPEM.f90:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11104 in PHOH_APRP_DPEM.f90:"      parameter(a1=-0.02298368d0,alpha1=1.06740430d0,r1=3.28664483d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11104 in PHOH_APRP_DPEM.f90:"      parameter(a1=-0.02298368d0,alpha1=1.06740430d0,r1=3.28664483d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11104 in PHOH_APRP_DPEM.f90:"      parameter(a1=-0.02298368d0,alpha1=1.06740430d0,r1=3.28664483d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11106 in PHOH_APRP_DPEM.f90:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11135 in PHOH_APRP_DPEM.f90:"      parameter (B=6.693126d1,alpha=1.894454d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11255 in PHOH_APRP_DPEM.f90:"      parameter(half=0.5d0,oossix=0.408248290463863d0,           oostlv=0.288675134594813d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11255 in PHOH_APRP_DPEM.f90:"      parameter(half=0.5d0,oossix=0.408248290463863d0,           oostlv=0.288675134594813d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11255 in PHOH_APRP_DPEM.f90:"      parameter(half=0.5d0,oossix=0.408248290463863d0,           oostlv=0.288675134594813d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11255 in PHOH_APRP_DPEM.f90:"      parameter(half=0.5d0,oossix=0.408248290463863d0,           oostlv=0.288675134594813d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11255 in PHOH_APRP_DPEM.f90:"      parameter(half=0.5d0,oossix=0.408248290463863d0,           oostlv=0.288675134594813d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11255 in PHOH_APRP_DPEM.f90:"      parameter(half=0.5d0,oossix=0.408248290463863d0,           oostlv=0.288675134594813d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11702 in PHOH_APRP_DPEM.f90:"      parameter(pi=3.1415926535898d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #12069 in PHOH_APRP_DPEM.f90:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Post-processing...
+	Block: PHOH_APRP_DPEM
+			Block: dpem
+			Block: pot
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: getdvec3
+			Block: poten
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evuii
+vars2fortran: No typespec for argument "ii".
+			Block: evuii
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evuii
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evuiit
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:gethess
+vars2fortran: No typespec for argument "nap".
+			Block: gethess
+			Block: getgeom
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:getgeom
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:getgeom
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: tent
+			Block: evu1r
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1b
+vars2fortran: No typespec for argument "igrad".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1b
+vars2fortran: No typespec for argument "theta".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1b
+vars2fortran: No typespec for argument "vbnd".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1b
+vars2fortran: No typespec for argument "dvdr".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1b
+vars2fortran: No typespec for argument "dvdth".
+			Block: evu1b
+			Block: evu1to
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evu2r
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2b
+vars2fortran: No typespec for argument "igrad".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2b
+vars2fortran: No typespec for argument "theta".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2b
+vars2fortran: No typespec for argument "vbnd".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2b
+vars2fortran: No typespec for argument "dvdr".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2b
+vars2fortran: No typespec for argument "dvdth".
+			Block: evu2b
+			Block: evu2to
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu2to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evu3r
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3b
+vars2fortran: No typespec for argument "igrad".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3b
+vars2fortran: No typespec for argument "theta".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3b
+vars2fortran: No typespec for argument "vbnd".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3b
+vars2fortran: No typespec for argument "dvdr".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3b
+vars2fortran: No typespec for argument "dvdth".
+			Block: evu3b
+			Block: evu3to
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evubm
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evubm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evubm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evuij
+vars2fortran: No typespec for argument "nap".
+			Block: evuij
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evuij
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evuij
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evuij
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evuij
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evuijt
+vars2fortran: No typespec for argument "nap".
+			Block: evuijt
+			Block: evu13to
+			Block: evu23to
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evu23to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evintcoord
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evintcoord
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:evintcoord
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: matvect
+			Block: bmat3
+			Block: matmult
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:bndlen
+vars2fortran: No typespec for argument "i".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:bndlen
+vars2fortran: No typespec for argument "j".
+			Block: bndlen
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:bndlen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:bndang
+vars2fortran: No typespec for argument "i".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:bndang
+vars2fortran: No typespec for argument "j".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:bndang
+vars2fortran: No typespec for argument "k".
+			Block: bndang
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:dihedr
+vars2fortran: No typespec for argument "i".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:dihedr
+vars2fortran: No typespec for argument "j".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:dihedr
+vars2fortran: No typespec for argument "k".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:dihedr
+vars2fortran: No typespec for argument "l".
+			Block: dihedr
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:dihedr
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:dihedr
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:oopba1
+vars2fortran: No typespec for argument "i".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:oopba1
+vars2fortran: No typespec for argument "j".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:oopba1
+vars2fortran: No typespec for argument "k".
+{}
+In: :PHOH_APRP_DPEM:PHOH_APRP_DPEM.f90:oopba1
+vars2fortran: No typespec for argument "l".
+			Block: oopba1
+			Block: xprod1
+			Block: sprod
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "PHOH_APRP_DPEM"...
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "dpem"...
+          u,ug = dpem(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot(igrad,xx,uu,guu,vv,gvv,dvec,cc,repflag)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "getdvec3"...
+          getdvec3(pemd,gpemd,pema,dvec,cc,[nclu])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "poten"...
+          uu,guu,vv = poten(igrad,x,y,z,gvv,cc)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evuii"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evuii(igrad,x,y,z,u,dudx,ii,[natm])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evuiit"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evuiit(igrad,r,nqtc,qtc,ut,dut,dutdr,ii)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "gethess"...
+          gethess(hss,hbb,htt,hbs,ii,[nap,nqs,nqb,nqt])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "getgeom"...
+          getgeom(qse,qbe,qte,ii,[nap,nqs,nqb,nqt])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "tent"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          tent(nap,rap,r,ir,t,dtdr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu1r"...
+          evu1r(igrad,r,v,dvdr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu1b"...
+          evu1b(igrad,r,theta,vbnd,dvdr,dvdth)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu1to"...
+          evu1to(igrad,r,phi,v,dvdr,dvdph)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu2r"...
+          evu2r(igrad,r,v,dvdr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu2b"...
+          evu2b(igrad,r,theta,vbnd,dvdr,dvdth)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu2to"...
+          evu2to(igrad,r,phi,v,dvdr,dvdph)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu3r"...
+          evu3r(igrad,r,v,dvdr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu3b"...
+          evu3b(igrad,r,theta,vbnd,dvdr,dvdth)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu3to"...
+          evu3to(igrad,r,phi,v,dvdr,dvdph)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evubm"...
+          evubm(igrad,x,y,z,ubm,dubmdx,[natm])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evuij"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evuij(nap,igrad,ir,t,dtdr,x,y,z,u12,u13,u23,du12dx,du13dx,du23dx,[natm])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evuijt"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evuijt(nap,igrad,ir,t,dtdr,ntc,qtc,uij,duij,duijdr,ij)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu13to"...
+          evu13to(r,phi,u13to,d13dph,d13dr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evu23to"...
+          evu23to(r,phi,u23to,d23dph,d23dr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evintcoord"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evintcoord(nbl,ibl,nba,iba,nto,ito,noop,ioop,nint,ric,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "matvect"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          matvect(y,m,a,x,n,[lda])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "bmat3"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          bmat3(ibl,iba,ito,ioop,natm,x,y,z,bm,[nbl,nba,nto,noop,ldbm])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "matmult"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          matmult(c,a,m,b,n,l,[ldc,lda,ldb])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "bndlen"("bndlen")...
+        Constructing wrapper function "bndlen"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          bndlen = bndlen(i,j,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "bndang"("bndang")...
+        Constructing wrapper function "bndang"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          bndang = bndang(i,j,k,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedr"("dihedr")...
+        Constructing wrapper function "dihedr"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedr = dihedr(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "oopba1"("oopba1")...
+        Constructing wrapper function "oopba1"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          oopba1 = oopba1(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "xprod1"...
+          xprod1(x1,x2,x3)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "sprod"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          sprod(n,a,b,c)
+    Wrote C/API module "PHOH_APRP_DPEM" to file "/tmp/tmpaokuh_5j/src.linux-x86_64-3.11/PHOH_APRP_DPEMmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpaokuh_5j/src.linux-x86_64-3.11/PHOH_APRP_DPEM-f2pywrappers.f"
+INFO:   adding '/tmp/tmpaokuh_5j/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpaokuh_5j/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpaokuh_5j/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpaokuh_5j/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpaokuh_5j/src.linux-x86_64-3.11/PHOH_APRP_DPEM-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'PHOH_APRP_DPEM' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmpaokuh_5j/tmp
+creating /tmp/tmpaokuh_5j/tmp/tmpaokuh_5j
+creating /tmp/tmpaokuh_5j/tmp/tmpaokuh_5j/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpaokuh_5j/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmpaokuh_5j/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmpaokuh_5j/src.linux-x86_64-3.11/PHOH_APRP_DPEMmodule.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpaokuh_5j/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:fix: PHOH_APRP_DPEM.f90
+PHOH_APRP_DPEM.f90:128:72:
+
+  128 |           ug(istate,jstate,iatom,idir)=guu(idir,iatom,istate,jstate)*51.422067
+      |                                                                        1
+Warning: Line truncated at (1) [-Wline-truncation]
+PHOH_APRP_DPEM.f90:157:39:
+
+  157 |       double precision cc(3,3),ccp(3,3)
+      |                                       1
+Warning: Unused variable 'ccp' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:139:48:
+
+  139 |       subroutine pot(igrad,xx,uu,guu,vv,gvv,dvec,cc,repflag)
+      |                                                1
+Warning: Unused dummy argument 'dvec' at (1) [-Wunused-dummy-argument]
+PHOH_APRP_DPEM.f90:153:39:
+
+  153 |       double precision guum(3,natm,3,3)
+      |                                       1
+Warning: Unused variable 'guum' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:152:39:
+
+  152 |       double precision guup(3,natm,3,3),gvv(3,natm,nsurft)
+      |                                       1
+Warning: Unused variable 'guup' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:139:26:
+
+  139 |       subroutine pot(igrad,xx,uu,guu,vv,gvv,dvec,cc,repflag)
+      |                          1
+Warning: Unused dummy argument 'igrad' at (1) [-Wunused-dummy-argument]
+PHOH_APRP_DPEM.f90:145:17:
+
+  145 |       integer i,j,k,l,m
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:145:19:
+
+  145 |       integer i,j,k,l,m
+      |                   1
+Warning: Unused variable 'k' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:145:21:
+
+  145 |       integer i,j,k,l,m
+      |                     1
+Warning: Unused variable 'l' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:145:23:
+
+  145 |       integer i,j,k,l,m
+      |                       1
+Warning: Unused variable 'm' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:139:59:
+
+  139 |       subroutine pot(igrad,xx,uu,guu,vv,gvv,dvec,cc,repflag)
+      |                                                           1
+Warning: Unused dummy argument 'repflag' at (1) [-Wunused-dummy-argument]
+PHOH_APRP_DPEM.f90:158:30:
+
+  158 |       double precision stp,tmp
+      |                              1
+Warning: Unused variable 'tmp' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:151:47:
+
+  151 |       double precision guu(3,natm,3,3),uup(3,3),vvp(3),vvm(3)
+      |                                               1
+Warning: Unused variable 'uup' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:151:61:
+
+  151 |       double precision guu(3,natm,3,3),uup(3,3),vvp(3),vvm(3)
+      |                                                             1
+Warning: Unused variable 'vvm' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:151:54:
+
+  151 |       double precision guu(3,natm,3,3),uup(3,3),vvp(3),vvm(3)
+      |                                                      1
+Warning: Unused variable 'vvp' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:281:37:
+
+  281 |       double precision agvv(3*natm,3)
+      |                                     1
+Warning: Unused variable 'agvv' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:246:51:
+
+  246 |       subroutine poten(igrad,X,Y,Z,uu,guu,vv,gvv,cc)
+      |                                                   1
+Warning: Unused dummy argument 'cc' at (1) [-Wunused-dummy-argument]
+PHOH_APRP_DPEM.f90:283:38:
+
+  283 |       double precision fad(3*natm,3,3)
+      |                                      1
+Warning: Unused variable 'fad' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:246:48:
+
+  246 |       subroutine poten(igrad,X,Y,Z,uu,guu,vv,gvv,cc)
+      |                                                1
+Warning: Unused dummy argument 'gvv' at (1) [-Wunused-dummy-argument]
+PHOH_APRP_DPEM.f90:275:24:
+
+  275 |       integer lwork,info
+      |                        1
+Warning: Unused variable 'info' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:275:19:
+
+  275 |       integer lwork,info
+      |                   1
+Warning: Unused variable 'lwork' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:246:44:
+
+  246 |       subroutine poten(igrad,X,Y,Z,uu,guu,vv,gvv,cc)
+      |                                            1
+Warning: Dummy argument 'vv' at (1) was declared INTENT(OUT) but was not set [-Wunused-dummy-argument]
+PHOH_APRP_DPEM.f90:279:46:
+
+  279 |       double precision, allocatable :: work(:)
+      |                                              1
+Warning: Unused variable 'work' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11136:17:
+
+11136 |       integer i,j
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11802:27:
+
+11802 |       double precision w(3)
+      |                           1
+Warning: Unused variable 'w' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:448:46:
+
+  448 |       double precision qtc(maxdim),qsc(maxdim)
+      |                                              1
+Warning: Unused variable 'qsc' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11109:31:
+
+11109 |       double precision x,y,dvdy,dydx,dxdr
+      |                               1
+Warning: Unused variable 'dvdy' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11109:41:
+
+11109 |       double precision x,y,dvdy,dydx,dxdr
+      |                                         1
+Warning: Unused variable 'dxdr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11109:36:
+
+11109 |       double precision x,y,dvdy,dydx,dxdr
+      |                                    1
+Warning: Unused variable 'dydx' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11109:24:
+
+11109 |       double precision x,y,dvdy,dydx,dxdr
+      |                        1
+Warning: Unused variable 'x' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11047:17:
+
+11047 |       integer i,j,k
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11047:19:
+
+11047 |       integer i,j,k
+      |                   1
+Warning: Unused variable 'k' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10999:31:
+
+10999 |       double precision x,y,dvdy,dydx,dxdr
+      |                               1
+Warning: Unused variable 'dvdy' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10999:41:
+
+10999 |       double precision x,y,dvdy,dydx,dxdr
+      |                                         1
+Warning: Unused variable 'dxdr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10999:36:
+
+10999 |       double precision x,y,dvdy,dydx,dxdr
+      |                                    1
+Warning: Unused variable 'dydx' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10999:24:
+
+10999 |       double precision x,y,dvdy,dydx,dxdr
+      |                        1
+Warning: Unused variable 'x' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10999:26:
+
+10999 |       double precision x,y,dvdy,dydx,dxdr
+      |                          1
+Warning: Unused variable 'y' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10967:31:
+
+10967 |       double precision x,y,dvdy,dydx,dxdr
+      |                               1
+Warning: Unused variable 'dvdy' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10967:36:
+
+10967 |       double precision x,y,dvdy,dydx,dxdr
+      |                                    1
+Warning: Unused variable 'dydx' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10916:17:
+
+10916 |       integer i,j,k
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10916:19:
+
+10916 |       integer i,j,k
+      |                   1
+Warning: Unused variable 'k' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10849:31:
+
+10849 |       double precision x,y,dvdy,dydx,dxdr
+      |                               1
+Warning: Unused variable 'dvdy' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10849:41:
+
+10849 |       double precision x,y,dvdy,dydx,dxdr
+      |                                         1
+Warning: Unused variable 'dxdr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10849:36:
+
+10849 |       double precision x,y,dvdy,dydx,dxdr
+      |                                    1
+Warning: Unused variable 'dydx' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10849:24:
+
+10849 |       double precision x,y,dvdy,dydx,dxdr
+      |                        1
+Warning: Unused variable 'x' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10796:17:
+
+10796 |       integer i,j,k
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:10796:19:
+
+10796 |       integer i,j,k
+      |                   1
+Warning: Unused variable 'k' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:561:34:
+
+  561 |       double precision dvsdr,dvbdr,dvtdr,dvbsdr
+      |                                  1
+Warning: Unused variable 'dvbdr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:561:47:
+
+  561 |       double precision dvsdr,dvbdr,dvtdr,dvbsdr
+      |                                               1
+Warning: Unused variable 'dvbsdr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:561:28:
+
+  561 |       double precision dvsdr,dvbdr,dvtdr,dvbsdr
+      |                            1
+Warning: Unused variable 'dvsdr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:561:40:
+
+  561 |       double precision dvsdr,dvbdr,dvtdr,dvbsdr
+      |                                        1
+Warning: Unused variable 'dvtdr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:554:19:
+
+  554 |       integer i,j,k
+      |                   1
+Warning: Unused variable 'k' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:549:18:
+
+  549 |       integer ntot,nqtc
+      |                  1
+Warning: Unused variable 'ntot' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:565:39:
+
+  565 |       double precision qs(nqs),qs1(nqs),qs2(nqs)
+      |                                       1
+Warning: Unused variable 'qs1' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:565:48:
+
+  565 |       double precision qs(nqs),qs1(nqs),qs2(nqs)
+      |                                                1
+Warning: Unused variable 'qs2' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11266:38:
+
+11266 |       double precision ct(ldct,maxdim)
+      |                                      1
+Warning: Array 'ct' at (1) is larger than limit set by '-fmax-stack-var-size=', moved from stack to static storage. This makes the procedure unsafe when called recursively, or concurrently from multiple threads. Consider increasing the '-fmax-stack-var-size=' limit (or use '-frecursive', which implies unlimited '-fmax-stack-var-size') - or change the code to use an ALLOCATABLE array. If the variable is never accessed concurrently, this warning can be ignored, and the variable could also be declared with the SAVE attribute. [-Wsurprising]
+PHOH_APRP_DPEM.f90:11259:36:
+
+11259 |       double precision d12tdr,d12sdr
+      |                                    1
+Warning: Unused variable 'd12sdr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11260:51:
+
+11260 |       double precision d13tdr,d13sdr,du13dr,du13dph
+      |                                                   1
+Warning: Unused variable 'du13dph' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11261:51:
+
+11261 |       double precision d23tdr,d23sdr,du23dr,du23dph
+      |                                                   1
+Warning: Unused variable 'du23dph' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11256:46:
+
+11256 |       double precision qtc(maxdim),qsc(maxdim)
+      |                                              1
+Warning: Unused variable 'qsc' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11632:32:
+
+11632 |       double precision sphi,cphi
+      |                                1
+Warning: Unused variable 'cphi' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11635:28:
+
+11635 |       double precision df2dr,df4dr,df6dr
+      |                            1
+Warning: Unused variable 'df2dr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11635:34:
+
+11635 |       double precision df2dr,df4dr,df6dr
+      |                                  1
+Warning: Unused variable 'df4dr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11635:40:
+
+11635 |       double precision df2dr,df4dr,df6dr
+      |                                        1
+Warning: Unused variable 'df6dr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11632:27:
+
+11632 |       double precision sphi,cphi
+      |                           1
+Warning: Unused variable 'sphi' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11633:28:
+
+11633 |       double precision sphi1,sphi2,sphi3,sphi4,sphi5
+      |                            1
+Warning: Unused variable 'sphi1' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11633:34:
+
+11633 |       double precision sphi1,sphi2,sphi3,sphi4,sphi5
+      |                                  1
+Warning: Unused variable 'sphi2' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11633:40:
+
+11633 |       double precision sphi1,sphi2,sphi3,sphi4,sphi5
+      |                                        1
+Warning: Unused variable 'sphi3' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11633:46:
+
+11633 |       double precision sphi1,sphi2,sphi3,sphi4,sphi5
+      |                                              1
+Warning: Unused variable 'sphi4' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11633:52:
+
+11633 |       double precision sphi1,sphi2,sphi3,sphi4,sphi5
+      |                                                    1
+Warning: Unused variable 'sphi5' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11559:28:
+
+11559 |       double precision df1dr,df3dr,df5dr
+      |                            1
+Warning: Unused variable 'df1dr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11559:34:
+
+11559 |       double precision df1dr,df3dr,df5dr
+      |                                  1
+Warning: Unused variable 'df3dr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11559:40:
+
+11559 |       double precision df1dr,df3dr,df5dr
+      |                                        1
+Warning: Unused variable 'df5dr' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:11401:29:
+
+11401 |       double precision u(nap)
+      |                             1
+Warning: Unused variable 'u' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:12160:25:
+
+12160 |       double precision a1,a2
+      |                         1
+Warning: Unused variable 'a1' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:12160:28:
+
+12160 |       double precision a1,a2
+      |                            1
+Warning: Unused variable 'a2' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:12159:27:
+
+12159 |       double precision v(3),w(3)
+      |                           1
+Warning: Unused variable 'v' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:12159:32:
+
+12159 |       double precision v(3),w(3)
+      |                                1
+Warning: Unused variable 'w' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:99:31:
+
+   99 |       integer :: iatom, idir, j, istate, jstate
+      |                               1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+PHOH_APRP_DPEM.f90:206:35:
+
+  206 |       subroutine getdvec3(nclu,pemd,gpemd,pema,dvec,cc)
+      |                                   1
+Warning: Unused dummy argument 'pemd' at (1) [-Wunused-dummy-argument]
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:809:72:
+
+  809 |      $           *(qs(i)-qse1(i))*(qs(j)-qse1(j))/(qs(i)*qs(j))
+      |                                                                        ^
+Warning: 'qse1' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:579:32:
+
+  579 |       double precision qse1(nqs),qse2(nqs)
+      |                                ^
+note: 'qse1' declared here
+PHOH_APRP_DPEM.f90:832:72:
+
+  832 |         ut=u0+vs+vb+vt+vbs
+      |                                                                        ^
+Warning: 'u0' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:556:25:
+
+  556 |       double precision u0,u01,u02,u1,u2
+      |                         ^
+note: 'u0' was declared here
+PHOH_APRP_DPEM.f90:935:72:
+
+  935 |         u1=u01+vs1+vb1+vt1+vbs1
+      |                                                                        ^
+Warning: 'u01' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:556:29:
+
+  556 |       double precision u0,u01,u02,u1,u2
+      |                             ^
+note: 'u01' was declared here
+PHOH_APRP_DPEM.f90:936:72:
+
+  936 |         u2=u02+vs2+vb2+vt2+vbs2
+      |                                                                        ^
+Warning: 'u02' may be used uninitialized [-Wmaybe-uninitialized]
+PHOH_APRP_DPEM.f90:556:33:
+
+  556 |       double precision u0,u01,u02,u1,u2
+      |                                 ^
+note: 'u02' was declared here
+INFO: gfortran:f77: /tmp/tmpaokuh_5j/src.linux-x86_64-3.11/PHOH_APRP_DPEM-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpaokuh_5j/tmp/tmpaokuh_5j/src.linux-x86_64-3.11/PHOH_APRP_DPEMmodule.o /tmp/tmpaokuh_5j/tmp/tmpaokuh_5j/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpaokuh_5j/PHOH_APRP_DPEM.o /tmp/tmpaokuh_5j/tmp/tmpaokuh_5j/src.linux-x86_64-3.11/PHOH_APRP_DPEM-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./PHOH_APRP_DPEM.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpaokuh_5j

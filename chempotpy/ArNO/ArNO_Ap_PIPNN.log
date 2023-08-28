@@ -1,0 +1,276 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "ArNO_Ap_PIPNN" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmpezauush3/src.linux-x86_64-3.11/ArNO_Ap_PIPNNmodule.c
+creating /tmp/tmpezauush3/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'ArNO_Ap_PIPNN.f90' (format:fix)
+Line #68 in ArNO_Ap_PIPNN.f90:"        parameter (pi=3.141592653589793d0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #93 in ArNO_Ap_PIPNN.f90:"        parameter (nroh1=17,nth=13,nroh2=70,ip=2) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #93 in ArNO_Ap_PIPNN.f90:"        parameter (nroh1=17,nth=13,nroh2=70,ip=2) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #93 in ArNO_Ap_PIPNN.f90:"        parameter (nroh1=17,nth=13,nroh2=70,ip=2) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #93 in ArNO_Ap_PIPNN.f90:"        parameter (nroh1=17,nth=13,nroh2=70,ip=2) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #94 in ArNO_Ap_PIPNN.f90:"        parameter (m=100,n=100,l=100) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #94 in ArNO_Ap_PIPNN.f90:"        parameter (m=100,n=100,l=100) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #94 in ArNO_Ap_PIPNN.f90:"        parameter (m=100,n=100,l=100) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Post-processing...
+	Block: ArNO_Ap_PIPNN
+			Block: pes
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes
+vars2fortran: No typespec for argument "r_no".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes
+vars2fortran: No typespec for argument "r_arn".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes
+vars2fortran: No typespec for argument "cthx".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes
+vars2fortran: No typespec for argument "vtot".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes
+vars2fortran: No typespec for argument "vint".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes
+vars2fortran: No typespec for argument "istat".
+			Block: arnopes
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes_sh
+vars2fortran: No typespec for argument "r10".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes_sh
+vars2fortran: No typespec for argument "r20".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes_sh
+vars2fortran: No typespec for argument "cthi".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes_sh
+vars2fortran: No typespec for argument "va".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes_sh
+vars2fortran: No typespec for argument "istate".
+			Block: arnopes_sh
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes_sh
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:arnopes_sh
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: potread
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:potread
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spl3
+vars2fortran: No typespec for argument "r1".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spl3
+vars2fortran: No typespec for argument "th".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spl3
+vars2fortran: No typespec for argument "r2".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spl3
+vars2fortran: No typespec for argument "v".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spl3
+vars2fortran: No typespec for argument "istate".
+			Block: spl3
+{'attrspec': ['dimension(n)']}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:splint
+vars2fortran: No typespec for argument "xa".
+{'attrspec': ['dimension(n)']}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:splint
+vars2fortran: No typespec for argument "ya".
+{'attrspec': ['dimension(n)']}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:splint
+vars2fortran: No typespec for argument "y2a".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:splint
+vars2fortran: No typespec for argument "n".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:splint
+vars2fortran: No typespec for argument "x".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:splint
+vars2fortran: No typespec for argument "y".
+			Block: splint
+{'attrspec': ['dimension(n)']}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spline
+vars2fortran: No typespec for argument "x".
+{'attrspec': ['dimension(n)']}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spline
+vars2fortran: No typespec for argument "y".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spline
+vars2fortran: No typespec for argument "n".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spline
+vars2fortran: No typespec for argument "yp1".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spline
+vars2fortran: No typespec for argument "ypn".
+{'attrspec': ['dimension(n)']}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:spline
+vars2fortran: No typespec for argument "y2".
+			Block: spline
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:longpes
+vars2fortran: No typespec for argument "r_no".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:longpes
+vars2fortran: No typespec for argument "r_arn".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:longpes
+vars2fortran: No typespec for argument "cthx".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:longpes
+vars2fortran: No typespec for argument "v".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:longpes
+vars2fortran: No typespec for argument "istat".
+			Block: longpes
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:vfuncs
+vars2fortran: No typespec for argument "theta".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:vfuncs
+vars2fortran: No typespec for argument "r".
+{'attrspec': ['dimension(4)']}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:vfuncs
+vars2fortran: No typespec for argument "c".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:vfuncs
+vars2fortran: No typespec for argument "v".
+			Block: vfuncs
+			Block: bval
+			Block: fval
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:pes1d
+vars2fortran: No typespec for argument "r_no".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:pes1d
+vars2fortran: No typespec for argument "v".
+{}
+In: :ArNO_Ap_PIPNN:ArNO_Ap_PIPNN.f90:pes1d
+vars2fortran: No typespec for argument "istat".
+			Block: pes1d
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "ArNO_Ap_PIPNN"...
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad,path)
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "arnopes"...
+          arnopes(r_no,r_arn,cthx,vtot,vint,istat)
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "arnopes_sh"...
+          arnopes_sh(r10,r20,cthi,va,istate)
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "potread"...
+          potread(path)
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "spl3"...
+          spl3(r1,th,r2,v,istate)
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "splint"...
+          splint(xa,ya,y2a,x,y,[n])
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "spline"...
+          spline(x,y,yp1,ypn,y2,[n])
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "longpes"...
+          longpes(r_no,r_arn,cthx,v,istat)
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "vfuncs"...
+          vfuncs(theta,r,c,v)
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "bval"...
+          bval(cth,b)
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "fval"...
+          fval(r,cth,f)
+    Generating possibly empty wrappers"
+    Maybe empty "ArNO_Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "pes1d"...
+          pes1d(r_no,v,istat)
+		Constructing COMMON block support for "bvcut"...
+		  vcut
+		Constructing COMMON block support for "pesa"...
+		  pesmin,roh2,roh1,thth,ve,ind
+    Wrote C/API module "ArNO_Ap_PIPNN" to file "/tmp/tmpezauush3/src.linux-x86_64-3.11/ArNO_Ap_PIPNNmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpezauush3/src.linux-x86_64-3.11/ArNO_Ap_PIPNN-f2pywrappers.f"
+INFO:   adding '/tmp/tmpezauush3/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpezauush3/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpezauush3/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpezauush3/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpezauush3/src.linux-x86_64-3.11/ArNO_Ap_PIPNN-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'ArNO_Ap_PIPNN' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmpezauush3/tmp
+creating /tmp/tmpezauush3/tmp/tmpezauush3
+creating /tmp/tmpezauush3/tmp/tmpezauush3/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpezauush3/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmpezauush3/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmpezauush3/src.linux-x86_64-3.11/ArNO_Ap_PIPNNmodule.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpezauush3/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f90: ArNO_Ap_PIPNN.f90
+INFO: gfortran:f77: /tmp/tmpezauush3/src.linux-x86_64-3.11/ArNO_Ap_PIPNN-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpezauush3/tmp/tmpezauush3/src.linux-x86_64-3.11/ArNO_Ap_PIPNNmodule.o /tmp/tmpezauush3/tmp/tmpezauush3/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpezauush3/ArNO_Ap_PIPNN.o /tmp/tmpezauush3/tmp/tmpezauush3/src.linux-x86_64-3.11/ArNO_Ap_PIPNN-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./ArNO_Ap_PIPNN.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpezauush3

@@ -1,0 +1,115 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "O3_14_3Ap_2023_DPEM" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp18qlp2ss/src.linux-x86_64-3.11/O3_14_3Ap_2023_DPEMmodule.c
+creating /tmp/tmp18qlp2ss/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'O3_14_3Ap_2023_DPEM.f90' (format:fix)
+Line #330 in O3_14_3Ap_2023_DPEM.f90:"      subroutine activation_gelu outine activation_derivative_gelu(z, a, b, n) teger i,n al*8, intent(in) :: z(n), a(n) al*8, intent(inout) :: b(n)  i=1,n "
+	analyzeline: No name/args pattern found for line.
+Line #355 in O3_14_3Ap_2023_DPEM.f90:"      subroutine activation_derivative_gelu outine activation_functional_heviside(z, a, n, r, nbonds) teger, intent(in) :: n, nbonds al*8, intent(in) :: z(n) al*8, intent(in) :: r(nbonds) al*8, intent(inout) :: a(n) al*8 :: r_max, Ar, Br al*8, parameter :: af_f=2, af_a=-2, af_b=7.5 teger :: i max=maxval(r,nbonds) =0.5+0.5*tanh(af_f*(r_max-af_a)) =0.5+0.5*tanh(af_f*(-r_max+af_b))  i=1,n "
+	analyzeline: No name/args pattern found for line.
+Line #381 in O3_14_3Ap_2023_DPEM.f90:"      subroutine activation_functional_heviside outine activation_functional_derivative_terms(g, z, n, r, nbonds) teger, intent(in) :: n, nbonds al*8, intent(in) :: z(n) al*8, intent(in) :: r(nbonds) al*8, intent(inout) :: g(nbonds,n) al*8 :: r_max al*8 :: Ar, Br al*8, parameter :: af_f=2, af_a=-2, af_b=7.5 al*8 :: dfdr(nbonds) teger :: i max=maxval(r,nbonds) =0.5+0.5*tanh(af_f*(r_max-af_a)) =0.5+0.5*tanh(af_f*(-r_max+af_b))  (r(1).ge.r(2) .and. r(1).ge.r(3)) then  "
+	analyzeline: No name/args pattern found for line.
+Line #416 in O3_14_3Ap_2023_DPEM.f90:"      subroutine activation_functional_derivative_terms outine sumover(a,b,sum1) teger, intent(in) :: a, b teger, intent(out) :: sum1 teger :: num m1=1-a  num=a, a-b+1, -1 "
+	analyzeline: No name/args pattern found for line.
+Line #440 in O3_14_3Ap_2023_DPEM.f90:"      subroutine sumover outine diagonalize(n,A_ss,EV_s,U_ss) plicit none teger, intent(in) :: n al*8, intent(in) :: A_ss(n,n) al*8, intent(out) :: U_ss(n,n) al*8, intent(out) :: EV_s(n) teger :: io,i al*8,allocatable :: lapack_work_d(:) teger, save :: lapack_lwork_d  gical, save :: first_time_diag=.true. ss=A_ss  (first_time_diag) then "
+	analyzeline: No name/args pattern found for line.
+Line #499 in O3_14_3Ap_2023_DPEM.f90:"      subroutine diagonalize outine grad_r_to_xyz(g,drdx,gr,r,x,n,ns) plicit none teger, intent(in) :: n, ns al*8, intent(in) :: x(n,3) al*8, intent(in) :: r(n*(n-1)/2) al*8, intent(in) :: gr(ns,n*(n-1)/2) al*8, intent(inout) :: g(ns,n,3) al*8, intent(inout) :: drdx(n*(n-1)/2,3*n) al*8 ::  gx(ns,3*n) teger :: i,j dx=0.0d0 dx(1,1)=(x(1,1)-x(2,1))/r(1) dx(1,2)=(x(1,2)-x(2,2))/r(1) dx(1,3)=(x(1,3)-x(2,3))/r(1) dx(1,4)=-drdx(1,1) dx(1,5)=-drdx(1,2) dx(1,6)=-drdx(1,3) dx(2,1)=(x(1,1)-x(3,1))/r(2) dx(2,2)=(x(1,2)-x(3,2))/r(2) dx(2,3)=(x(1,3)-x(3,3))/r(2) dx(2,7)=-drdx(2,1) dx(2,8)=-drdx(2,2) dx(2,9)=-drdx(2,3) dx(3,4)=(x(2,1)-x(3,1))/r(3) dx(3,5)=(x(2,2)-x(3,2))/r(3) dx(3,6)=(x(2,3)-x(3,3))/r(3) dx(3,7)=-drdx(3,4) dx(3,8)=-drdx(3,5) dx(3,9)=-drdx(3,6) ll mproduct(gr,drdx,gx,ns,n*(n-1)/2,3*n)  i=1,n "
+	analyzeline: No name/args pattern found for line.
+Line #545 in O3_14_3Ap_2023_DPEM.f90:"      subroutine grad_r_to_xyz outine nac_r_to_xyz(h,drdx,hr,r,x,n,ns) plicit none teger, intent(in) :: n, ns al*8, intent(in) :: x(n,3) al*8, intent(in) :: r(n*(n-1)/2) al*8, intent(in) :: hr(ns,ns,n*(n-1)/2) al*8, intent(inout) :: h(ns,ns,n,3) al*8, intent(inout) :: drdx(n*(n-1)/2,3*n) al*8 ::  hr_vec(ns*ns,n*(n-1)/2) al*8 ::  hx(ns*ns,3*n) teger :: i,j,k,l dx=0.0d0 dx(1,1)=(x(1,1)-x(2,1))/r(1) dx(1,2)=(x(1,2)-x(2,2))/r(1) dx(1,3)=(x(1,3)-x(2,3))/r(1) dx(1,4)=-drdx(1,1) dx(1,5)=-drdx(1,2) dx(1,6)=-drdx(1,3) dx(2,1)=(x(1,1)-x(3,1))/r(2) dx(2,2)=(x(1,2)-x(3,2))/r(2) dx(2,3)=(x(1,3)-x(3,3))/r(2) dx(2,7)=-drdx(2,1) dx(2,8)=-drdx(2,2) dx(2,9)=-drdx(2,3) dx(3,4)=(x(2,1)-x(3,1))/r(3) dx(3,5)=(x(2,2)-x(3,2))/r(3) dx(3,6)=(x(2,3)-x(3,3))/r(3) dx(3,7)=-drdx(3,4) dx(3,8)=-drdx(3,5) dx(3,9)=-drdx(3,6)  i=1,ns "
+	analyzeline: No name/args pattern found for line.
+Line #577 in O3_14_3Ap_2023_DPEM.f90:"      subroutine nac_r_to_xyz outine convert_xyz_to_r(x,r,n) plicit none teger, intent(in) :: n al*8, intent(in) :: x(n,3) al*8, intent(out) :: r(n*(n-1)/2) teger :: i, j, l 1  i=1,n "
+	analyzeline: No name/args pattern found for line.
+crackline: groupcounter=10 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=9 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=8 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=7 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=6 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=5 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=4 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=3 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=2 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=1 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+Post-processing...
+	Block: O3_14_3Ap_2023_DPEM
+			Block: dpem
+			Block: unknown_subroutine
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "O3_14_3Ap_2023_DPEM"...
+    Generating possibly empty wrappers"
+    Maybe empty "O3_14_3Ap_2023_DPEM-f2pywrappers.f"
+        Constructing wrapper function "dpem"...
+          u,ug = dpem(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "O3_14_3Ap_2023_DPEM-f2pywrappers.f"
+        Constructing wrapper function "unknown_subroutine"...
+          unknown_subroutine()
+    Wrote C/API module "O3_14_3Ap_2023_DPEM" to file "/tmp/tmp18qlp2ss/src.linux-x86_64-3.11/O3_14_3Ap_2023_DPEMmodule.c"
+INFO:   adding '/tmp/tmp18qlp2ss/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp18qlp2ss/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp18qlp2ss/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp18qlp2ss/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp18qlp2ss/src.linux-x86_64-3.11/O3_14_3Ap_2023_DPEM-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'O3_14_3Ap_2023_DPEM' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmp18qlp2ss/tmp
+creating /tmp/tmp18qlp2ss/tmp/tmp18qlp2ss
+creating /tmp/tmp18qlp2ss/tmp/tmp18qlp2ss/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp18qlp2ss/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmp18qlp2ss/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmp18qlp2ss/src.linux-x86_64-3.11/O3_14_3Ap_2023_DPEMmodule.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp18qlp2ss/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f90: O3_14_3Ap_2023_DPEM.f90
+INFO: gfortran:f77: /tmp/tmp18qlp2ss/src.linux-x86_64-3.11/O3_14_3Ap_2023_DPEM-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp18qlp2ss/tmp/tmp18qlp2ss/src.linux-x86_64-3.11/O3_14_3Ap_2023_DPEMmodule.o /tmp/tmp18qlp2ss/tmp/tmp18qlp2ss/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp18qlp2ss/O3_14_3Ap_2023_DPEM.o /tmp/tmp18qlp2ss/tmp/tmp18qlp2ss/src.linux-x86_64-3.11/O3_14_3Ap_2023_DPEM-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./O3_14_3Ap_2023_DPEM.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp18qlp2ss

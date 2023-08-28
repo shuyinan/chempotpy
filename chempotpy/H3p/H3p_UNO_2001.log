@@ -1,0 +1,104 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "H3p_UNO_2001" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/H3p_UNO_2001module.c
+creating /tmp/tmp2d1fcu7x/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'H3p_UNO_2001.f' (format:fix,strict)
+Post-processing...
+	Block: H3p_UNO_2001
+			Block: pes
+			Block: evdrdx
+			Block: diagonalize
+{'attrspec': ['dimension(nt, 3)']}
+In: :H3p_UNO_2001:H3p_UNO_2001.f:pot
+vars2fortran: No typespec for argument "r".
+{'attrspec': ['dimension(nt)']}
+In: :H3p_UNO_2001:H3p_UNO_2001.f:pot
+vars2fortran: No typespec for argument "e".
+{'attrspec': ['dimension(3, nt)']}
+In: :H3p_UNO_2001:H3p_UNO_2001.f:pot
+vars2fortran: No typespec for argument "de".
+{}
+In: :H3p_UNO_2001:H3p_UNO_2001.f:pot
+vars2fortran: No typespec for argument "nt".
+{}
+In: :H3p_UNO_2001:H3p_UNO_2001.f:pot
+vars2fortran: No typespec for argument "nsurf".
+			Block: pot
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "H3p_UNO_2001"...
+    Generating possibly empty wrappers"
+    Maybe empty "H3p_UNO_2001-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          pin,grad,dvec = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "H3p_UNO_2001-f2pywrappers.f"
+        Constructing wrapper function "evdrdx"...
+          drdx = evdrdx(x,r)
+    Generating possibly empty wrappers"
+    Maybe empty "H3p_UNO_2001-f2pywrappers.f"
+        Constructing wrapper function "diagonalize"...
+          ev_s,u_ss = diagonalize(a_ss,[n])
+    Generating possibly empty wrappers"
+    Maybe empty "H3p_UNO_2001-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot(r,e,de,nsurf,[nt])
+    Wrote C/API module "H3p_UNO_2001" to file "/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/H3p_UNO_2001module.c"
+INFO:   adding '/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp2d1fcu7x/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp2d1fcu7x/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/H3p_UNO_2001-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'H3p_UNO_2001' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmp2d1fcu7x/tmp
+creating /tmp/tmp2d1fcu7x/tmp/tmp2d1fcu7x
+creating /tmp/tmp2d1fcu7x/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/H3p_UNO_2001module.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/H3p_UNO_2001-f2pywrappers.f
+INFO: gfortran:f77: H3p_UNO_2001.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp2d1fcu7x/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/H3p_UNO_2001module.o /tmp/tmp2d1fcu7x/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp2d1fcu7x/H3p_UNO_2001.o /tmp/tmp2d1fcu7x/tmp/tmp2d1fcu7x/src.linux-x86_64-3.11/H3p_UNO_2001-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./H3p_UNO_2001.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp2d1fcu7x

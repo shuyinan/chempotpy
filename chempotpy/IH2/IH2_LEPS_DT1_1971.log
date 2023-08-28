@@ -1,0 +1,478 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "IH2_LEPS_DT1_1971" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp_dhofdfd/src.linux-x86_64-3.11/IH2_LEPS_DT1_1971module.c
+creating /tmp/tmp_dhofdfd/src.linux-x86_64-3.11
+analyzeline: Failed to evaluate '4.0d0*pi*1.0d-07'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '1.0d0/(cmu_0*clight**2)'. Ignoring: invalid decimal literal (<string>, line 1)
+Reading fortran codes...
+	Reading file 'IH2_LEPS_DT1_1971.f' (format:fix,strict)
+Line #16 in IH2_LEPS_DT1_1971.f:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int') type.
+Line #16 in IH2_LEPS_DT1_1971.f:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int(isurf*(isurf+1)/2)') type.
+Line #128 in IH2_LEPS_DT1_1971.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #130 in IH2_LEPS_DT1_1971.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #130 in IH2_LEPS_DT1_1971.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #145 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CKCAL = 627.5095D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #145 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CKCAL = 627.5095D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #147 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CANGS = 0.52917706D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #147 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CANGS = 0.52917706D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #147 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CANGS = 0.52917706D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #273 in IH2_LEPS_DT1_1971.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #275 in IH2_LEPS_DT1_1971.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #275 in IH2_LEPS_DT1_1971.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #297 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CKCAL = 627.5095D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #297 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CKCAL = 627.5095D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #299 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CANGS = 0.52917706D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #299 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CANGS = 0.52917706D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #299 in IH2_LEPS_DT1_1971.f:"         PARAMETER (CANGS = 0.52917706D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #439 in IH2_LEPS_DT1_1971.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #441 in IH2_LEPS_DT1_1971.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #441 in IH2_LEPS_DT1_1971.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #495 in IH2_LEPS_DT1_1971.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #665 in IH2_LEPS_DT1_1971.f:"      PARAMETER(        PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #666 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    CLIGHT = 2.99792458D08)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #666 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    CLIGHT = 2.99792458D08)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #667 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #667 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #667 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #668 in IH2_LEPS_DT1_1971.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #668 in IH2_LEPS_DT1_1971.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #668 in IH2_LEPS_DT1_1971.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #668 in IH2_LEPS_DT1_1971.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	determineexprtype: could not determine expressions ('1.0d0/(cmu_0*clight**2)') type.
+Line #669 in IH2_LEPS_DT1_1971.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #669 in IH2_LEPS_DT1_1971.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #669 in IH2_LEPS_DT1_1971.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #670 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #670 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #670 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #670 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #671 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #671 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #671 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #671 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #671 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #672 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #672 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #672 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #672 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #672 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #672 in IH2_LEPS_DT1_1971.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #673 in IH2_LEPS_DT1_1971.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #673 in IH2_LEPS_DT1_1971.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #673 in IH2_LEPS_DT1_1971.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #673 in IH2_LEPS_DT1_1971.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #673 in IH2_LEPS_DT1_1971.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #673 in IH2_LEPS_DT1_1971.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #673 in IH2_LEPS_DT1_1971.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #674 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #674 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #674 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #674 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #674 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #674 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #674 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #674 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #675 in IH2_LEPS_DT1_1971.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #675 in IH2_LEPS_DT1_1971.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #675 in IH2_LEPS_DT1_1971.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #675 in IH2_LEPS_DT1_1971.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #675 in IH2_LEPS_DT1_1971.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #675 in IH2_LEPS_DT1_1971.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #675 in IH2_LEPS_DT1_1971.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #675 in IH2_LEPS_DT1_1971.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #675 in IH2_LEPS_DT1_1971.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #676 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #677 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+getstrlength: expected a signature of a string but got: {'typespec': 'character', 'charselector': {'*': '75'}, 'attrspec': [], 'dimension': ['5']}
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #678 in IH2_LEPS_DT1_1971.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #679 in IH2_LEPS_DT1_1971.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #680 in IH2_LEPS_DT1_1971.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Post-processing...
+	Block: IH2_LEPS_DT1_1971
+			Block: pes
+			Block: prepot
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: pot
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: ptpacm
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ptpacm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ptpacm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: potinfo
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:potinfo
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:potinfo
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: ancvrt
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: cartou
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:cartou
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: carttor
+			Block: eunitzero
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:eunitzero
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: rtocart
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:rtocart
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: dedcou
+In: :IH2_LEPS_DT1_1971:IH2_LEPS_DT1_1971.f:dedcou
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "IH2_LEPS_DT1_1971"...
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "prepot"...
+          prepot()
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot()
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "potinfo"...
+          potinfo()
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "ancvrt"...
+          ancvrt()
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "cartou"...
+          cartou()
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "carttor"...
+          carttor()
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "eunitzero"...
+          eunitzero()
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "rtocart"...
+          rtocart()
+    Generating possibly empty wrappers"
+    Maybe empty "IH2_LEPS_DT1_1971-f2pywrappers.f"
+        Constructing wrapper function "dedcou"...
+          dedcou()
+		Constructing COMMON block support for "usrocm"...
+		  pengygs,pengyes,pengyij,dgscart,descart,dijcart
+		Constructing COMMON block support for "usricm"...
+		  cart,anuzero,nulbl,nflag,nasurf,nder
+		Constructing COMMON block support for "pt3cm"...
+		  ezero
+		Constructing COMMON block support for "infocm"...
+		  cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+		Constructing COMMON block support for "asycm"...
+		  easyab,easybc,easyac
+		Constructing COMMON block support for "rmcrcm"...
+		  rr,s,d,alpha,re,alfd,clbh
+		Constructing COMMON block support for "rmcicm"...
+		  irxn,l
+		Constructing COMMON block support for "precm"...
+		  c,pre,rrmre,a,dadp,dpdr,rrmr,rr1ms1,rr2ms2,rrs1d2,sr1r2,pid4,pid2,dmdn
+		Constructing COMMON block support for "pt1cm"...
+		  r,engygs,degsdr
+		Constructing COMMON block support for "pt4cm"...
+		  engyes,deesdr
+		Constructing COMMON block support for "pt5cm"...
+		  engyij,deijdr
+		Constructing COMMON block support for "utilcm"...
+		  dgscartnu,descartnu,dijcartnu,cnvrtd,cnvrte,cnvrtde,ireorder,ksdiag,kediag,ksoffd,keoffd
+    Wrote C/API module "IH2_LEPS_DT1_1971" to file "/tmp/tmp_dhofdfd/src.linux-x86_64-3.11/IH2_LEPS_DT1_1971module.c"
+    Fortran 77 wrappers are saved to "/tmp/tmp_dhofdfd/src.linux-x86_64-3.11/IH2_LEPS_DT1_1971-f2pywrappers.f"
+INFO:   adding '/tmp/tmp_dhofdfd/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp_dhofdfd/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp_dhofdfd/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp_dhofdfd/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp_dhofdfd/src.linux-x86_64-3.11/IH2_LEPS_DT1_1971-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'IH2_LEPS_DT1_1971' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmp_dhofdfd/tmp
+creating /tmp/tmp_dhofdfd/tmp/tmp_dhofdfd
+creating /tmp/tmp_dhofdfd/tmp/tmp_dhofdfd/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp_dhofdfd/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmp_dhofdfd/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmp_dhofdfd/src.linux-x86_64-3.11/IH2_LEPS_DT1_1971module.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp_dhofdfd/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmp_dhofdfd/src.linux-x86_64-3.11/IH2_LEPS_DT1_1971-f2pywrappers.f
+INFO: gfortran:f77: IH2_LEPS_DT1_1971.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp_dhofdfd/tmp/tmp_dhofdfd/src.linux-x86_64-3.11/IH2_LEPS_DT1_1971module.o /tmp/tmp_dhofdfd/tmp/tmp_dhofdfd/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp_dhofdfd/IH2_LEPS_DT1_1971.o /tmp/tmp_dhofdfd/tmp/tmp_dhofdfd/src.linux-x86_64-3.11/IH2_LEPS_DT1_1971-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./IH2_LEPS_DT1_1971.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp_dhofdfd

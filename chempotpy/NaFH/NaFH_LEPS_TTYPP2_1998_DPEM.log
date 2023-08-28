@@ -1,0 +1,164 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "NaFH_LEPS_TTYPP2_1998_DPEM" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmpe2do_7wu/src.linux-x86_64-3.11/NaFH_LEPS_TTYPP2_1998_DPEMmodule.c
+creating /tmp/tmpe2do_7wu/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'NaFH_LEPS_TTYPP2_1998_DPEM.f' (format:fix,strict)
+Post-processing...
+	Block: NaFH_LEPS_TTYPP2_1998_DPEM
+			Block: dpem
+			Block: evdrdx
+			Block: diagonalize
+			Block: prepot
+{'attrspec': ['dimension(nt,3)']}
+In: :NaFH_LEPS_TTYPP2_1998_DPEM:NaFH_LEPS_TTYPP2_1998_DPEM.f:pot
+vars2fortran: No typespec for argument "r".
+{'attrspec': ['dimension(nt)']}
+In: :NaFH_LEPS_TTYPP2_1998_DPEM:NaFH_LEPS_TTYPP2_1998_DPEM.f:pot
+vars2fortran: No typespec for argument "e".
+{'attrspec': ['dimension(3,nt)']}
+In: :NaFH_LEPS_TTYPP2_1998_DPEM:NaFH_LEPS_TTYPP2_1998_DPEM.f:pot
+vars2fortran: No typespec for argument "de".
+{}
+In: :NaFH_LEPS_TTYPP2_1998_DPEM:NaFH_LEPS_TTYPP2_1998_DPEM.f:pot
+vars2fortran: No typespec for argument "nt".
+{}
+In: :NaFH_LEPS_TTYPP2_1998_DPEM:NaFH_LEPS_TTYPP2_1998_DPEM.f:pot
+vars2fortran: No typespec for argument "nsurf".
+			Block: pot
+			Block: prepot11
+			Block: prepot12
+			Block: prepot22
+			Block: general
+			Block: uoneone
+			Block: utwotwo
+			Block: uonetwo
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "NaFH_LEPS_TTYPP2_1998_DPEM"...
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "dpem"...
+          u,ug = dpem(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "evdrdx"...
+          drdx = evdrdx(x,r)
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "diagonalize"...
+          ev_s,u_ss = diagonalize(a_ss,[n])
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "prepot"...
+          prepot()
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot(r,e,de,nsurf,[nt])
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "prepot11"...
+          prepot11()
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "pot11"...
+          pot11(r,e,de,nt)
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "prepot12"...
+          prepot12()
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "pot12"...
+          pot12(r,e,de,nt)
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "prepot22"...
+          prepot22()
+    Generating possibly empty wrappers"
+    Maybe empty "NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+        Constructing wrapper function "pot22"...
+          pot22(r,e,de,nt)
+		Constructing COMMON block support for "com_para"...
+		  g_myrank,g_nprocs
+		Constructing COMMON block support for "onetwo"...
+		  cnf,cnf1,chf,bc,ads1,ars1,abs1,amh,amf,amna,amu,una2p,asmall,cevau,denf,renf,dehf,rehf
+		Constructing COMMON block support for "uone"...
+		  y,c2a,c2b,c2c,dip1,adip1,rdip1,acut1,rcut1,dipn,al2,aln0,dipnn,al2n,aln0n1,aln0n2,rn0n
+		Constructing COMMON block support for "angular1"...
+		  ac
+		Constructing COMMON block support for "ucoupl"...
+		  ahf,anaf,anah,r21,r23,r13
+		Constructing COMMON block support for "ucoupl1"...
+		  ccnf,ccnha,ccnhi,ccnhi1
+		Constructing COMMON block support for "u12nah"...
+		  xpnh,xpnh1
+		Constructing COMMON block support for "utwo"...
+		  y,c2a,c2b,c2c,r20i,r20a,al20i,al20i1,al20a,psi,rsi,al2a,rr0a,dip2,adip2,rdip2,acut2,rcut2,ry,aly,dy,dy1,dy2,dip2n,adip2n,rdip2n,acut2n,rcut2n
+		Constructing COMMON block support for "angular2"...
+		  ac
+    Wrote C/API module "NaFH_LEPS_TTYPP2_1998_DPEM" to file "/tmp/tmpe2do_7wu/src.linux-x86_64-3.11/NaFH_LEPS_TTYPP2_1998_DPEMmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpe2do_7wu/src.linux-x86_64-3.11/NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f"
+INFO:   adding '/tmp/tmpe2do_7wu/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpe2do_7wu/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpe2do_7wu/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpe2do_7wu/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpe2do_7wu/src.linux-x86_64-3.11/NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'NaFH_LEPS_TTYPP2_1998_DPEM' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmpe2do_7wu/tmp
+creating /tmp/tmpe2do_7wu/tmp/tmpe2do_7wu
+creating /tmp/tmpe2do_7wu/tmp/tmpe2do_7wu/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpe2do_7wu/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmpe2do_7wu/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmpe2do_7wu/src.linux-x86_64-3.11/NaFH_LEPS_TTYPP2_1998_DPEMmodule.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpe2do_7wu/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmpe2do_7wu/src.linux-x86_64-3.11/NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.f
+INFO: gfortran:f77: NaFH_LEPS_TTYPP2_1998_DPEM.f
+NaFH_LEPS_TTYPP2_1998_DPEM.f:63:33:
+
+   63 |       call diagonalize(nstates,u,p,t)
+      |                                 1
+Warning: Rank mismatch in argument 'ev_s' at (1) (rank-1 and scalar)
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpe2do_7wu/tmp/tmpe2do_7wu/src.linux-x86_64-3.11/NaFH_LEPS_TTYPP2_1998_DPEMmodule.o /tmp/tmpe2do_7wu/tmp/tmpe2do_7wu/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpe2do_7wu/NaFH_LEPS_TTYPP2_1998_DPEM.o /tmp/tmpe2do_7wu/tmp/tmpe2do_7wu/src.linux-x86_64-3.11/NaFH_LEPS_TTYPP2_1998_DPEM-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./NaFH_LEPS_TTYPP2_1998_DPEM.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpe2do_7wu
