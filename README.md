@@ -24,11 +24,11 @@ How to install
        conda install -c conda-forge gfortran
        pip install numpy
        pip install charset_normalizer
-       pip install chempotpy
 
 * Install stable release:
   
         pip install chempotpy
+
 
 
 * The users may re-compile all .so modules for compatability reasons:
