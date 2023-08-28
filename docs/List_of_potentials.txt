@@ -166,7 +166,7 @@
     CH3OH:
     106. S1.  CH3OH_PIPNN:         single-state, P
 
-    CH4:
+    CH4: --disabled
     107. S1.  CH4_GEN_SP_2001:     single-state, P
 
     CH4Br:
@@ -315,7 +315,7 @@
     198. S9.  H3_GEN_TK_1984:       single-state, P/G
     199. M1.  H3_GEN_DMBE_1987:     2-state, P/G/D
 
-    H3Cl:
+    H3Cl: --disabled
     200. S1.  H3Cl_PIPNN:           single-state, P
 
     H3ClO:
@@ -328,7 +328,7 @@
     H3S:
     204. S1.  H3S_PIPNN:         single-state, P/G
 
-    H4O2:
+    H4O2: --disabled
     205. S1.  H4O2_PIP:          single-state, P
 
     HClOH:

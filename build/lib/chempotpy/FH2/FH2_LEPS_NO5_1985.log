@@ -1,0 +1,498 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "FH2_LEPS_NO5_1985" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/FH2_LEPS_NO5_1985module.c
+creating /tmp/tmpuxdy5h_z/src.linux-x86_64-3.11
+analyzeline: Failed to evaluate '4.0d0*pi*1.0d-07'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '1.0d0/(cmu_0*clight**2)'. Ignoring: invalid decimal literal (<string>, line 1)
+Reading fortran codes...
+	Reading file 'FH2_LEPS_NO5_1985.f' (format:fix,strict)
+Line #15 in FH2_LEPS_NO5_1985.f:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int') type.
+Line #15 in FH2_LEPS_NO5_1985.f:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int(isurf*(isurf+1)/2)') type.
+Line #131 in FH2_LEPS_NO5_1985.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #133 in FH2_LEPS_NO5_1985.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #133 in FH2_LEPS_NO5_1985.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #146 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CKCAU = 627.5095D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #146 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CKCAU = 627.5095D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #148 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CANGAU = 0.52917706D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #148 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CANGAU = 0.52917706D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #148 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CANGAU = 0.52917706D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #265 in FH2_LEPS_NO5_1985.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #267 in FH2_LEPS_NO5_1985.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #267 in FH2_LEPS_NO5_1985.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #287 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CKCAU = 627.5095D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #287 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CKCAU = 627.5095D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #288 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CANGAU = 0.52917706D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #288 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CANGAU = 0.52917706D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #288 in FH2_LEPS_NO5_1985.f:"         PARAMETER (CANGAU = 0.52917706D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #289 in FH2_LEPS_NO5_1985.f:"         PARAMETER (TDEG = 57.29577951D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #289 in FH2_LEPS_NO5_1985.f:"         PARAMETER (TDEG = 57.29577951D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #289 in FH2_LEPS_NO5_1985.f:"         PARAMETER (TDEG = 57.29577951D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #289 in FH2_LEPS_NO5_1985.f:"         PARAMETER (TDEG = 57.29577951D0)                               "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #293 in FH2_LEPS_NO5_1985.f:"         PARAMETER (EXLARG = 80.D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #293 in FH2_LEPS_NO5_1985.f:"         PARAMETER (EXLARG = 80.D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #293 in FH2_LEPS_NO5_1985.f:"         PARAMETER (EXLARG = 80.D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #293 in FH2_LEPS_NO5_1985.f:"         PARAMETER (EXLARG = 80.D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #293 in FH2_LEPS_NO5_1985.f:"         PARAMETER (EXLARG = 80.D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #694 in FH2_LEPS_NO5_1985.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #696 in FH2_LEPS_NO5_1985.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #696 in FH2_LEPS_NO5_1985.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #762 in FH2_LEPS_NO5_1985.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #932 in FH2_LEPS_NO5_1985.f:"      PARAMETER(        PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #933 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    CLIGHT = 2.99792458D08)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #933 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    CLIGHT = 2.99792458D08)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #934 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #934 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #934 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #935 in FH2_LEPS_NO5_1985.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #935 in FH2_LEPS_NO5_1985.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #935 in FH2_LEPS_NO5_1985.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #935 in FH2_LEPS_NO5_1985.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	determineexprtype: could not determine expressions ('1.0d0/(cmu_0*clight**2)') type.
+Line #936 in FH2_LEPS_NO5_1985.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #936 in FH2_LEPS_NO5_1985.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #936 in FH2_LEPS_NO5_1985.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #937 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #937 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #937 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #937 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #938 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #938 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #938 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #938 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #938 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #939 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #939 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #939 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #939 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #939 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #939 in FH2_LEPS_NO5_1985.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #940 in FH2_LEPS_NO5_1985.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #940 in FH2_LEPS_NO5_1985.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #940 in FH2_LEPS_NO5_1985.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #940 in FH2_LEPS_NO5_1985.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #940 in FH2_LEPS_NO5_1985.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #940 in FH2_LEPS_NO5_1985.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #940 in FH2_LEPS_NO5_1985.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #941 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #941 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #941 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #941 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #941 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #941 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #941 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #941 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #942 in FH2_LEPS_NO5_1985.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #942 in FH2_LEPS_NO5_1985.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #942 in FH2_LEPS_NO5_1985.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #942 in FH2_LEPS_NO5_1985.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #942 in FH2_LEPS_NO5_1985.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #942 in FH2_LEPS_NO5_1985.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #942 in FH2_LEPS_NO5_1985.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #942 in FH2_LEPS_NO5_1985.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #942 in FH2_LEPS_NO5_1985.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #943 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	getstrlength: expected a signature of a string but got: {'typespec': 'character', 'charselector': {'*': '75'}, 'attrspec': [], 'dimension': ['5']}
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #944 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #945 in FH2_LEPS_NO5_1985.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #946 in FH2_LEPS_NO5_1985.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #947 in FH2_LEPS_NO5_1985.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Post-processing...
+	Block: FH2_LEPS_NO5_1985
+			Block: pes
+			Block: prepot
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: pot
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: ptpacm
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ptpacm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ptpacm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: potinfo
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:potinfo
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:potinfo
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: ancvrt
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: cartou
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:cartou
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: carttor
+			Block: eunitzero
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:eunitzero
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: rtocart
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:rtocart
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: dedcou
+In: :FH2_LEPS_NO5_1985:FH2_LEPS_NO5_1985.f:dedcou
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "FH2_LEPS_NO5_1985"...
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "prepot"...
+          prepot()
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot()
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "potinfo"...
+          potinfo()
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "ancvrt"...
+          ancvrt()
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "cartou"...
+          cartou()
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "carttor"...
+          carttor()
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "eunitzero"...
+          eunitzero()
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "rtocart"...
+          rtocart()
+    Generating possibly empty wrappers"
+    Maybe empty "FH2_LEPS_NO5_1985-f2pywrappers.f"
+        Constructing wrapper function "dedcou"...
+          dedcou()
+		Constructing COMMON block support for "usrocm"...
+		  pengygs,pengyes,pengyij,dgscart,descart,dijcart
+		Constructing COMMON block support for "usricm"...
+		  cart,anuzero,nulbl,nflag,nasurf,nder
+		Constructing COMMON block support for "pt3cm"...
+		  ezero
+		Constructing COMMON block support for "infocm"...
+		  cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+		Constructing COMMON block support for "asycm"...
+		  easyab,easybc,easyac
+		Constructing COMMON block support for "satocm"...
+		  dm,re,beta
+		Constructing COMMON block support for "precm"...
+		  z,q,xj,dq,dj,dz,rr,a1,a2,a,b,c,d,f,g,bet,betp,zfh0,zhh0,zhhst,deg1,deg2,deg3,deg4,deg3p,c1,c2,c3,c4,c5,c6,c3c,alf,alfp,alft,p3c,q3c,zhhdif,omp3c,omq3c,ha2,g2
+		Constructing COMMON block support for "pt1cm"...
+		  r,engygs,degsdr
+		Constructing COMMON block support for "pt4cm"...
+		  engyes,deesdr
+		Constructing COMMON block support for "pt5cm"...
+		  engyij,deijdr
+		Constructing COMMON block support for "utilcm"...
+		  dgscartnu,descartnu,dijcartnu,cnvrtd,cnvrte,cnvrtde,ireorder,ksdiag,kediag,ksoffd,keoffd
+    Wrote C/API module "FH2_LEPS_NO5_1985" to file "/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/FH2_LEPS_NO5_1985module.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/FH2_LEPS_NO5_1985-f2pywrappers.f"
+INFO:   adding '/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpuxdy5h_z/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpuxdy5h_z/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/FH2_LEPS_NO5_1985-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'FH2_LEPS_NO5_1985' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
+
+creating /tmp/tmpuxdy5h_z/tmp
+creating /tmp/tmpuxdy5h_z/tmp/tmpuxdy5h_z
+creating /tmp/tmpuxdy5h_z/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/FH2_LEPS_NO5_1985module.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/FH2_LEPS_NO5_1985-f2pywrappers.f
+INFO: gfortran:f77: FH2_LEPS_NO5_1985.f
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpuxdy5h_z/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/FH2_LEPS_NO5_1985module.o /tmp/tmpuxdy5h_z/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpuxdy5h_z/FH2_LEPS_NO5_1985.o /tmp/tmpuxdy5h_z/tmp/tmpuxdy5h_z/src.linux-x86_64-3.11/FH2_LEPS_NO5_1985-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./FH2_LEPS_NO5_1985.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpuxdy5h_z

@@ -45,12 +45,12 @@
     BrH2 BrHCl 
     C2H2N2O C2H2O C2H4O4 C2H6Cl C2H6F C2H6H C2H6O 
     C2H6OH C2H7 COCO C3H7NO C6H5SH C6H6O C7H8S 
-    CH2O CH2O2 CH2OH CH3NH2 CH3OH CH4 CH4Br CH4Cl 
+    CH2O CH2O2 CH2OH CH3NH2 CH3OH CH4Br CH4Cl 
     CH4CN CH4F CH4_H2O_H2O CH4O CH4OCl CH4OF CH4OH 
     CH5 CH5p Cl2H ClH2 ClH2O ClNH3 CH5O2
     F2H F2H2 FH2 FH2O 
     GeH4OH GeH5 
-    H2CO H2O2 H2OBr HOBr H3 H3Cl H3plus H3S H4O2 H7p 
+    H2CO H2O2 H2OBr HOBr H3 H3plus H3S H7p 
     H3ClO HClOH HO3 HOCO-Ar 
     I2H IH2 K2Rb2 LiFH malonaldehyde MCH MXH N2HOCp 
     N2O N2O2 N3 N4 NaFH NaH2 NH3 NH3CN NH3OH NH4 NinR 
@@ -444,7 +444,7 @@
     CH3OH:
     106. S1.  CH3OH_PIPNN:         single-state, P
 
-    CH4:
+    CH4: --diabled
     107. S1.  CH4_GEN_SP_2001:     single-state, P
 
     CH4Br:
@@ -593,7 +593,7 @@
     198. S9.  H3_GEN_TK_1984:       single-state, P/G
     199. M1.  H3_GEN_DMBE_1987:     2-state, P/G/D
 
-    H3Cl:
+    H3Cl: --disabled
     200. S1.  H3Cl_PIPNN:           single-state, P
 
     H3ClO:
@@ -606,7 +606,7 @@
     H3S:
     204. S1.  H3S_PIPNN:         single-state, P/G
 
-    H4O2:
+    H4O2: --diabled
     205. S1.  H4O2_PIP:          single-state, P
 
     HClOH:

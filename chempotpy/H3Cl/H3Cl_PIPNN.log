@@ -1,0 +1,223 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "H3Cl_PIPNN" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp2uu4xbhm/src.linux-x86_64-3.11/H3Cl_PIPNNmodule.c
+creating /tmp/tmp2uu4xbhm/src.linux-x86_64-3.11
+rmbadname1: Replacing "long" with "long_bn".
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/symbolic.py:1508: ExprWarning: fromstring: treating '2!' as symbol (original=7**2!)
+  ewarn(
+Tip: If your original code is Fortran source then you must use -m option.
+Reading fortran codes...
+	Reading file 'H3Cl_PIPNN.f' (format:fix,strict)
+Line #7 in H3Cl_PIPNN.f:"       implicit none"
+	analyzeline: no group yet. Creating program group with name "H3Cl_PIPNN".
+Line #253 in H3Cl_PIPNN.f:"      real*8 ra,rb,rc,theta1,theta2,phi,r1,r2,r3,th1,th2,a1,a2,a3,a11,a22"
+	updatevars: attempt to change the type of "r1" ("integer") to "real". Ignoring.
+Line #253 in H3Cl_PIPNN.f:"      real*8 ra,rb,rc,theta1,theta2,phi,r1,r2,r3,th1,th2,a1,a2,a3,a11,a22"
+	updatevars: attempt to change the type of "r2" ("integer") to "real". Ignoring.
+Post-processing...
+	Block: H3Cl_PIPNN
+In: fromsky:H3Cl_PIPNN
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: fromsky:H3Cl_PIPNN
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: fromsky:H3Cl_PIPNN
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+	Block: H3Cl_PIPNN
+			Block: pes
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:pes
+get_useparameters: no module nnparam info used by pes
+{'attrspec': ['dimension(3,4)']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:pesh3cl
+vars2fortran: No typespec for argument "x".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:pesh3cl
+vars2fortran: No typespec for argument "vtot".
+			Block: pesh3cl
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:pesh3cl
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:pot0
+vars2fortran: No typespec for argument "r0".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:pot0
+vars2fortran: No typespec for argument "vv0".
+			Block: pot0
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:pot1
+vars2fortran: No typespec for argument "r1".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:pot1
+vars2fortran: No typespec for argument "vv1".
+			Block: pot1
+{'attrspec': ['dimension(n)']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:splint
+vars2fortran: No typespec for argument "xa".
+{'attrspec': ['dimension(n)']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:splint
+vars2fortran: No typespec for argument "ya".
+{'attrspec': ['dimension(n)']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:splint
+vars2fortran: No typespec for argument "y2a".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:splint
+vars2fortran: No typespec for argument "n".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:splint
+vars2fortran: No typespec for argument "x".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:splint
+vars2fortran: No typespec for argument "y".
+			Block: splint
+{'attrspec': ['dimension(n)']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:spline
+vars2fortran: No typespec for argument "x".
+{'attrspec': ['dimension(n)']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:spline
+vars2fortran: No typespec for argument "y".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:spline
+vars2fortran: No typespec for argument "n".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:spline
+vars2fortran: No typespec for argument "yp1".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:spline
+vars2fortran: No typespec for argument "ypn".
+{'attrspec': ['dimension(n)']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:spline
+vars2fortran: No typespec for argument "y2".
+			Block: spline
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:clh3vlr
+vars2fortran: No typespec for argument "r1".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:clh3vlr
+vars2fortran: No typespec for argument "r2".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:clh3vlr
+vars2fortran: No typespec for argument "r3".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:clh3vlr
+vars2fortran: No typespec for argument "theta1".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:clh3vlr
+vars2fortran: No typespec for argument "theta2".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:clh3vlr
+vars2fortran: No typespec for argument "phi".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:clh3vlr
+vars2fortran: No typespec for argument "vint".
+{}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:clh3vlr
+vars2fortran: No typespec for argument "n".
+			Block: clh3vlr
+			Block: funcs
+{'typespec': 'integer', 'attrspec': ['parameter']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:funcs
+get_parameters:parameter 'the' does not have value?!
+{'typespec': 'integer', 'attrspec': ['parameter']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:funcs
+get_parameters:parameter 'order' does not have value?!
+{'typespec': 'integer', 'attrspec': ['parameter']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:funcs
+get_parameters:parameter 'of' does not have value?!
+{'typespec': 'integer', 'attrspec': ['parameter'], 'kindselector': {'*': '8'}}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:funcs
+get_parameters:parameter 'r1' does not have value?!
+{'typespec': 'integer', 'attrspec': ['parameter']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:funcs
+get_parameters:parameter 'and' does not have value?!
+{'typespec': 'integer', 'attrspec': ['parameter'], 'kindselector': {'*': '8'}}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:funcs
+get_parameters:parameter 'r2' does not have value?!
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:funcs
+get_parameters: got "invalid syntax (<string>, line 1)" on 'm1**2!'
+			Block: clh3pipnn
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:clh3pipnn
+get_useparameters: no module nnparam info used by clh3pipnn
+			Block: pes_init
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:pes_init
+get_useparameters: no module nnparam info used by pes_init
+			Block: tranfun
+			Block: emsav134
+			Block: bemsav134
+			Block: evmono134
+			Block: evpoly134
+			Block: getpota
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:getpota
+get_useparameters: no module nnparam info used by getpota
+			Block: getpotb
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:getpotb
+get_useparameters: no module nnparam info used by getpotb
+			Block: getpotc
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:getpotc
+get_useparameters: no module nnparam info used by getpotc
+{'attrspec': ['dimension(3)']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:distance
+vars2fortran: No typespec for argument "a".
+{'attrspec': ['dimension(3)']}
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:distance
+vars2fortran: No typespec for argument "b".
+			Block: distance
+			Block: xyz_to_jaco
+In: :H3Cl_PIPNN:H3Cl_PIPNN.f:xyz_to_jaco
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+			Block: dihedral
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Traceback (most recent call last):
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/bin/f2py3", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/f2py2e.py", line 702, in main
+    run_compile()
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/f2py2e.py", line 669, in run_compile
+    setup(ext_modules=[ext])
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/distutils/core.py", line 169, in setup
+    return old_setup(**new_attr)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/__init__.py", line 107, in setup
+    return distutils.core.setup(**attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 185, in setup
+    return run_commands(dist)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 201, in run_commands
+    dist.run_commands()
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+    self.run_command(cmd)
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/dist.py", line 1234, in run_command
+    super().run_command(command)
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+    cmd_obj.run()
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/distutils/command/build.py", line 62, in run
+    old_build.run(self)
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/command/build.py", line 131, in run
+    self.run_command(cmd_name)
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+    self.distribution.run_command(command)
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/dist.py", line 1234, in run_command
+    super().run_command(command)
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+    cmd_obj.run()
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/distutils/command/build_src.py", line 144, in run
+    self.build_sources()
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/distutils/command/build_src.py", line 161, in build_sources
+    self.build_extension_sources(ext)
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/distutils/command/build_src.py", line 321, in build_extension_sources
+    sources = self.f2py_sources(sources, ext)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/distutils/command/build_src.py", line 562, in f2py_sources
+    numpy.f2py.run_main(f2py_options + ['--lower',
+  File "/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/f2py2e.py", line 469, in run_main
+    raise TypeError('All blocks must be python module blocks but got %s' % (
+TypeError: All blocks must be python module blocks but got 'program'

@@ -12,7 +12,7 @@ rm *.so
   do
   if [ -f "$surface" ]; then
     name=`echo $surface | sed 's/\.[^\.]*$//'`
-    f2py -c -m ${name} --f77flags="-fallow-argument-mismatch -std=legacy" ${surface} > ${name}.log
+    f2py3 -c -m ${name} --f77flags="-fallow-argument-mismatch -std=legacy" ${surface} > ${name}.log
   fi
   done
 
@@ -20,7 +20,7 @@ rm *.so
   do
   if [ -f "$surface" ]; then
     name=`echo $surface | sed 's/\.[^\.]*$//'`
-    f2py -c -m ${name} --f90flags="-fallow-argument-mismatch -std=legacy" ${surface} > ${name}.log
+    f2py3 -c -m ${name} --f90flags="-fallow-argument-mismatch -std=legacy" ${surface} > ${name}.log
   fi
   done
 
@@ -60,8 +60,9 @@ done
 echo "=========================================================================="
 echo "=========================================================================="
 echo "   "
-echo "checking finished, if you didn't see any message, they are successful
+echo "checking finished, if you didn't see any message, they are successful"
 echo "   "
 echo "=========================================================================="
 echo "=========================================================================="
+
 

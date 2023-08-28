@@ -15,16 +15,28 @@ All fortran source code are stored in folder chempotpy
 
 How to install
 --------------
+* Create a conda virtual environment with gfortran and MKL:
+    
+       conda create --name chempotpy 
+       conda activate chempotpy
+       conda install python
+       conda install mkl mkl-service
+       conda install -c conda-forge gfortran
+       pip install numpy
+       pip install charset_normalizer
+       pip install chempotpy
 
 * Install stable release:
   
         pip install chempotpy
 
-* The users can re-compile all .so modules for compatability reasons:
+
+* The users may re-compile all .so modules for compatability reasons:
 
   get into the parent directory of chempotpy 
    
-        ./install.script  
+        make all 
+        make check
 
 
 Citation

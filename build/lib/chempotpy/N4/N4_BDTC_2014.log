@@ -1,0 +1,323 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "N4_BDTC_2014" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014module.c
+creating /tmp/tmp7_i8yr05/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'N4_BDTC_2014.f90' (format:free)
+Line #76 in N4_BDTC_2014.f90:"C             called once before using the subroutine 'pot'.   "
+	analyzeline: No name/args pattern found for line.
+Line #123 in N4_BDTC_2014.f90:"c     Preliminary subroutine.  Call 'prepot' once before any call  "
+	analyzeline: No name/args pattern found for line.
+Line #224 in N4_BDTC_2014.f90:"         call default2cartesian( "
+	analyzeline: No name/args pattern found for line.
+Line #272 in N4_BDTC_2014.f90:"c     Main PES subroutine. "
+	analyzeline: No name/args pattern found for line.
+Line #309 in N4_BDTC_2014.f90:"c     Evaluate the potential energy surface fitting function "
+	analyzeline: No name/args pattern found for line.
+Line #311 in N4_BDTC_2014.f90:"      call evaluatesurface(cgmeth,y,qr,xr,q,x,moltype,pwonly, "
+	analyzeline: No name/args pattern found for line.
+Line #328 in N4_BDTC_2014.f90:"      subroutine evaluatesurface(cg,y,qr,xr,q,x,moltype,pwonly, "
+	analyzeline: No name/args pattern found for line.
+Line #402 in N4_BDTC_2014.f90:"c       Compute the weight function and its derivative. "
+	analyzeline: No name/args pattern found for line.
+Line #964 in N4_BDTC_2014.f90:"      subroutine calccoordinates( "
+	analyzeline: No name/args pattern found for line.
+Line #979 in N4_BDTC_2014.f90:"      subroutine default2cartesian(ra,rb,d,thetaa_d,thetab_d, "
+	analyzeline: No name/args pattern found for line.
+Line #1303 in N4_BDTC_2014.f90:"c     Subroutine to evaluate the 2-body potential energy and gradient "
+	analyzeline: No name/args pattern found for line.
+Line #1405 in N4_BDTC_2014.f90:"c     subroutine calls the 'calcpairwise' subroutine six times. "
+	analyzeline: No name/args pattern found for line.
+crackline: groupcounter=9 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=8 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=7 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=6 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=5 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=4 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=3 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=2 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=1 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+Post-processing...
+	Block: N4_BDTC_2014
+			Block: pes
+			Block: unknown_subroutine
+				Block: falcons_vars_eval
+				Block: falcons_vars_main
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+	Block: N4_BDTC_2014
+		Block: unknown_interface
+			Block: pes
+			Block: unknown_subroutine
+				Block: falcons_vars_eval
+				Block: falcons_vars_main
+Building modules...
+    Building module "N4_BDTC_2014"...
+    Generating possibly empty wrappers"
+    Maybe empty "N4_BDTC_2014-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad,path)
+    Generating possibly empty wrappers"
+    Maybe empty "N4_BDTC_2014-f2pywrappers.f"
+        Constructing wrapper function "unknown_subroutine"...
+          unknown_subroutine()
+		Constructing F90 module support for "falcons_vars_eval"...
+		  Variables: qi aji
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+		Constructing F90 module support for "falcons_vars_main"...
+		  Variables: i j k l nn ind n m eta np moltype pesform sd cmap qp pnu epsnu ps pu epsu e epw systo r rwfa rwfb t qr qs q xr x aa qeq y dedy crc
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+    Wrote C/API module "N4_BDTC_2014" to file "/tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014module.c"
+    Fortran 90 wrappers are saved to "/tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014-f2pywrappers2.f90"
+INFO:   adding '/tmp/tmp7_i8yr05/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp7_i8yr05/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp7_i8yr05/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp7_i8yr05/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014-f2pywrappers.f' to sources.
+INFO:   adding '/tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014-f2pywrappers2.f90' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'N4_BDTC_2014' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
+
+creating /tmp/tmp7_i8yr05/tmp
+creating /tmp/tmp7_i8yr05/tmp/tmp7_i8yr05
+creating /tmp/tmp7_i8yr05/tmp/tmp7_i8yr05/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp7_i8yr05/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmp7_i8yr05/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014module.c
+INFO: compiling Fortran 90 module sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp7_i8yr05/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+extra options: '-J/tmp/tmp7_i8yr05/ -I/tmp/tmp7_i8yr05/'
+INFO: gfortran:fix: N4_BDTC_2014.f90
+N4_BDTC_2014.f90:563:22:
+
+  563 |       integer :: ind,i,j,k,l,ll,a
+      |                      1
+Warning: Unused variable 'i' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:965:39:
+
+  965 |      & y,qr,xr,q,x,sd,aa,qeq,moltype,qp,qps)
+      |                                       1
+Warning: Unused dummy argument 'qp' at (1) [-Wunused-dummy-argument]
+N4_BDTC_2014.f90:965:21:
+
+  965 |      & y,qr,xr,q,x,sd,aa,qeq,moltype,qp,qps)
+      |                     1
+Warning: Dummy argument 'sd' at (1) was declared INTENT(OUT) but was not set [-Wunused-dummy-argument]
+N4_BDTC_2014.f90:1051:18:
+
+ 1051 |       real*8 :: e0,e1,f0,f1,vrtmp
+      |                  1
+Warning: Unused variable 'e0' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:1051:21:
+
+ 1051 |       real*8 :: e0,e1,f0,f1,vrtmp
+      |                     1
+Warning: Unused variable 'e1' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:1051:24:
+
+ 1051 |       real*8 :: e0,e1,f0,f1,vrtmp
+      |                        1
+Warning: Unused variable 'f0' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:1051:27:
+
+ 1051 |       real*8 :: e0,e1,f0,f1,vrtmp
+      |                           1
+Warning: Unused variable 'f1' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:1050:18:
+
+ 1050 |       integer :: i
+      |                  1
+Warning: Unused variable 'i' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:1051:33:
+
+ 1051 |       real*8 :: e0,e1,f0,f1,vrtmp
+      |                                 1
+Warning: Unused variable 'vrtmp' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:1054:32:
+
+ 1054 |       real*8, dimension(4) :: vv
+      |                                1
+Warning: Unused variable 'vv' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:1015:18:
+
+ 1015 |       integer :: i
+      |                  1
+Warning: Unused variable 'i' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:17:18:
+
+   17 |       integer :: i, j, k, l
+      |                  1
+Warning: Unused variable 'i' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:18:30:
+
+   18 |       integer :: istate, iatom, idir
+      |                              1
+Warning: Unused variable 'iatom' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:18:36:
+
+   18 |       integer :: istate, iatom, idir
+      |                                    1
+Warning: Unused variable 'idir' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:17:21:
+
+   17 |       integer :: i, j, k, l
+      |                     1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:17:24:
+
+   17 |       integer :: i, j, k, l
+      |                        1
+Warning: Unused variable 'k' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:17:27:
+
+   17 |       integer :: i, j, k, l
+      |                           1
+Warning: Unused variable 'l' declared at (1) [-Wunused-variable]
+N4_BDTC_2014.f90:1391:72:
+
+ 1391 |       v2 = de*(1.0d0-u)*(1.0d0-u)- de
+      |                                                                        ^
+Warning: 'de' may be used uninitialized [-Wmaybe-uninitialized]
+N4_BDTC_2014.f90:1328:21:
+
+ 1328 |       real*8 :: re,de,fy,dfdy,dfdr,u,y,dydr,r2,r4,re2,re4,y2,y4,v
+      |                     ^
+note: 'de' was declared here
+N4_BDTC_2014.f90:1379:72:
+
+ 1379 |       re2= re*re
+      |                                                                        ^
+Warning: 're' may be used uninitialized [-Wmaybe-uninitialized]
+N4_BDTC_2014.f90:1328:18:
+
+ 1328 |       real*8 :: re,de,fy,dfdy,dfdr,u,y,dydr,r2,r4,re2,re4,y2,y4,v
+      |                  ^
+note: 're' was declared here
+N4_BDTC_2014.f90:1387:72:
+
+ 1387 |      &   + c(5)*y4*y + c(6)*y4*y2
+      |                                                                        ^
+Warning: 'c[0]' may be used uninitialized [-Wmaybe-uninitialized]
+N4_BDTC_2014.f90:1325:34:
+
+ 1325 |       real*8, dimension(0:10) :: c
+      |                                  ^
+note: 'c[0]' was declared here
+N4_BDTC_2014.f90:1387:72:
+
+ 1387 |      &   + c(5)*y4*y + c(6)*y4*y2
+      |                                                                        ^
+Warning: 'c[1]' may be used uninitialized [-Wmaybe-uninitialized]
+N4_BDTC_2014.f90:1325:34:
+
+ 1325 |       real*8, dimension(0:10) :: c
+      |                                  ^
+note: 'c[1]' was declared here
+N4_BDTC_2014.f90:1387:72:
+
+ 1387 |      &   + c(5)*y4*y + c(6)*y4*y2
+      |                                                                        ^
+Warning: 'c[2]' may be used uninitialized [-Wmaybe-uninitialized]
+N4_BDTC_2014.f90:1325:34:
+
+ 1325 |       real*8, dimension(0:10) :: c
+      |                                  ^
+note: 'c[2]' was declared here
+N4_BDTC_2014.f90:1387:72:
+
+ 1387 |      &   + c(5)*y4*y + c(6)*y4*y2
+      |                                                                        ^
+Warning: 'c[3]' may be used uninitialized [-Wmaybe-uninitialized]
+N4_BDTC_2014.f90:1325:34:
+
+ 1325 |       real*8, dimension(0:10) :: c
+      |                                  ^
+note: 'c[3]' was declared here
+N4_BDTC_2014.f90:1387:72:
+
+ 1387 |      &   + c(5)*y4*y + c(6)*y4*y2
+      |                                                                        ^
+Warning: 'c[4]' may be used uninitialized [-Wmaybe-uninitialized]
+N4_BDTC_2014.f90:1325:34:
+
+ 1325 |       real*8, dimension(0:10) :: c
+      |                                  ^
+note: 'c[4]' was declared here
+N4_BDTC_2014.f90:1387:72:
+
+ 1387 |      &   + c(5)*y4*y + c(6)*y4*y2
+      |                                                                        ^
+Warning: 'c[5]' may be used uninitialized [-Wmaybe-uninitialized]
+N4_BDTC_2014.f90:1325:34:
+
+ 1325 |       real*8, dimension(0:10) :: c
+      |                                  ^
+note: 'c[5]' was declared here
+N4_BDTC_2014.f90:1387:72:
+
+ 1387 |      &   + c(5)*y4*y + c(6)*y4*y2
+      |                                                                        ^
+Warning: 'c[6]' may be used uninitialized [-Wmaybe-uninitialized]
+N4_BDTC_2014.f90:1325:34:
+
+ 1325 |       real*8, dimension(0:10) :: c
+      |                                  ^
+note: 'c[6]' was declared here
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp7_i8yr05/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+extra options: '-J/tmp/tmp7_i8yr05/ -I/tmp/tmp7_i8yr05/'
+INFO: gfortran:f90: /tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014-f2pywrappers2.f90
+INFO: gfortran:f77: /tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp7_i8yr05/tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014module.o /tmp/tmp7_i8yr05/tmp/tmp7_i8yr05/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp7_i8yr05/N4_BDTC_2014.o /tmp/tmp7_i8yr05/tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014-f2pywrappers.o /tmp/tmp7_i8yr05/tmp/tmp7_i8yr05/src.linux-x86_64-3.11/N4_BDTC_2014-f2pywrappers2.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./N4_BDTC_2014.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp7_i8yr05

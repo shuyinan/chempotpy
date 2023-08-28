@@ -1,0 +1,538 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "CH4CN_VBMM" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp2zu13jv3/src.linux-x86_64-3.11/CH4CN_VBMMmodule.c
+creating /tmp/tmp2zu13jv3/src.linux-x86_64-3.11
+rmbadname1: Replacing "switch" with "switch_bn".
+analyzeline: Failed to evaluate '4.0d0*pi*1.0d-07'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '1.0d0/(cmu_0*clight**2)'. Ignoring: invalid decimal literal (<string>, line 1)
+Reading fortran codes...
+	Reading file 'CH4CN_VBMM.f90' (format:free)
+Line #15 in CH4CN_VBMM.f90:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2)) "
+	determineexprtype: could not determine expressions ('int') type.
+Line #15 in CH4CN_VBMM.f90:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2)) "
+	determineexprtype: could not determine expressions ('int(isurf*(isurf+1)/2)') type.
+Line #97 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #98 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #98 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #221 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #222 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #222 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #297 in CH4CN_VBMM.f90:"c  subroutine calculates reference angles for the "in-plane" potential "
+	analyzeline: No name/args pattern found for line.
+Line #307 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #308 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #308 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #440 in CH4CN_VBMM.f90:"c  subroutine to calculate leps-type stretching potential and its "
+	analyzeline: No name/args pattern found for line.
+Line #451 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #452 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #452 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{'before': '', 'this': 'dimension', 'after': 'vqch(4),vjch(4),vqbh(4),vjbh(4),vq(4),vj(4), '}
+Line #498 in CH4CN_VBMM.f90:"       dimension vqch(4),vjch(4),vqbh(4),vjbh(4),vq(4),vj(4), "
+	analyzeline: no name pattern found in dimension statement for ''. Skipping.
+Line #705 in CH4CN_VBMM.f90:"c  subroutine calculates symmetrized vop potential and derivatives "
+	analyzeline: No name/args pattern found for line.
+Line #715 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #716 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #716 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #829 in CH4CN_VBMM.f90:"c  subroutine performs sum over j, k, l "
+	analyzeline: No name/args pattern found for line.
+Line #861 in CH4CN_VBMM.f90:"c  subroutine calculates symmetrised in plane bend term "
+	analyzeline: No name/args pattern found for line.
+Line #872 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #873 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #873 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #994 in CH4CN_VBMM.f90:"c  Now, calculate each force constant fkh2o(i) as a function of the O-H(I) "
+	analyzeline: No name/args pattern found for line.
+Line #1100 in CH4CN_VBMM.f90:"c  subroutine calculates out of plane angle delta, loops "
+	analyzeline: No name/args pattern found for line.
+Line #1114 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1115 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1115 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{'before': '', 'this': 'dimension', 'after': 'delta(4),in(3),a(3),b(3),axb(3),c(4,3),argd(4), '}
+Line #1161 in CH4CN_VBMM.f90:"       dimension  delta(4),in(3),a(3),b(3),axb(3),c(4,3),argd(4), "
+	analyzeline: no name pattern found in dimension statement for ''. Skipping.
+Line #1369 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1370 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1370 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1483 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1484 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1484 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1682 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1683 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1683 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1812 in CH4CN_VBMM.f90:"C   NATOMS = the number of atoms represented by this potential function "
+	analyzeline: No name/args pattern found for line.
+Line #1828 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1829 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1829 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1830 in CH4CN_VBMM.f90:"      PARAMETER (N3TMMN = 21) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1830 in CH4CN_VBMM.f90:"      PARAMETER (N3TMMN = 21) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1938 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1939 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1939 in CH4CN_VBMM.f90:"      PARAMETER (NATOM = 25) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2040 in CH4CN_VBMM.f90:"      PARAMETER (PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2210 in CH4CN_VBMM.f90:"      PARAMETER(        PI = 3.141592653589793D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2211 in CH4CN_VBMM.f90:"      PARAMETER(    CLIGHT = 2.99792458D08) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2211 in CH4CN_VBMM.f90:"      PARAMETER(    CLIGHT = 2.99792458D08) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2212 in CH4CN_VBMM.f90:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2212 in CH4CN_VBMM.f90:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2212 in CH4CN_VBMM.f90:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2213 in CH4CN_VBMM.f90:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2)) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2213 in CH4CN_VBMM.f90:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2)) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2213 in CH4CN_VBMM.f90:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2)) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2213 in CH4CN_VBMM.f90:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2)) "
+	determineexprtype: could not determine expressions ('1.0d0/(cmu_0*clight**2)') type.
+Line #2214 in CH4CN_VBMM.f90:"      PARAMETER(        CE = 1.602176462D-19) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2214 in CH4CN_VBMM.f90:"      PARAMETER(        CE = 1.602176462D-19) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2214 in CH4CN_VBMM.f90:"      PARAMETER(        CE = 1.602176462D-19) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2215 in CH4CN_VBMM.f90:"      PARAMETER(   CPLANCK = 6.62606876D-34) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2215 in CH4CN_VBMM.f90:"      PARAMETER(   CPLANCK = 6.62606876D-34) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2215 in CH4CN_VBMM.f90:"      PARAMETER(   CPLANCK = 6.62606876D-34) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2215 in CH4CN_VBMM.f90:"      PARAMETER(   CPLANCK = 6.62606876D-34) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2216 in CH4CN_VBMM.f90:"      PARAMETER(      CM_E = 9.10938188D-31) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2216 in CH4CN_VBMM.f90:"      PARAMETER(      CM_E = 9.10938188D-31) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2216 in CH4CN_VBMM.f90:"      PARAMETER(      CM_E = 9.10938188D-31) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2216 in CH4CN_VBMM.f90:"      PARAMETER(      CM_E = 9.10938188D-31) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2216 in CH4CN_VBMM.f90:"      PARAMETER(      CM_E = 9.10938188D-31) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2217 in CH4CN_VBMM.f90:"      PARAMETER(      CANG = 1.0D-10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2217 in CH4CN_VBMM.f90:"      PARAMETER(      CANG = 1.0D-10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2217 in CH4CN_VBMM.f90:"      PARAMETER(      CANG = 1.0D-10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2217 in CH4CN_VBMM.f90:"      PARAMETER(      CANG = 1.0D-10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2217 in CH4CN_VBMM.f90:"      PARAMETER(      CANG = 1.0D-10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2217 in CH4CN_VBMM.f90:"      PARAMETER(      CANG = 1.0D-10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2218 in CH4CN_VBMM.f90:"      PARAMETER( CAVOGADRO = 6.02214199D23) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2218 in CH4CN_VBMM.f90:"      PARAMETER( CAVOGADRO = 6.02214199D23) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2218 in CH4CN_VBMM.f90:"      PARAMETER( CAVOGADRO = 6.02214199D23) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2218 in CH4CN_VBMM.f90:"      PARAMETER( CAVOGADRO = 6.02214199D23) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2218 in CH4CN_VBMM.f90:"      PARAMETER( CAVOGADRO = 6.02214199D23) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2218 in CH4CN_VBMM.f90:"      PARAMETER( CAVOGADRO = 6.02214199D23) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2218 in CH4CN_VBMM.f90:"      PARAMETER( CAVOGADRO = 6.02214199D23) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2219 in CH4CN_VBMM.f90:"      PARAMETER(     CKCAL = 4.184D10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2219 in CH4CN_VBMM.f90:"      PARAMETER(     CKCAL = 4.184D10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2219 in CH4CN_VBMM.f90:"      PARAMETER(     CKCAL = 4.184D10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2219 in CH4CN_VBMM.f90:"      PARAMETER(     CKCAL = 4.184D10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2219 in CH4CN_VBMM.f90:"      PARAMETER(     CKCAL = 4.184D10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2219 in CH4CN_VBMM.f90:"      PARAMETER(     CKCAL = 4.184D10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2219 in CH4CN_VBMM.f90:"      PARAMETER(     CKCAL = 4.184D10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2219 in CH4CN_VBMM.f90:"      PARAMETER(     CKCAL = 4.184D10) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2220 in CH4CN_VBMM.f90:"      PARAMETER(  HTOMILLH = 1000.D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2220 in CH4CN_VBMM.f90:"      PARAMETER(  HTOMILLH = 1000.D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2220 in CH4CN_VBMM.f90:"      PARAMETER(  HTOMILLH = 1000.D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2220 in CH4CN_VBMM.f90:"      PARAMETER(  HTOMILLH = 1000.D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2220 in CH4CN_VBMM.f90:"      PARAMETER(  HTOMILLH = 1000.D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2220 in CH4CN_VBMM.f90:"      PARAMETER(  HTOMILLH = 1000.D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2220 in CH4CN_VBMM.f90:"      PARAMETER(  HTOMILLH = 1000.D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2220 in CH4CN_VBMM.f90:"      PARAMETER(  HTOMILLH = 1000.D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2220 in CH4CN_VBMM.f90:"      PARAMETER(  HTOMILLH = 1000.D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2221 in CH4CN_VBMM.f90:"      PARAMETER(     HTOEV = 27.2113834D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2222 in CH4CN_VBMM.f90:"      PARAMETER(   HTOKCAL = 627.509470D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2223 in CH4CN_VBMM.f90:"      PARAMETER(   HTOWAVE = 219474.631D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2224 in CH4CN_VBMM.f90:"      PARAMETER(     HTOKJ = 2625.49962D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2225 in CH4CN_VBMM.f90:"      PARAMETER(    BOHR_A = .5291772083D0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+crackline: groupcounter=10 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=9 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=8 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=7 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=6 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=5 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=4 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=3 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=2 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=1 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine', 9: 'subroutine', 10: 'subroutine', 11: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+Post-processing...
+	Block: CH4CN_VBMM
+			Block: pes
+			Block: pot
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: coorden
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:coorden
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:coorden
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:refangles:stretch:opbend:unknown_subroutine:ipbend:unknown_subroutine:calcdelta
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:refangles:stretch:opbend:unknown_subroutine:ipbend:unknown_subroutine:calcdelta
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:refangles:stretch:opbend:unknown_subroutine:ipbend:unknown_subroutine:calcdelta
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:refangles:stretch:opbend:unknown_subroutine:ipbend:unknown_subroutine:calcdelta
+vars2fortran: No typespec for argument "l".
+{}
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:refangles:stretch:opbend:unknown_subroutine:ipbend:unknown_subroutine:calcdelta
+vars2fortran: No typespec for argument "sum2".
+{}
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:refangles:stretch:opbend:unknown_subroutine:ipbend:unknown_subroutine:calcdelta
+vars2fortran: No typespec for argument "sum4".
+{}
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:refangles:stretch:opbend:unknown_subroutine:ipbend
+vars2fortran: No typespec for argument "vip".
+{}
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:refangles:stretch:opbend
+vars2fortran: No typespec for argument "vop".
+{}
+In: :CH4CN_VBMM:CH4CN_VBMM.f90:refangles:stretch
+vars2fortran: No typespec for argument "vstr".
+			Block: refangles
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "CH4CN_VBMM"...
+    Generating possibly empty wrappers"
+    Maybe empty "CH4CN_VBMM-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "CH4CN_VBMM-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot()
+    Generating possibly empty wrappers"
+    Maybe empty "CH4CN_VBMM-f2pywrappers.f"
+        Constructing wrapper function "coorden"...
+          coorden()
+    Generating possibly empty wrappers"
+    Maybe empty "CH4CN_VBMM-f2pywrappers.f"
+        Constructing wrapper function "refangles"...
+          refangles()
+		Constructing COMMON block support for "usrocm"...
+		  pengygs,pengyes
+		Constructing COMMON block support for "usricm"...
+		  cart,anuzero
+		Constructing COMMON block support for "pt1cm"...
+		  r,engygs,degsdr
+		Constructing COMMON block support for "pt3cm"...
+		  ezero
+		Constructing COMMON block support for "pt4cm"...
+		  engyes,deesdr
+		Constructing COMMON block support for "pt5cm"...
+		  engyij,deijdr
+		Constructing COMMON block support for "infocm"...
+		  cartnu,indexes
+		Constructing COMMON block support for "potcm"...
+		  nnc,nnb,nnh,nno
+		Constructing COMMON block support for "angles"...
+		  theta0,dtheta0
+		Constructing COMMON block support for "bonds"...
+		  rcb,rno,rch,rbh
+		Constructing COMMON block support for "coords"...
+		  tcb,tno,tch,tbh
+		Constructing COMMON block support for "delta1"...
+		  fdelta,hdelta
+		Constructing COMMON block support for "delta2"...
+		  dfdelta,dhdelta
+		Constructing COMMON block support for "force1"...
+		  fk0,f1,dfdc,dfdh
+		Constructing COMMON block support for "fsw1"...
+		  a1s,b1s,a2s,b2s
+		Constructing COMMON block support for "ip1"...
+		  s1,ds1,s2,ds2
+		Constructing COMMON block support for "ndx"...
+		  nc,nhb,nh,no
+		Constructing COMMON block support for "op1"...
+		  s3,ds3
+		Constructing COMMON block support for "qpdot_pl"...
+		  q,pdot
+		Constructing COMMON block support for "switch1"...
+		  sphi,dsphi,stheta,dstheta
+		Constructing COMMON block support for "addh2o"...
+		  ded,angh2o,fkh2o
+    Wrote C/API module "CH4CN_VBMM" to file "/tmp/tmp2zu13jv3/src.linux-x86_64-3.11/CH4CN_VBMMmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmp2zu13jv3/src.linux-x86_64-3.11/CH4CN_VBMM-f2pywrappers.f"
+INFO:   adding '/tmp/tmp2zu13jv3/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp2zu13jv3/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp2zu13jv3/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp2zu13jv3/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp2zu13jv3/src.linux-x86_64-3.11/CH4CN_VBMM-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'CH4CN_VBMM' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
+
+creating /tmp/tmp2zu13jv3/tmp
+creating /tmp/tmp2zu13jv3/tmp/tmp2zu13jv3
+creating /tmp/tmp2zu13jv3/tmp/tmp2zu13jv3/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp2zu13jv3/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmp2zu13jv3/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmp2zu13jv3/src.linux-x86_64-3.11/CH4CN_VBMMmodule.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp2zu13jv3/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gfortran:fix: CH4CN_VBMM.f90
+CH4CN_VBMM.f90:2593:5:
+
+ 2593 |  2001 FORMAT(6F12.8)
+      |     1
+Warning: Label 2001 at (1) defined but not used [-Wunused-label]
+CH4CN_VBMM.f90:2611:25:
+
+ 2611 |       CHARACTER*75 REF(5)
+      |                         1
+Warning: Unused variable 'ref' declared at (1) [-Wunused-variable]
+CH4CN_VBMM.f90:2721:72:
+
+ 2721 |                   Y = DEESDR(M1,J1)
+      |                                                                        ^
+Warning: 'j1' may be used uninitialized [-Wmaybe-uninitialized]
+CH4CN_VBMM.f90:2692:20:
+
+ 2692 |                DO J1=KSDIAG,KEDIAG
+      |                    ^
+note: 'j1' was declared here
+INFO: gfortran:f77: /tmp/tmp2zu13jv3/src.linux-x86_64-3.11/CH4CN_VBMM-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp2zu13jv3/tmp/tmp2zu13jv3/src.linux-x86_64-3.11/CH4CN_VBMMmodule.o /tmp/tmp2zu13jv3/tmp/tmp2zu13jv3/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp2zu13jv3/CH4CN_VBMM.o /tmp/tmp2zu13jv3/tmp/tmp2zu13jv3/src.linux-x86_64-3.11/CH4CN_VBMM-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./CH4CN_VBMM.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp2zu13jv3

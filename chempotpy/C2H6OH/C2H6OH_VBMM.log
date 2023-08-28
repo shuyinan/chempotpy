@@ -1,0 +1,815 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "C2H6OH_VBMM" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmphbyn1kps/src.linux-x86_64-3.11/C2H6OH_VBMMmodule.c
+creating /tmp/tmphbyn1kps/src.linux-x86_64-3.11
+rmbadname1: Replacing "switch" with "switch_bn".
+analyzeline: Failed to evaluate '4.0d0*pi*1.0d-07'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '1.0d0/(cmu_0*clight**2)'. Ignoring: invalid decimal literal (<string>, line 1)
+Reading fortran codes...
+	Reading file 'C2H6OH_VBMM.f' (format:fix,strict)
+Line #15 in C2H6OH_VBMM.f:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int') type.
+Line #15 in C2H6OH_VBMM.f:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int(isurf*(isurf+1)/2)') type.
+Line #101 in C2H6OH_VBMM.f:"      PARAMETER (JSURF = INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int') type.
+Line #101 in C2H6OH_VBMM.f:"      PARAMETER (JSURF = INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int(isurf*(isurf+1)/2)') type.
+Line #104 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #304 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #306 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #306 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #485 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #487 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #487 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #611 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #613 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #613 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #785 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #787 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #787 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #974 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #976 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #976 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1192 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1194 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1194 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1333 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1335 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1335 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1536 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1538 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1538 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1736 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1738 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1738 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1926 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1928 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1928 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2033 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2035 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2035 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2185 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2187 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2187 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2611 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2612 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2612 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2614 in C2H6OH_VBMM.f:"      PARAMETER (N3TMMN = 30)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2614 in C2H6OH_VBMM.f:"      PARAMETER (N3TMMN = 30)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2781 in C2H6OH_VBMM.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2783 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2783 in C2H6OH_VBMM.f:"      PARAMETER (NATOM = 25)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2922 in C2H6OH_VBMM.f:"      PARAMETER (JSURF = INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int') type.
+Line #2922 in C2H6OH_VBMM.f:"      PARAMETER (JSURF = INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int(isurf*(isurf+1)/2)') type.
+Line #3093 in C2H6OH_VBMM.f:"      PARAMETER(        PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3094 in C2H6OH_VBMM.f:"      PARAMETER(    CLIGHT = 2.99792458D08)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3094 in C2H6OH_VBMM.f:"      PARAMETER(    CLIGHT = 2.99792458D08)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3095 in C2H6OH_VBMM.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3095 in C2H6OH_VBMM.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3095 in C2H6OH_VBMM.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3096 in C2H6OH_VBMM.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3096 in C2H6OH_VBMM.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3096 in C2H6OH_VBMM.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3096 in C2H6OH_VBMM.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	determineexprtype: could not determine expressions ('1.0d0/(cmu_0*clight**2)') type.
+Line #3097 in C2H6OH_VBMM.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3097 in C2H6OH_VBMM.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3097 in C2H6OH_VBMM.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3098 in C2H6OH_VBMM.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3098 in C2H6OH_VBMM.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3098 in C2H6OH_VBMM.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3098 in C2H6OH_VBMM.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3099 in C2H6OH_VBMM.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3099 in C2H6OH_VBMM.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3099 in C2H6OH_VBMM.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3099 in C2H6OH_VBMM.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3099 in C2H6OH_VBMM.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3100 in C2H6OH_VBMM.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3100 in C2H6OH_VBMM.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3100 in C2H6OH_VBMM.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3100 in C2H6OH_VBMM.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3100 in C2H6OH_VBMM.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3100 in C2H6OH_VBMM.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3101 in C2H6OH_VBMM.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3101 in C2H6OH_VBMM.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3101 in C2H6OH_VBMM.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3101 in C2H6OH_VBMM.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3101 in C2H6OH_VBMM.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3101 in C2H6OH_VBMM.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3101 in C2H6OH_VBMM.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3102 in C2H6OH_VBMM.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3102 in C2H6OH_VBMM.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3102 in C2H6OH_VBMM.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3102 in C2H6OH_VBMM.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3102 in C2H6OH_VBMM.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3102 in C2H6OH_VBMM.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3102 in C2H6OH_VBMM.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3102 in C2H6OH_VBMM.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3103 in C2H6OH_VBMM.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3103 in C2H6OH_VBMM.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3103 in C2H6OH_VBMM.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3103 in C2H6OH_VBMM.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3103 in C2H6OH_VBMM.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3103 in C2H6OH_VBMM.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3103 in C2H6OH_VBMM.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3103 in C2H6OH_VBMM.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3103 in C2H6OH_VBMM.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+getstrlength: expected a signature of a string but got: {'typespec': 'character', 'charselector': {'*': '75'}, 'attrspec': [], 'dimension': ['5']}
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3104 in C2H6OH_VBMM.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3105 in C2H6OH_VBMM.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3106 in C2H6OH_VBMM.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3107 in C2H6OH_VBMM.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3108 in C2H6OH_VBMM.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Post-processing...
+	Block: C2H6OH_VBMM
+			Block: pes
+			Block: pot
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: coorden
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:coorden
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:coorden
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:torsion
+vars2fortran: No typespec for argument "vtor".
+			Block: torsion
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:torsion
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:torsion
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:dihedro
+vars2fortran: No typespec for argument "dihed".
+			Block: dihedro
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:dihedro
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:dihedro
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: crosprod
+			Block: dotprod
+			Block: anorm
+			Block: refangles
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:refangles
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:refangles
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:stretch
+vars2fortran: No typespec for argument "vstr".
+			Block: stretch
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:stretch
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:stretch
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:opbend
+vars2fortran: No typespec for argument "vop".
+			Block: opbend
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:opbend
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:opbend
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ipbend
+vars2fortran: No typespec for argument "vip".
+			Block: ipbend
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ipbend
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ipbend
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta1
+vars2fortran: No typespec for argument "i".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta1
+vars2fortran: No typespec for argument "j".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta1
+vars2fortran: No typespec for argument "k".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta1
+vars2fortran: No typespec for argument "l".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta1
+vars2fortran: No typespec for argument "sum2".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta1
+vars2fortran: No typespec for argument "sum4".
+			Block: calcdelta1
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta1
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta1
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta2
+vars2fortran: No typespec for argument "i".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta2
+vars2fortran: No typespec for argument "j".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta2
+vars2fortran: No typespec for argument "k".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta2
+vars2fortran: No typespec for argument "l".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta2
+vars2fortran: No typespec for argument "sum2".
+{}
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta2
+vars2fortran: No typespec for argument "sum4".
+			Block: calcdelta2
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:calcdelta2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: opforce
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:opforce
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:opforce
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: ipforce
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ipforce
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ipforce
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: switchf
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:switchf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:switchf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: prepot
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: ptpacm
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ptpacm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ptpacm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: potinfo
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:potinfo
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: ancvrt
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: cartou
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:cartou
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: carttor
+			Block: eunitzero
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:eunitzero
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: rtocart
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:rtocart
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: dedcou
+In: :C2H6OH_VBMM:C2H6OH_VBMM.f:dedcou
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "C2H6OH_VBMM"...
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "coorden"...
+          coorden()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "torsion"...
+          torsion(vtor)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "dihedro"...
+          dihedro(i,j,k,l,dihed)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "crosprod"...
+          crosprod(x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dotprod"("dotprod")...
+        Constructing wrapper function "dotprod"...
+          dotprod = dotprod(x,y)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+		Creating wrapper for Fortran function "anorm"("anorm")...
+        Constructing wrapper function "anorm"...
+          anorm = anorm(x)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "refangles"...
+          refangles()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "stretch"...
+          stretch(vstr)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "opbend"...
+          opbend(vop)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "ipbend"...
+          ipbend(vip)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "calcdelta1"...
+          calcdelta1(i,j,k,l,sum2,sum4)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "calcdelta2"...
+          calcdelta2(i,j,k,l,sum2,sum4)
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "opforce"...
+          opforce()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "ipforce"...
+          ipforce()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "switchf"...
+          switchf()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "prepot"...
+          prepot()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "potinfo"...
+          potinfo()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "ancvrt"...
+          ancvrt()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "cartou"...
+          cartou()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "carttor"...
+          carttor()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "eunitzero"...
+          eunitzero()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "rtocart"...
+          rtocart()
+    Generating possibly empty wrappers"
+    Maybe empty "C2H6OH_VBMM-f2pywrappers.f"
+        Constructing wrapper function "dedcou"...
+          dedcou()
+		Constructing COMMON block support for "usrocm"...
+		  pengygs,pengyes,pengyij,dgscart,descart,dijcart
+		Constructing COMMON block support for "usricm"...
+		  cart,anuzero,nulbl,nflag,nasurf,nder
+		Constructing COMMON block support for "pt1cm"...
+		  r,engygs,degsdr
+		Constructing COMMON block support for "pt3cm"...
+		  ezero
+		Constructing COMMON block support for "pt4cm"...
+		  engyes,deesdr
+		Constructing COMMON block support for "pt5cm"...
+		  engyij,deijdr
+		Constructing COMMON block support for "infocm"...
+		  cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+		Constructing COMMON block support for "potcm"...
+		  nnc1,nnc2,nnb,r0c1hr,r0c1hp,w3,w4,d1c1h,d3c1h,a1c1h,b1c1h,c1c1h,r0c2hr,r0c2hp,w5,w6,d1c2h,d3c2h,a1c2h,b1c2h,c1c2h,r0cc,rcc,d1cc,acc,a1c,a2c,r0hh,d1hh,d3hh,ahh,r0cb,d1cb,d3cb,acb,a3s,b3s,aphi,bphi,cphi,atheta,btheta,ctheta,fch3,hch3,fkinf,ak,bk,aa1,aa2,aa3,aa4,v3,w1,w2,a1s,b1s,a2s,b2s,a1scc,b1scc,a2scc,b2scc,a3scc,b3scc
+		Constructing COMMON block support for "angles"...
+		  theta0,dtheta0
+		Constructing COMMON block support for "bonds"...
+		  r0c1h,r0c2h
+		Constructing COMMON block support for "bonds2"...
+		  rc1h,rc2h,rbh,rhh
+		Constructing COMMON block support for "bonds3"...
+		  rc1b,rc2b
+		Constructing COMMON block support for "coords1"...
+		  tcb,tc1h,tc2h,tbh
+		Constructing COMMON block support for "coords2"...
+		  tcc,thh
+		Constructing COMMON block support for "coords3"...
+		  tc1b,tc2b
+		Constructing COMMON block support for "delta1"...
+		  fdelta,hdelta
+		Constructing COMMON block support for "delta2"...
+		  dfdelta,dhdelta
+		Constructing COMMON block support for "force1"...
+		  fk0,f1,dfdc,dfdh
+		Constructing COMMON block support for "ip1"...
+		  s1,ds1,s2,ds2
+		Constructing COMMON block support for "ndx"...
+		  nc,nhb,nh
+		Constructing COMMON block support for "ndx2"...
+		  nc1,nc2,nnh
+		Constructing COMMON block support for "op1"...
+		  s3,ds3
+		Constructing COMMON block support for "qpdot"...
+		  q,pdot
+		Constructing COMMON block support for "stret1"...
+		  d1ch,d3ch,a1cc,b1cc,c1cc
+		Constructing COMMON block support for "switch1"...
+		  sphi,dsphi,stheta,dstheta
+		Constructing COMMON block support for "thetahcch"...
+		  thetahcch
+		Constructing COMMON block support for "h2o"...
+		  rno,tno,nno,no
+		Constructing COMMON block support for "addh2o"...
+		  angh2o,fkh2oeq,fkh2o,alph2o,angh2oeq
+		Constructing COMMON block support for "utilcm"...
+		  dgscartnu,descartnu,dijcartnu,cnvrtd,cnvrte,cnvrtde,ireorder,ksdiag,kediag,ksoffd,keoffd
+    Wrote C/API module "C2H6OH_VBMM" to file "/tmp/tmphbyn1kps/src.linux-x86_64-3.11/C2H6OH_VBMMmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmphbyn1kps/src.linux-x86_64-3.11/C2H6OH_VBMM-f2pywrappers.f"
+INFO:   adding '/tmp/tmphbyn1kps/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmphbyn1kps/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmphbyn1kps/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmphbyn1kps/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmphbyn1kps/src.linux-x86_64-3.11/C2H6OH_VBMM-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'C2H6OH_VBMM' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
+
+creating /tmp/tmphbyn1kps/tmp
+creating /tmp/tmphbyn1kps/tmp/tmphbyn1kps
+creating /tmp/tmphbyn1kps/tmp/tmphbyn1kps/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmphbyn1kps/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmphbyn1kps/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmphbyn1kps/src.linux-x86_64-3.11/C2H6OH_VBMMmodule.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmphbyn1kps/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmphbyn1kps/src.linux-x86_64-3.11/C2H6OH_VBMM-f2pywrappers.f
+INFO: gfortran:f77: C2H6OH_VBMM.f
+/tmp/tmphbyn1kps/src.linux-x86_64-3.11/C2H6OH_VBMM-f2pywrappers.f:165:20:
+
+  165 |       common /potcm/ nnc1,nnc2,nnb,r0c1hr,r0c1hp,w3,w4,d1c1h,d3c1h
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:2793:20:
+
+ 2793 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:122:20:
+
+  122 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:1353:20:
+
+ 1353 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:2053:20:
+
+ 2053 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:1212:20:
+
+ 1212 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:1756:20:
+
+ 1756 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:1556:20:
+
+ 1556 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:1946:20:
+
+ 1946 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:994:20:
+
+  994 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:505:20:
+
+  505 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:631:20:
+
+  631 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:805:20:
+
+  805 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:2205:20:
+
+ 2205 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:324:20:
+
+  324 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6OH_VBMM.f:2624:20:
+
+ 2624 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmphbyn1kps/tmp/tmphbyn1kps/src.linux-x86_64-3.11/C2H6OH_VBMMmodule.o /tmp/tmphbyn1kps/tmp/tmphbyn1kps/src.linux-x86_64-3.11/fortranobject.o /tmp/tmphbyn1kps/C2H6OH_VBMM.o /tmp/tmphbyn1kps/tmp/tmphbyn1kps/src.linux-x86_64-3.11/C2H6OH_VBMM-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./C2H6OH_VBMM.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmphbyn1kps

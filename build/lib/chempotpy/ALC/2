@@ -1,0 +1,114 @@
+      subroutine pes(x,igrad,p,g,d)
+
+      IMPLICIT DOUBLE PRECISION (A-H,O-Z)
+      ! number of electronic state
+      integer, parameter :: nstates=1
+      integer, parameter :: natoms=3
+      integer, intent(in) :: igrad
+      double precision, intent(in) :: x(natoms,3)
+      double precision, intent(out) :: p(nstates), g(nstates,natoms,3)
+      double precision, intent(out) :: d(nstates,nstates,natoms,3)
+
+      COMMON /PT1CM/ RR(3),E,DEDRR(3)
+      COMMON /PT2CM/ NSURF, NDER, NDUM(21)
+      double precision :: tx(9), r2(3), dedx(9), drdx(3,9)
+      logical, save :: first_time_data=.true.
+
+      !initialize 
+      v=0.d0
+      g=0.d0
+      d=0.d0
+
+      do iatom=1, natoms
+      do idir=1,3
+        j=(iatom-1)*3+idir
+        tx(j)=x(iatom,idir)
+      enddo
+      enddo
+      ! input cartesian is ClHH
+      RR(1)=sqrt((x(1,1)-x(2,1))**2+(x(1,2)-x(2,2))**2
+     *          +(x(1,3)-x(2,3))**2)/0.529177211
+      RR(2)=sqrt((x(2,1)-x(3,1))**2+(x(2,2)-x(3,2))**2
+     *          +(x(2,3)-x(3,3))**2)/0.529177211
+      RR(3)=sqrt((x(1,1)-x(3,1))**2+(x(1,2)-x(3,2))**2
+     *          +(x(1,3)-x(3,3))**2)/0.529177211
+      
+      NSURF=0
+      NDER=igrad
+      DEDRR=0.d0     
+
+      if(first_time_data) then
+      call prepot
+      first_time_data=.false.
+      endif
+
+      call pot
+
+      E=E*27.211386
+      DEDRR=DEDRR*51.422067
+
+      r2=RR*0.529177211
+      call evdrdx(tx, r2, drdx)
+      dedx=0.d0
+      do i=1,9
+      do j=1,3
+        dedx(i)=dedx(i)+DEDRR(j)*drdx(j,i)
+      enddo     
+      enddo
+
+
+      if (igrad==0) then
+        do istate=1,nstates
+          p(istate)=E
+        enddo
+      else if (igrad==1) then
+        do istate=1,nstates
+          p(istate)=E
+        enddo
+        do iatom=1,natoms
+        do idir=1,3
+          j=(iatom-1)*3+idir
+          g(1,iatom,idir)=dedx(j)
+        enddo
+        enddo
+      else if (igrad==2) then
+        write (*,*) 'Only energy and gradient are available'
+      endif
+
+      endsubroutine
+
+      subroutine EvdRdX(X,r,drdx)
+
+      integer i,j
+      double precision, intent(in) :: X(9), R(3)
+      double precision, intent(out) :: dRdX(3,9)
+
+! Initialize dRdX(3,9)
+      do i=1,3
+        do j=1,9
+          dRdX(i,j)=0.0d0
+        enddo
+      enddo
+
+      dRdX(1,1)=(x(1)-x(4))/r(1)
+      dRdX(1,2)=(x(2)-x(5))/r(1)
+      dRdX(1,3)=(x(3)-x(6))/r(1)
+      dRdX(1,4)=-dRdX(1,1)
+      dRdX(1,5)=-dRdX(1,2)
+      dRdX(1,6)=-dRdX(1,3)
+
+      dRdX(2,4)=(x(4)-x(7))/r(2)
+      dRdX(2,5)=(x(5)-x(8))/r(2)
+      dRdX(2,6)=(x(6)-x(9))/r(2)
+      dRdX(2,7)=-dRdX(2,4)
+      dRdX(2,8)=-dRdX(2,5)
+      dRdX(2,9)=-dRdX(2,6)
+
+      dRdX(3,1)=(x(1)-x(7))/r(3)
+      dRdX(3,2)=(x(2)-x(8))/r(3)
+      dRdX(3,3)=(x(3)-x(9))/r(3)
+      dRdX(3,7)=-dRdX(3,1)
+      dRdX(3,8)=-dRdX(3,2)
+      dRdX(3,9)=-dRdX(3,3)
+
+      endsubroutine

@@ -1,0 +1,289 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "NO2_4Ap_PIPNN" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNNmodule.c
+creating /tmp/tmp0gkp2avw/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'NO2_4Ap_PIPNN.f90' (format:free)
+Line #343 in NO2_4Ap_PIPNN.f90:"c    ifunc=1, transfer function is hyperbolic tangent function, 'tansig' "
+	analyzeline: No name/args pattern found for line.
+Line #344 in NO2_4Ap_PIPNN.f90:"c    ifunc=2, transfer function is log sigmoid function, 'logsig' "
+	analyzeline: No name/args pattern found for line.
+Line #345 in NO2_4Ap_PIPNN.f90:"c    ifunc=3, transfer function is pure linear function, 'purelin'. It is imposed to the output layer by default "
+	analyzeline: No name/args pattern found for line.
+crackline: groupcounter=5 groupname={0: '', 1: 'module', 2: 'interface', 3: 'function', 4: 'function', 5: 'function', 6: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=4 groupname={0: '', 1: 'module', 2: 'interface', 3: 'function', 4: 'function', 5: 'function', 6: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=3 groupname={0: '', 1: 'module', 2: 'interface', 3: 'function', 4: 'function', 5: 'function', 6: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=2 groupname={0: '', 1: 'module', 2: 'interface', 3: 'function', 4: 'function', 5: 'function', 6: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=1 groupname={0: '', 1: 'module', 2: 'interface', 3: 'function', 4: 'function', 5: 'function', 6: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+Post-processing...
+	Block: NO2_4Ap_PIPNN
+			Block: nnparam
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:nnparam
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:nnparam
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: pes
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:pes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:pes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:pes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evvdvdx
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:evvdvdx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:evvdvdx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:evvdvdx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: pes_init
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:pes_init
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:pes_init
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:pes_init
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: pot3a
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:pot3a
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:pot3a
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NO2_4Ap_PIPNN:NO2_4Ap_PIPNN.f90:pot3a
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: tranfun
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+	Block: NO2_4Ap_PIPNN
+		Block: unknown_interface
+			Block: nnparam
+			Block: pes
+			Block: evvdvdx
+			Block: pes_init
+			Block: pot3a
+			Block: tranfun
+Building modules...
+    Building module "NO2_4Ap_PIPNN"...
+    Generating possibly empty wrappers"
+    Maybe empty "NO2_4Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad,path)
+    Generating possibly empty wrappers"
+    Maybe empty "NO2_4Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "evvdvdx"...
+          evvdvdx(xcart,v,vpes,dvdxa,dvdx,ndriv)
+    Generating possibly empty wrappers"
+    Maybe empty "NO2_4Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "pes_init"...
+          pes_init(path)
+    Generating possibly empty wrappers"
+    Maybe empty "NO2_4Ap_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "pot3a"...
+          pot3a(x,vpot3,dvdg,ndriv)
+    Generating possibly empty wrappers"
+    Maybe empty "NO2_4Ap_PIPNN-f2pywrappers.f"
+		Creating wrapper for Fortran function "tranfun"("tranfun")...
+        Constructing wrapper function "tranfun"...
+          tranfun = tranfun(x,ifunc)
+		Constructing F90 module support for "nnparam"...
+		  Variables: alpha pi natom npes nbond ninput noutput nscale nhid3 nlayer3 ifunc3 nwe3 nodemax3 nodes3a weight3a bias3a
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+getarrdims:warning: assumed shape array, using 0 instead of ':'
+    Wrote C/API module "NO2_4Ap_PIPNN" to file "/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNNmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNN-f2pywrappers.f"
+    Fortran 90 wrappers are saved to "/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNN-f2pywrappers2.f90"
+INFO:   adding '/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp0gkp2avw/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp0gkp2avw/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp0gkp2avw/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNN-f2pywrappers.f' to sources.
+INFO:   adding '/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNN-f2pywrappers2.f90' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'NO2_4Ap_PIPNN' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
+
+creating /tmp/tmp0gkp2avw/tmp
+creating /tmp/tmp0gkp2avw/tmp/tmp0gkp2avw
+creating /tmp/tmp0gkp2avw/tmp/tmp0gkp2avw/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp0gkp2avw/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmp0gkp2avw/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNNmodule.c
+INFO: compiling Fortran 90 module sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp0gkp2avw/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+extra options: '-J/tmp/tmp0gkp2avw/ -I/tmp/tmp0gkp2avw/'
+INFO: gfortran:fix: NO2_4Ap_PIPNN.f90
+NO2_4Ap_PIPNN.f90:125:26:
+
+  125 |       real*8 dvdr(1:nbond),x(1:natom*3),drdx(1:nbond,1:natom*3)
+      |                          1
+Warning: Unused variable 'dvdr' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:466:64:
+
+  466 |       real*8 dvdr(1:nbond),dpdr(1:nbond,0:ninput),dvdp(0:ninput)
+      |                                                                1
+Warning: Unused variable 'dvdp' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:466:26:
+
+  466 |       real*8 dvdr(1:nbond),dpdr(1:nbond,0:ninput),dvdp(0:ninput)
+      |                          1
+Warning: Unused variable 'dvdr' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:468:54:
+
+  468 |       real*8 dvdxa(1:natom*3),dvdg(1:ninput,npes),rtmp
+      |                                                      1
+Warning: Unused variable 'rtmp' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:465:48:
+
+  465 |       real*8 drdx(1:nbond,1:natom*3),x(1:ninput)
+      |                                                1
+Warning: Unused variable 'x' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:464:52:
+
+  464 |       real*8 dvdx(1:natom*3,npes),xcart(1:3,1:natom)
+      |                                                    1
+Warning: Unused variable 'xcart' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:520:15:
+
+  520 |       integer i,j,k
+      |               1
+Warning: Unused variable 'i' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:520:17:
+
+  520 |       integer i,j,k
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:520:19:
+
+  520 |       integer i,j,k
+      |                   1
+Warning: Unused variable 'k' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:517:29:
+
+  517 |       subroutine evdrdx(xcart,r,x,drdx)
+      |                             1
+Warning: Unused dummy argument 'xcart' at (1) [-Wunused-dummy-argument]
+NO2_4Ap_PIPNN.f90:501:27:
+
+  501 |       subroutine evdvdr(r,c,m,p,dpdr)
+      |                           1
+Warning: Unused dummy argument 'c' at (1) [-Wunused-dummy-argument]
+NO2_4Ap_PIPNN.f90:504:15:
+
+  504 |       integer i,j
+      |               1
+Warning: Unused variable 'i' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:504:17:
+
+  504 |       integer i,j
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:588:17:
+
+  588 |       integer i,j
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:571:17:
+
+  571 |       integer i,j
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:552:17:
+
+  552 |       integer i,j
+      |                 1
+Warning: Unused variable 'j' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:257:35:
+
+  257 |       real*8 vrange,girange(ninput)
+      |                                   1
+Warning: Unused variable 'girange' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:257:19:
+
+  257 |       real*8 vrange,girange(ninput)
+      |                   1
+Warning: Unused variable 'vrange' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:180:21:
+
+  180 |       character f1*80
+      |                     1
+Warning: Unused variable 'f1' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:179:33:
+
+  179 |       integer ibasis,npd,iterm,ib,nfile1,nfile2
+      |                                 1
+Warning: Unused variable 'ib' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:179:20:
+
+  179 |       integer ibasis,npd,iterm,ib,nfile1,nfile2
+      |                    1
+Warning: Unused variable 'ibasis' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:179:30:
+
+  179 |       integer ibasis,npd,iterm,ib,nfile1,nfile2
+      |                              1
+Warning: Unused variable 'iterm' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:179:24:
+
+  179 |       integer ibasis,npd,iterm,ib,nfile1,nfile2
+      |                        1
+Warning: Unused variable 'npd' declared at (1) [-Wunused-variable]
+NO2_4Ap_PIPNN.f90:339:8:
+
+  339 |         function tranfun(x,ifunc)
+      |        ^
+Warning: '__result_tranfun' may be used uninitialized [-Wmaybe-uninitialized]
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp0gkp2avw/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+extra options: '-J/tmp/tmp0gkp2avw/ -I/tmp/tmp0gkp2avw/'
+INFO: gfortran:f90: /tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNN-f2pywrappers2.f90
+INFO: gfortran:f77: /tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNN-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp0gkp2avw/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNNmodule.o /tmp/tmp0gkp2avw/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp0gkp2avw/NO2_4Ap_PIPNN.o /tmp/tmp0gkp2avw/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNN-f2pywrappers.o /tmp/tmp0gkp2avw/tmp/tmp0gkp2avw/src.linux-x86_64-3.11/NO2_4Ap_PIPNN-f2pywrappers2.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./NO2_4Ap_PIPNN.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp0gkp2avw

@@ -11,7 +11,7 @@ del version_dict
 setup(
     name="chempotpy",
     version=version,
-    author="Yinan Shu, Zoltan Varga, Donald G. Truhlar",
+    author="Yinan Shu, Zoltan Varga, Dayou Zhang, Donald G. Truhlar",
     description="chempotpy: CHEMical library of POTential energy surfaces in PYthon",
     python_requires=">=3.8",
     packages=find_packages(),
@@ -20,7 +20,7 @@ setup(
     },
     install_requires=[
         'numpy',
-        'gfortran',
+        'charset_normalizer',
     ],
     zip_safe=True,
 )

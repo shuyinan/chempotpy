@@ -1,0 +1,603 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "H4O2_PIP" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c
+creating /tmp/tmpdgidcwxb/src.linux-x86_64-3.11
+<string>:1: SyntaxWarning: 'list' object is not callable; perhaps you missed a comma?
+<string>:1: SyntaxWarning: 'list' object is not callable; perhaps you missed a comma?
+<string>:1: SyntaxWarning: 'list' object is not callable; perhaps you missed a comma?
+<string>:1: SyntaxWarning: 'list' object is not callable; perhaps you missed a comma?
+<string>:1: SyntaxWarning: 'list' object is not callable; perhaps you missed a comma?
+Reading fortran codes...
+	Reading file 'H4O2_PIP.f90' (format:free)
+Post-processing...
+	Block: H4O2_PIP
+			Block: constants
+In: :H4O2_PIP:H4O2_PIP.f90:constants
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H4O2_PIP:H4O2_PIP.f90:constants
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H4O2_PIP:H4O2_PIP.f90:constants
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H4O2_PIP:H4O2_PIP.f90:constants
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H4O2_PIP:H4O2_PIP.f90:constants
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H4O2_PIP:H4O2_PIP.f90:constants
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H4O2_PIP:H4O2_PIP.f90:constants
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H4O2_PIP:H4O2_PIP.f90:constants
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H4O2_PIP:H4O2_PIP.f90:constants
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: pes
+			Block: pes_init
+			Block: h4o2pot
+			Block: prepot
+			Block: calcpot
+			Block: inv_mg42_t
+In: :H4O2_PIP:H4O2_PIP.f90:inv_mg42_t
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 5, 3, 3, 0, 1, 0, 0, 0/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_mg42_t
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 8, 11, 14, 14, 15, 15, 15, 15/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_mg42_t
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 0, 1, 10, 24, 47, 101, 195, 328, 489/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_mg42_t
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 1, 2, 12, 36, 83, 184, 379, 707, 1196/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_mg42_t
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_mg42_t
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555/)'
+			Block: getr0
+			Block: getrvec
+In: :H4O2_PIP:H4O2_PIP.f90:getrvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 5, 3, 3, 0, 1, 0, 0, 0/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getrvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 8, 11, 14, 14, 15, 15, 15, 15/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getrvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 0, 1, 10, 24, 47, 101, 195, 328, 489/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getrvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 1, 2, 12, 36, 83, 184, 379, 707, 1196/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getrvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getrvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555/)'
+			Block: getvec
+In: :H4O2_PIP:H4O2_PIP.f90:getvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 5, 3, 3, 0, 1, 0, 0, 0/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 8, 11, 14, 14, 15, 15, 15, 15/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 0, 1, 10, 24, 47, 101, 195, 328, 489/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 1, 2, 12, 36, 83, 184, 379, 707, 1196/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180/)'
+In: :H4O2_PIP:H4O2_PIP.f90:getvec
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555/)'
+			Block: getx0
+			Block: inv_base
+In: :H4O2_PIP:H4O2_PIP.f90:inv_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 5, 3, 3, 0, 1, 0, 0, 0/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 8, 11, 14, 14, 15, 15, 15, 15/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 0, 1, 10, 24, 47, 101, 195, 328, 489/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 1, 2, 12, 36, 83, 184, 379, 707, 1196/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180/)'
+In: :H4O2_PIP:H4O2_PIP.f90:inv_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555/)'
+			Block: mg42_base
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 5, 3, 3, 0, 1, 0, 0, 0/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 8, 11, 14, 14, 15, 15, 15, 15/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 0, 1, 10, 24, 47, 101, 195, 328, 489/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 1, 2, 12, 36, 83, 184, 379, 707, 1196/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_base
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555/)'
+			Block: mg42_gens
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_gens
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 5, 3, 3, 0, 1, 0, 0, 0/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_gens
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 8, 11, 14, 14, 15, 15, 15, 15/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_gens
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 0, 1, 10, 24, 47, 101, 195, 328, 489/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_gens
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 1, 2, 12, 36, 83, 184, 379, 707, 1196/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_gens
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_gens
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555/)'
+			Block: mg42_prims
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_prims
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 5, 3, 3, 0, 1, 0, 0, 0/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_prims
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 8, 11, 14, 14, 15, 15, 15, 15/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_prims
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 0, 1, 10, 24, 47, 101, 195, 328, 489/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_prims
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 1, 2, 12, 36, 83, 184, 379, 707, 1196/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_prims
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_prims
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555/)'
+			Block: mg42_secs
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_secs
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 5, 3, 3, 0, 1, 0, 0, 0/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_secs
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, 3, 8, 11, 14, 14, 15, 15, 15, 15/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_secs
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 0, 1, 10, 24, 47, 101, 195, 328, 489/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_secs
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 1, 2, 12, 36, 83, 184, 379, 707, 1196/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_secs
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180/)'
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_secs
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555/)'
+			Block: mg42_setd
+In: :H4O2_PIP:H4O2_PIP.f90:mg42_setd
+get_parameters: got "invalid syntax (<string>, line 1)" on '(/0, m, m+n/)'
+			Block: mg42_deg2_i1j0
+			Block: mg42_deg3_i2
+			Block: mg42_deg3_i0j0
+			Block: mg42_deg3_i1j0
+			Block: mg42_deg3_i1j1
+			Block: mg42_deg3_i2j0
+			Block: mg42_deg4_i1
+			Block: mg42_deg4_i1j0
+			Block: mg42_deg4_i2j0
+			Block: mg42_deg4_i0j1
+			Block: mg42_deg4_i1j1
+			Block: mg42_deg4_i2j1
+			Block: mg42_deg5_i1
+			Block: mg42_deg5_i0j0
+			Block: mg42_deg5_i1j0
+			Block: mg42_deg5_i2j0
+			Block: mg42_deg5_i0j1
+			Block: mg42_deg5_i1j1
+			Block: mg42_deg5_i2j1
+			Block: mg42_deg6_i1j0
+			Block: mg42_deg6_i2j0
+			Block: mg42_deg6_i0j1
+			Block: mg42_deg6_i1j1
+			Block: mg42_deg6_i2j1
+			Block: mg42_deg7_i0j0
+			Block: mg42_deg7_i1j0
+			Block: mg42_deg7_i2j0
+			Block: mg42_deg7_i2j1
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+	Block: H4O2_PIP
+		Block: unknown_interface
+			Block: constants
+			Block: pes
+			Block: pes_init
+			Block: h4o2pot
+			Block: prepot
+			Block: calcpot
+			Block: inv_mg42_t
+			Block: getr0
+			Block: getrvec
+			Block: getvec
+			Block: getx0
+			Block: inv_base
+			Block: mg42_base
+			Block: mg42_gens
+			Block: mg42_prims
+			Block: mg42_secs
+			Block: mg42_setd
+			Block: mg42_deg2_i1j0
+			Block: mg42_deg3_i2
+			Block: mg42_deg3_i0j0
+			Block: mg42_deg3_i1j0
+			Block: mg42_deg3_i1j1
+			Block: mg42_deg3_i2j0
+			Block: mg42_deg4_i1
+			Block: mg42_deg4_i1j0
+			Block: mg42_deg4_i2j0
+			Block: mg42_deg4_i0j1
+			Block: mg42_deg4_i1j1
+			Block: mg42_deg4_i2j1
+			Block: mg42_deg5_i1
+			Block: mg42_deg5_i0j0
+			Block: mg42_deg5_i1j0
+			Block: mg42_deg5_i2j0
+			Block: mg42_deg5_i0j1
+			Block: mg42_deg5_i1j1
+			Block: mg42_deg5_i2j1
+			Block: mg42_deg6_i1j0
+			Block: mg42_deg6_i2j0
+			Block: mg42_deg6_i0j1
+			Block: mg42_deg6_i1j1
+			Block: mg42_deg6_i2j1
+			Block: mg42_deg7_i0j0
+			Block: mg42_deg7_i1j0
+			Block: mg42_deg7_i2j0
+			Block: mg42_deg7_i2j1
+Building modules...
+    Building module "H4O2_PIP"...
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad,path)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "pes_init"...
+          pes_init(path)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "h4o2pot"...
+          h4o2pot(x,v)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "prepot"...
+          prepot(dname)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "calcpot"...
+          calcpot(v,cart)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "getr0"...
+          getr0(xn,r0,[nk])
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "getrvec"...
+          getrvec(r,vec,[m])
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "getvec"...
+          getvec(ms,mr,xn,vec)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "getx0"...
+          getx0(r0,x0,[nk])
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "inv_base"...
+          w = inv_base(mxd,u,v)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_base"...
+          w = mg42_base(mxd,x)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_gens"...
+          y = mg42_gens(ind,x)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_prims"...
+          u = mg42_prims(x)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_secs"...
+          v = mg42_secs(mxd,x)
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_setd"...
+          mg42_setd()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg2_i1j0"...
+          mg42_deg2_i1j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg3_i2"...
+          mg42_deg3_i2()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg3_i0j0"...
+          mg42_deg3_i0j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg3_i1j0"...
+          mg42_deg3_i1j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg3_i1j1"...
+          mg42_deg3_i1j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg3_i2j0"...
+          mg42_deg3_i2j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg4_i1"...
+          mg42_deg4_i1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg4_i1j0"...
+          mg42_deg4_i1j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg4_i2j0"...
+          mg42_deg4_i2j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg4_i0j1"...
+          mg42_deg4_i0j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg4_i1j1"...
+          mg42_deg4_i1j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg4_i2j1"...
+          mg42_deg4_i2j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg5_i1"...
+          mg42_deg5_i1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg5_i0j0"...
+          mg42_deg5_i0j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg5_i1j0"...
+          mg42_deg5_i1j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg5_i2j0"...
+          mg42_deg5_i2j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg5_i0j1"...
+          mg42_deg5_i0j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg5_i1j1"...
+          mg42_deg5_i1j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg5_i2j1"...
+          mg42_deg5_i2j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg6_i1j0"...
+          mg42_deg6_i1j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg6_i2j0"...
+          mg42_deg6_i2j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg6_i0j1"...
+          mg42_deg6_i0j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg6_i1j1"...
+          mg42_deg6_i1j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg6_i2j1"...
+          mg42_deg6_i2j1()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg7_i0j0"...
+          mg42_deg7_i0j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg7_i1j0"...
+          mg42_deg7_i1j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg7_i2j0"...
+          mg42_deg7_i2j0()
+    Generating possibly empty wrappers"
+    Maybe empty "H4O2_PIP-f2pywrappers.f"
+        Constructing wrapper function "mg42_deg7_i2j1"...
+          mg42_deg7_i2j1()
+		Constructing COMMON block support for "ncoe"...
+		  ms,mr
+		Constructing COMMON block support for "h4o2coef"...
+		  dc0,dw0,coef
+		Constructing F90 module support for "constants"...
+		  Variables: c_mass d_mass h_mass o_mass pi auang aucm aukcal emass
+		Constructing F90 module support for "inv_mg42_t"...
+		  Variables: mg42_nr mg42_ngrp mg42_ngen mg42_dvp mg42_ivp mg42_dvs mg42_ivs mg42_dvb mg42_ivb
+    Wrote C/API module "H4O2_PIP" to file "/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIP-f2pywrappers.f"
+    Fortran 90 wrappers are saved to "/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIP-f2pywrappers2.f90"
+INFO:   adding '/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpdgidcwxb/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpdgidcwxb/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpdgidcwxb/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIP-f2pywrappers.f' to sources.
+INFO:   adding '/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIP-f2pywrappers2.f90' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'H4O2_PIP' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
+
+creating /tmp/tmpdgidcwxb/tmp
+creating /tmp/tmpdgidcwxb/tmp/tmpdgidcwxb
+creating /tmp/tmpdgidcwxb/tmp/tmpdgidcwxb/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpdgidcwxb/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmpdgidcwxb/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c: In function 'f2py_rout_H4O2_PIP_inv_base':
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:15: error: expected expression before '[' token
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |               ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:17: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |                 ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:20: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |                    ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:23: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |                       ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:27: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |                           ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:31: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |                               ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:35: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |                                   ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:39: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |                                       ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:43: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |                                           ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1523:47: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1523 |     u_Dims[0]=[0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd);
+      |                                               ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1536:150: error: macro "CHECKARRAY" passed 12 arguments, but takes just 3
+ 1536 |     CHECKARRAY(shape(u, 0) == [0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd),"shape(u, 0) == [0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd)","2nd argument u") {
+      |                                                                                                                                                      ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:154: note: macro "CHECKARRAY" defined here
+  154 | #define CHECKARRAY(check,tcheck,name) \
+      | 
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1536:5: error: 'CHECKARRAY' undeclared (first use in this function)
+ 1536 |     CHECKARRAY(shape(u, 0) == [0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd),"shape(u, 0) == [0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd)","2nd argument u") {
+      |     ^~~~~~~~~~
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1536:5: note: each undeclared identifier is reported only once for each function it appears in
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1536:15: error: expected ';' before '{' token
+ 1536 |     CHECKARRAY(shape(u, 0) == [0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd),"shape(u, 0) == [0, 3, 8, 11, 14, 14, 15, 15, 15, 15](mxd)","2nd argument u") {
+      |               ^                                                                                                                                        ~
+      |               ;
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1551:160: error: macro "CHECKARRAY" passed 12 arguments, but takes just 3
+ 1551 |     CHECKARRAY(shape(v, 0) == [1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd),"shape(v, 0) == [1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd)","3rd argument v") {
+      |                                                                                                                                                                ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:154: note: macro "CHECKARRAY" defined here
+  154 | #define CHECKARRAY(check,tcheck,name) \
+      | 
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1507:9: warning: unused variable 'capi_w_intent' [-Wunused-variable]
+ 1507 |     int capi_w_intent = 0;
+      |         ^~~~~~~~~~~~~
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1506:20: warning: unused variable 'capi_w_as_array' [-Wunused-variable]
+ 1506 |     PyArrayObject *capi_w_as_array = NULL;
+      |                    ^~~~~~~~~~~~~~~
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1505:15: warning: unused variable 'w_Rank' [-Wunused-variable]
+ 1505 |     const int w_Rank = 1;
+      |               ^~~~~~
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1504:14: warning: unused variable 'w_Dims' [-Wunused-variable]
+ 1504 |     npy_intp w_Dims[1] = {-1};
+      |              ^~~~~~
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1503:12: warning: unused variable 'w' [-Wunused-variable]
+ 1503 |     float *w = NULL;
+      |            ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1501:9: warning: unused variable 'capi_v_intent' [-Wunused-variable]
+ 1501 |     int capi_v_intent = 0;
+      |         ^~~~~~~~~~~~~
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1500:20: warning: unused variable 'capi_v_as_array' [-Wunused-variable]
+ 1500 |     PyArrayObject *capi_v_as_array = NULL;
+      |                    ^~~~~~~~~~~~~~~
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1499:15: warning: unused variable 'v_Rank' [-Wunused-variable]
+ 1499 |     const int v_Rank = 1;
+      |               ^~~~~~
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1498:14: warning: unused variable 'v_Dims' [-Wunused-variable]
+ 1498 |     npy_intp v_Dims[1] = {-1};
+      |              ^~~~~~
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1497:12: warning: unused variable 'v' [-Wunused-variable]
+ 1497 |     float *v = NULL;
+      |            ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1491:12: warning: variable 'u' set but not used [-Wunused-but-set-variable]
+ 1491 |     float *u = NULL;
+      |            ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c: In function 'f2py_rout_H4O2_PIP_mg42_base':
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:15: error: expected expression before '[' token
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |               ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:17: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |                 ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:20: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |                    ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:24: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |                        ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:28: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |                            ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:33: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |                                 ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:38: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |                                      ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:44: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |                                            ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:50: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |                                                  ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:1675:57: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1675 |     w_Dims[0]=[1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555](mxd);
+      |                                                         ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c: In function 'f2py_rout_H4O2_PIP_mg42_secs':
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:15: error: expected expression before '[' token
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |               ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:17: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |                 ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:20: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |                    ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:23: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |                       ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:27: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |                           ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:31: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |                               ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:35: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |                                   ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:40: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |                                        ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:45: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |                                             ^
+/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c:2015:50: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 2015 |     v_Dims[0]=[1, 1, 2, 12, 36, 83, 184, 379, 707, 1196](mxd);
+      |                                                  ^
+error: Command "gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpdgidcwxb/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c /tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.c -o /tmp/tmpdgidcwxb/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.o -MMD -MF /tmp/tmpdgidcwxb/tmp/tmpdgidcwxb/src.linux-x86_64-3.11/H4O2_PIPmodule.o.d" failed with exit status 1

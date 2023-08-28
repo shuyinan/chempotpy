@@ -3,3 +3,4 @@ chempotpy/**/__pycache__/
 
 dist
 chempotpy.egg-info
+build
