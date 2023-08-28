@@ -48,6 +48,7 @@ clean:
                 cd $$system; \
                 rm -f *.so; \
                 rm -f *.log; \
+                rm -f *.o; \
                 cd ..; \
         done
 
