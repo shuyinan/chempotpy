@@ -133,8 +133,8 @@
         do i=1,nlayer
          nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weighta(nodemax,nodemax,2:nlayer),
-     %   biasa(nodemax,2:nlayer))
+        allocate(weighta(nodemax,nodemax,2:nlayer),&
+     &   biasa(nodemax,2:nlayer))
         read(nfile,*)ifunc,nwe
 !-->....ifunc hence controls the type of transfer function used for hidden layers
 !-->....At this time, only an equivalent transfer function can be used for all hidden layers
@@ -176,7 +176,6 @@
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavga(i))/pdela(i)
         enddo
@@ -187,7 +186,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -200,7 +199,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -218,9 +217,6 @@ c       write(*,*)ninput
         implicit none
         integer ifunc
         real*8 tranfun,x
-c    ifunc=1, transfer function is hyperbolic tangent function, 'tansig'
-c    ifunc=2, transfer function is log sigmoid function, 'logsig'
-c    ifunc=3, transfer function is pure linear function, 'purelin'. It is imposed to the output layer by default
         if (ifunc.eq.1) then
         tranfun=dtanh(x)
         else if (ifunc.eq.2) then
@@ -464,24 +460,24 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
         p(17) = m(35) + m(36) + m(37) + m(38) + m(39) + m(40)
         p(18) = m(41) + m(42)
         p(19) = p(1)*p(7)
-        p(20) = m(43) + m(44) + m(45) + m(46) + m(47) + m(48) 
-     &  + m(49) + m(50) + m(51) + m(52) + m(53) 
+        p(20) = m(43) + m(44) + m(45) + m(46) + m(47) + m(48) &
+     &  + m(49) + m(50) + m(51) + m(52) + m(53) &
      &  + m(54)
         p(21) = p(1)*p(9)
         p(22) = m(55) + m(56) + m(57)
         p(23) = p(1)*p(10)
-        p(24) = m(58) + m(59) + m(60) + m(61) + m(62) + m(63) 
-     &  + m(64) + m(65) + m(66) + m(67) + m(68) 
+        p(24) = m(58) + m(59) + m(60) + m(61) + m(62) + m(63) &
+     &  + m(64) + m(65) + m(66) + m(67) + m(68) &
      &  + m(69)
-        p(25) = m(70) + m(71) + m(72) + m(73) + m(74) + m(75) 
-     &  + m(76) + m(77) + m(78) + m(79) + m(80) 
+        p(25) = m(70) + m(71) + m(72) + m(73) + m(74) + m(75) &
+     &  + m(76) + m(77) + m(78) + m(79) + m(80) &
      &  + m(81)
         p(26) = p(3)*p(5) - p(24)
         p(27) = p(3)*p(6) - p(25)
         p(28) = p(3)*p(7) - p(22)
         p(29) = p(1)*p(11)
-        p(30) = m(82) + m(83) + m(84) + m(85) + m(86) + m(87) 
-     &  + m(88) + m(89) + m(90) + m(91) + m(92) 
+        p(30) = m(82) + m(83) + m(84) + m(85) + m(86) + m(87) &
+     &  + m(88) + m(89) + m(90) + m(91) + m(92) &
      &  + m(93)
         p(31) = m(94)
         p(32) = p(2)*p(11) - p(30)
@@ -509,19 +505,19 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
         p(54) = p(1)*p(22)
         p(55) = p(1)*p(24)
         p(56) = p(1)*p(25)
-        p(57) = m(110) + m(111) + m(112) + m(113) + m(114) + m(115) 
-     &  + m(116) + m(117) + m(118) + m(119) + m(120) 
+        p(57) = m(110) + m(111) + m(112) + m(113) + m(114) + m(115) &
+     &  + m(116) + m(117) + m(118) + m(119) + m(120) &
      &  + m(121)
         p(58) = p(1)*p(26)
-        p(59) = m(122) + m(123) + m(124) + m(125) + m(126) + m(127) 
-     &  + m(128) + m(129) + m(130) + m(131) + m(132) 
+        p(59) = m(122) + m(123) + m(124) + m(125) + m(126) + m(127) &
+     &  + m(128) + m(129) + m(130) + m(131) + m(132) &
      &  + m(133)
         p(60) = p(1)*p(27)
         p(61) = p(3)*p(17) - p(59)
         p(62) = p(3)*p(18)
         p(63) = p(1)*p(28)
-        p(64) = m(134) + m(135) + m(136) + m(137) + m(138) + m(139) 
-     &  + m(140) + m(141) + m(142) + m(143) + m(144) 
+        p(64) = m(134) + m(135) + m(136) + m(137) + m(138) + m(139) &
+     &  + m(140) + m(141) + m(142) + m(143) + m(144) &
      &  + m(145)
         p(65) = p(3)*p(20) - p(64) - p(57)
         p(66) = p(1)*p(30)
@@ -559,7 +555,7 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
         p(98) = p(3)*p(36) - p(96) - p(93)
         p(99) = p(3)*p(37) - p(90)
         p(100) = p(1)*p(29)
-        p(101) = p(2)*p(30) - p(73) - p(72) - p(69) - p(68)-p(67)-p(69) 
+        p(101) = p(2)*p(30) - p(73) - p(72) - p(69) - p(68)-p(67)-p(69)&
      &  - p(68) - p(67)
         p(102) = p(11)*p(13) - p(101)
         p(103) = p(1)*p(42)

@@ -1,0 +1,365 @@
+#!/bin/bash
+
+#Metaprogram for generating chempotpy interface subroutine.
+#Yinan Shu, Aug 29, 2023
+ 
+List_of_system=("ALC" "AlmHn" "Aln" "ArNO" "BrH2" "BrHCl" "C2H2N2O" "C2H2O" "C2H6Cl" "C2H6F" "C2H6H" "C2H6O" "C2H6OH" "C2H7" "C2N" "C3H7NO" "C6H5SH" "C6H6O" "C7H8S" "CH2O" "CH2O2" "CH3NH2" "CH3OH" "CH4Br" "CH4Cl" "CH4CN" "CH4F" "CH4_H2O_H2O" "CH4O" "CH4OCl" "CH4OF" "CH4OH" "CH5" "CH5O2" "CH5p" "Cl2H" "ClH2" "ClH2O" "ClNH3" "COCO" "F2H" "F2H2" "FH2" "FH2O" "GeH4OH" "GeH5" "H2CO" "H2O2" "H2OBr" "H3" "H3ClO" "H3p" "H3S" "HClOH" "HO3" "HOBr" "HOCO_Ar" "I2H" "IH2" "K2Rb2" "LiFH" "MCH" "MXH" "N2HOCp" "N2O" "N2O2" "N3" "N4" "NaFH" "NaH2" "NH3" "NH3CN" "NH3OH" "NH4" "NO2" "O2H" "O2H3" "O3" "O4" "OH2" "OH3" "SiH4Cl" "SiH5" "SiOH" "YRH")
+
+List_of_surface_need_path=("NO2_2Ap_PIPNN" "NO2_4Ap_PIPNN" "NO2_6Ap_PIPNN" "HO3_PIPNN" "O2H3_PIPNN" "FH2O_PIPNN" "FH2O_SOC_PIPNN" "N4_1A_PIPNN" "CH4OCl_PIPNN" "C2H2O_PIPNN" "CH2O2_PIPNN" "H3Cl_PIPNN" "CH4OF_PIPNN" "CH2O_PIPNN" "C2H2N2O_PIPNN" "N2HOCp_PIPNN" "H3S_PIPNN" "HClOH_PIPNN" "ArNO_Ap_PIPNN" "ArNO_App_PIPNN" "COCO_PIPNN" "H3ClO_PIPNN" "K2Rb2_PIPNN" "HOBr_3App_PIP" "CH3OH_PIP" "C3H7NO_PIP" "CH4_H2O_H2O_PIP" "ClH2_LEPS_TTGI2_1985" "CH4Br_VBMM_2002" "H4O2_PIP" "F2H2_GEN_JBKKL_1990" "H2CO_PIP" "HOCO_Ar_PIP" "CH4_GEN_SP_2001" "CH4F_GEN_GC_1996" "CH4F_GEN_GCSO_1996" "N4_BDTC_2014" "C2N_PIPNN_Ap" "C2N_PIPNN_App")
+
+
+#main subroutine, chempotpy
+echo "!=================================================================================" > code.f90
+echo "! Chempotpy fortran subroutine written by metaprogram" > code.f90
+echo "! this subrotuine is part of Chempotpy" > code.f90
+echo "! by Yinan Shu, Zoltan Varga, Dayou Zhang, and Donald G. Truhlar " > code.f90
+echo "!  " > code.f90 
+echo "! The following systems are in Chempotpy but current not in this subroutine:" > code.f90
+echo "! AlmHn, Aln, SiOH" > code.f90
+echo "! The following surfaces are in Chempotpy but current not in this subroutine:" > code.f90
+echo "! H3: H3_GEN_BH_2009, H3_GEN_BKMP3_1996
+echo "!=================================================================================" > code.f90
+echo "subroutine chempotpy(system,surface,path,geom,nstates,natoms,igrad,p,g,d,u,ug)" > code.f90
+echo "  implicit none" >> code.f90
+echo "  character(len=1024), intent(in) :: system, surface, path" >> code.f90
+echo "  integer, intent(in) :: nstates, natoms, igrad" >> code.f90
+echo "  double precision, intent(in) :: geom(natoms,3)" >> code.f90
+echo "  double precision, intent(inout) :: p(nstates)" >> code.f90
+echo "  double precision, intent(inout) :: g(nstates,natoms,3)" >> code.f90
+echo "  double precision, intent(inout) :: d(nstates,nstates,natoms,3)" >> code.f90
+echo "  double precision, intent(inout) :: u(nstates,nstates)" >> code.f90
+echo "  double precision, intent(inout) :: ug(nstates,nstates,natoms,3)" >> code.f90
+echo "  character(len=100), dimension(1000) :: List_of_surface_need_path" >> code.f90
+echo "  integer :: pos" >> code.f90
+echo "  " >> code.f90
+echo "  pos = INDEX(surface, \"_DPEM\")" >> code.f90
+echo "  if (pos > 0) then" >> code.f90
+echo "    call dpem_interface(system,surface,path,geom,nstates,natoms,igrad,u,ug)" >> code.f90
+echo "  else" >> code.f90
+echo "    call adiabats_interface(system,surface,path,geom,nstates,natoms,igrad,p,g,d)" >> code.f90
+echo "  endif" >> code.f90
+echo "end subroutine chempotpy" >> code.f90
+
+echo "  " >> code.f90
+echo "subroutine adiabats_interface(system,surface,path,geom,nstates,natoms,igrad,p,g,d)" >> code.f90
+echo "  implicit none" >> ../code.f90
+echo "  character(len=1024), intent(in) :: system, surface, path" >> code.f90
+echo "  integer, intent(in) :: nstates, natoms, igrad" >> code.f90
+echo "  double precision, intent(in) :: geom(natoms,3)" >> code.f90
+echo "  double precision, intent(inout) :: p(nstates)" >> code.f90
+echo "  double precision, intent(inout) :: g(nstates,natoms,3)" >> code.f90
+echo "  double precision, intent(inout) :: d(nstates,nstates,natoms,3)" >> code.f90
+echo "  character(len=65536) :: serialized_data, commend" >> code.f90
+echo "  character(len=1024) :: main_name, buffer" >> code.f90
+echo "  integer :: i, j, k, l" >> code.f90
+echo "  " >> code.f90
+echo "  serialized_data=\" \"" >> code.f90
+echo "  write(buffer,*) natoms" >> code.f90
+echo "  serialized_data=trim(serialized_data)//\" \"// trim(buffer)" >> code.f90
+echo "  write(buffer,*) nstates" >> code.f90
+echo "  serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  write(buffer,*) igrad" >> code.f90
+echo "  serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  do i=1,natoms" >> code.f90
+echo "  do j=1,3" >> code.f90
+echo "    write(buffer,*) geom(i,j)" >> code.f90
+echo "    serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "    write(buffer,*) p(i)" >> code.f90
+echo "    serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "  do j=1,natoms" >> code.f90
+echo "  do k=1,3" >> code.f90
+echo "    write(buffer,*) g(i,j,k)" >> code.f90
+echo "    serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "  do j=1,nstates" >> code.f90
+echo "  do k=1,natoms" >> code.f90
+echo "  do l=1,3" >> code.f90
+echo "    write(buffer,*) d(i,j,k,l)" >> code.f90
+echo "    serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  serialized_data=trim(serialized_data)//\" \"//trim(path)" >> code.f90
+echo "  serialized_data = trim(serialized_data)" >> code.f90
+echo "  main_name=trim(surface)//\"_main\"" >> code.f90
+echo "  commend = trim(trim(path)//\"/\"//trim(system)//\"/\"//\"lib/\"//trim(main_name)//\" \"//serialized_data)" >> code.f90
+echo "  call EXECUTE_COMMAND_LINE(commend)" >> code.f90
+echo "  open(unit=10, file=\"shared_data.bin\", access=\"stream\", form=\"unformatted\", status=\"old\")" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "    read(10) p(i)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "  do j=1,natoms" >> code.f90
+echo "  do k=1,3" >> code.f90
+echo "    read(10) g(i,j,k)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "  do j=1,nstates" >> code.f90
+echo "  do k=1,natoms" >> code.f90
+echo "  do l=1,3" >> code.f90
+echo "    read(10) d(i,j,k,l)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  close(10)" >> code.f90
+echo "end subroutine adiabats_interface" >> code.f90
+
+echo "  " >> code.f90
+echo "subroutine dpem_interface(system,surface,path,geom,nstates,natoms,igrad,u,ug)" >> code.f90
+echo "  implicit none" >> ../code.f90
+echo "  character(len=1024), intent(in) :: system, surface, path" >> code.f90
+echo "  integer, intent(in) :: nstates, natoms, igrad" >> code.f90
+echo "  double precision, intent(in) :: geom(natoms,3)" >> code.f90
+echo "  double precision, intent(inout) :: u(nstates,nstates)" >> code.f90
+echo "  double precision, intent(inout) :: ug(nstates,nstates,natoms,3)" >> code.f90
+echo "  character(len=65536) :: serialized_data, commend" >> code.f90
+echo "  character(len=1024) :: main_name, buffer" >> code.f90
+echo "  integer :: i, j, k, l" >> code.f90
+echo "  " >> code.f90
+echo "  serialized_data=\" \"" >> code.f90
+echo "  write(buffer,*) natoms" >> code.f90
+echo "  serialized_data=trim(serialized_data)//\" \"// trim(buffer)" >> code.f90
+echo "  write(buffer,*) nstates" >> code.f90
+echo "  serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  write(buffer,*) igrad" >> code.f90
+echo "  serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  do i=1,natoms" >> code.f90
+echo "  do j=1,3" >> code.f90
+echo "    write(buffer,*) geom(i,j)" >> code.f90
+echo "    serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "  do j=1,nstates" >> code.f90
+echo "    write(buffer,*) u(i,j)" >> code.f90
+echo "    serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "  do j=1,nstates" >> code.f90
+echo "  do k=1,natoms" >> code.f90
+echo "  do l=1,3" >> code.f90
+echo "    write(buffer,*) ug(i,j,k,l)" >> code.f90
+echo "    serialized_data=trim(serialized_data)//\" \"//trim(buffer)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  serialized_data=trim(serialized_data)//\" \"//trim(path)" >> code.f90
+echo "  serialized_data = trim(serialized_data)" >> code.f90
+echo "  main_name=trim(surface)//\"_main\"" >> code.f90
+echo "  commend = trim(trim(path)//\"/\"//trim(system)//\"/\"//\"lib/\"//trim(main_name)//\" \"//serialized_data)" >> code.f90
+echo "  call EXECUTE_COMMAND_LINE(commend)" >> code.f90
+echo "  open(unit=10, file=\"shared_data.bin\", access=\"stream\", form=\"unformatted\", status=\"old\")" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "  do j=1,nstates" >> code.f90
+echo "    read(10) u(i,j)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  do i=1,nstates" >> code.f90
+echo "  do j=1,nstates" >> code.f90
+echo "  do k=1,natoms" >> code.f90
+echo "  do l=1,3" >> code.f90
+echo "    read(10) ug(i,j,k,l)" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  enddo" >> code.f90
+echo "  close(10)" >> code.f90
+echo "end subroutine adiabats_interface" >> code.f90
+
+#generate subprograms for each surface 
+for system in "${List_of_system[@]}"; do
+  cd $system
+    echo "generate library and subroutine for system $system ..."
+    if [ ! -d "lib" ]; then
+      mkdir lib
+    fi
+    #obtain the list of surfaces
+    for surface in *.f *.f90
+    do
+    if [ -f "$surface" ]; then
+      surface_name=`echo $surface | sed 's/\.[^\.]*$//'`
+      #1. write the driver program for surface
+      #1.1 dpem 
+      if [[ ${surface_name} == *DPEM* ]]; then
+        echo "program ${surface_name}_main" > lib/${surface_name}_main.f90
+        echo "  implicit none" >> lib/${surface_name}_main.f90
+        echo "  integer :: nstates, natoms, igrad" >> lib/${surface_name}_main.f90
+        echo "  double precision, allocatable :: geom(:,:), u(:,:), ug(:,:,:,:)" >> lib/${surface_name}_main.f90
+        echo "  character(len=1024) :: buffer,path" >> lib/${surface_name}_main.f90
+        echo "  integer :: id, i, j, k, l" >> lib/${surface_name}_main.f90
+        echo "  " >> lib/${surface_name}_main.f90
+        echo "  call get_command_argument(1, buffer)" >> lib/${surface_name}_main.f90
+        echo "  read(buffer,*) natoms" >> lib/${surface_name}_main.f90
+        echo "  call get_command_argument(2, buffer)" >> lib/${surface_name}_main.f90
+        echo "  read(buffer,*) nstates" >> lib/${surface_name}_main.f90
+        echo "  call get_command_argument(3, buffer)" >> lib/${surface_name}_main.f90
+        echo "  read(buffer,*) igrad" >> lib/${surface_name}_main.f90
+        echo "  allocate(geom(natoms, 3))" >> lib/${surface_name}_main.f90
+        echo "  id=4" >> lib/${surface_name}_main.f90
+        echo "  do i=1,natoms" >> lib/${surface_name}_main.f90
+        echo "  do j=1,3" >> lib/${surface_name}_main.f90
+        echo "    call get_command_argument(id,buffer)" >> lib/${surface_name}_main.f90
+        echo "    read(buffer,*) geom(i,j)" >> lib/${surface_name}_main.f90
+        echo "    id=id+1" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  allocate(u(nstates,nstates))" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do j=1,nstates" >> lib/${surface_name}_main.f90
+        echo "    call get_command_argument(id,buffer)" >> lib/${surface_name}_main.f90
+        echo "    read(buffer,*) u(i,j)" >> lib/${surface_name}_main.f90
+        echo "    id=id+1" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  allocate(ug(nstates, nstates, natoms, 3))" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do j=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do k=1,natoms" >> lib/${surface_name}_main.f90
+        echo "  do l=1,3" >> lib/${surface_name}_main.f90
+        echo "    call get_command_argument(id,buffer)" >> lib/${surface_name}_main.f90
+        echo "    read(buffer,*) ug(i,j,k,l)" >> lib/${surface_name}_main.f90
+        echo "    id=id+1" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  call get_command_argument(id, path)" >> lib/${surface_name}_main.f90
+        echo "  path=trim(path)" >> lib/${surface_name}_main.f90
+        if [[ " ${List_of_surface_need_path[@]} " =~ " ${surface_name} " ]]; then
+          echo "  call pes(geom,igrad,path,u,ug)" >> lib/${surface_name}_main.f90
+        else
+          echo "  call pes(geom,igrad,u,ug)" >> lib/${surface_name}_main.f90
+        fi
+        echo "  open(unit=10, file=\"shared_data.bin\", access=\"stream\", status=\"replace\")" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do j=1,nstates" >> lib/${surface_name}_main.f90
+        echo "    write(10) u(i,j)" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do j=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do k=1,natoms" >> lib/${surface_name}_main.f90
+        echo "  do l=1,3" >> lib/${surface_name}_main.f90
+        echo "    write(10) ug(i,j,k,l)" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  close(10)" >> lib/${surface_name}_main.f90
+        echo "  deallocate(geom)" >> lib/${surface_name}_main.f90
+        echo "  deallocate(u)" >> lib/${surface_name}_main.f90
+        echo "  deallocate(ug)" >> lib/${surface_name}_main.f90
+        echo "end program" >> lib/${surface_name}_main.f90
+      #1.2 adiabats
+      else 
+        echo "program ${surface_name}_main" > lib/${surface_name}_main.f90
+        echo "  implicit none" >> lib/${surface_name}_main.f90
+        echo "  integer :: nstates, natoms, igrad" >> lib/${surface_name}_main.f90
+        echo "  double precision, allocatable :: geom(:,:), p(:), g(:,:,:), d(:,:,:,:)" >> lib/${surface_name}_main.f90
+        echo "  character(len=1024) :: buffer,path" >> lib/${surface_name}_main.f90
+        echo "  integer :: id, i, j, k, l" >> lib/${surface_name}_main.f90
+        echo "  " >> lib/${surface_name}_main.f90
+        echo "  call get_command_argument(1, buffer)" >> lib/${surface_name}_main.f90
+        echo "  read(buffer,*) natoms" >> lib/${surface_name}_main.f90
+        echo "  call get_command_argument(2, buffer)" >> lib/${surface_name}_main.f90
+        echo "  read(buffer,*) nstates" >> lib/${surface_name}_main.f90
+        echo "  call get_command_argument(3, buffer)" >> lib/${surface_name}_main.f90
+        echo "  read(buffer,*) igrad" >> lib/${surface_name}_main.f90
+        echo "  allocate(geom(natoms, 3))" >> lib/${surface_name}_main.f90
+        echo "  id=4" >> lib/${surface_name}_main.f90
+        echo "  do i=1,natoms" >> lib/${surface_name}_main.f90
+        echo "  do j=1,3" >> lib/${surface_name}_main.f90
+        echo "    call get_command_argument(id,buffer)" >> lib/${surface_name}_main.f90
+        echo "    read(buffer,*) geom(i,j)" >> lib/${surface_name}_main.f90
+        echo "    id=id+1" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  allocate(p(nstates))" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "    call get_command_argument(id,buffer)" >> lib/${surface_name}_main.f90
+        echo "    read(buffer,*) p(i)" >> lib/${surface_name}_main.f90
+        echo "    id=id+1" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  allocate(g(nstates, natoms, 3))" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do j=1,natoms" >> lib/${surface_name}_main.f90
+        echo "  do k=1,3" >> lib/${surface_name}_main.f90
+        echo "    call get_command_argument(id,buffer)" >> lib/${surface_name}_main.f90
+        echo "    read(buffer,*) g(i,j,k)" >> lib/${surface_name}_main.f90
+        echo "    id=id+1" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  allocate(d(nstates, nstates, natoms, 3))" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do j=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do k=1,natoms" >> lib/${surface_name}_main.f90
+        echo "  do l=1,3" >> lib/${surface_name}_main.f90
+        echo "    call get_command_argument(id,buffer)" >> lib/${surface_name}_main.f90
+        echo "    read(buffer,*) d(i,j,k,l)" >> lib/${surface_name}_main.f90
+        echo "    id=id+1" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  call get_command_argument(id, path)" >> lib/${surface_name}_main.f90
+        echo "  path=trim(path)" >> lib/${surface_name}_main.f90
+        if [[ " ${List_of_surface_need_path[@]} " =~ " ${surface_name} " ]]; then
+          echo "  call pes(geom,igrad,path,p,g,d)" >> lib/${surface_name}_main.f90
+        else
+          echo "  call pes(geom,igrad,p,g,d)" >> lib/${surface_name}_main.f90
+        fi
+        echo "  open(unit=10, file=\"shared_data.bin\", access=\"stream\", status=\"replace\")" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "    write(10) p(i)" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do j=1,natoms" >> lib/${surface_name}_main.f90
+        echo "  do k=1,3" >> lib/${surface_name}_main.f90
+        echo "    write(10) g(i,j,k)" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  do i=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do j=1,nstates" >> lib/${surface_name}_main.f90
+        echo "  do k=1,natoms" >> lib/${surface_name}_main.f90
+        echo "  do l=1,3" >> lib/${surface_name}_main.f90
+        echo "    write(10) d(i,j,k,l)" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  enddo" >> lib/${surface_name}_main.f90
+        echo "  close(10)" >> lib/${surface_name}_main.f90
+        echo "  deallocate(geom)" >> lib/${surface_name}_main.f90
+        echo "  deallocate(p)" >> lib/${surface_name}_main.f90
+        echo "  deallocate(g)" >> lib/${surface_name}_main.f90
+        echo "  deallocate(d)" >> lib/${surface_name}_main.f90
+        echo "end program" >> lib/${surface_name}_main.f90
+      fi 
+
+      #2. compile the original PES subroutine module 
+      gfortran -c ${surface} -o lib/${surface_name}.o -lmkl_intel_lp64 -lmkl_sequential -lmkl_core
+      #3. compile the driver 
+      gfortran -c lib/${surface_name}_main.f90 -o ${surface_name}_main.o 
+      #4. link the driver and PES subroutine module
+      gfortran lib/${surface_name}_main.o lib/${surface_name}.o lib/${surface_name}_main -lmkl_intel_lp64 -lmkl_sequential -lmkl_core
+    fi
+    done
+  cd ..
+done
+
+mv code.f90 chempotpy.f90

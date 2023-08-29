@@ -31,8 +31,8 @@
 !natom     ==>Number of atoms
 !npes      ==>Number of PESs
 !***************************************************************************
-      real*8,parameter::alpha=1.0d0,PI=3.141592653589793238d0,
-     %radian=PI/180.0d0,bohr=0.5291772d0
+      real*8,parameter::alpha=1.0d0,PI=3.141592653589793238d0,&
+     &radian=PI/180.0d0,bohr=0.5291772d0
       integer,parameter::natom=3,npes=3
       integer,parameter::nbond=natom*(natom-1)/2
       integer,parameter::ninput=12
@@ -40,8 +40,8 @@
       integer nhid3,nlayer3,ifunc3
       integer nwe3,nodemax3
       integer,allocatable::nodes3a(:)
-      real*8,allocatable::weight3a(:,:,:,:),bias3a(:,:,:),
-     %pdel3a(:,:),pavg3a(:,:)
+      real*8,allocatable::weight3a(:,:,:,:),bias3a(:,:,:),&
+     &pdel3a(:,:),pavg3a(:,:)
       end module nnparam
 
       subroutine pes(x,igrad,path,p,g,d)
@@ -135,8 +135,8 @@
       do i=1,2
        do j=i+1,3
         k=k+1
-       r(k)=dot_product(xcart(:,i)-xcart(:,j),
-     $                  xcart(:,i)-xcart(:,j))
+       r(k)=dot_product(xcart(:,i)-xcart(:,j),&
+     &                  xcart(:,i)-xcart(:,j))
         r(k)=dsqrt(r(k))
         xmorse(k)=dexp(-r(k)/alpha)
        enddo
@@ -211,7 +211,7 @@
        read(nfile1,*)nhid3,noutput
        nscale=ninput+noutput
        nlayer3=nhid3+2 !additional one for input layer and one for output 
-       allocate(nodes3a(nlayer3),pdel3a(nscale,npes),
+       allocate(nodes3a(nlayer3),pdel3a(nscale,npes),&
      &pavg3a(nscale,npes))
        nodes3a(1)=ninput
        nodes3a(nlayer3)=noutput
@@ -220,7 +220,7 @@
        do i=1,nlayer3
         nodemax3=max(nodemax3,nodes3a(i))
        enddo
-       allocate(weight3a(nodemax3,nodemax3,2:nlayer3,npes),
+       allocate(weight3a(nodemax3,nodemax3,2:nlayer3,npes),&
      &bias3a(nodemax3,2:nlayer3,npes))
        read(nfile1,*)ifunc3,nwe3
 
@@ -286,7 +286,7 @@
         do inode1=1,nodes3a(ilay1)
          y(inode1,ilay1,m)=bias3a(inode1,ilay1,m)
          do inode2=1,nodes3a(ilay2)
-          y(inode1,ilay1,m)=y(inode1,ilay1,m)+y(inode2,ilay2,m)
+          y(inode1,ilay1,m)=y(inode1,ilay1,m)+y(inode2,ilay2,m)&
      &*weight3a(inode2,inode1,ilay1,m)
          enddo
          y(inode1,ilay1,m)=tranfun(y(inode1,ilay1,m),ifunc3)
@@ -299,20 +299,20 @@
        do inode1=1,nodes3a(ilay1)
         y(inode1,ilay1,m)=bias3a(inode1,ilay1,m)
         do inode2=1,nodes3a(ilay2)
-         y(inode1,ilay1,m)=y(inode1,ilay1,m)+y(inode2,ilay2,m)
+         y(inode1,ilay1,m)=y(inode1,ilay1,m)+y(inode2,ilay2,m)&
      &*weight3a(inode2,inode1,ilay1,m)
         enddo
        enddo
 
 !-->.....the value of output layer is the fitted potntial
-       vpot3(m)=y(nodes3a(nlayer3),nlayer3,m)
+       vpot3(m)=y(nodes3a(nlayer3),nlayer3,m)&
      &*pdel3a(nscale,m)+pavg3a(nscale,m)
       enddo
 
       if(ndriv.eq.1)then
        neu1=nodes3a(2);neu2=nodes3a(3)
-       allocate(nxw1(1:ninput,1:neu1,npes),nxw2(1:neu1,1:neu2,npes),
-     $ax(1:neu1,npes),bx(1:neu2,npes),nxw3(1:neu2,npes))
+       allocate(nxw1(1:ninput,1:neu1,npes),nxw2(1:neu1,1:neu2,npes),&
+     &ax(1:neu1,npes),bx(1:neu2,npes),nxw3(1:neu2,npes))
        do m=1,npes
         do i=1,ninput
          do j=1,neu1

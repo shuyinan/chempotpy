@@ -69,8 +69,10 @@
        integer i,j,k,lpes
        real*8 rb(ndim),xbond(ndim),basis(nbasis),tmp1,txinput(nbasis-1)
        real*8 ct(3,natom),xvec(3,ndim),cx(3,natom),cy(3,natom)
-       real*8 m(0:nbasis-1)
+       real*8 m(30)
        real*8 vpes,vpesa,vpesb,vpesc,vpesH,vnn
+       real*8 dvdg(ninput)
+       integer ndriv
        basis=0.d0
 
        cx=ct
@@ -95,7 +97,7 @@
         txinput(j)=basis(j+1)
        enddo
 
-       call getpota(txinput,vpesa)
+       call getpota(txinput,vpesa,dvdg,ndriv)
         vnn=vpesc
        vpes=vnn
 !-->      write(*,*)vpes
@@ -137,8 +139,8 @@
         do i=1,nlayer
          nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weighta(nodemax,nodemax,2:nlayer),
-     %   biasa(nodemax,2:nlayer))
+        allocate(weighta(nodemax,nodemax,2:nlayer),&
+     &   biasa(nodemax,2:nlayer))
         read(nfile,*)ifunc,nwe
 !-->....ifunc hence controls the type of transfer function used for hidden layers
 !-->....At this time, only an equivalent transfer function can be used for all hidden layers
@@ -182,7 +184,6 @@
         real*8 dvdg(ninput),dvtmp
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavga(i))/pdela(i)
         enddo
@@ -193,7 +194,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -206,7 +207,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -217,8 +218,8 @@ c       write(*,*)ninput
         vpot=y(nodes(nlayer),nlayer)*pdela(nscale)+pavga(nscale)
         if(ndriv.eq.1)then
          neu1=nodes(2);neu2=nodes(3)
-         allocate(nxw1(1:ninput,1:neu1),nxw2(1:neu1,1:neu2),
-     $ax(1:neu1),bx(1:neu2),nxw3(1:neu2))
+         allocate(nxw1(1:ninput,1:neu1),nxw2(1:neu1,1:neu2),&
+     &ax(1:neu1),bx(1:neu2),nxw3(1:neu2))
          do i=1,ninput
           do j=1,neu1
            nxw1(i,j)=weighta(i,j,2)
@@ -262,9 +263,6 @@ c       write(*,*)ninput
         implicit none
         integer ifunc
         real*8 tranfun,x
-c    ifunc=1, transfer function is hyperbolic tangent function, 'tansig'
-c    ifunc=2, transfer function is log sigmoid function, 'logsig'
-c    ifunc=3, transfer function is pure linear function, 'purelin'. It is imposed to the output layer by default
         if (ifunc.eq.1) then
         tranfun=dtanh(x)
         else if (ifunc.eq.2) then
@@ -294,8 +292,8 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       do i=1,3
        do j=i+1,4
         k=k+1
-       r(k)=dot_product(xcart(:,i)-xcart(:,j),
-     $                  xcart(:,i)-xcart(:,j))
+       r(k)=dot_product(xcart(:,i)-xcart(:,j),&
+     &                  xcart(:,i)-xcart(:,j))
         r(k)=dsqrt(r(k))
         xmorse(k)=dexp(-r(k)/alpha)
        enddo
@@ -549,20 +547,20 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
        dpdr(i,7)=dpdr(i,1)*p(1)+p(1)*dpdr(i,1)-dpdr(i,3)-dpdr(i,3)
        dpdr(i,8)=dpdr(i,2)*p(2)+p(2)*dpdr(i,2)-dpdr(i,6)-dpdr(i,6)
        dpdr(i,9)=dmdr(i,16)
-       dpdr(i,10)=dmdr(i,17)+dmdr(i,18)+dmdr(i,19)+dmdr(i,20)+dmdr(i,21)
+       dpdr(i,10)=dmdr(i,17)+dmdr(i,18)+dmdr(i,19)+dmdr(i,20)+dmdr(i,21)&
      &+dmdr(i,22)
        dpdr(i,11)=dpdr(i,2)*p(3)+p(2)*dpdr(i,3)-dpdr(i,10)
-       dpdr(i,12)=dmdr(i,23)+dmdr(i,24)+dmdr(i,25)+dmdr(i,26)+dmdr(i,27)
+       dpdr(i,12)=dmdr(i,23)+dmdr(i,24)+dmdr(i,25)+dmdr(i,26)+dmdr(i,27)&
      &+dmdr(i,28)
        dpdr(i,13)=dmdr(i,29)
        dpdr(i,14)=dpdr(i,1)*p(6)+p(1)*dpdr(i,6)-dpdr(i,12)
-       dpdr(i,15)=dpdr(i,1)*p(3)+p(1)*dpdr(i,3)-dpdr(i,9)-dpdr(i,9)-dpdr
+       dpdr(i,15)=dpdr(i,1)*p(3)+p(1)*dpdr(i,3)-dpdr(i,9)-dpdr(i,9)-dpdr&
      &(i,9)
        dpdr(i,16)=dpdr(i,1)*p(4)+p(1)*dpdr(i,4)-dpdr(i,10)
        dpdr(i,17)=dpdr(i,2)*p(7)+p(2)*dpdr(i,7)-dpdr(i,16)
        dpdr(i,18)=dpdr(i,2)*p(4)+p(2)*dpdr(i,4)-dpdr(i,12)
        dpdr(i,19)=dpdr(i,1)*p(8)+p(1)*dpdr(i,8)-dpdr(i,18)
-       dpdr(i,20)=dpdr(i,2)*p(6)+p(2)*dpdr(i,6)-dpdr(i,13)-dpdr(i,13)-dp
+       dpdr(i,20)=dpdr(i,2)*p(6)+p(2)*dpdr(i,6)-dpdr(i,13)-dpdr(i,13)-dp&
      &dr(i,13)
        dpdr(i,21)=dpdr(i,1)*p(7)+p(1)*dpdr(i,7)-dpdr(i,15)
        dpdr(i,22)=dpdr(i,2)*p(8)+p(2)*dpdr(i,8)-dpdr(i,20)

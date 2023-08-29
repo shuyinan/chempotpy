@@ -205,8 +205,8 @@
         do i=1,nlayer
            nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weighta(nodemax,nodemax,2:nlayer),
-     %  biasa(nodemax,2:nlayer))
+        allocate(weighta(nodemax,nodemax,2:nlayer),&
+     &  biasa(nodemax,2:nlayer))
         read(wfilea,*)ifunc,nwe
         read(wfilea,*)(pdela(i),i=1,nscale)
         read(wfilea,*)(pavga(i),i=1,nscale)
@@ -251,8 +251,8 @@
         do i=1,nlayer
            nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weightb(nodemax,nodemax,2:nlayer),
-     %  biasb(nodemax,2:nlayer))
+        allocate(weightb(nodemax,nodemax,2:nlayer),&
+     &  biasb(nodemax,2:nlayer))
         read(wfileb,*)ifunc,nwe
         read(wfileb,*)(pdelb(i),i=1,nscale)
         read(wfileb,*)(pavgb(i),i=1,nscale)
@@ -297,8 +297,8 @@
         do i=1,nlayer
            nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weightc(nodemax,nodemax,2:nlayer),
-     %  biasc(nodemax,2:nlayer))
+        allocate(weightc(nodemax,nodemax,2:nlayer),&
+     &  biasc(nodemax,2:nlayer))
         read(wfilec,*)ifunc,nwe
         read(wfilec,*)(pdelc(i),i=1,nscale)
         read(wfilec,*)(pavgc(i),i=1,nscale)
@@ -348,7 +348,7 @@
            do inode1=1,nodes(ilay1)
               y(inode1,ilay1)=biasa(inode1,ilay1)
               do inode2=1,nodes(ilay2)
-                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &                           *weighta(inode2,inode1,ilay1)
               enddo
               y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -361,7 +361,7 @@
         do inode1=1,nodes(ilay1)
            y(inode1,ilay1)=biasa(inode1,ilay1)
            do inode2=1,nodes(ilay2)
-              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &                        *weighta(inode2,inode1,ilay1)
            enddo
 !-->....the transfer function is linear y=x for output layer
@@ -393,7 +393,7 @@
            do inode1=1,nodes(ilay1)
               y(inode1,ilay1)=biasb(inode1,ilay1)
               do inode2=1,nodes(ilay2)
-                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &                           *weightb(inode2,inode1,ilay1)
               enddo
               y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -406,7 +406,7 @@
         do inode1=1,nodes(ilay1)
            y(inode1,ilay1)=biasb(inode1,ilay1)
            do inode2=1,nodes(ilay2)
-              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &                        *weightb(inode2,inode1,ilay1)
            enddo
 !-->....the transfer function is linear y=x for output layer
@@ -438,7 +438,7 @@
            do inode1=1,nodes(ilay1)
               y(inode1,ilay1)=biasc(inode1,ilay1)
               do inode2=1,nodes(ilay2)
-                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &                           *weightc(inode2,inode1,ilay1)
               enddo
               y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -451,7 +451,7 @@
         do inode1=1,nodes(ilay1)
            y(inode1,ilay1)=biasc(inode1,ilay1)
            do inode2=1,nodes(ilay2)
-              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &                        *weightc(inode2,inode1,ilay1)
            enddo
 !-->....the transfer function is linear y=x for output layer
@@ -469,10 +469,6 @@
         implicit none
         integer ifunc
         real*8 tranfun,x
-c    ifunc=1, transfer function is hyperbolic tangent function, 'tansig'
-c    ifunc=2, transfer function is log sigmoid function, 'logsig'
-c    ifunc=3, transfer function is pure linear function, 'purelin'. It
-c             is imposed to the output layer by default
         if (ifunc.eq.1) then
            tranfun=dtanh(x)
         else if (ifunc.eq.2) then
@@ -591,8 +587,8 @@ c             is imposed to the output layer by default
         p(8) = p(1)*p(3)
         p(9) = p(3)*p(2)
         p(10) = p(1)*p(1)
-        p(11) = p(2)*p(2)-p(7)-p(6)-p(5)-p(7)-p(6)-
-     $          p(5)
+        p(11) = p(2)*p(2)-p(7)-p(6)-p(5)-p(7)-p(6)-&
+     &          p(5)
         p(12) = p(3)*p(3)
         p(13) = p(1)*p(5)
         p(14) = p(1)*p(6)

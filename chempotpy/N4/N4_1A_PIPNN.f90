@@ -121,8 +121,8 @@
        use nnparam
        implicit none
        integer i,j,k
-       real*8 rb(ndim),xbond(ndim),basis(1:nbasis),tmp1,
-     %  txinput(nbasis-1),bnew(1:nnew)
+       real*8 rb(ndim),xbond(ndim),basis(1:nbasis),tmp1,&
+     &  txinput(nbasis-1),bnew(1:nnew)
        real*8 ct(3,natom),xvec(3,ndim),cx(3,natom)
        real*8 vpes,vpesa,vpesb,vpesc
        real*8 vn2,vn2tmp,grad
@@ -379,8 +379,8 @@
         do i=1,nlayer
          nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weighta(nodemax,nodemax,2:nlayer),
-     %   biasa(nodemax,2:nlayer))
+        allocate(weighta(nodemax,nodemax,2:nlayer),&
+     &   biasa(nodemax,2:nlayer))
         read(nfile,*)ifunc,nwe
 !-->....ifunc hence controls the type of transfer function used for hidden layers
 !-->....At this time, only an equivalent transfer function can be used for all hidden layers
@@ -421,8 +421,8 @@
         do i=1,nlayer
          nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weightb(nodemax,nodemax,2:nlayer),
-     %   biasb(nodemax,2:nlayer))
+        allocate(weightb(nodemax,nodemax,2:nlayer),&
+     &   biasb(nodemax,2:nlayer))
         read(nfile,*)ifunc,nwe
 !-->....ifunc hence controls the type of transfer function used for hidden layers
 !-->....At this time, only an equivalent transfer function can be used for all hidden layers
@@ -463,8 +463,8 @@
         do i=1,nlayer
          nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weightc(nodemax,nodemax,2:nlayer),
-     % biasc(nodemax,2:nlayer))
+        allocate(weightc(nodemax,nodemax,2:nlayer),&
+     & biasc(nodemax,2:nlayer))
         read(nfile,*)ifunc,nwe
 !-->....ifunc hence controls the type of transfer function used for hidden layers
 !-->....At this time, only an equivalent transfer function can be used for all hidden layers
@@ -505,7 +505,6 @@
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavga(i))/pdela(i)
         enddo
@@ -516,7 +515,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -529,7 +528,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -548,7 +547,6 @@ c       write(*,*)ninput
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavgb(i))/pdelb(i)
         enddo
@@ -559,7 +557,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasb(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightb(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -572,7 +570,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasb(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightb(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -591,7 +589,6 @@ c       write(*,*)ninput
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavgc(i))/pdelc(i)
         enddo
@@ -602,7 +599,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasc(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightc(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -615,7 +612,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasc(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightc(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -631,9 +628,6 @@ c       write(*,*)ninput
         implicit none
         integer ifunc
         real*8 tranfun,x
-c    ifunc=1, transfer function is hyperbolic tangent function, 'tansig'
-c    ifunc=2, transfer function is log sigmoid function, 'logsig'
-c    ifunc=3, transfer function is pure linear function, 'purelin'. It is imposed to the output layer by default
         if (ifunc.eq.1) then
         tranfun=dtanh(x)
         else if (ifunc.eq.2) then
@@ -797,10 +791,10 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       p(0)=m(0)
       p(1)=m(1)+m(2)+m(3)+m(4)+m(5)+m(6)
       p(2)=m(7)+m(8)+m(9)
-      p(3)=m(10)+m(11)+m(12)+m(13)+m(14)+m(15)+m(16)+m(17)+m(18)+m(19)+m
+      p(3)=m(10)+m(11)+m(12)+m(13)+m(14)+m(15)+m(16)+m(17)+m(18)+m(19)+m&
      &(20)+m(21)
       p(4)=p(1)*p(1)-p(3)-p(2)-p(3)-p(2)
-      p(5)=m(22)+m(23)+m(24)+m(25)+m(26)+m(27)+m(28)+m(29)+m(30)+m(31)+m
+      p(5)=m(22)+m(23)+m(24)+m(25)+m(26)+m(27)+m(28)+m(29)+m(30)+m(31)+m&
      &(32)+m(33)
       p(6)=m(34)+m(35)+m(36)+m(37)
       p(7)=m(38)+m(39)+m(40)+m(41)
@@ -808,14 +802,14 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       p(9)=p(1)*p(3)-p(6)-p(7)-p(5)-p(6)-p(7)-p(5)-p(6)-p(7)
       p(10)=p(1)*p(4)-p(9)-p(8)
       p(11)=m(42)+m(43)+m(44)
-      p(12)=m(45)+m(46)+m(47)+m(48)+m(49)+m(50)+m(51)+m(52)+m(53)+m(54)+
+      p(12)=m(45)+m(46)+m(47)+m(48)+m(49)+m(50)+m(51)+m(52)+m(53)+m(54)+&
      &m(55)+m(56)
       p(13)=p(2)*p(3)-p(12)
       p(14)=p(1)*p(5)-p(12)-p(11)-p(13)-p(12)-p(11)-p(11)-p(11)
       p(15)=p(1)*p(6)-p(12)
       p(16)=p(1)*p(7)-p(12)
       p(17)=p(2)*p(2)-p(11)-p(11)
-      p(18)=p(3)*p(3)-p(12)-p(11)-p(15)-p(16)-p(14)-p(12)-p(11)-p(15)-p(
+      p(18)=p(3)*p(3)-p(12)-p(11)-p(15)-p(16)-p(14)-p(12)-p(11)-p(15)-p(&
      &16)-p(14)-p(12)-p(11)-p(12)-p(11)
       p(19)=p(2)*p(4)-p(14)
       p(20)=p(3)*p(4)-p(15)-p(16)-p(13)
@@ -826,7 +820,7 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       p(25)=p(2)*p(7)
       p(26)=p(1)*p(12)-p(22)-p(24)-p(25)-p(22)-p(22)-p(22)
       p(27)=p(2)*p(5)-p(22)-p(23)-p(22)
-      p(28)=p(3)*p(5)-p(22)-p(26)-p(24)-p(25)-p(23)-p(22)-p(24)-p(25)-p(
+      p(28)=p(3)*p(5)-p(22)-p(26)-p(24)-p(25)-p(23)-p(22)-p(24)-p(25)-p(&
      &23)-p(22)-p(22)
       p(29)=p(3)*p(6)-p(22)-p(26)-p(22)
       p(30)=p(3)*p(7)-p(22)-p(26)-p(22)
@@ -840,8 +834,8 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       p(38)=p(3)*p(10)-p(33)-p(34)-p(31)
       p(39)=p(1)*p(21)-p(38)-p(37)
       p(40)=m(63)
-      p(41)=m(64)+m(65)+m(66)+m(67)+m(68)+m(69)+m(70)+m(71)+m(72)+m(73)+
-     &m(74)+m(75)+m(76)+m(77)+m(78)+m(79)+m(80)+m(81)+m(82)+m(83)+m(84)+
+      p(41)=m(64)+m(65)+m(66)+m(67)+m(68)+m(69)+m(70)+m(71)+m(72)+m(73)+&
+     &m(74)+m(75)+m(76)+m(77)+m(78)+m(79)+m(80)+m(81)+m(82)+m(83)+m(84)+&
      &m(85)+m(86)+m(87)
       p(42)=p(1)*p(22)-p(40)-p(41)-p(40)-p(40)-p(40)-p(40)-p(40)
       p(43)=p(2)*p(11)-p(40)-p(40)-p(40)
@@ -878,8 +872,8 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       p(74)=p(6)*p(11)
       p(75)=p(7)*p(11)
       p(76)=p(3)*p(22)-p(72)-p(74)-p(75)-p(72)-p(72)-p(72)
-      p(77)=m(88)+m(89)+m(90)+m(91)+m(92)+m(93)+m(94)+m(95)+m(96)+m(97)+
-     &m(98)+m(99)+m(100)+m(101)+m(102)+m(103)+m(104)+m(105)+m(106)+m(107
+      p(77)=m(88)+m(89)+m(90)+m(91)+m(92)+m(93)+m(94)+m(95)+m(96)+m(97)+&
+     &m(98)+m(99)+m(100)+m(101)+m(102)+m(103)+m(104)+m(105)+m(106)+m(107&
      &)+m(108)+m(109)+m(110)+m(111)
       p(78)=p(1)*p(42)-p(72)-p(76)
       p(79)=p(5)*p(11)-p(72)-p(73)-p(72)
@@ -933,9 +927,9 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       p(127)=p(2)*p(41)-p(121)-p(123)-p(121)
       p(128)=p(6)*p(23)-p(123)
       p(129)=p(7)*p(23)-p(123)
-      p(130)=p(3)*p(41)-p(122)-p(121)-p(120)-p(125)-p(128)-p(126)-p(129)
-     &-p(124)-p(123)-p(122)-p(121)-p(120)-p(125)-p(126)-p(124)-p(123)-p(
-     &122)-p(121)-p(120)-p(122)-p(121)-p(120)-p(120)-p(120)-p(120)-p(120
+      p(130)=p(3)*p(41)-p(122)-p(121)-p(120)-p(125)-p(128)-p(126)-p(129)&
+     &-p(124)-p(123)-p(122)-p(121)-p(120)-p(125)-p(126)-p(124)-p(123)-p(&
+     &122)-p(121)-p(120)-p(122)-p(121)-p(120)-p(120)-p(120)-p(120)-p(120&
      &)
       p(131)=p(3)*p(42)-p(121)-p(125)-p(126)-p(121)
       p(132)=p(4)*p(41)-p(121)-p(131)-p(128)-p(129)-p(127)-p(121)
@@ -1008,7 +1002,7 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       p(199)=p(40)*p(9)
       p(200)=p(40)*p(10)
       p(201)=p(11)*p(22)-p(195)
-      p(202)=p(12)*p(22)-p(196)-p(197)-p(195)-p(196)-p(197)-p(195)-p(196
+      p(202)=p(12)*p(22)-p(196)-p(197)-p(195)-p(196)-p(197)-p(195)-p(196&
      &)-p(197)
       p(203)=p(17)*p(22)-p(198)
       p(204)=p(6)*p(43)
@@ -1026,8 +1020,8 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       p(216)=p(2)*p(77)-p(199)-p(206)
       p(217)=p(6)*p(49)-p(205)
       p(218)=p(7)*p(49)-p(204)
-      p(219)=p(3)*p(77)-p(200)-p(199)-p(198)-p(209)-p(217)-p(211)-p(218)
-     &-p(207)-p(204)-p(205)-p(200)-p(199)-p(198)-p(200)-p(198)-p(200)-p(
+      p(219)=p(3)*p(77)-p(200)-p(199)-p(198)-p(209)-p(217)-p(211)-p(218)&
+     &-p(207)-p(204)-p(205)-p(200)-p(199)-p(198)-p(200)-p(198)-p(200)-p(&
      &198)
       p(220)=p(3)*p(78)-p(199)-p(210)-p(212)
       p(221)=p(10)*p(41)-p(199)-p(220)-p(217)-p(218)-p(216)
@@ -1172,7 +1166,8 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
 
       y=(r*r*r*r - re*re*re*re)/(r*r*r*r + re*re*re*re)
 
-      fy = as(0) + as(1)*y + as(2)*y*y + as(3)*y*y*y + as(4)*y*y*y*y 
+      fy = as(0) + as(1)*y + as(2)*y*y + as(3)*y*y*y + &
+     &as(4)*y*y*y*y &
      &   + as(5)*y*y*y*y*y + as(6)*y*y*y*y*y*y
 
       u=exp(-fy*(r-re))
@@ -1189,8 +1184,8 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       if (igrad.eq.1) then
        grad=0.d0
 
-       dfdy = as(1) + 2.0d0*as(2)*y + 3.0d0*as(3)*y*y 
-     &      + 4.0d0*as(4)*y*y*y + 5.0d0*as(5)*y*y*y*y 
+       dfdy = as(1) + 2.0d0*as(2)*y + 3.0d0*as(3)*y*y& 
+     &      + 4.0d0*as(4)*y*y*y + 5.0d0*as(5)*y*y*y*y&
      &      + 6.0d0*as(6)*y*y*y*y*y
         rr = r*r*r*r + re*re*re*re
         dydr = 8.0d0*r*r*r*re*re*re*re/(rr*rr)
@@ -1261,7 +1256,7 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       endif
 
 ! Calculate dispersion correction
-      call edisp(94,5,2,dist,iz,mxc, 
+      call edisp(94,5,2,dist,iz,mxc, &
      &     rs6,rs8,e6,e8,e6dr,e8dr,c6,0)
 
       disp = 0.0d0
@@ -1271,7 +1266,7 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       enddo
 
       if (igrad .eq. 1) then
-      call edisp(94,5,2,dist,iz,mxc, 
+      call edisp(94,5,2,dist,iz,mxc, &
      &     rs6,rs8,e6,e8,e6dr,e8dr,c6,1)
 
       dispdr(:) = 0.0d0
@@ -1290,7 +1285,7 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
 !**********************************************************************
 ! compute energy
 !**********************************************************************
-      subroutine edisp(max_elem,maxc,n,dist,iz,mxc, 
+      subroutine edisp(max_elem,maxc,n,dist,iz,mxc, &
      &           rs6,rs8,e6,e8,e6dr,e8dr,c6a,igrad)
 
       integer n,iz(2),max_elem,maxc,mxc(max_elem)
@@ -1319,58 +1314,58 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
 !  the large number of digits is just to keep the results consistent
 !  with older versions. They should not imply any higher accuracy than
 !  the old values
-      r2r4(1:94)=(/ 
-     &2.00734898d0,  1.56637132d0,  5.01986934d0,  3.85379032d0,  
-     &3.64446594d0,  3.10492822d0,  2.71175247d0,  2.59361680d0,  
-     &2.38825250d0,  2.21522516d0,  6.58585536d0,  5.46295967d0,  
-     &5.65216669d0,  4.88284902d0,  4.29727576d0,  4.04108902d0,  
-     &3.72932356d0,  3.44677275d0,  7.97762753d0,  7.07623947d0,  
-     &6.60844053d0,  6.28791364d0,  6.07728703d0,  5.54643096d0,  
-     &5.80491167d0,  5.58415602d0,  5.41374528d0,  5.28497229d0,  
-     &5.22592821d0,  5.09817141d0,  6.12149689d0,  5.54083734d0,  
-     &5.06696878d0,  4.87005108d0,  4.59089647d0,  4.31176304d0,  
-     &9.55461698d0,  8.67396077d0,  7.97210197d0,  7.43439917d0,  
-     &6.58711862d0,  6.19536215d0,  6.01517290d0,  5.81623410d0,  
-     &5.65710424d0,  5.52640661d0,  5.44263305d0,  5.58285373d0,  
-     &7.02081898d0,  6.46815523d0,  5.98089120d0,  5.81686657d0,  
-     &5.53321815d0,  5.25477007d0, 11.02204549d0,  0.15679528d0,  
-     &9.35167836d0,  9.06926079d0,  8.97241155d0,  8.90092807d0,  
-     &8.85984840d0,  8.81736827d0,  8.79317710d0,  7.89969626d0,  
-     &8.80588454d0,  8.42439218d0,  8.54289262d0,  8.47583370d0,  
-     &8.45090888d0,  8.47339339d0,  7.83525634d0,  8.20702843d0,  
-     &7.70559063d0,  7.32755997d0,  7.03887381d0,  6.68978720d0,  
-     &6.05450052d0,  5.88752022d0,  5.70661499d0,  5.78450695d0,  
-     &7.79780729d0,  7.26443867d0,  6.78151984d0,  6.67883169d0,  
-     &6.39024318d0,  6.09527958d0, 11.79156076d0, 11.10997644d0,  
-     &9.51377795d0,  8.67197068d0,  8.77140725d0,  8.65402716d0,  
+      r2r4(1:94)=(/ &
+     &2.00734898d0,  1.56637132d0,  5.01986934d0,  3.85379032d0,  &
+     &3.64446594d0,  3.10492822d0,  2.71175247d0,  2.59361680d0,  &
+     &2.38825250d0,  2.21522516d0,  6.58585536d0,  5.46295967d0,  &
+     &5.65216669d0,  4.88284902d0,  4.29727576d0,  4.04108902d0,  &
+     &3.72932356d0,  3.44677275d0,  7.97762753d0,  7.07623947d0,  &
+     &6.60844053d0,  6.28791364d0,  6.07728703d0,  5.54643096d0,  &
+     &5.80491167d0,  5.58415602d0,  5.41374528d0,  5.28497229d0,  &
+     &5.22592821d0,  5.09817141d0,  6.12149689d0,  5.54083734d0,  &
+     &5.06696878d0,  4.87005108d0,  4.59089647d0,  4.31176304d0,  &
+     &9.55461698d0,  8.67396077d0,  7.97210197d0,  7.43439917d0,  &
+     &6.58711862d0,  6.19536215d0,  6.01517290d0,  5.81623410d0,  &
+     &5.65710424d0,  5.52640661d0,  5.44263305d0,  5.58285373d0,  &
+     &7.02081898d0,  6.46815523d0,  5.98089120d0,  5.81686657d0,  &
+     &5.53321815d0,  5.25477007d0, 11.02204549d0,  0.15679528d0,  &
+     &9.35167836d0,  9.06926079d0,  8.97241155d0,  8.90092807d0,  &
+     &8.85984840d0,  8.81736827d0,  8.79317710d0,  7.89969626d0,  &
+     &8.80588454d0,  8.42439218d0,  8.54289262d0,  8.47583370d0,  &
+     &8.45090888d0,  8.47339339d0,  7.83525634d0,  8.20702843d0,  &
+     &7.70559063d0,  7.32755997d0,  7.03887381d0,  6.68978720d0,  &
+     &6.05450052d0,  5.88752022d0,  5.70661499d0,  5.78450695d0,  &
+     &7.79780729d0,  7.26443867d0,  6.78151984d0,  6.67883169d0,  &
+     &6.39024318d0,  6.09527958d0, 11.79156076d0, 11.10997644d0,  &
+     &9.51377795d0,  8.67197068d0,  8.77140725d0,  8.65402716d0,  &
      &8.53923501d0,  8.85024712d0 /)
 
 ! these new data are scaled with k2=4./3. and converted to a_0 via
 ! autoang=0.52917726d0
-      rcov(1:94)=(/ 
-     & 0.80628308d0, 1.15903197d0, 3.02356173d0, 2.36845659d0, 
-     & 1.94011865d0, 1.88972601d0, 1.78894056d0, 1.58736983d0, 
-     & 1.61256616d0, 1.68815527d0, 3.52748848d0, 3.14954334d0, 
-     & 2.84718717d0, 2.62041997d0, 2.77159820d0, 2.57002732d0, 
-     & 2.49443835d0, 2.41884923d0, 4.43455700d0, 3.88023730d0, 
-     & 3.35111422d0, 3.07395437d0, 3.04875805d0, 2.77159820d0, 
-     & 2.69600923d0, 2.62041997d0, 2.51963467d0, 2.49443835d0, 
-     & 2.54483100d0, 2.74640188d0, 2.82199085d0, 2.74640188d0, 
-     & 2.89757982d0, 2.77159820d0, 2.87238349d0, 2.94797246d0, 
-     & 4.76210950d0, 4.20778980d0, 3.70386304d0, 3.50229216d0, 
-     & 3.32591790d0, 3.12434702d0, 2.89757982d0, 2.84718717d0, 
-     & 2.84718717d0, 2.72120556d0, 2.89757982d0, 3.09915070d0, 
-     & 3.22513231d0, 3.17473967d0, 3.17473967d0, 3.09915070d0, 
-     & 3.32591790d0, 3.30072128d0, 5.26603625d0, 4.43455700d0, 
-     & 4.08180818d0, 3.70386304d0, 3.98102289d0, 3.95582657d0, 
-     & 3.93062995d0, 3.90543362d0, 3.80464833d0, 3.82984466d0, 
-     & 3.80464833d0, 3.77945201d0, 3.75425569d0, 3.75425569d0, 
-     & 3.72905937d0, 3.85504098d0, 3.67866672d0, 3.45189952d0, 
-     & 3.30072128d0, 3.09915070d0, 2.97316878d0, 2.92277614d0, 
-     & 2.79679452d0, 2.82199085d0, 2.84718717d0, 3.32591790d0, 
-     & 3.27552496d0, 3.27552496d0, 3.42670319d0, 3.30072128d0, 
-     & 3.47709584d0, 3.57788113d0, 5.06446567d0, 4.56053862d0, 
-     & 4.20778980d0, 3.98102289d0, 3.82984466d0, 3.85504098d0, 
+      rcov(1:94)=(/ &
+     & 0.80628308d0, 1.15903197d0, 3.02356173d0, 2.36845659d0, &
+     & 1.94011865d0, 1.88972601d0, 1.78894056d0, 1.58736983d0, &
+     & 1.61256616d0, 1.68815527d0, 3.52748848d0, 3.14954334d0, &
+     & 2.84718717d0, 2.62041997d0, 2.77159820d0, 2.57002732d0, &
+     & 2.49443835d0, 2.41884923d0, 4.43455700d0, 3.88023730d0, &
+     & 3.35111422d0, 3.07395437d0, 3.04875805d0, 2.77159820d0, &
+     & 2.69600923d0, 2.62041997d0, 2.51963467d0, 2.49443835d0, &
+     & 2.54483100d0, 2.74640188d0, 2.82199085d0, 2.74640188d0, &
+     & 2.89757982d0, 2.77159820d0, 2.87238349d0, 2.94797246d0, &
+     & 4.76210950d0, 4.20778980d0, 3.70386304d0, 3.50229216d0, &
+     & 3.32591790d0, 3.12434702d0, 2.89757982d0, 2.84718717d0, &
+     & 2.84718717d0, 2.72120556d0, 2.89757982d0, 3.09915070d0, &
+     & 3.22513231d0, 3.17473967d0, 3.17473967d0, 3.09915070d0, &
+     & 3.32591790d0, 3.30072128d0, 5.26603625d0, 4.43455700d0, &
+     & 4.08180818d0, 3.70386304d0, 3.98102289d0, 3.95582657d0, &
+     & 3.93062995d0, 3.90543362d0, 3.80464833d0, 3.82984466d0, &
+     & 3.80464833d0, 3.77945201d0, 3.75425569d0, 3.75425569d0, &
+     & 3.72905937d0, 3.85504098d0, 3.67866672d0, 3.45189952d0, &
+     & 3.30072128d0, 3.09915070d0, 2.97316878d0, 2.92277614d0, &
+     & 2.79679452d0, 2.82199085d0, 2.84718717d0, 3.32591790d0, &
+     & 3.27552496d0, 3.27552496d0, 3.42670319d0, 3.30072128d0, &
+     & 3.47709584d0, 3.57788113d0, 5.06446567d0, 4.56053862d0, &
+     & 4.20778980d0, 3.98102289d0, 3.82984466d0, 3.85504098d0, &
      & 3.88023730d0, 3.90543362d0 /)
 
 ! DFT-D3

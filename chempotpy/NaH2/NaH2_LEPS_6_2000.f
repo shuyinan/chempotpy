@@ -272,17 +272,6 @@ C
           call g_pot12(g_p_, r, g_r, ldg_r, e, De, ldg_e, nt)
         else if (nsurf .eq. 3) then
           call g_pot22(g_p_, r, g_r, ldg_r, e, De, ldg_e, nt)
-        else
-          do 10 i=1,nt
-            call g_pot11(g_p_, r, g_r, ldg_r, v11, De, ldg_e, 1)
-            call g_pot12(g_p_, r, g_r, ldg_r, v12, De, ldg_e, 1)
-            call g_pot22(g_p_, r, g_r, ldg_r, v22, De, ldg_e, 1)
-            if (nsurf .eq. 4) then
-              e(i)=0.5d0*(v11+v22-dsqrt((v11-v22)**2+4.d0*v12**2))
-            else
-              e(i)=0.5d0*(v11+v22+dsqrt((v11-v22)**2+4.d0*v12**2))
-            end if
-   10     continue
         end if
 
       return

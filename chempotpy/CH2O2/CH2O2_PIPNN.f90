@@ -5,8 +5,8 @@
 !-->  global variables are declared in this module
       module nnparam1
       implicit none
-      real*8,parameter::alpha=1.8d0,PI=3.141592653589793238d0,
-     $radian=PI/180.0d0,bohr=0.5291772d0
+      real*8,parameter::alpha=1.8d0,PI=3.141592653589793238d0,&
+     &radian=PI/180.0d0,bohr=0.5291772d0
       real*8,parameter::PARA2=27.2114d0
       integer,parameter::ndata=6136
       real*8,parameter::vpesmin=-560.0228149965d0
@@ -15,8 +15,8 @@
       integer noutput1,nscale1
       integer nhid3,nlayer31,ifunc31,nwe3,nodemax31
       integer,allocatable::nodes3a1(:)
-      real*8,allocatable::weight3a1(:,:,:),bias3a1(:,:),
-     $pdel3a1(:),pavg3a1(:)
+      real*8,allocatable::weight3a1(:,:,:),bias3a1(:,:),&
+     &pdel3a1(:),pavg3a1(:)
       end module nnparam1
 
       subroutine pes(x,igrad,path,p,g,d)
@@ -93,8 +93,8 @@
       do i=1,nlayer31
        nodemax31=max(nodemax31,nodes3a1(i))
       enddo
-      allocate(weight3a1(nodemax31,nodemax31,2:nlayer31),
-     $bias3a1(nodemax31,2:nlayer31))
+      allocate(weight3a1(nodemax31,nodemax31,2:nlayer31),&
+     &bias3a1(nodemax31,2:nlayer31))
       read(nfile1,*)ifunc31,nwe3
       read(nfile1,*)(pdel3a1(i),i=1,nscale1)
       read(nfile1,*)(pavg3a1(i),i=1,nscale1)
@@ -145,8 +145,8 @@
          do inode1=1,nodes3a1(ilay1)
           y(inode1,ilay1)=bias3a1(inode1,ilay1)
           do inode2=1,nodes3a1(ilay2)
-           y(inode1,ilay1)=y(inode1,ilay1)+
-     $y(inode2,ilay2)*weight3a1(inode2,inode1,ilay1)
+           y(inode1,ilay1)=y(inode1,ilay1)+&
+     &y(inode2,ilay2)*weight3a1(inode2,inode1,ilay1)
           enddo
           y(inode1,ilay1)=tranfun1(y(inode1,ilay1),ifunc31)
          enddo
@@ -158,13 +158,13 @@
         do inode1=1,nodes3a1(ilay1)
         y(inode1,ilay1)=bias3a1(inode1,ilay1)
         do inode2=1,nodes3a1(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+
-     $y(inode2,ilay2)*weight3a1(inode2,inode1,ilay1)
+        y(inode1,ilay1)=y(inode1,ilay1)+&
+     &y(inode2,ilay2)*weight3a1(inode2,inode1,ilay1)
         enddo
         enddo
 
 !-->....the value of output layer is the fitted potntial 
-        vpot3=y(nodes3a1(nlayer31),nlayer31)*pdel3a1(nscale1)+
+        vpot3=y(nodes3a1(nlayer31),nlayer31)*pdel3a1(nscale1)+&
      &  pavg3a1(nscale1)
 
 !        write(*,'(f16.8)')vpot3
@@ -215,8 +215,8 @@
       do i=1,natom-1
        do j=i+1,natom
         k=k+1
-       r(k)=dsqrt(dot_product(xcart(:,i)-xcart(:,j),
-     $                  xcart(:,i)-xcart(:,j)))
+       r(k)=dsqrt(dot_product(xcart(:,i)-xcart(:,j),&
+     &                  xcart(:,i)-xcart(:,j)))
 !        r(k)=dsqrt(r(k))
         xmorse(k)=dexp(-r(k)/(PARA*alpha))
        enddo

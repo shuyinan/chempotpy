@@ -272,31 +272,6 @@ c initialize seed matrix here
           call g_pot12(g_p_, r, g_r, ldg_r, e, De, ldg_e, nt)
         else if (nsurf .eq. 3) then
           call g_pot22(g_p_, r, g_r, ldg_r, e, De, ldg_e, nt)
-        else
-          do i=1,nt
-           call 
-     &      g_pot11(g_p_, r(i,1), g_r(1,i,1), ldg_r, v11, De1, ldg_e, 1)
-           call 
-     &      g_pot12(g_p_, r(i,1), g_r(1,i,1), ldg_r, v12, De2, ldg_e, 1)
-           call 
-     &      g_pot22(g_p_, r(i,1), g_r(1,i,1), ldg_r, v22, De3, ldg_e, 1)
-            dis = dsqrt((v11-v22)**2+4.d0*v12**2)
-            do j = 1,3
-              ddis(j) = (v11-v22)*(de1(j,1)-de3(j,1))+4.0d0*v12*de2(j,1)
-              ddis(j) = ddis(j)/dis
-            enddo
-            if (nsurf .eq. 4) then
-              e(i)=0.5d0*(v11+v22-dis)
-              do j = 1,3
-                de(j,i) = 0.5d0*(de1(j,1)+de3(j,1)-ddis(j))
-              enddo
-            else
-              e(i)=0.5d0*(v11+v22+dis)
-              do j = 1,3
-                de(j,i) = 0.5d0*(de1(j,1)+de3(j,1)+ddis(j))
-              enddo
-            end if
-          enddo
         end if
 
       return

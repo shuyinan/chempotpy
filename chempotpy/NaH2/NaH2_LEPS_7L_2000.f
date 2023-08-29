@@ -13,6 +13,7 @@
       double precision :: r(1,3), v(1)
       double precision :: u11(1), u12(1), u22(1)
       double precision :: u(nstates,nstates)
+      double precision :: t(nstates,nstates)
       logical, save :: first_time_data=.true.
       integer :: i, j, k, l
 
@@ -195,17 +196,6 @@ c ********************************************************************
           call pot12(r,e,nt)
         else if (nsurf .eq. 3) then
           call pot22(r,e,nt)
-        else
-          do i=1,nt
-            call pot11(r(i,1),v11,1)
-            call pot12(r(i,1),v12,1)
-            call pot22(r(i,1),v22,1)
-            if (nsurf .eq. 4) then
-              e(i)=0.5d0*(v11+v22-dsqrt((v11-v22)**2+4.d0*v12**2))
-            else
-              e(i)=0.5d0*(v11+v22+dsqrt((v11-v22)**2+4.d0*v12**2))
-            end if
-          enddo
         end if
 
       return

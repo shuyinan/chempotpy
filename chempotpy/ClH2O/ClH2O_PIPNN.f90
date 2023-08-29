@@ -2,9 +2,9 @@
 !-->  global variables are declared in this module
        module nnparam
        implicit none
-       real*8,parameter::alpha=1.0d0,vpesmin=-536.01052952d0,  !-->reactant
-     $ vpescut=5.0d0,  ! 4eV
-     % PI=3.141592653589793238d0,radian=PI/180.0d0,bohr=0.5291772d0
+       real*8,parameter::alpha=1.0d0,vpesmin=-536.01052952d0,&
+       &vpescut=5.0d0,&
+       &PI=3.141592653589793238d0,radian=PI/180.0d0,bohr=0.5291772d0
        integer,parameter::n0ho=20,n0hcl=18  !dipole
        integer,parameter::nxho=18,nxhcl=18  ! product energy
        integer,parameter::n2n=100
@@ -1279,8 +1279,8 @@
       do i=1,nlayer
        nodemax=max(nodemax,nodes(i))
       enddo
-      allocate(weighta(nodemax,nodemax,2:nlayer),
-     % biasa(nodemax,2:nlayer))
+      allocate(weighta(nodemax,nodemax,2:nlayer),&
+     &biasa(nodemax,2:nlayer))
       ifunc=  1;nwe=  5061
       pdela(  1)=  0.1067562850000000d0
       pavga(  1)=  0.1067562850000000d0
@@ -11460,8 +11460,8 @@
       do i=1,nlayer
        nodemax=max(nodemax,nodes(i))
       enddo
-      allocate(weightb(nodemax,nodemax,2:nlayer),
-     % biasb(nodemax,2:nlayer))
+      allocate(weightb(nodemax,nodemax,2:nlayer),&
+     & biasb(nodemax,2:nlayer))
       ifunc=  1;nwe=  5061
       pdelb(  1)=  0.1067562850000000d0
       pavgb(  1)=  0.1067562850000000d0
@@ -21641,8 +21641,8 @@
       do i=1,nlayer
        nodemax=max(nodemax,nodes(i))
       enddo
-      allocate(weightc(nodemax,nodemax,2:nlayer),
-     %biasc(nodemax,2:nlayer))
+      allocate(weightc(nodemax,nodemax,2:nlayer),&
+     &biasc(nodemax,2:nlayer))
       ifunc=  1;nwe=  5061
       pdelc(  1)=  0.1067562850000000d0
       pavgc(  1)=  0.1067562850000000d0
@@ -31821,7 +31821,6 @@
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavga(i))/pdela(i)
         enddo
@@ -31832,7 +31831,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -31845,7 +31844,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -31864,7 +31863,6 @@ c       write(*,*)ninput
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavgb(i))/pdelb(i)
         enddo
@@ -31875,7 +31873,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasb(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightb(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -31888,7 +31886,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasb(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightb(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -31907,7 +31905,6 @@ c       write(*,*)ninput
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavgc(i))/pdelc(i)
         enddo
@@ -31918,7 +31915,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasc(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightc(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -31931,7 +31928,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasc(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightc(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -31947,9 +31944,6 @@ c       write(*,*)ninput
         implicit none
         integer ifunc
         real*8 tranfun,x
-c    ifunc=1, transfer function is hyperbolic tangent function, 'tansig'
-c    ifunc=2, transfer function is log sigmoid function, 'logsig'
-c    ifunc=3, transfer function is pure linear function, 'purelin'. It is imposed to the output layer by default
         if (ifunc.eq.1) then
         tranfun=dtanh(x)
         else if (ifunc.eq.2) then
@@ -32092,10 +32086,10 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
 ! check the linked atom order: make sure that
 ! 1st H linked or near Cl 
 
-        xcom1(:)=xct2(:,1)+(mass(3)/(mass(1)+mass(3)))*
-     $ (xct2(:,3)-xct2(:,1))
-        xcom2(:)=xct2(:,2)+(mass(4)/(mass(2)+mass(4)))*
-     $ (xct2(:,4)-xct2(:,2))
+        xcom1(:)=xct2(:,1)+(mass(3)/(mass(1)+mass(3)))*&
+     & (xct2(:,3)-xct2(:,1))
+        xcom2(:)=xct2(:,2)+(mass(4)/(mass(2)+mass(4)))*&
+     & (xct2(:,4)-xct2(:,2))
         rcom=dsqrt(dot_product(xcom1-xcom2,xcom1-xcom2))
         skey=(1.0d0-dtanh(0.8d0*(rcom-10.0d0)))/2.0d0 
         call clh2oNN(xct2,vfit,va,vb,vc)
@@ -32183,8 +32177,8 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       angAB=dot_product(vecACl,vecBO)/(rACl*rBO)
       angAB=dacos(max(-1.0d0,min(1.0d0,angAB)))
 
-      vcorr=dpthcl*dptho/((rAB/0.5291772d0)**3)*
-     $      (dcos(angAB)-3.0d0*dcos(angB)*dcos(angA))
+      vcorr=dpthcl*dptho/((rAB/0.5291772d0)**3)*&
+     &      (dcos(angAB)-3.0d0*dcos(angB)*dcos(angA))
 
       vdp=((vt1+vcorr)-vpesmin)*627.509d0 - 0.15d0
       vdp=vdp/23.0605d0
@@ -32411,13 +32405,6 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       
 !++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-C##################################################################
-      
-C# SPLINE ROUTINES
-C#            Numerical recipes in fortran
-C#            Cambrige University Press
-C#            York, 2nd edition, 1992.
-C##################################################################
       SUBROUTINE splint(xa,ya,y2a,n,x,y)
       implicit double precision  (a-h,o-z)
       DIMENSION xa(n),y2a(n),ya(n)
@@ -32436,12 +32423,10 @@ C##################################################################
       if (h.eq.0.0d0) write(6,*) 'bad xa input in splint'
       a=(xa(khi)-x)/h
       b=(x-xa(klo))/h
-      y=a*ya(klo)+b*ya(khi)+((a**3-a)*y2a(klo)+(b**3-b)*y2a(khi))*(h**
-     *2)/6.0d0
+      y=a*ya(klo)+b*ya(khi)+((a**3-a)*y2a(klo)+(b**3-b)*y2a(khi))*(h**2)/6.0d0
       return
       END
 
-C##############################################################################
       SUBROUTINE spline(x,y,n,yp1,ypn,y2)
       implicit double precision  (a-h,o-z)
       DIMENSION x(n),y(n),y2(n)
@@ -32458,9 +32443,9 @@ C##############################################################################
         sig=(x(i)-x(i-1))/(x(i+1)-x(i-1))
         p=sig*y2(i-1)+2.0d0
         y2(i)=(sig-1.0d0)/p
-        u(i)=(6.0d0*((y(i+1)-y(i))/(x(i+
-     *1)-x(i))-(y(i)-y(i-1))/(x(i)-x(i-1)))/(x(i+1)-x(i-1))-sig*
-     *u(i-1))/p
+        u(i)=(6.0d0*((y(i+1)-y(i))/(x(i+&
+     &1)-x(i))-(y(i)-y(i-1))/(x(i)-x(i-1)))/(x(i+1)-x(i-1))-sig*&
+     &u(i-1))/p
 11    continue
       if (ypn.gt..99d30) then
         qn=0.0d0

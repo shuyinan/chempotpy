@@ -10,6 +10,7 @@
       double precision, intent(out) :: ug(nstates,nstates,natoms,3)
 
       double precision :: nt, r(1,3), r2(3), v(1)
+      double precision :: p(nstates)
       double precision :: u11(1), u12(1), u22(1)
       double precision :: de_u11(3,1), de_u12(3,1), de_u22(3,1)
       double precision :: dudr(nstates,nstates,3)
@@ -1385,7 +1386,7 @@ C
         integer g_pmax_,ia,ib,ic
         parameter (g_pmax_ = 3)
         integer g_i_, g_p_, ldg_r, ldg_cfu11
-        real g_r(ldg_r, 1, 3)
+        double precision g_r(ldg_r, 1, 3)
         double precision d4_p, d3_p, d17_b, d5_b, d6_b, d7_b, d8_b, d12_
      *v, d2_v, d11_b
         double precision d10_b, d1_w, d2_w, d3_v, d4_v, d5_v, d1_p, d7_v

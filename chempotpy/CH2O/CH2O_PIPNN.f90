@@ -136,8 +136,8 @@
         do i=1,nlayer
          nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weighta(nodemax,nodemax,2:nlayer),
-     %   biasa(nodemax,2:nlayer))
+        allocate(weighta(nodemax,nodemax,2:nlayer),&
+        &biasa(nodemax,2:nlayer))
         read(nfile,*)ifunc,nwe
 !-->....ifunc hence controls the type of transfer function used for hidden layers
 !-->....At this time, only an equivalent transfer function can be used for all hidden layers
@@ -179,7 +179,6 @@
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavga(i))/pdela(i)
         enddo
@@ -190,8 +189,8 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
-     &*weighta(inode2,inode1,ilay1)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
+        &*weighta(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
         enddo
@@ -203,8 +202,8 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
-     &*weighta(inode2,inode1,ilay1)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
+        &*weighta(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
 !-->....so no operation is needed here
@@ -221,9 +220,6 @@ c       write(*,*)ninput
         implicit none
         integer ifunc
         real*8 tranfun,x
-c    ifunc=1, transfer function is hyperbolic tangent function, 'tansig'
-c    ifunc=2, transfer function is log sigmoid function, 'logsig'
-c    ifunc=3, transfer function is pure linear function, 'purelin'. It is imposed to the output layer by default
         if (ifunc.eq.1) then
         tranfun=dtanh(x)
         else if (ifunc.eq.2) then

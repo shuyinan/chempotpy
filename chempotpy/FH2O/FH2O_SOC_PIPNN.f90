@@ -3,8 +3,8 @@
 !-->  global variables are declared in this module
        module nnparam
        implicit none
-       real*8,parameter::alpha=1.0d0,vpesmin=-176.0260035639990d0,
-     % PI=3.141592653589793238d0,radian=PI/180.0d0,bohr=0.5291772d0
+       real*8,parameter::alpha=1.0d0,vpesmin=-176.0260035639990d0,&
+     & PI=3.141592653589793238d0,radian=PI/180.0d0,bohr=0.5291772d0
        integer,parameter::nbasis=18,nrbasissoc=147,npbasissoc=288
        integer,parameter::ninput=17
        integer noutput,nhid,nlayer,ifunc,nwe,nodemax
@@ -81,7 +81,6 @@
 
       endsubroutine
 
-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc      
       
       subroutine fh2o_soc_nn(xt,vg,socg,vgsoc)
       use nnparam
@@ -124,7 +123,6 @@ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
       rt(5)=dsqrt(dot_product(xvec(:,5),xvec(:,5)))
       rt(6)=dsqrt(dot_product(xvec(:,6),xvec(:,6)))
 
-cccccccc  reactant 
        xt2(:,1)=xt(:,1)
        xt2(:,2)=xt(:,4)
        xt2(:,3)=xt(:,2)
@@ -137,7 +135,6 @@ cccccccc  reactant
 
        call soc_react_ground(rcom,the2,phi,socrg)
 
-cccccccc  product       
        xt2(:,1)=xn(:,2)
        xt2(:,2)=xn(:,4)
        xt2(:,3)=xn(:,1)
@@ -162,7 +159,6 @@ cccccccc  product
       return
       end subroutine fh2o_soc_nn
       
-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
       subroutine orderxnt(x1,x2)
       implicit none
@@ -235,7 +231,6 @@ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
       end function p2function
      
 
-*********************SOC**************************
       subroutine soc_react_ground(rcom,t2,phi,socrg)
       use nnparam
       implicit none
@@ -252,11 +247,11 @@ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
          j=j+1
          nrcom=n
          if(l.le.3)then
-          tr1basis(j)=r1function(rcom,nrcom)*dcos(dble(k)*phi)*
-     $                dcos(dble(l)*t2)
+          tr1basis(j)=r1function(rcom,nrcom)*dcos(dble(k)*phi)*&
+     &                dcos(dble(l)*t2)
          else
-          tr1basis(j)=r1function(rcom,nrcom)*dcos(dble(k)*phi)*
-     $                 dsin(dble(l-3)*t2)
+          tr1basis(j)=r1function(rcom,nrcom)*dcos(dble(k)*phi)*&
+     &                 dsin(dble(l-3)*t2)
          endif
         enddo
        enddo
@@ -270,7 +265,6 @@ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
       return
       end subroutine soc_react_ground
 
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
       subroutine soc_product_ground(rcom,t1,t2,phi,socpg)    
       use nnparam
@@ -287,8 +281,8 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
          do m=0,3 
           j=j+1
           nrcom=n
-          tp2basis(j)=p2function(rcom,nrcom)*dcos(dble(k)*phi)*
-     $ dcos(dble(l)*t1)*dcos(dble(m)*t2)
+          tp2basis(j)=p2function(rcom,nrcom)*dcos(dble(k)*phi)*&
+     & dcos(dble(l)*t1)*dcos(dble(m)*t2)
          enddo
         enddo
        enddo
@@ -421,8 +415,8 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
       open(4,file=file_path2,status='old')
       rewind(4)
       read(4,'(a100)')line
-109   read(4,'(i4,3i3,3x,6i2)',end=121)ibasis,npd,nterm(ibasis+1),
-     $iterm,(nindex(ibasis+1,iterm,ib), ib=1,6)
+109   read(4,'(i4,3i3,3x,6i2)',end=121)ibasis,npd,nterm(ibasis+1),&
+     &iterm,(nindex(ibasis+1,iterm,ib), ib=1,6)
       if(nindex(ibasis+1,iterm,1).eq.2)then
         goto 121
       else
@@ -457,8 +451,8 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
         do i=1,nlayer
          nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weighta(nodemax,nodemax,2:nlayer),
-     %   biasa(nodemax,2:nlayer))
+        allocate(weighta(nodemax,nodemax,2:nlayer),&
+     &   biasa(nodemax,2:nlayer))
         read(nfile,*)ifunc,nwe
 !-->....ifunc hence controls the type of transfer function used for
 !hidden layers
@@ -502,8 +496,8 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
         do i=1,nlayer
          nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weightb(nodemax,nodemax,2:nlayer),
-     %   biasb(nodemax,2:nlayer))
+        allocate(weightb(nodemax,nodemax,2:nlayer),&
+     &   biasb(nodemax,2:nlayer))
         read(nfile,*)ifunc,nwe
 !-->....ifunc hence controls the type of transfer function used for
 !hidden layers
@@ -547,8 +541,8 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
         do i=1,nlayer
          nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weightc(nodemax,nodemax,2:nlayer),
-     % biasc(nodemax,2:nlayer))
+        allocate(weightc(nodemax,nodemax,2:nlayer),&
+     & biasc(nodemax,2:nlayer))
         read(nfile,*)ifunc,nwe
 !-->....ifunc hence controls the type of transfer function used for
 !hidden layers
@@ -592,7 +586,6 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavga(i))/pdela(i)
         enddo
@@ -603,7 +596,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -616,7 +609,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasa(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weighta(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -635,7 +628,6 @@ c       write(*,*)ninput
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavgb(i))/pdelb(i)
         enddo
@@ -646,7 +638,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasb(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightb(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -659,7 +651,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasb(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightb(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -678,7 +670,6 @@ c       write(*,*)ninput
         real*8 x(ninput),y(nodemax,nlayer),vpot
         real*8, external :: tranfun
 !-->....set up the normalized input layer
-c       write(*,*)ninput
         do i=1,ninput
           y(i,1)=(x(i)-pavgc(i))/pdelc(i)
         enddo
@@ -689,7 +680,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasc(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightc(inode2,inode1,ilay1)
         enddo
         y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
@@ -702,7 +693,7 @@ c       write(*,*)ninput
         do inode1=1,nodes(ilay1)
         y(inode1,ilay1)=biasc(inode1,ilay1)
         do inode2=1,nodes(ilay2)
-        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
+        y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)&
      &*weightc(inode2,inode1,ilay1)
         enddo
 !-->....the transfer function is linear y=x for output layer
@@ -718,9 +709,6 @@ c       write(*,*)ninput
         implicit none
         integer ifunc
         real*8 tranfun,x
-c    ifunc=1, transfer function is hyperbolic tangent function, 'tansig'
-c    ifunc=2, transfer function is log sigmoid function, 'logsig'
-c    ifunc=3, transfer function is pure linear function, 'purelin'. It is imposed to the output layer by default
         if (ifunc.eq.1) then
         tranfun=dtanh(x)
         else if (ifunc.eq.2) then
@@ -824,8 +812,8 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       mass(4)=18.99840d0
       
       xAB(:)=(mass(1)*ct(:,1)+mass(2)*ct(:,2))/(mass(1)+mass(2))
-      xABC(:)=(mass(1)*ct(:,1)+mass(2)*ct(:,2)+mass(3)*ct(:,3))/
-     $ (mass(1)+mass(2)+mass(3))
+      xABC(:)=(mass(1)*ct(:,1)+mass(2)*ct(:,2)+mass(3)*ct(:,3))/&
+     & (mass(1)+mass(2)+mass(3))
 
       xvec(:,1)=ct(:,1)-ct(:,2)
       xvec(:,2)=ct(:,3)-xAB(:)
@@ -844,8 +832,8 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       call crossp(xvec(:,1),xvec(:,2),crop1) 
       call crossp(xvec(:,2),xvec(:,3),crop2) 
       
-      rt(6)=dot_product(crop1,crop2)/dsqrt(dot_product(crop1,crop1))/
-     $dsqrt(dot_product(crop2,crop2))
+      rt(6)=dot_product(crop1,crop2)/dsqrt(dot_product(crop1,crop1))/&
+     &dsqrt(dot_product(crop2,crop2))
       
       rt(6)=dacos(max(-1.0d0,min(1.0d0,rt(6))))
 
@@ -855,17 +843,6 @@ c    ifunc=3, transfer function is pure linear function, 'purelin'. It is impose
       end subroutine xyzTOjcb3
 
 
-!******************************************************************************
-c     subroutine crossp(v1,v2,v3)
-c     real(kind=8)::v1(1:3),v2(1:3),v3(1:3)
-c     ! cross product of two 3-dimensional vectors
-c     v3(1)=v1(2)*v2(3)-v1(3)*v2(2)
-c     v3(2)=v1(3)*v2(1)-v1(1)*v2(3)
-c     v3(3)=v1(1)*v2(2)-v1(2)*v2(1)
-c     return
-c     end subroutine crossp
-
-!******************************************************************************
       subroutine jcb3tocart(rint,cart)
       implicit none
       real*8 rint(6),cart(3,4)
@@ -894,20 +871,6 @@ c     end subroutine crossp
       phia=rint(6)
 !-->-->ABC+D Jacobi coordinates 
 !-->-->            Schematic diagram
-c          X     
-c         /|\                 - D  F
-c          |                -   /
-c          |              -    /
-c     H A  |            -r3   /
-c        \ |          -      /
-c         \th1      -th2    /
-c----------e---------------C-------------->Z 
-c        r1|\      r2    /   H
-c          | \         /
-c          |  \      /
-c                B O             
-!c          |   
-c               
 !-->-->origin is the center of mass of AB.
 !-->-->r2 lies on Z positive axis, AB is in the XZ positive plane
 !-->-->Xa is always positive and Xb is always negative.
@@ -939,17 +902,12 @@ c
 
       subroutine cart_diJacobi(c1,r)
 ! convert the diatom-diatom Jacobi coordinates to XYZ coordinates
-!  c in angstrom and ABCD, r in angstrom and radians
       implicit none
       real*8 r(1:6),c(1:3,1:4),Mass(1:4),c1(1:3,1:4)
       real*8 crop1(1:3),crop2(1:3)
       real*8 vec(1:3,1:9),dotpp(1:9),bohr
       real*8 dotp,costh1,costh2,AMass,BMass,CMass,DMass,costh3
 
-c     c(:,1)=c1(:,4)
-c     c(:,2)=c1(:,1)
-c     c(:,3)=c1(:,3)
-c     c(:,4)=c1(:,2)
       c=c1  ! c in HOHF order angstrom
       bohr=1.0d0
       AMass=2.0141d0
@@ -962,7 +920,6 @@ c     c(:,4)=c1(:,2)
       vec(:,3)=c(:,3)-c(:,4) ! vector D->C OC
       r(2)    =dsqrt( sum(vec(:,3)**2) )/bohr
       vec(:,4)=c(:,4)+vec(:,3)*CMass/(CMass+DMass) !vector Y(Y COM of
-CD)
       vec(:,5)=vec(:,4)-vec(:,2) !vecor R X->Y
       r(3)    =dsqrt( sum(vec(:,5)**2) )/bohr
 !-
@@ -992,22 +949,18 @@ CD)
       r(5) = dacos( max(-1.0d0,min(1.0d0,costh2))) ! in radians
 
       if (dabs(dcos(r(4))*dcos(r(5))).lt.1.0d-16)then
-c       write(*,*) '   ******'
-c       write(*,'(3f12.6)')c
-c      write(*,*)'some 3-atom collinear, dihedral angle cant be defined'
-c       write(*,*) '   ******'
 !       stop
 !       return
       else
 ! compute the Jacobi dihedral angle, based on the norm of the plane
        call crossp(vec(:,1), vec(:,5),crop1) ! crossproduct for the norm
        call crossp(vec(:,3), vec(:,5),crop2) !
-       if(dsqrt( sum(crop1(:)**2))*dsqrt(sum(crop2(:)**2)).lt.1.0d-10)
+       if(dsqrt( sum(crop1(:)**2))*dsqrt(sum(crop2(:)**2)).lt.1.0d-10)&
      &  then
         r(6) = 0.0d0
        else
-       costh3=dot_product(crop1(:),crop2(:))/(dsqrt(sum(crop1(:)**2))
-     $ *dsqrt(sum(crop2(:)**2)))
+       costh3=dot_product(crop1(:),crop2(:))/(dsqrt(sum(crop1(:)**2))&
+     & *dsqrt(sum(crop2(:)**2)))
 !    write(99999,'(f20.10)') costh3
        r(6) = dacos( max(-1.0d0,min(1.0d0,costh3)))
        endif

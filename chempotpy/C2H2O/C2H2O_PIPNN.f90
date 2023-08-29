@@ -210,8 +210,7 @@
         do i=1,nlayer
            nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weighta(nodemax,nodemax,2:nlayer),
-     %  biasa(nodemax,2:nlayer))
+        allocate(weighta(nodemax,nodemax,2:nlayer),biasa(nodemax,2:nlayer))
         read(wfilea,*)ifunc,nwe
         read(wfilea,*)(pdela(i),i=1,nscale)
         read(wfilea,*)(pavga(i),i=1,nscale)
@@ -255,8 +254,7 @@
         do i=1,nlayer
            nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weightb(nodemax,nodemax,2:nlayer),
-     %  biasb(nodemax,2:nlayer))
+        allocate(weightb(nodemax,nodemax,2:nlayer),biasb(nodemax,2:nlayer))
         read(wfileb,*)ifunc,nwe
         read(wfileb,*)(pdelb(i),i=1,nscale)
         read(wfileb,*)(pavgb(i),i=1,nscale)
@@ -301,8 +299,7 @@
         do i=1,nlayer
            nodemax=max(nodemax,nodes(i))
         enddo
-        allocate(weightc(nodemax,nodemax,2:nlayer),
-     %  biasc(nodemax,2:nlayer))
+        allocate(weightc(nodemax,nodemax,2:nlayer),biasc(nodemax,2:nlayer))
         read(wfilec,*)ifunc,nwe
         read(wfilec,*)(pdelc(i),i=1,nscale)
         read(wfilec,*)(pavgc(i),i=1,nscale)
@@ -352,8 +349,7 @@
            do inode1=1,nodes(ilay1)
               y(inode1,ilay1)=biasa(inode1,ilay1)
               do inode2=1,nodes(ilay2)
-                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
-     &                           *weighta(inode2,inode1,ilay1)
+                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)*weighta(inode2,inode1,ilay1)
               enddo
               y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
            enddo
@@ -365,8 +361,7 @@
         do inode1=1,nodes(ilay1)
            y(inode1,ilay1)=biasa(inode1,ilay1)
            do inode2=1,nodes(ilay2)
-              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
-     &                        *weighta(inode2,inode1,ilay1)
+              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)*weighta(inode2,inode1,ilay1)
            enddo
 !-->....the transfer function is linear y=x for output layer
 !-->....so no operation is needed here
@@ -397,8 +392,7 @@
            do inode1=1,nodes(ilay1)
               y(inode1,ilay1)=biasb(inode1,ilay1)
               do inode2=1,nodes(ilay2)
-                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
-     &                           *weightb(inode2,inode1,ilay1)
+                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)*weightb(inode2,inode1,ilay1)
               enddo
               y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
            enddo
@@ -410,8 +404,7 @@
         do inode1=1,nodes(ilay1)
            y(inode1,ilay1)=biasb(inode1,ilay1)
            do inode2=1,nodes(ilay2)
-              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
-     &                        *weightb(inode2,inode1,ilay1)
+              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)*weightb(inode2,inode1,ilay1)
            enddo
 !-->....the transfer function is linear y=x for output layer
 !-->....so no operation is needed here
@@ -442,8 +435,7 @@
            do inode1=1,nodes(ilay1)
               y(inode1,ilay1)=biasc(inode1,ilay1)
               do inode2=1,nodes(ilay2)
-                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
-     &                           *weightc(inode2,inode1,ilay1)
+                 y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)*weightc(inode2,inode1,ilay1)
               enddo
               y(inode1,ilay1)=tranfun(y(inode1,ilay1),ifunc)
            enddo
@@ -455,8 +447,7 @@
         do inode1=1,nodes(ilay1)
            y(inode1,ilay1)=biasc(inode1,ilay1)
            do inode2=1,nodes(ilay2)
-              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)
-     &                        *weightc(inode2,inode1,ilay1)
+              y(inode1,ilay1)=y(inode1,ilay1)+y(inode2,ilay2)*weightc(inode2,inode1,ilay1)
            enddo
 !-->....the transfer function is linear y=x for output layer
 !-->....so no operation is needed here
@@ -473,10 +464,6 @@
         implicit none
         integer ifunc
         real*8 tranfun,x
-c    ifunc=1, transfer function is hyperbolic tangent function, 'tansig'
-c    ifunc=2, transfer function is log sigmoid function, 'logsig'
-c    ifunc=3, transfer function is pure linear function, 'purelin'. It
-c             is imposed to the output layer by default
         if (ifunc.eq.1) then
            tranfun=dtanh(x)
         else if (ifunc.eq.2) then
@@ -524,8 +511,7 @@ c             is imposed to the output layer by default
         rH4O1=dsqrt(dot_product(xvec(:,9),xvec(:,9)))    !  O1->H4
         rH5O1=dsqrt(dot_product(xvec(:,10),xvec(:,10)))  !  O1->H5
 
-        rb(:)=(/rC2C3,rC2H4,rC2H5,rC2O1,rC3H4,
-     $         rC3H5,rC3O1,rH4H5,rH4O1,rH5O1/)
+        rb(:)=(/rC2C3,rC2H4,rC2H5,rC2O1,rC3H4,rC3H5,rC3O1,rH4H5,rH4O1,rH5O1/)
 
         min_rCH=min(rC2H4,rC2H5,rC3H4,rC3H5)
 
@@ -557,8 +543,8 @@ c             is imposed to the output layer by default
            return
         else
            if(rC2C3.gt.yy) then
-             if((rC2H4.le.xx .and. rC2H5.le.xx .and. rC3O1.le.zz).or.
-     $          (rC3H4.le.xx .and. rC3H5.le.xx .and. rC2O1.le.zz))then
+             if((rC2H4.le.xx .and. rC2H5.le.xx .and. rC3O1.le.zz).or. &
+     &          (rC3H4.le.xx .and. rC3H5.le.xx .and. rC2O1.le.zz))then
                 lxc=0
 !                print*,"lxc.eq.0, CH2+CO channel"
                 return
@@ -568,23 +554,22 @@ c             is imposed to the output layer by default
                 return
              endif
            else
-             if((rC2H4.le.xx .and.rC3H5.le.xx) .or. 
-     $          (rC2H5.le.xx .and.rC3H4.le.xx))then
+             if((rC2H4.le.xx .and.rC3H5.le.xx) .or. (rC2H5.le.xx .and.rC3H4.le.xx))then
                 lxc=0
 !                print*,"lxc.eq.0, HCCH+O channel"
                 return
-             elseif(((rC2H4.le.xx.or.rC2H5.le.xx).and.rC3O1.le.yy ).or.
-     $          ((rC3H4.le.xx.or.rC3H5.le.xx) .and. rC2O1.le.yy ))then
+             elseif(((rC2H4.le.xx.or.rC2H5.le.xx).and.rC3O1.le.yy ).or.&
+     &          ((rC3H4.le.xx.or.rC3H5.le.xx) .and. rC2O1.le.yy ))then
                 lxc=0
 !                print*,"lxc.eq.0, HCCO+H channel"
                 return
-             elseif(((rC2H4.le.xx.or.rC3H4.le.xx).and.rH5O1.le.tt ).or.
-     $          ((rC2H5.le.xx.or.rC3H5.le.xx) .and. rH4O1.le.tt ))then
+             elseif(((rC2H4.le.xx.or.rC3H4.le.xx).and.rH5O1.le.tt ).or. &
+     &          ((rC2H5.le.xx.or.rC3H5.le.xx) .and. rH4O1.le.tt ))then
                 lxc=0
 !                print*,"lxc.eq.0, HCC+OH channel"
                 return
-             elseif((rC2H4.le.xx.and.rC2H5.le.xx.and.rC3O1.le.yy ).or.
-     $          (rC3H4.le.xx.and.rC3H5.le.xx.and.rC2O1.le.yy ))then
+             elseif((rC2H4.le.xx.and.rC2H5.le.xx.and.rC3O1.le.yy ).or. &
+     &          (rC3H4.le.xx.and.rC3H5.le.xx.and.rC2O1.le.yy ))then
                 lxc=0
 !                print*,"lxc.eq.0, H2CCO channel"
                 return
