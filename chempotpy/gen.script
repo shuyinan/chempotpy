@@ -17,7 +17,7 @@ echo "!  " > code.f90
 echo "! The following systems are in Chempotpy but current not in this subroutine:" > code.f90
 echo "! AlmHn, Aln, SiOH" > code.f90
 echo "! The following surfaces are in Chempotpy but current not in this subroutine:" > code.f90
-echo "! H3: H3_GEN_BH_2009, H3_GEN_BKMP3_1996
+echo "! H3: H3_GEN_BH_2009, H3_GEN_BKMP3_1996" > code.f90
 echo "!=================================================================================" > code.f90
 echo "subroutine chempotpy(system,surface,path,geom,nstates,natoms,igrad,p,g,d,u,ug)" > code.f90
 echo "  implicit none" >> code.f90
