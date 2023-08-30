@@ -1,0 +1,15 @@
+ALC7m7_LEPS_ModelSurface.f:355:20:
+
+  355 |       COMMON /PT1CM/  R(N3ATOM), ENGYGS, DEGSDR(N3ATOM)
+      |                    1
+Warning: Named COMMON block 'pt1cm' at (1) shall be of the same size as elsewhere (1208 vs 56 bytes)
+ALC7m7_LEPS_ModelSurface.f:357:20:
+
+  357 |       COMMON /PT4CM/  ENGYES(ISURF),DEESDR(N3ATOM,ISURF)
+      |                    1
+Warning: Named COMMON block 'pt4cm' at (1) shall be of the same size as elsewhere (3040 vs 80 bytes)
+ALC7m7_LEPS_ModelSurface.f:358:20:
+
+  358 |       COMMON /PT5CM/  ENGYIJ(JSURF),DEIJDR(N3ATOM,JSURF)
+      |                    1
+Warning: Named COMMON block 'pt5cm' at (1) shall be of the same size as elsewhere (9120 vs 24 bytes)

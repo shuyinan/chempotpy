@@ -1,0 +1,674 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "PHOH_APRP" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmpu56255_x/src.linux-x86_64-3.11/PHOH_APRPmodule.c
+creating /tmp/tmpu56255_x/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'PHOH_APRP.f' (format:fix,strict)
+Line #10325 in PHOH_APRP.f:"      parameter(zero=0.0d0,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10815 in PHOH_APRP.f:"      parameter(de=0.17596055d0,re=1.93206106d0,          beta=0.63822703d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10815 in PHOH_APRP.f:"      parameter(de=0.17596055d0,re=1.93206106d0,          beta=0.63822703d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10815 in PHOH_APRP.f:"      parameter(de=0.17596055d0,re=1.93206106d0,          beta=0.63822703d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10904 in PHOH_APRP.f:"      parameter(a1=0.02371114d0,alpha1=0.96558083d0,r1=3.25505778d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10904 in PHOH_APRP.f:"      parameter(a1=0.02371114d0,alpha1=0.96558083d0,r1=3.25505778d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10904 in PHOH_APRP.f:"      parameter(a1=0.02371114d0,alpha1=0.96558083d0,r1=3.25505778d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10906 in PHOH_APRP.f:"      parameter(a2=0.00349299d0,alpha2=1.092945551d1,r2=2.10516007d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10935 in PHOH_APRP.f:"      parameter(alpha=0.67269344d0,de=0.41866243d0,          re=1.95347670d0,v0=0.17280158d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10935 in PHOH_APRP.f:"      parameter(alpha=0.67269344d0,de=0.41866243d0,          re=1.95347670d0,v0=0.17280158d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10935 in PHOH_APRP.f:"      parameter(alpha=0.67269344d0,de=0.41866243d0,          re=1.95347670d0,v0=0.17280158d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10935 in PHOH_APRP.f:"      parameter(alpha=0.67269344d0,de=0.41866243d0,          re=1.95347670d0,v0=0.17280158d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10935 in PHOH_APRP.f:"      parameter(alpha=0.67269344d0,de=0.41866243d0,          re=1.95347670d0,v0=0.17280158d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #10935 in PHOH_APRP.f:"      parameter(alpha=0.67269344d0,de=0.41866243d0,          re=1.95347670d0,v0=0.17280158d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11024 in PHOH_APRP.f:"      parameter(a1=0.01925782d0,alpha1=5.00873578d0,r1=2.22678700d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11024 in PHOH_APRP.f:"      parameter(a1=0.01925782d0,alpha1=5.00873578d0,r1=2.22678700d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11024 in PHOH_APRP.f:"      parameter(a1=0.01925782d0,alpha1=5.00873578d0,r1=2.22678700d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11053 in PHOH_APRP.f:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11053 in PHOH_APRP.f:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11053 in PHOH_APRP.f:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11053 in PHOH_APRP.f:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11053 in PHOH_APRP.f:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11053 in PHOH_APRP.f:"      parameter(a1=0.06496177d0,alpha1=1.81347726d0,r1=2.63168269d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11054 in PHOH_APRP.f:"      parameter(a2=-0.00077880d0,alpha2=3.24769899d0,r2=3.71412291d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11056 in PHOH_APRP.f:"      parameter(a3=9.3151142407d2,alpha3=4.73016534d0,r3=-0.04117486d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11164 in PHOH_APRP.f:"      parameter(a1=-0.02298368d0,alpha1=1.06740430d0,r1=3.28664483d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11164 in PHOH_APRP.f:"      parameter(a1=-0.02298368d0,alpha1=1.06740430d0,r1=3.28664483d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11164 in PHOH_APRP.f:"      parameter(a1=-0.02298368d0,alpha1=1.06740430d0,r1=3.28664483d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11166 in PHOH_APRP.f:"      parameter(a2=0.01138152d0,alpha2=0.65339172d0,r2=2.58341105d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11195 in PHOH_APRP.f:"      parameter (B=6.693126d1,alpha=1.894454d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11315 in PHOH_APRP.f:"      parameter(half=0.5d0,oossix=0.408248290463863d0,          oostlv=0.288675134594813d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11315 in PHOH_APRP.f:"      parameter(half=0.5d0,oossix=0.408248290463863d0,          oostlv=0.288675134594813d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11315 in PHOH_APRP.f:"      parameter(half=0.5d0,oossix=0.408248290463863d0,          oostlv=0.288675134594813d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11315 in PHOH_APRP.f:"      parameter(half=0.5d0,oossix=0.408248290463863d0,          oostlv=0.288675134594813d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11315 in PHOH_APRP.f:"      parameter(half=0.5d0,oossix=0.408248290463863d0,          oostlv=0.288675134594813d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11315 in PHOH_APRP.f:"      parameter(half=0.5d0,oossix=0.408248290463863d0,          oostlv=0.288675134594813d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #11762 in PHOH_APRP.f:"      parameter(pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #12129 in PHOH_APRP.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Post-processing...
+	Block: PHOH_APRP
+			Block: pes
+			Block: pot
+In: :PHOH_APRP:PHOH_APRP.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: getdvec3
+			Block: poten
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evuii
+vars2fortran: No typespec for argument "ii".
+			Block: evuii
+In: :PHOH_APRP:PHOH_APRP.f:evuii
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evuiit
+{}
+In: :PHOH_APRP:PHOH_APRP.f:gethess
+vars2fortran: No typespec for argument "nap".
+			Block: gethess
+			Block: getgeom
+In: :PHOH_APRP:PHOH_APRP.f:getgeom
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:getgeom
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: tent
+			Block: evu1r
+In: :PHOH_APRP:PHOH_APRP.f:evu1r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu1r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu1r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu1b
+vars2fortran: No typespec for argument "igrad".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu1b
+vars2fortran: No typespec for argument "theta".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu1b
+vars2fortran: No typespec for argument "vbnd".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu1b
+vars2fortran: No typespec for argument "dvdr".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu1b
+vars2fortran: No typespec for argument "dvdth".
+			Block: evu1b
+			Block: evu1to
+In: :PHOH_APRP:PHOH_APRP.f:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu1to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evu2r
+In: :PHOH_APRP:PHOH_APRP.f:evu2r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu2r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu2r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu2r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu2b
+vars2fortran: No typespec for argument "igrad".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu2b
+vars2fortran: No typespec for argument "theta".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu2b
+vars2fortran: No typespec for argument "vbnd".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu2b
+vars2fortran: No typespec for argument "dvdr".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu2b
+vars2fortran: No typespec for argument "dvdth".
+			Block: evu2b
+			Block: evu2to
+In: :PHOH_APRP:PHOH_APRP.f:evu2to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu2to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu2to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evu3r
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3r
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu3b
+vars2fortran: No typespec for argument "igrad".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu3b
+vars2fortran: No typespec for argument "theta".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu3b
+vars2fortran: No typespec for argument "vbnd".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu3b
+vars2fortran: No typespec for argument "dvdr".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evu3b
+vars2fortran: No typespec for argument "dvdth".
+			Block: evu3b
+			Block: evu3to
+In: :PHOH_APRP:PHOH_APRP.f:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evu3to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evubm
+In: :PHOH_APRP:PHOH_APRP.f:evubm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evubm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evuij
+vars2fortran: No typespec for argument "nap".
+			Block: evuij
+In: :PHOH_APRP:PHOH_APRP.f:evuij
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evuij
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evuij
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evuij
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP:PHOH_APRP.f:evuijt
+vars2fortran: No typespec for argument "nap".
+			Block: evuijt
+			Block: evu13to
+			Block: evu23to
+In: :PHOH_APRP:PHOH_APRP.f:evu23to
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: evintcoord
+In: :PHOH_APRP:PHOH_APRP.f:evintcoord
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:evintcoord
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: matvect
+			Block: bmat3
+			Block: matmult
+{}
+In: :PHOH_APRP:PHOH_APRP.f:bndlen
+vars2fortran: No typespec for argument "i".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:bndlen
+vars2fortran: No typespec for argument "j".
+			Block: bndlen
+In: :PHOH_APRP:PHOH_APRP.f:bndlen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP:PHOH_APRP.f:bndang
+vars2fortran: No typespec for argument "i".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:bndang
+vars2fortran: No typespec for argument "j".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:bndang
+vars2fortran: No typespec for argument "k".
+			Block: bndang
+{}
+In: :PHOH_APRP:PHOH_APRP.f:dihedr
+vars2fortran: No typespec for argument "i".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:dihedr
+vars2fortran: No typespec for argument "j".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:dihedr
+vars2fortran: No typespec for argument "k".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:dihedr
+vars2fortran: No typespec for argument "l".
+			Block: dihedr
+In: :PHOH_APRP:PHOH_APRP.f:dihedr
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :PHOH_APRP:PHOH_APRP.f:dihedr
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :PHOH_APRP:PHOH_APRP.f:oopba1
+vars2fortran: No typespec for argument "i".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:oopba1
+vars2fortran: No typespec for argument "j".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:oopba1
+vars2fortran: No typespec for argument "k".
+{}
+In: :PHOH_APRP:PHOH_APRP.f:oopba1
+vars2fortran: No typespec for argument "l".
+			Block: oopba1
+			Block: xprod1
+			Block: sprod
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "PHOH_APRP"...
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot(igrad,xx,uu,guu,vv,gvv,dvec,cc,repflag)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "getdvec3"...
+          getdvec3(pemd,gpemd,pema,dvec,cc,[nclu])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "poten"...
+          uu,guu,vv = poten(igrad,x,y,z,gvv,cc)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evuii"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evuii(igrad,x,y,z,u,dudx,ii,[natm])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evuiit"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evuiit(igrad,r,nqtc,qtc,ut,dut,dutdr,ii)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "gethess"...
+          gethess(hss,hbb,htt,hbs,ii,[nap,nqs,nqb,nqt])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "getgeom"...
+          getgeom(qse,qbe,qte,ii,[nap,nqs,nqb,nqt])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "tent"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          tent(nap,rap,r,ir,t,dtdr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu1r"...
+          evu1r(igrad,r,v,dvdr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu1b"...
+          evu1b(igrad,r,theta,vbnd,dvdr,dvdth)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu1to"...
+          evu1to(igrad,r,phi,v,dvdr,dvdph)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu2r"...
+          evu2r(igrad,r,v,dvdr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu2b"...
+          evu2b(igrad,r,theta,vbnd,dvdr,dvdth)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu2to"...
+          evu2to(igrad,r,phi,v,dvdr,dvdph)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu3r"...
+          evu3r(igrad,r,v,dvdr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu3b"...
+          evu3b(igrad,r,theta,vbnd,dvdr,dvdth)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu3to"...
+          evu3to(igrad,r,phi,v,dvdr,dvdph)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evubm"...
+          evubm(igrad,x,y,z,ubm,dubmdx,[natm])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evuij"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evuij(nap,igrad,ir,t,dtdr,x,y,z,u12,u13,u23,du12dx,du13dx,du23dx,[natm])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evuijt"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evuijt(nap,igrad,ir,t,dtdr,ntc,qtc,uij,duij,duijdr,ij)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu13to"...
+          evu13to(r,phi,u13to,d13dph,d13dr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evu23to"...
+          evu23to(r,phi,u23to,d23dph,d23dr)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "evintcoord"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          evintcoord(nbl,ibl,nba,iba,nto,ito,noop,ioop,nint,ric,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "matvect"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          matvect(y,m,a,x,n,[lda])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "bmat3"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          bmat3(ibl,iba,ito,ioop,natm,x,y,z,bm,[nbl,nba,nto,noop,ldbm])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "matmult"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          matmult(c,a,m,b,n,l,[ldc,lda,ldb])
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+		Creating wrapper for Fortran function "bndlen"("bndlen")...
+        Constructing wrapper function "bndlen"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          bndlen = bndlen(i,j,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+		Creating wrapper for Fortran function "bndang"("bndang")...
+        Constructing wrapper function "bndang"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          bndang = bndang(i,j,k,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedr"("dihedr")...
+        Constructing wrapper function "dihedr"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedr = dihedr(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+		Creating wrapper for Fortran function "oopba1"("oopba1")...
+        Constructing wrapper function "oopba1"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          oopba1 = oopba1(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "xprod1"...
+          xprod1(x1,x2,x3)
+    Generating possibly empty wrappers"
+    Maybe empty "PHOH_APRP-f2pywrappers.f"
+        Constructing wrapper function "sprod"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          sprod(n,a,b,c)
+    Wrote C/API module "PHOH_APRP" to file "/tmp/tmpu56255_x/src.linux-x86_64-3.11/PHOH_APRPmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpu56255_x/src.linux-x86_64-3.11/PHOH_APRP-f2pywrappers.f"
+INFO:   adding '/tmp/tmpu56255_x/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpu56255_x/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpu56255_x/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpu56255_x/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpu56255_x/src.linux-x86_64-3.11/PHOH_APRP-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'PHOH_APRP' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmpu56255_x/tmp
+creating /tmp/tmpu56255_x/tmp/tmpu56255_x
+creating /tmp/tmpu56255_x/tmp/tmpu56255_x/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpu56255_x/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmpu56255_x/src.linux-x86_64-3.11/PHOH_APRPmodule.c
+INFO: gcc: /tmp/tmpu56255_x/src.linux-x86_64-3.11/fortranobject.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpu56255_x/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmpu56255_x/src.linux-x86_64-3.11/PHOH_APRP-f2pywrappers.f
+INFO: gfortran:f77: PHOH_APRP.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpu56255_x/tmp/tmpu56255_x/src.linux-x86_64-3.11/PHOH_APRPmodule.o /tmp/tmpu56255_x/tmp/tmpu56255_x/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpu56255_x/PHOH_APRP.o /tmp/tmpu56255_x/tmp/tmpu56255_x/src.linux-x86_64-3.11/PHOH_APRP-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./PHOH_APRP.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpu56255_x

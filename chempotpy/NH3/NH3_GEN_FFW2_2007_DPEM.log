@@ -1,0 +1,326 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "NH3_GEN_FFW2_2007_DPEM" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmpkxziaax2/src.linux-x86_64-3.11/NH3_GEN_FFW2_2007_DPEMmodule.c
+creating /tmp/tmpkxziaax2/src.linux-x86_64-3.11
+analyzeline: Failed to evaluate '1.d0/autoev'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '1.0d0/autoang'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate 'ev_to_hartree/ang_to_bohr'. Ignoring: name 'ev_to_hartree' is not defined
+analyzeline: Failed to evaluate 'pi/180.d0'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '0.5d0*pi'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '2.0d0*1.024d0'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate 'pi/180.d0'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '106.68*pi/180.0d0'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '0.5d0*pi'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate 'pi/180.d0'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '2.0d0*pi/3.0d0'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '0.5d0*pi'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '3.1415926535897930d0/180.d0'. Ignoring: invalid decimal literal (<string>, line 1)
+Reading fortran codes...
+	Reading file 'NH3_GEN_FFW2_2007_DPEM.f' (format:fix,strict)
+Line #154 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter(autoev=27.2113845d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #157 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (EV_TO_HARTREE= 1.d0/autoev)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #157 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (EV_TO_HARTREE= 1.d0/autoev)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #158 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (ANG_TO_BOHR=1.0d0/autoang)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #158 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (ANG_TO_BOHR=1.0d0/autoang)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #162 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (gconv = EV_TO_HARTREE/ANG_TO_BOHR)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #162 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (gconv = EV_TO_HARTREE/ANG_TO_BOHR)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #162 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (gconv = EV_TO_HARTREE/ANG_TO_BOHR)"
+	determineexprtype: could not determine expressions ('ev_to_hartree/ang_to_bohr') type.
+Line #386 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( deg2au = PI/180.d0            )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #390 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (  HBa    = 0.5d0*PI                    )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #669 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (Recor=2.0d0*1.024d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #669 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (Recor=2.0d0*1.024d0)"
+	determineexprtype: could not determine expressions ('2.0d0*1.024d0') type.
+Line #788 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( deg2au = PI/180.d0            )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #790 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( GTa    = 106.68*PI/180.0d0    )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #790 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( GTa    = 106.68*PI/180.0d0    )"
+	determineexprtype: could not determine expressions ('106.68*pi/180.0d0') type.
+Line #791 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( cosGTa = -0.2870261592d0      )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #795 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( HBa    =  0.5d0*PI            )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #795 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( HBa    =  0.5d0*PI            )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1297 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (deg2au = PI/180.d0 )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1299 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( FRU12b = 1.00d0           )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1300 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( GTU12a = 2.0d0*PI/3.0d0   )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1300 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( GTU12a = 2.0d0*PI/3.0d0   )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1300 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( GTU12a = 2.0d0*PI/3.0d0   )"
+	determineexprtype: could not determine expressions ('2.0d0*pi/3.0d0') type.
+Line #1306 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( HBU12a = 0.5d0*PI         )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1306 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter ( HBU12a = 0.5d0*PI         )"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1876 in NH3_GEN_FFW2_2007_DPEM.f:"        parameter (iout1 = 0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1877 in NH3_GEN_FFW2_2007_DPEM.f:"        parameter (inp1 = 5)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1882 in NH3_GEN_FFW2_2007_DPEM.f:"        parameter (tol = 1.0d-4)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1920 in NH3_GEN_FFW2_2007_DPEM.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1920 in NH3_GEN_FFW2_2007_DPEM.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3025 in NH3_GEN_FFW2_2007_DPEM.f:"      parameter (  degtopi = 3.1415926535897930d0/180.d0 )"
+	determineexprtype: could not determine expressions ('3.1415926535897930d0/180.d0') type.
+Post-processing...
+	Block: NH3_GEN_FFW2_2007_DPEM
+			Block: dpem
+			Block: diagonalize
+			Block: pot
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: prepot
+			Block: packpot
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:packpot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: sumpoly
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:sumpoly
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: symopt
+			Block: getsym7g
+			Block: getsym7
+			Block: getsym3
+			Block: repulsive
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:repulsive
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: u11poly
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:u11poly
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:u11poly
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: u22poly
+			Block: u12poly
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:u12poly
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:u12poly
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: getadiabat
+			Block: calcindu1
+			Block: calcindu2
+			Block: calcindu12
+			Block: potcoeff
+			Block: tobowman
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:tobowman
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:tobowman
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: g_distplane
+			Block: g_det3
+			Block: carttoang
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:carttoang
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: cart_to_polar
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:cart_to_polar
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: polar_to_cart
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:polar_to_cart
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: frombowman
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:frombowman
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: angle_to_cart
+In: :NH3_GEN_FFW2_2007_DPEM:NH3_GEN_FFW2_2007_DPEM.f:angle_to_cart
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: rarray
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "NH3_GEN_FFW2_2007_DPEM"...
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "dpem"...
+          u,ug = dpem(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "diagonalize"...
+          ev_s,u_ss = diagonalize(a_ss,[n])
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot(xcart,u11,u22,u12,v1,v2,gu11,gu22,gu12,gv1,gv2)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "prepot"...
+          prepot()
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "packpot"...
+          packpot(coord,u11,u22,u12,v1,v2,gcu11,gcu22,gcu12,gcv1,gcv2)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "sumpoly"...
+          sumpoly(ind0,bowint,coeff,v,gv,cpot,[nc])
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "symopt"...
+          symopt(ip,s,[n])
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "getsym7g"...
+          getsym7g(s,x,y,dy)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "getsym7"...
+          getsym7(s,x,y)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "getsym3"...
+          getsym3(s,x,y)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "repulsive"...
+          repulsive(rr,erep,derep,cpot)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "u11poly"...
+          u11poly(ind0,geoint,xin,dxin,gin,x7,dx7,ans,g_ans)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "u22poly"...
+          u22poly(ind0,geoint,xin,dxin,gin,g1in,x7,dx7,ans,g_ans)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "u12poly"...
+          u12poly(ind0,geoint,gin,hbu12,d7,ans,g_ans)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "getadiabat"...
+          getadiabat(u11,u22,u12,v1,v2,gu11,gu22,gu12,gv1,gv2,[nv])
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "calcindu1"...
+          calcindu1(ind,m1,m2,m3,m4,m5,m6,m7,[nc])
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "calcindu2"...
+          calcindu2(ind,m1,m2,m3,m4,m5,m6,m7,[nc])
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "calcindu12"...
+          calcindu12(ind,m1,m2,m3,m4,m5,m6,m7,[nc])
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "potcoeff"...
+          potcoeff()
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "tobowman"...
+          tobowman(x,bow,g_bow)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "g_distplane"...
+          g_distplane(a1,g_a1,a2,g_a2,a3,g_a3,d,g_d,x,g_x,y,g_y,z,g_z,dist,g_dist)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "g_det3"...
+          g_det3(a,g_a,ans,g_ans)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "carttoang"...
+          carttoang(cart,ans,gangint)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "cart_to_polar"...
+          cart_to_polar(x,ans)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "polar_to_cart"...
+          polar_to_cart(p,ans)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "frombowman"...
+          frombowman(bow,coord)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "angle_to_cart"...
+          angle_to_cart(angint,coord)
+    Generating possibly empty wrappers"
+    Maybe empty "NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+        Constructing wrapper function "rarray"...
+          rarray(natoms,x,r,dr,[mx,mr])
+		Constructing COMMON block support for "c_nhcoe"...
+		  nhcoeu1,nhcoeu2,nhcoeu12,nhindu1,nhindu2,nhindu12
+		Constructing COMMON block support for "calcrrrr"...
+		  rrrrr,lrrrrr
+    Wrote C/API module "NH3_GEN_FFW2_2007_DPEM" to file "/tmp/tmpkxziaax2/src.linux-x86_64-3.11/NH3_GEN_FFW2_2007_DPEMmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpkxziaax2/src.linux-x86_64-3.11/NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f"
+INFO:   adding '/tmp/tmpkxziaax2/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpkxziaax2/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpkxziaax2/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpkxziaax2/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpkxziaax2/src.linux-x86_64-3.11/NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'NH3_GEN_FFW2_2007_DPEM' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmpkxziaax2/tmp
+creating /tmp/tmpkxziaax2/tmp/tmpkxziaax2
+creating /tmp/tmpkxziaax2/tmp/tmpkxziaax2/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpkxziaax2/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmpkxziaax2/src.linux-x86_64-3.11/NH3_GEN_FFW2_2007_DPEMmodule.c
+INFO: gcc: /tmp/tmpkxziaax2/src.linux-x86_64-3.11/fortranobject.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpkxziaax2/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmpkxziaax2/src.linux-x86_64-3.11/NH3_GEN_FFW2_2007_DPEM-f2pywrappers.f
+INFO: gfortran:f77: NH3_GEN_FFW2_2007_DPEM.f
+NH3_GEN_FFW2_2007_DPEM.f:12:22:
+
+   12 |       common /c_nhcoe/  nhcoeU1, nhcoeU2, nhcoeU12,
+      |                      1
+Warning: Named COMMON block 'c_nhcoe' at (1) shall be of the same size as elsewhere (24 vs 6408 bytes)
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpkxziaax2/tmp/tmpkxziaax2/src.linux-x86_64-3.11/NH3_GEN_FFW2_2007_DPEMmodule.o /tmp/tmpkxziaax2/tmp/tmpkxziaax2/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpkxziaax2/NH3_GEN_FFW2_2007_DPEM.o /tmp/tmpkxziaax2/tmp/tmpkxziaax2/src.linux-x86_64-3.11/NH3_GEN_FFW2_2007_DPEM-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./NH3_GEN_FFW2_2007_DPEM.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpkxziaax2

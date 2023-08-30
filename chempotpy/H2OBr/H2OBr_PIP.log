@@ -1,0 +1,114 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "H2OBr_PIP" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp0ihv25vq/src.linux-x86_64-3.11/H2OBr_PIPmodule.c
+creating /tmp/tmp0ihv25vq/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'H2OBr_PIP.f90' (format:fix)
+Line #600 in H2OBr_PIP.f90:"      subroutine  outine potder(xyz,dxyz) icit none ger, parameter:: dp=kind(0.d0)                    (dp), intent(in) :: xyz(4,3) (dp), intent(out) :: dxyz(4,3) (dp) :: h, v1, v2 (dp) :: xyz_t(4,3) ger :: i, j 01_dp*0.5291772_dp =1,4  j=1,3 "
+	analyzeline: No name/args pattern found for line.
+Line #636 in H2OBr_PIP.f90:"      function emsav outine bemsav(x,p) plicit none teger, parameter :: wp  = kind(1.0D0) al(wp),dimension(1:6),intent(in)::x al(wp),dimension(0:501),intent(out)::p al(wp),dimension(0:10)::m ll evmono(x,m) ll evpoly(m,p) turn "
+	analyzeline: No name/args pattern found for line.
+Line #657 in H2OBr_PIP.f90:"      subroutine bemsav outine evmono(x,m) plicit none teger, parameter :: wp  = kind(1.0D0) al(wp),dimension(1:6),intent(in)::x al(wp),dimension(0:10),intent(out)::m 0) = 1.0D0 1) = x(6) 2) = x(5) 3) = x(3) 4) = x(4) 5) = x(2) 6) = x(1) 7) = m(2)*m(3) 8) = m(3)*m(4) 9) = m(2)*m(5) 10) = m(4)*m(5) turn "
+	analyzeline: No name/args pattern found for line.
+Line #1169 in H2OBr_PIP.f90:"      subroutine evmono outine evpoly(m,p) plicit none teger, parameter :: wp  = kind(1.0D0) al(wp),dimension(0:10),intent(in)::m al(wp),dimension(0:501),intent(out)::p 0) = m(0) 1) = m(1) 2) = m(2) + m(3) 3) = m(4) + m(5) 4) = m(6) 5) = p(1)*p(2) 6) = m(7) 7) = p(1)*p(3) 8) = m(8) + m(9) 9) = m(10) 10) = p(2)*p(3) - p(8) 11) = p(1)*p(4) 12) = p(4)*p(2) 13) = p(4)*p(3) 14) = p(1)*p(1) 15) = p(2)*p(2) - p(6) - p(6) 16) = p(3)*p(3) - p(9) - p(9) 17) = p(4)*p(4) 18) = p(1)*p(6) 19) = p(1)*p(8) 20) = p(1)*p(9) 21) = p(1)*p(10) 22) = p(6)*p(3) 23) = p(9)*p(2) 24) = p(1)*p(12) 25) = p(4)*p(6) 26) = p(1)*p(13) 27) = p(4)*p(8) 28) = p(4)*p(9) 29) = p(4)*p(10) 30) = p(1)*p(5) 31) = p(1)*p(15) 32) = p(6)*p(2) 33) = p(1)*p(7) 34) = p(2)*p(8) - p(22) 35) = p(2)*p(10) - p(22) 36) = p(1)*p(16) 37) = p(3)*p(8) - p(23) 38) = p(9)*p(3) 39) = p(2)*p(16) - p(37) 40) = p(1)*p(11) 41) = p(4)*p(15) 42) = p(4)*p(16) 43) = p(1)*p(17) 44) = p(4)*p(12) 45) = p(4)*p(13) 46) = p(1)*p(14) 47) = p(2)*p(15) - p(32) 48) = p(3)*p(16) - p(38) 49) = p(4)*p(17) 50) = p(1)*p(22) 51) = p(1)*p(23) 52) = p(6)*p(9) 53) = p(1)*p(25) 54) = p(1)*p(27) 55) = p(1)*p(28) 56) = p(1)*p(29) 57) = p(4)*p(22) 58) = p(4)*p(23) 59) = p(1)*p(18) 60) = p(1)*p(32) 61) = p(1)*p(19) 62) = p(1)*p(34) 63) = p(1)*p(20) 64) = p(1)*p(21) 65) = p(6)*p(8) 66) = p(1)*p(35) 67) = p(6)*p(10) 68) = p(9)*p(15) 69) = p(1)*p(37) 70) = p(1)*p(38) 71) = p(9)*p(8) 72) = p(1)*p(39) 73) = p(6)*p(16) 74) = p(9)*p(10) 75) = p(1)*p(24) 76) = p(1)*p(41) 77) = p(4)*p(32) 78) = p(1)*p(26) 79) = p(4)*p(34) 80) = p(4)*p(35) 81) = p(1)*p(42) 82) = p(4)*p(37) 83) = p(4)*p(38) 84) = p(4)*p(39) 85) = p(1)*p(44) 86) = p(4)*p(25) 87) = p(1)*p(45) 88) = p(4)*p(27) 89) = p(4)*p(28) 90) = p(4)*p(29) 91) = p(1)*p(30) 92) = p(1)*p(31) 93) = p(6)*p(6) 94) = p(1)*p(47) 95) = p(6)*p(15) 96) = p(1)*p(33) 97) = p(2)*p(34) - p(65) 98) = p(2)*p(35) - p(67) 99) = p(1)*p(36) 100) = p(2)*p(37) - p(73) 101) = p(9)*p(9) 102) = p(2)*p(39) - p(73) 103) = p(1)*p(48) 104) = p(3)*p(37) - p(71) 105) = p(9)*p(16) 106) = p(2)*p(48) - p(104) 107) = p(1)*p(40) 108) = p(4)*p(47) 109) = p(4)*p(48) 110) = p(1)*p(43) 111) = p(4)*p(41) 112) = p(4)*p(42) 113) = p(1)*p(49) 114) = p(4)*p(44) 115) = p(4)*p(45) 116) = p(1)*p(46) 117) = p(2)*p(47) - p(95) 118) = p(3)*p(48) - p(105) 119) = p(4)*p(49) 120) = p(1)*p(52) 121) = p(1)*p(57) 122) = p(1)*p(58) 123) = p(4)*p(52) 124) = p(1)*p(50) 125) = p(1)*p(65) 126) = p(1)*p(51) 127) = p(1)*p(67) 128) = p(1)*p(68) 129) = p(6)*p(23) 130) = p(1)*p(71) 131) = p(1)*p(73) 132) = p(1)*p(74) 133) = p(6)*p(38) 134) = p(1)*p(53) 135) = p(1)*p(77) 136) = p(1)*p(54) 137) = p(1)*p(79) 138) = p(1)*p(55) 139) = p(1)*p(56) 140) = p(4)*p(65) 141) = p(1)*p(80) 142) = p(4)*p(67) 143) = p(4)*p(68) 144) = p(1)*p(82) 145) = p(1)*p(83) 146) = p(4)*p(71) 147) = p(1)*p(84) 148) = p(4)*p(73) 149) = p(4)*p(74) 150) = p(1)*p(86) 151) = p(1)*p(88) 152) = p(1)*p(89) 153) = p(1)*p(90) 154) = p(4)*p(57) 155) = p(4)*p(58) 156) = p(1)*p(59) 157) = p(1)*p(60) 158) = p(1)*p(93) 159) = p(1)*p(95) 160) = p(1)*p(61) 161) = p(1)*p(62) 162) = p(1)*p(97) 163) = p(1)*p(63) 164) = p(1)*p(64) 165) = p(6)*p(34) 166) = p(1)*p(66) 167) = p(6)*p(22) 168) = p(1)*p(98) 169) = p(6)*p(35) 170) = p(9)*p(47) 171) = p(1)*p(69) 172) = p(1)*p(100) 173) = p(1)*p(70) 174) = p(9)*p(34) 175) = p(1)*p(101) 176) = p(1)*p(72) 177) = p(6)*p(37) 178) = p(9)*p(23) 179) = p(1)*p(102) 180) = p(6)*p(39) 181) = p(9)*p(35) 182) = p(1)*p(104) 183) = p(1)*p(105) 184) = p(9)*p(37) 185) = p(1)*p(106) 186) = p(6)*p(48) 187) = p(9)*p(39) 188) = p(1)*p(75) 189) = p(1)*p(76) 190) = p(4)*p(93) 191) = p(1)*p(108) 192) = p(4)*p(95) 193) = p(1)*p(78) 194) = p(4)*p(97) 195) = p(4)*p(98) 196) = p(1)*p(81) 197) = p(4)*p(100) 198) = p(4)*p(101) 199) = p(4)*p(102) 200) = p(1)*p(109) 201) = p(4)*p(104) 202) = p(4)*p(105) 203) = p(4)*p(106) 204) = p(1)*p(85) 205) = p(1)*p(111) 206) = p(4)*p(77) 207) = p(1)*p(87) 208) = p(4)*p(79) 209) = p(4)*p(80) 210) = p(1)*p(112) 211) = p(4)*p(82) 212) = p(4)*p(83) 213) = p(4)*p(84) 214) = p(1)*p(114) 215) = p(4)*p(86) 216) = p(1)*p(115) 217) = p(4)*p(88) 218) = p(4)*p(89) 219) = p(4)*p(90) 220) = p(1)*p(91) 221) = p(1)*p(92) 222) = p(1)*p(94) 223) = p(6)*p(32) 224) = p(1)*p(117) 225) = p(6)*p(47) 226) = p(1)*p(96) 227) = p(2)*p(97) - p(165) 228) = p(2)*p(98) - p(169) 229) = p(1)*p(99) 230) = p(2)*p(100) - p(177) 231) = p(2)*p(102) - p(180) 232) = p(1)*p(103) 233) = p(2)*p(104) - p(186) 234) = p(9)*p(38) 235) = p(2)*p(106) - p(186) 236) = p(1)*p(118) 237) = p(3)*p(104) - p(184) 238) = p(9)*p(48) 239) = p(2)*p(118) - p(237) 240) = p(1)*p(107) 241) = p(4)*p(117) 242) = p(4)*p(118) 243) = p(1)*p(110) 244) = p(4)*p(108) 245) = p(4)*p(109) 246) = p(1)*p(113) 247) = p(4)*p(111) 248) = p(4)*p(112) 249) = p(1)*p(119) 250) = p(4)*p(114) 251) = p(4)*p(115) 252) = p(1)*p(116) 253) = p(2)*p(117) - p(225) 254) = p(3)*p(118) - p(238) 255) = p(4)*p(119) 256) = p(1)*p(123) 257) = p(1)*p(120) 258) = p(1)*p(129) 259) = p(1)*p(133) 260) = p(1)*p(121) 261) = p(1)*p(140) 262) = p(1)*p(122) 263) = p(1)*p(142) 264) = p(1)*p(143) 265) = p(4)*p(129) 266) = p(1)*p(146) 267) = p(1)*p(148) 268) = p(1)*p(149) 269) = p(4)*p(133) 270) = p(1)*p(154) 271) = p(1)*p(155) 272) = p(4)*p(123) 273) = p(1)*p(124) 274) = p(1)*p(125) 275) = p(1)*p(165) 276) = p(1)*p(126) 277) = p(1)*p(127) 278) = p(1)*p(167) 279) = p(1)*p(128) 280) = p(6)*p(52) 281) = p(1)*p(169) 282) = p(1)*p(170) 283) = p(6)*p(68) 284) = p(1)*p(130) 285) = p(1)*p(174) 286) = p(1)*p(131) 287) = p(1)*p(177) 288) = p(1)*p(132) 289) = p(6)*p(71) 290) = p(1)*p(178) 291) = p(6)*p(101) 292) = p(1)*p(180) 293) = p(1)*p(181) 294) = p(6)*p(74) 295) = p(1)*p(184) 296) = p(1)*p(186) 297) = p(1)*p(187) 298) = p(6)*p(105) 299) = p(1)*p(134) 300) = p(1)*p(135) 301) = p(1)*p(190) 302) = p(1)*p(192) 303) = p(1)*p(136) 304) = p(1)*p(137) 305) = p(1)*p(194) 306) = p(1)*p(138) 307) = p(1)*p(139) 308) = p(4)*p(165) 309) = p(1)*p(141) 310) = p(4)*p(167) 311) = p(1)*p(195) 312) = p(4)*p(169) 313) = p(4)*p(170) 314) = p(1)*p(144) 315) = p(1)*p(197) 316) = p(1)*p(145) 317) = p(4)*p(174) 318) = p(1)*p(198) 319) = p(1)*p(147) 320) = p(4)*p(177) 321) = p(4)*p(178) 322) = p(1)*p(199) 323) = p(4)*p(180) 324) = p(4)*p(181) 325) = p(1)*p(201) 326) = p(1)*p(202) 327) = p(4)*p(184) 328) = p(1)*p(203) 329) = p(4)*p(186) 330) = p(4)*p(187) 331) = p(1)*p(150) 332) = p(1)*p(206) 333) = p(1)*p(151) 334) = p(1)*p(208) 335) = p(1)*p(152) 336) = p(1)*p(153) 337) = p(4)*p(140) 338) = p(1)*p(209) 339) = p(4)*p(142) 340) = p(4)*p(143) 341) = p(1)*p(211) 342) = p(1)*p(212) 343) = p(4)*p(146) 344) = p(1)*p(213) 345) = p(4)*p(148) 346) = p(4)*p(149) 347) = p(1)*p(215) 348) = p(1)*p(217) 349) = p(1)*p(218) 350) = p(1)*p(219) 351) = p(4)*p(154) 352) = p(4)*p(155) 353) = p(1)*p(156) 354) = p(1)*p(157) 355) = p(1)*p(158) 356) = p(1)*p(159) 357) = p(1)*p(223) 358) = p(1)*p(225) 359) = p(1)*p(160) 360) = p(1)*p(161) 361) = p(1)*p(162) 362) = p(1)*p(227) 363) = p(1)*p(163) 364) = p(1)*p(164) 365) = p(6)*p(97) 366) = p(1)*p(166) 367) = p(6)*p(65) 368) = p(1)*p(168) 369) = p(6)*p(67) 370) = p(1)*p(228) 371) = p(6)*p(98) 372) = p(9)*p(117) 373) = p(1)*p(171) 374) = p(1)*p(172) 375) = p(1)*p(230) 376) = p(1)*p(173) 377) = p(9)*p(97) 378) = p(1)*p(175) 379) = p(1)*p(176) 380) = p(6)*p(100) 381) = p(1)*p(179) 382) = p(6)*p(73) 383) = p(9)*p(68) 384) = p(1)*p(231) 385) = p(6)*p(102) 386) = p(9)*p(98) 387) = p(1)*p(182) 388) = p(1)*p(233) 389) = p(1)*p(183) 390) = p(9)*p(100) 391) = p(1)*p(234) 392) = p(9)*p(71) 393) = p(1)*p(185) 394) = p(6)*p(104) 395) = p(9)*p(74) 396) = p(1)*p(235) 397) = p(6)*p(106) 398) = p(9)*p(102) 399) = p(1)*p(237) 400) = p(1)*p(238) 401) = p(9)*p(104) 402) = p(1)*p(239) 403) = p(6)*p(118) 404) = p(9)*p(106) 405) = p(1)*p(188) 406) = p(1)*p(189) 407) = p(1)*p(191) 408) = p(4)*p(223) 409) = p(1)*p(241) 410) = p(4)*p(225) 411) = p(1)*p(193) 412) = p(4)*p(227) 413) = p(4)*p(228) 414) = p(1)*p(196) 415) = p(4)*p(230) 416) = p(4)*p(231) 417) = p(1)*p(200) 418) = p(4)*p(233) 419) = p(4)*p(234) 420) = p(4)*p(235) 421) = p(1)*p(242) 422) = p(4)*p(237) 423) = p(4)*p(238) 424) = p(4)*p(239) 425) = p(1)*p(204) 426) = p(1)*p(205) 427) = p(4)*p(190) 428) = p(1)*p(244) 429) = p(4)*p(192) 430) = p(1)*p(207) 431) = p(4)*p(194) 432) = p(4)*p(195) 433) = p(1)*p(210) 434) = p(4)*p(197) 435) = p(4)*p(198) 436) = p(4)*p(199) 437) = p(1)*p(245) 438) = p(4)*p(201) 439) = p(4)*p(202) 440) = p(4)*p(203) 441) = p(1)*p(214) 442) = p(1)*p(247) 443) = p(4)*p(206) 444) = p(1)*p(216) 445) = p(4)*p(208) 446) = p(4)*p(209) 447) = p(1)*p(248) 448) = p(4)*p(211) 449) = p(4)*p(212) 450) = p(4)*p(213) 451) = p(1)*p(250) 452) = p(4)*p(215) 453) = p(1)*p(251) 454) = p(4)*p(217) 455) = p(4)*p(218) 456) = p(4)*p(219) 457) = p(1)*p(220) 458) = p(1)*p(221) 459) = p(1)*p(222) 460) = p(6)*p(93) 461) = p(1)*p(224) 462) = p(6)*p(95) 463) = p(1)*p(253) 464) = p(6)*p(117) 465) = p(1)*p(226) 466) = p(2)*p(227) - p(365) 467) = p(2)*p(228) - p(371) 468) = p(1)*p(229) 469) = p(2)*p(230) - p(380) 470) = p(2)*p(231) - p(385) 471) = p(1)*p(232) 472) = p(2)*p(233) - p(394) 473) = p(9)*p(101) 474) = p(2)*p(235) - p(397) 475) = p(1)*p(236) 476) = p(2)*p(237) - p(403) 477) = p(9)*p(105) 478) = p(2)*p(239) - p(403) 479) = p(1)*p(254) 480) = p(3)*p(237) - p(401) 481) = p(9)*p(118) 482) = p(2)*p(254) - p(480) 483) = p(1)*p(240) 484) = p(4)*p(253) 485) = p(4)*p(254) 486) = p(1)*p(243) 487) = p(4)*p(241) 488) = p(4)*p(242) 489) = p(1)*p(246) 490) = p(4)*p(244) 491) = p(4)*p(245) 492) = p(1)*p(249) 493) = p(4)*p(247) 494) = p(4)*p(248) 495) = p(1)*p(255) 496) = p(4)*p(250) 497) = p(4)*p(251) 498) = p(1)*p(252) 499) = p(2)*p(253) - p(464) 500) = p(3)*p(254) - p(481) 501) = p(4)*p(255) turn "
+	analyzeline: No name/args pattern found for line.
+crackline: groupcounter=8 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'function', 5: 'function', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=7 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'function', 5: 'function', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=6 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'function', 5: 'function', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=5 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'function', 5: 'function', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=4 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'function', 5: 'function', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=3 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'function', 5: 'function', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=2 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'function', 5: 'function', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+crackline: groupcounter=1 groupname={0: '', 1: 'module', 2: 'interface', 3: 'subroutine', 4: 'function', 5: 'function', 6: 'subroutine', 7: 'subroutine', 8: 'subroutine'}
+crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+Post-processing...
+	Block: H2OBr_PIP
+			Block: pes
+In: :H2OBr_PIP:H2OBr_PIP.f90:unknown_subroutine:emsav
+determineexprtype: could not determine expressions ('c@)@ result@(@v@)@ plicit none teger, parameter :: wp  = kind@(@1.0d0@)@ al@(@wp@)@,dimension@(@1:6@)@::x al@(@wp@)@,dimension@(@0:501@)@::c al@(@wp@)@,dimension@(@0:501@)@::p ll bemsav@(@x') type.
+{}
+In: :H2OBr_PIP:H2OBr_PIP.f90:unknown_subroutine:emsav
+vars2fortran: No typespec for argument "x".
+{}
+In: :H2OBr_PIP:H2OBr_PIP.f90:unknown_subroutine:emsav
+vars2fortran: No typespec for argument "e_c____result___v____plicit_none_teger__parameter____wp____kind___1_0d0____al___wp____dimension___1_6_____x_al___wp____dimension___0_501_____c_al___wp____dimension___0_501_____p_ll_bemsav___x_e".
+{}
+In: :H2OBr_PIP:H2OBr_PIP.f90:unknown_subroutine:emsav
+vars2fortran: No typespec for argument "p".
+			Block: unknown_subroutine
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "H2OBr_PIP"...
+    Generating possibly empty wrappers"
+    Maybe empty "H2OBr_PIP-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "H2OBr_PIP-f2pywrappers.f"
+        Constructing wrapper function "unknown_subroutine"...
+          unknown_subroutine()
+    Wrote C/API module "H2OBr_PIP" to file "/tmp/tmp0ihv25vq/src.linux-x86_64-3.11/H2OBr_PIPmodule.c"
+INFO:   adding '/tmp/tmp0ihv25vq/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp0ihv25vq/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp0ihv25vq/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp0ihv25vq/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp0ihv25vq/src.linux-x86_64-3.11/H2OBr_PIP-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'H2OBr_PIP' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmp0ihv25vq/tmp
+creating /tmp/tmp0ihv25vq/tmp/tmp0ihv25vq
+creating /tmp/tmp0ihv25vq/tmp/tmp0ihv25vq/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp0ihv25vq/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmp0ihv25vq/src.linux-x86_64-3.11/H2OBr_PIPmodule.c
+INFO: gcc: /tmp/tmp0ihv25vq/src.linux-x86_64-3.11/fortranobject.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp0ihv25vq/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f90: H2OBr_PIP.f90
+INFO: gfortran:f77: /tmp/tmp0ihv25vq/src.linux-x86_64-3.11/H2OBr_PIP-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp0ihv25vq/tmp/tmp0ihv25vq/src.linux-x86_64-3.11/H2OBr_PIPmodule.o /tmp/tmp0ihv25vq/tmp/tmp0ihv25vq/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp0ihv25vq/H2OBr_PIP.o /tmp/tmp0ihv25vq/tmp/tmp0ihv25vq/src.linux-x86_64-3.11/H2OBr_PIP-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./H2OBr_PIP.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp0ihv25vq

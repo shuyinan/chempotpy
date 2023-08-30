@@ -1,0 +1,75 @@
+C2H6O_VBMM.f:2691:20:
+
+ 2691 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:135:20:
+
+  135 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:1328:20:
+
+ 1328 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:1973:20:
+
+ 1973 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:1190:20:
+
+ 1190 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:1682:20:
+
+ 1682 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:1485:20:
+
+ 1485 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:1869:20:
+
+ 1869 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:985:20:
+
+  985 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:505:20:
+
+  505 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:628:20:
+
+  628 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:799:20:
+
+  799 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:2122:20:
+
+ 2122 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:334:20:
+
+  334 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+C2H6O_VBMM.f:2538:20:
+
+ 2538 |       COMMON /POTCM/ nnc1,nnc2,nnb,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0c1hr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]

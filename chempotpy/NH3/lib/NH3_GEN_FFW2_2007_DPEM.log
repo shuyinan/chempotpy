@@ -1,0 +1,5 @@
+NH3_GEN_FFW2_2007_DPEM.f:12:22:
+
+   12 |       common /c_nhcoe/  nhcoeU1, nhcoeU2, nhcoeU12,
+      |                      1
+Warning: Named COMMON block 'c_nhcoe' at (1) shall be of the same size as elsewhere (24 vs 6408 bytes)

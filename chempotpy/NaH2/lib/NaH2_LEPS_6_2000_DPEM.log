@@ -1,0 +1,15 @@
+NaH2_LEPS_6_2000_DPEM.f:256:46:
+
+  256 |             call g_pot11(g_p_, r, g_r, ldg_r, v11, De, ldg_e, 1)
+      |                                              1
+Warning: Rank mismatch in argument 'e' at (1) (rank-1 and scalar)
+NaH2_LEPS_6_2000_DPEM.f:257:46:
+
+  257 |             call g_pot12(g_p_, r, g_r, ldg_r, v12, De, ldg_e, 1)
+      |                                              1
+Warning: Rank mismatch in argument 'e' at (1) (rank-1 and scalar)
+NaH2_LEPS_6_2000_DPEM.f:258:46:
+
+  258 |             call g_pot22(g_p_, r, g_r, ldg_r, v22, De, ldg_e, 1)
+      |                                              1
+Warning: Rank mismatch in argument 'e' at (1) (rank-1 and scalar)

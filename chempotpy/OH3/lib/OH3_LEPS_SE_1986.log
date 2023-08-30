@@ -1,0 +1,25 @@
+OH3_LEPS_SE_1986.f:144:19:
+
+  144 |       COMMON/PT3CM/ EZERO(ISURF+1)
+      |                   1
+Warning: Named COMMON block 'pt3cm' at (1) shall be of the same size as elsewhere (16 vs 48 bytes)
+OH3_LEPS_SE_1986.f:148:20:
+
+  148 |       COMMON/USRICM/ CART(NATOM,3),ANUZERO,
+      |                    1
+Warning: Named COMMON block 'usricm' at (1) shall be of the same size as elsewhere (808 vs 936 bytes)
+OH3_LEPS_SE_1986.f:1305:20:
+
+ 1305 |       COMMON/USROCM/ PENGYGS,PENGYES(ISURF),
+      |                    1
+Warning: Named COMMON block 'usrocm' at (1) shall be of the same size as elsewhere (12768 vs 1824 bytes)
+OH3_LEPS_SE_1986.f:1136:20:
+
+ 1136 |       COMMON /PT4CM/  ENGYES(ISURF),DEESDR(N3ATOM,ISURF)
+      |                    1
+Warning: Named COMMON block 'pt4cm' at (1) shall be of the same size as elsewhere (3040 vs 608 bytes)
+OH3_LEPS_SE_1986.f:1137:20:
+
+ 1137 |       COMMON /PT5CM/  ENGYIJ(JSURF),DEIJDR(N3ATOM,JSURF)
+      |                    1
+Warning: Named COMMON block 'pt5cm' at (1) shall be of the same size as elsewhere (9120 vs 608 bytes)

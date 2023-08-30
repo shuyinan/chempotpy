@@ -1,0 +1,30 @@
+OH2_App_GEN_M3n1988.f:1029:51:
+
+ 1029 |          DIS = POTSPL(3,NPHI,PHI,BSP(1,1),CSP(1,1),SCRAP,ANGLE)
+      |                                                   1
+Warning: Rank mismatch in argument 'd' at (1) (rank-1 and scalar)
+OH2_App_GEN_M3n1988.f:1030:52:
+
+ 1030 |          DDIS = POTSPL(4,NPHI,PHI,BSP(1,1),CSP(1,1),SCRAP,ANGLE)
+      |                                                    1
+Warning: Rank mismatch in argument 'd' at (1) (rank-1 and scalar)
+OH2_App_GEN_M3n1988.f:1031:52:
+
+ 1031 |          REQ2 = POTSPL(3,NPHI,PHI,BSP(1,2),CSP(1,2),SCRAP,ANGLE)
+      |                                                    1
+Warning: Rank mismatch in argument 'd' at (1) (rank-1 and scalar)
+OH2_App_GEN_M3n1988.f:1032:52:
+
+ 1032 |          DREQ = POTSPL(4,NPHI,PHI,BSP(1,2),CSP(1,2),SCRAP,ANGLE)
+      |                                                    1
+Warning: Rank mismatch in argument 'd' at (1) (rank-1 and scalar)
+OH2_App_GEN_M3n1988.f:1033:52:
+
+ 1033 |          BET =  POTSPL(3,NPHI,PHI,BSP(1,3),CSP(1,3),SCRAP,ANGLE)
+      |                                                    1
+Warning: Rank mismatch in argument 'd' at (1) (rank-1 and scalar)
+OH2_App_GEN_M3n1988.f:1034:52:
+
+ 1034 |          DBET = POTSPL(4,NPHI,PHI,BSP(1,3),CSP(1,3),SCRAP,ANGLE)
+      |                                                    1
+Warning: Rank mismatch in argument 'd' at (1) (rank-1 and scalar)

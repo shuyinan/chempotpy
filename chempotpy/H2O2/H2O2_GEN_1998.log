@@ -1,0 +1,282 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "H2O2_GEN_1998" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmpylr4tosr/src.linux-x86_64-3.11/H2O2_GEN_1998module.c
+creating /tmp/tmpylr4tosr/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'H2O2_GEN_1998.f' (format:fix,strict)
+Line #155 in H2O2_GEN_1998.f:"      PARAMETER (ROHHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #156 in H2O2_GEN_1998.f:"      PARAMETER (ROOLOW = 1.8D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #156 in H2O2_GEN_1998.f:"      PARAMETER (ROOLOW = 1.8D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #157 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #157 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #157 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #163 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #163 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #163 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #163 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #862 in H2O2_GEN_1998.f:"      PARAMETER (ROHHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #863 in H2O2_GEN_1998.f:"      PARAMETER (ROOLOW = 1.8D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #863 in H2O2_GEN_1998.f:"      PARAMETER (ROOLOW = 1.8D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #864 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #864 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #864 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #871 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #871 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #871 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #871 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1275 in H2O2_GEN_1998.f:"      PARAMETER (ROHHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1276 in H2O2_GEN_1998.f:"      PARAMETER (ROOLOW = 1.8D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1276 in H2O2_GEN_1998.f:"      PARAMETER (ROOLOW = 1.8D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1277 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1277 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1277 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1280 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1280 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1280 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1280 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1282 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1282 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1282 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1282 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1282 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2273 in H2O2_GEN_1998.f:"      PARAMETER (ROHHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2274 in H2O2_GEN_1998.f:"      PARAMETER (ROOLOW = 1.8D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2274 in H2O2_GEN_1998.f:"      PARAMETER (ROOLOW = 1.8D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2275 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2275 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2275 in H2O2_GEN_1998.f:"      PARAMETER (ROOHIGH = 4.0D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2278 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2278 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2278 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2278 in H2O2_GEN_1998.f:"      PARAMETER (RHHLOW = 0.7D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2280 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2280 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2280 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2280 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2280 in H2O2_GEN_1998.f:"        parameter (g_pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2282 in H2O2_GEN_1998.f:"        parameter (g2pmax = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2282 in H2O2_GEN_1998.f:"        parameter (g2pmax = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2282 in H2O2_GEN_1998.f:"        parameter (g2pmax = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2282 in H2O2_GEN_1998.f:"        parameter (g2pmax = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2282 in H2O2_GEN_1998.f:"        parameter (g2pmax = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2316 in H2O2_GEN_1998.f:"        parameter (g__pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2316 in H2O2_GEN_1998.f:"        parameter (g__pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2316 in H2O2_GEN_1998.f:"        parameter (g__pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2316 in H2O2_GEN_1998.f:"        parameter (g__pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2316 in H2O2_GEN_1998.f:"        parameter (g__pmax_ = 12)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Post-processing...
+	Block: H2O2_GEN_1998
+			Block: pes
+			Block: surf
+			Block: potential
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:potential
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:potential
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:potential
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:potential
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:potential
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: pot
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: vibpot
+			Block: g_surf
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_surf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_surf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_surf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_surf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_surf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: g_vibpot
+			Block: g_analytic
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_analytic
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_analytic
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_analytic
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_analytic
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:g_analytic
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: g_g_vibpot
+{}
+In: :H2O2_GEN_1998:H2O2_GEN_1998.f:setup
+vars2fortran: No typespec for argument "n3tm".
+			Block: setup
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "H2O2_GEN_1998"...
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "surf"...
+          surf(v,coord,dx,[n3tm])
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "potential"...
+          potential(v,x,dx,dxx,[n3tm])
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot(v,x)
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "vibpot"...
+          vibpot(coord,v)
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "g_surf"...
+          g_surf(g_p_,v,g_v,x,g_x,[ldg_v,ldg_x])
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "g_vibpot"...
+          g_vibpot(g_p_,coord,g_coord,v,g_v,[ldg_coord,ldg_v])
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "g_analytic"...
+          g_analytic(g2p,g_p_,v,g_v,g_g_v,x,g_x,g_g_x,[ldg_g_v,ldg_v,ldg_g_x,ldg_x])
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "g_g_vibpot"...
+          g_g_vibpot(g2p,g_p_,coord,g_coord,g_g_coord,v,g_v,g_g_v,[ldg_g_coord,ldg_coord,ldg_g_v,ldg_v])
+    Generating possibly empty wrappers"
+    Maybe empty "H2O2_GEN_1998-f2pywrappers.f"
+        Constructing wrapper function "setup"...
+          setup(n3tm)
+    Wrote C/API module "H2O2_GEN_1998" to file "/tmp/tmpylr4tosr/src.linux-x86_64-3.11/H2O2_GEN_1998module.c"
+INFO:   adding '/tmp/tmpylr4tosr/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpylr4tosr/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpylr4tosr/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpylr4tosr/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpylr4tosr/src.linux-x86_64-3.11/H2O2_GEN_1998-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'H2O2_GEN_1998' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmpylr4tosr/tmp
+creating /tmp/tmpylr4tosr/tmp/tmpylr4tosr
+creating /tmp/tmpylr4tosr/tmp/tmpylr4tosr/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpylr4tosr/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmpylr4tosr/src.linux-x86_64-3.11/H2O2_GEN_1998module.c
+INFO: gcc: /tmp/tmpylr4tosr/src.linux-x86_64-3.11/fortranobject.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpylr4tosr/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmpylr4tosr/src.linux-x86_64-3.11/H2O2_GEN_1998-f2pywrappers.f
+INFO: gfortran:f77: H2O2_GEN_1998.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpylr4tosr/tmp/tmpylr4tosr/src.linux-x86_64-3.11/H2O2_GEN_1998module.o /tmp/tmpylr4tosr/tmp/tmpylr4tosr/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpylr4tosr/H2O2_GEN_1998.o /tmp/tmpylr4tosr/tmp/tmpylr4tosr/src.linux-x86_64-3.11/H2O2_GEN_1998-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./H2O2_GEN_1998.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpylr4tosr

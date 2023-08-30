@@ -1,0 +1,20 @@
+BrH2_LEPS_W_1959.f:266:23:
+
+  266 |          COMMON /PT4CM/ IPTPRT
+      |                       1
+Warning: Named COMMON block 'pt4cm' at (1) shall be of the same size as elsewhere (4 vs 80 bytes)
+BrH2_LEPS_W_1959.f:344:20:
+
+  344 |       COMMON /PT1CM/  R(N3ATOM), ENGYGS, DEGSDR(N3ATOM)
+      |                    1
+Warning: Named COMMON block 'pt1cm' at (1) shall be of the same size as elsewhere (1208 vs 56 bytes)
+BrH2_LEPS_W_1959.f:346:20:
+
+  346 |       COMMON /PT4CM/  ENGYES(ISURF),DEESDR(N3ATOM,ISURF)
+      |                    1
+Warning: Named COMMON block 'pt4cm' at (1) shall be of the same size as elsewhere (3040 vs 80 bytes)
+BrH2_LEPS_W_1959.f:347:20:
+
+  347 |       COMMON /PT5CM/  ENGYIJ(JSURF),DEIJDR(N3ATOM,JSURF)
+      |                    1
+Warning: Named COMMON block 'pt5cm' at (1) shall be of the same size as elsewhere (9120 vs 24 bytes)

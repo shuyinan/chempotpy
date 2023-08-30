@@ -1,0 +1,43 @@
+ClH2_LEPS_TTGI1_1985.f:539:11:
+
+  538 |       DO 150 I=1,126
+      |                                                                        2
+  539 |  150  V3H2(I)=V3H2(I)+ONE
+      |           1
+Warning: Array reference at (1) out of bounds (126 > 64) in loop beginning at (2)
+ClH2_LEPS_TTGI1_1985.f:539:19:
+
+  538 |       DO 150 I=1,126
+      |                                                                        2
+  539 |  150  V3H2(I)=V3H2(I)+ONE
+      |                   1
+Warning: Array reference at (1) out of bounds (126 > 64) in loop beginning at (2)
+ClH2_LEPS_TTGI1_1985.f:545:11:
+
+  544 |       DO 170 I=1,126
+      |                                                                        2
+  545 |  170  V4H2(I)=V4H2(I)+ONE
+      |           1
+Warning: Array reference at (1) out of bounds (126 > 64) in loop beginning at (2)
+ClH2_LEPS_TTGI1_1985.f:545:19:
+
+  544 |       DO 170 I=1,126
+      |                                                                        2
+  545 |  170  V4H2(I)=V4H2(I)+ONE
+      |                   1
+Warning: Array reference at (1) out of bounds (126 > 64) in loop beginning at (2)
+ClH2_LEPS_TTGI1_1985.f:1232:20:
+
+ 1232 |       COMMON /PT1CM/  R(N3ATOM), ENGYGS, DEGSDR(N3ATOM)
+      |                    1
+Warning: Named COMMON block 'pt1cm' at (1) shall be of the same size as elsewhere (1208 vs 56 bytes)
+ClH2_LEPS_TTGI1_1985.f:1234:20:
+
+ 1234 |       COMMON /PT4CM/  ENGYES(ISURF),DEESDR(N3ATOM,ISURF)
+      |                    1
+Warning: Named COMMON block 'pt4cm' at (1) shall be of the same size as elsewhere (3040 vs 4 bytes)
+ClH2_LEPS_TTGI1_1985.f:1235:20:
+
+ 1235 |       COMMON /PT5CM/  ENGYIJ(JSURF),DEIJDR(N3ATOM,JSURF)
+      |                    1
+Warning: Named COMMON block 'pt5cm' at (1) shall be of the same size as elsewhere (9120 vs 24 bytes)

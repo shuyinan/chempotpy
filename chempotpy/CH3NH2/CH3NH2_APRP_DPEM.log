@@ -1,0 +1,579 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "CH3NH2_APRP_DPEM" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp1bl_ctii/src.linux-x86_64-3.11/CH3NH2_APRP_DPEMmodule.c
+creating /tmp/tmp1bl_ctii/src.linux-x86_64-3.11
+rmbadname1: Replacing "const" with "const_bn".
+Reading fortran codes...
+	Reading file 'CH3NH2_APRP_DPEM.f' (format:fix,strict)
+Line #283 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2283 in CH3NH2_APRP_DPEM.f:"      integer nrap  !number of anchor points"
+	updatevars: could not crack entity declaration "nrap!number". Ignoring.
+Line #2284 in CH3NH2_APRP_DPEM.f:"      integer ntap  !number of anchor points"
+	updatevars: could not crack entity declaration "ntap!number". Ignoring.
+Line #2834 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #2922 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3037 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3148 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3261 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3373 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3486 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3597 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3722 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3849 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #3973 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #4109 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #4239 in CH3NH2_APRP_DPEM.f:"      parameter(tiny=1.0d-13,pi=3.1415926535898d0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Post-processing...
+	Block: CH3NH2_APRP_DPEM
+			Block: dpem
+			Block: pot
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr1
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr1
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr1
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr1
+vars2fortran: No typespec for argument "l".
+			Block: dihedr1
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr1
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr1
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:bndlen
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:bndlen
+vars2fortran: No typespec for argument "j".
+			Block: bndlen
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:bndlen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:bndang
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:bndang
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:bndang
+vars2fortran: No typespec for argument "k".
+			Block: bndang
+			Block: xprod1
+			Block: sprod
+			Block: convertit
+			Block: angder
+			Block: disder
+			Block: solver
+			Block: getv0
+			Block: getpara
+			Block: tert
+			Block: calchess1
+			Block: calchess2
+			Block: calchess3
+			Block: calcgeom
+			Block: bigtent
+			Block: kpev2gm2
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr2
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr2
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr2
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr2
+vars2fortran: No typespec for argument "l".
+			Block: dihedr2
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedr2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrix
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrix
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrix
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrix
+vars2fortran: No typespec for argument "l".
+			Block: dihedrix
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrix
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrix
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriy
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriy
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriy
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriy
+vars2fortran: No typespec for argument "l".
+			Block: dihedriy
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriy
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriy
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriz
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriz
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriz
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriz
+vars2fortran: No typespec for argument "l".
+			Block: dihedriz
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriz
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedriz
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlx
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlx
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlx
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlx
+vars2fortran: No typespec for argument "l".
+			Block: dihedrlx
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrly
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrly
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrly
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrly
+vars2fortran: No typespec for argument "l".
+			Block: dihedrly
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrly
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrly
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlz
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlz
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlz
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlz
+vars2fortran: No typespec for argument "l".
+			Block: dihedrlz
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlz
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrlz
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjx
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjx
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjx
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjx
+vars2fortran: No typespec for argument "l".
+			Block: dihedrjx
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjy
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjy
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjy
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjy
+vars2fortran: No typespec for argument "l".
+			Block: dihedrjy
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjy
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjy
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjz
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjz
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjz
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjz
+vars2fortran: No typespec for argument "l".
+			Block: dihedrjz
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjz
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrjz
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkx
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkx
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkx
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkx
+vars2fortran: No typespec for argument "l".
+			Block: dihedrkx
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrky
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrky
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrky
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrky
+vars2fortran: No typespec for argument "l".
+			Block: dihedrky
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrky
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrky
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkz
+vars2fortran: No typespec for argument "i".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkz
+vars2fortran: No typespec for argument "j".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkz
+vars2fortran: No typespec for argument "k".
+{}
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkz
+vars2fortran: No typespec for argument "l".
+			Block: dihedrkz
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkz
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f:dihedrkz
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "CH3NH2_APRP_DPEM"...
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "dpem"...
+          u,ug = dpem(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot(igrad,xx,uu,guu,vv,gvv,dvec,eigvec,repflag)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedr1"("dihedr1")...
+        Constructing wrapper function "dihedr1"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedr1 = dihedr1(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "bndlen"("bndlen")...
+        Constructing wrapper function "bndlen"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          bndlen = bndlen(i,j,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "bndang"("bndang")...
+        Constructing wrapper function "bndang"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          bndang = bndang(i,j,k,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "xprod1"...
+          xprod1(x1,x2,x3)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "sprod"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          sprod(n,a,b,c)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "convertit"...
+          convertit(x,y,z,dk,dx1,dy1,dz1)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "angder"...
+          angder(x,y,z,i,j,k,dngx,dngy,dngz)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "disder"...
+          disder(x,y,z,i,j,dngx,dngy,dngz)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "solver"...
+          solver(igrad,ra1,ra2,qc,ii,nrap,ntap,ut,dut)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "getv0"...
+          getv0(ii,v0,[nrap,ntap])
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "getpara"...
+          getpara(ii,knhb1,knhb2,knc1,knc2,kch1,kch2,kch3,kcnha1,kcnha2,kcnhb1,kcnhb2,knch1,knch2,jnhb1,jnhb2,jnhb3,jnc1,jnc2,jnc3,jcnha1,jcnha2,jcnha3,jcnhb1,jcnhb2,jcnhb3,gnhb1,gnhb2,gnhb3,gnc1,gnc2,gnc3,ft1,fa1,[nrap,ntap])
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "tert"...
+          tert(igrad,ii,x,y,z,nrap,ntap,en,dx1,dy1,dz1)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "calchess1"...
+          calchess1(igrad,nrap,ntap,fg,x,y,z,ii,h,dh)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "calchess2"...
+          calchess2(igrad,nrap,ntap,fg,x,y,z,ii,h,dh)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "calchess3"...
+          calchess3(igrad,nrap,ntap,fg,x,y,z,ii,h,dh)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "calcgeom"...
+          calcgeom(x,y,z,qc)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "bigtent"...
+          bigtent(r1,t2,f,rap,tap,fg,si,tk,df,[nrap,ntap])
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+        Constructing wrapper function "kpev2gm2"...
+          kpev2gm2(igrad,x,y,z,v3,imol,dx,dy,dz)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedr2"("dihedr2")...
+        Constructing wrapper function "dihedr2"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedr2 = dihedr2(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrix"("dihedrix")...
+        Constructing wrapper function "dihedrix"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrix = dihedrix(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedriy"("dihedriy")...
+        Constructing wrapper function "dihedriy"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedriy = dihedriy(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedriz"("dihedriz")...
+        Constructing wrapper function "dihedriz"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedriz = dihedriz(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrlx"("dihedrlx")...
+        Constructing wrapper function "dihedrlx"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrlx = dihedrlx(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrly"("dihedrly")...
+        Constructing wrapper function "dihedrly"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrly = dihedrly(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrlz"("dihedrlz")...
+        Constructing wrapper function "dihedrlz"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrlz = dihedrlz(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrjx"("dihedrjx")...
+        Constructing wrapper function "dihedrjx"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrjx = dihedrjx(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrjy"("dihedrjy")...
+        Constructing wrapper function "dihedrjy"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrjy = dihedrjy(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrjz"("dihedrjz")...
+        Constructing wrapper function "dihedrjz"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrjz = dihedrjz(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrkx"("dihedrkx")...
+        Constructing wrapper function "dihedrkx"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrkx = dihedrkx(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrky"("dihedrky")...
+        Constructing wrapper function "dihedrky"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrky = dihedrky(i,j,k,l,x,y,z)
+    Generating possibly empty wrappers"
+    Maybe empty "CH3NH2_APRP_DPEM-f2pywrappers.f"
+		Creating wrapper for Fortran function "dihedrkz"("dihedrkz")...
+        Constructing wrapper function "dihedrkz"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dihedrkz = dihedrkz(i,j,k,l,x,y,z)
+    Wrote C/API module "CH3NH2_APRP_DPEM" to file "/tmp/tmp1bl_ctii/src.linux-x86_64-3.11/CH3NH2_APRP_DPEMmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmp1bl_ctii/src.linux-x86_64-3.11/CH3NH2_APRP_DPEM-f2pywrappers.f"
+INFO:   adding '/tmp/tmp1bl_ctii/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp1bl_ctii/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp1bl_ctii/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp1bl_ctii/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp1bl_ctii/src.linux-x86_64-3.11/CH3NH2_APRP_DPEM-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'CH3NH2_APRP_DPEM' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmp1bl_ctii/tmp
+creating /tmp/tmp1bl_ctii/tmp/tmp1bl_ctii
+creating /tmp/tmp1bl_ctii/tmp/tmp1bl_ctii/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp1bl_ctii/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmp1bl_ctii/src.linux-x86_64-3.11/CH3NH2_APRP_DPEMmodule.c
+INFO: gcc: /tmp/tmp1bl_ctii/src.linux-x86_64-3.11/fortranobject.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp1bl_ctii/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmp1bl_ctii/src.linux-x86_64-3.11/CH3NH2_APRP_DPEM-f2pywrappers.f
+INFO: gfortran:f77: CH3NH2_APRP_DPEM.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp1bl_ctii/tmp/tmp1bl_ctii/src.linux-x86_64-3.11/CH3NH2_APRP_DPEMmodule.o /tmp/tmp1bl_ctii/tmp/tmp1bl_ctii/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp1bl_ctii/CH3NH2_APRP_DPEM.o /tmp/tmp1bl_ctii/tmp/tmp1bl_ctii/src.linux-x86_64-3.11/CH3NH2_APRP_DPEM-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./CH3NH2_APRP_DPEM.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp1bl_ctii

@@ -1,0 +1,65 @@
+NH3CN_VBMM.f:1955:20:
+
+ 1955 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:1207:20:
+
+ 1207 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:1460:20:
+
+ 1460 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:117:20:
+
+  117 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:1039:20:
+
+ 1039 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:654:20:
+
+  654 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:375:20:
+
+  375 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:1701:20:
+
+ 1701 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:260:20:
+
+  260 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:1566:20:
+
+ 1566 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:498:20:
+
+  498 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:1844:20:
+
+ 1844 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]
+NH3CN_VBMM.f:881:20:
+
+  881 |       COMMON /POTCM/ nnc,nnb,nnh(4),nno,
+      |                    1
+Warning: Padding of 4 bytes required before 'r0chr' in COMMON 'potcm' at (1); reorder elements or use '-fno-align-commons' [-Walign-commons]

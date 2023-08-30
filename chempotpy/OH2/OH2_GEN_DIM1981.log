@@ -1,0 +1,589 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "OH2_GEN_DIM1981" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmp46408p7m/src.linux-x86_64-3.11/OH2_GEN_DIM1981module.c
+creating /tmp/tmp46408p7m/src.linux-x86_64-3.11
+analyzeline: Failed to evaluate '4.0d0*pi*1.0d-07'. Ignoring: invalid decimal literal (<string>, line 1)
+analyzeline: Failed to evaluate '1.0d0/(cmu_0*clight**2)'. Ignoring: invalid decimal literal (<string>, line 1)
+Reading fortran codes...
+	Reading file 'OH2_GEN_DIM1981.f' (format:fix,strict)
+Line #15 in OH2_GEN_DIM1981.f:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int') type.
+Line #15 in OH2_GEN_DIM1981.f:"      PARAMETER (JSURF=INT(ISURF*(ISURF+1)/2))"
+	determineexprtype: could not determine expressions ('int(isurf*(isurf+1)/2)') type.
+Line #141 in OH2_GEN_DIM1981.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #143 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #143 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #168 in OH2_GEN_DIM1981.f:"         PARAMETER (BOHR = .52917706D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #168 in OH2_GEN_DIM1981.f:"         PARAMETER (BOHR = .52917706D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #170 in OH2_GEN_DIM1981.f:"         PARAMETER (HRTREE = 627.5095D0)                                "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #170 in OH2_GEN_DIM1981.f:"         PARAMETER (HRTREE = 627.5095D0)                                "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #170 in OH2_GEN_DIM1981.f:"         PARAMETER (HRTREE = 627.5095D0)                                "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #293 in OH2_GEN_DIM1981.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #295 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #295 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #320 in OH2_GEN_DIM1981.f:"         PARAMETER (BOHR = .52917706D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #320 in OH2_GEN_DIM1981.f:"         PARAMETER (BOHR = .52917706D0)                                 "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #322 in OH2_GEN_DIM1981.f:"         PARAMETER (HRTREE = 627.5095D0)                                "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #322 in OH2_GEN_DIM1981.f:"         PARAMETER (HRTREE = 627.5095D0)                                "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #322 in OH2_GEN_DIM1981.f:"         PARAMETER (HRTREE = 627.5095D0)                                "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #473 in OH2_GEN_DIM1981.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #475 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #475 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #493 in OH2_GEN_DIM1981.f:"      PARAMETER (BOHR = .52917706D0)                                    "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #493 in OH2_GEN_DIM1981.f:"      PARAMETER (BOHR = .52917706D0)                                    "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #495 in OH2_GEN_DIM1981.f:"      PARAMETER (HRTREE = 627.5095D0)                                   "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #495 in OH2_GEN_DIM1981.f:"      PARAMETER (HRTREE = 627.5095D0)                                   "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #495 in OH2_GEN_DIM1981.f:"      PARAMETER (HRTREE = 627.5095D0)                                   "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #497 in OH2_GEN_DIM1981.f:"      PARAMETER (DETRAD=.0174532D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #497 in OH2_GEN_DIM1981.f:"      PARAMETER (DETRAD=.0174532D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #497 in OH2_GEN_DIM1981.f:"      PARAMETER (DETRAD=.0174532D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #497 in OH2_GEN_DIM1981.f:"      PARAMETER (DETRAD=.0174532D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #569 in OH2_GEN_DIM1981.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #571 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #571 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #591 in OH2_GEN_DIM1981.f:"      PARAMETER (HRTREE = 627.5095D0)                                   "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #591 in OH2_GEN_DIM1981.f:"      PARAMETER (HRTREE = 627.5095D0)                                   "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #593 in OH2_GEN_DIM1981.f:"      PARAMETER (DETRAD=.0174532D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #593 in OH2_GEN_DIM1981.f:"      PARAMETER (DETRAD=.0174532D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #593 in OH2_GEN_DIM1981.f:"      PARAMETER (DETRAD=.0174532D0)                                     "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #736 in OH2_GEN_DIM1981.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #738 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #738 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #908 in OH2_GEN_DIM1981.f:"      PARAMETER (PI = 3.141592653589793D0)                              "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #910 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #910 in OH2_GEN_DIM1981.f:"      PARAMETER (NATOM = 25)                                            "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #962 in OH2_GEN_DIM1981.f:"         DATA (PHI(I), I=1,17)                                                      / 0.0000000d+00, 0.2000000d+01,                                     0.4000000d+01, 0.6000000d+01,                                     0.1800000d+02, 0.2400000d+02,                                     0.3000000d+02, 0.3400000d+02,                                     0.3800000d+02, 0.4400000d+02,                                     0.4800000d+02, 0.5400000d+02,                                     0.6000000d+02, 0.7600000d+02,                                     0.8600000d+02, 0.8800000d+02,                                     0.9000000d+02/                                      "
+	analyzeline: implied-DO list "(phi(i), i=1,17)" is not supported. Skipping.
+Line #972 in OH2_GEN_DIM1981.f:"         DATA (BSP(I,1),I=1,17)                                                     / 0.1094409d+03, 0.1094212d+03,                                     0.1094004d+03, 0.1093775d+03,                                     0.1088412d+03, 0.1077417d+03,                                     0.1055117d+03, 0.1030257d+03,                                     0.9966266d+02, 0.9630693d+02,                                     0.9637480d+02, 0.9811765d+02,                                     0.1000138d+03, 0.1029822d+03,                                     0.1038929d+03, 0.1040309d+03,                                     0.1041572d+03/                                      "
+	analyzeline: implied-DO list "(bsp(i,1),i=1,17)" is not supported. Skipping.
+Line #982 in OH2_GEN_DIM1981.f:"         DATA (BSP(I,2),I=1,17)                                                     / 0.1473413d+01, 0.1474257d+01,                                     0.1476847d+01, 0.1481213d+01,                                     0.1545280d+01, 0.1599182d+01,                                     0.1655956d+01, 0.1681611d+01,                                     0.1680401d+01, 0.1626349d+01,                                     0.1572269d+01, 0.1486160d+01,                                     0.1408802d+01, 0.1273705d+01,                                     0.1241724d+01, 0.1239825d+01,                                     0.1239394d+01/                                      "
+	analyzeline: implied-DO list "(bsp(i,2),i=1,17)" is not supported. Skipping.
+Line #995 in OH2_GEN_DIM1981.f:"         DATA (BSP(I,3),I=1,17)                                                 / 0.1942440d+01, 0.1940545d+01,                                     0.1936212d+01, 0.1929558d+01,                                     0.1825750d+01, 0.1719964d+01,                                     0.1603891d+01, 0.1538857d+01,                                     0.1490752d+01, 0.1525683d+01,                                     0.1620584d+01, 0.1788983d+01,                                     0.1942842d+01, 0.2222638d+01,                                     0.2294156d+01, 0.2299114d+01,                                     0.2301070d+01/                                          "
+	analyzeline: implied-DO list "(bsp(i,3),i=1,17)" is not supported. Skipping.
+Line #1031 in OH2_GEN_DIM1981.f:"      PARAMETER (PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1201 in OH2_GEN_DIM1981.f:"      PARAMETER(        PI = 3.141592653589793D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1202 in OH2_GEN_DIM1981.f:"      PARAMETER(    CLIGHT = 2.99792458D08)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1202 in OH2_GEN_DIM1981.f:"      PARAMETER(    CLIGHT = 2.99792458D08)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1203 in OH2_GEN_DIM1981.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1203 in OH2_GEN_DIM1981.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1203 in OH2_GEN_DIM1981.f:"      PARAMETER(     CMU_0 = 4.0D0*PI*1.0D-07)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1204 in OH2_GEN_DIM1981.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1204 in OH2_GEN_DIM1981.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1204 in OH2_GEN_DIM1981.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1204 in OH2_GEN_DIM1981.f:"      PARAMETER(CEPSILON_0 = 1.0D0/(CMU_0*CLIGHT**2))"
+	determineexprtype: could not determine expressions ('1.0d0/(cmu_0*clight**2)') type.
+Line #1205 in OH2_GEN_DIM1981.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1205 in OH2_GEN_DIM1981.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1205 in OH2_GEN_DIM1981.f:"      PARAMETER(        CE = 1.602176462D-19)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1206 in OH2_GEN_DIM1981.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1206 in OH2_GEN_DIM1981.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1206 in OH2_GEN_DIM1981.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1206 in OH2_GEN_DIM1981.f:"      PARAMETER(   CPLANCK = 6.62606876D-34)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1207 in OH2_GEN_DIM1981.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1207 in OH2_GEN_DIM1981.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1207 in OH2_GEN_DIM1981.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1207 in OH2_GEN_DIM1981.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1207 in OH2_GEN_DIM1981.f:"      PARAMETER(      CM_E = 9.10938188D-31)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1208 in OH2_GEN_DIM1981.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1208 in OH2_GEN_DIM1981.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1208 in OH2_GEN_DIM1981.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1208 in OH2_GEN_DIM1981.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1208 in OH2_GEN_DIM1981.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1208 in OH2_GEN_DIM1981.f:"      PARAMETER(      CANG = 1.0D-10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1209 in OH2_GEN_DIM1981.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1209 in OH2_GEN_DIM1981.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+getstrlength: expected a signature of a string but got: {'typespec': 'character', 'charselector': {'*': '75'}, 'attrspec': [], 'dimension': ['5']}
+Line #1209 in OH2_GEN_DIM1981.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1209 in OH2_GEN_DIM1981.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1209 in OH2_GEN_DIM1981.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1209 in OH2_GEN_DIM1981.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1209 in OH2_GEN_DIM1981.f:"      PARAMETER( CAVOGADRO = 6.02214199D23)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1210 in OH2_GEN_DIM1981.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1210 in OH2_GEN_DIM1981.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1210 in OH2_GEN_DIM1981.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1210 in OH2_GEN_DIM1981.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1210 in OH2_GEN_DIM1981.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1210 in OH2_GEN_DIM1981.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1210 in OH2_GEN_DIM1981.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1210 in OH2_GEN_DIM1981.f:"      PARAMETER(     CKCAL = 4.184D10)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1211 in OH2_GEN_DIM1981.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1211 in OH2_GEN_DIM1981.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1211 in OH2_GEN_DIM1981.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1211 in OH2_GEN_DIM1981.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1211 in OH2_GEN_DIM1981.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1211 in OH2_GEN_DIM1981.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1211 in OH2_GEN_DIM1981.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1211 in OH2_GEN_DIM1981.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1211 in OH2_GEN_DIM1981.f:"      PARAMETER(  HTOMILLH = 1000.D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1212 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOEV = 27.2113834D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1213 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOKCAL = 627.509470D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1214 in OH2_GEN_DIM1981.f:"      PARAMETER(   HTOWAVE = 219474.631D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1215 in OH2_GEN_DIM1981.f:"      PARAMETER(     HTOKJ = 2625.49962D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Line #1216 in OH2_GEN_DIM1981.f:"      PARAMETER(    BOHR_A = .5291772083D0)"
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Post-processing...
+	Block: OH2_GEN_DIM1981
+			Block: pes
+			Block: prepot
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:prepot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: pot
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:pot
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: prepot2
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:prepot2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:prepot2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:prepot2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:prepot2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:prepot2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: pot2
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:pot2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:pot2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:pot2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:pot2
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:spline
+vars2fortran: No typespec for argument "isw".
+{}
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:spline
+vars2fortran: No typespec for argument "nn".
+{'attrspec': ['dimension(nn+2)']}
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:spline
+vars2fortran: No typespec for argument "x".
+{'attrspec': ['dimension(nn+2)']}
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:spline
+vars2fortran: No typespec for argument "y".
+{'attrspec': ['dimension(nn+2)']}
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:spline
+vars2fortran: No typespec for argument "c".
+{'attrspec': ['dimension(nn+2)']}
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:spline
+vars2fortran: No typespec for argument "d".
+{}
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:spline
+vars2fortran: No typespec for argument "xpt".
+			Block: spline
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:spline
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:spline
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: ptpacm
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ptpacm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ptpacm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: potinfo
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:potinfo
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:potinfo
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: ancvrt
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:ancvrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: cartou
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:cartou
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: carttor
+			Block: eunitzero
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:eunitzero
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: rtocart
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:rtocart
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: dedcou
+In: :OH2_GEN_DIM1981:OH2_GEN_DIM1981.f:dedcou
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "OH2_GEN_DIM1981"...
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "prepot"...
+          prepot()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "pot"...
+          pot()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "prepot2"...
+          prepot2()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "pot2"...
+          pot2()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+		Creating wrapper for Fortran function "spline"("spline")...
+        Constructing wrapper function "spline"...
+          spline = spline(isw,x,y,c,d,xpt,[nn])
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "potinfo"...
+          potinfo()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "ancvrt"...
+          ancvrt()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "cartou"...
+          cartou()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "carttor"...
+          carttor()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "eunitzero"...
+          eunitzero()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "rtocart"...
+          rtocart()
+    Generating possibly empty wrappers"
+    Maybe empty "OH2_GEN_DIM1981-f2pywrappers.f"
+        Constructing wrapper function "dedcou"...
+          dedcou()
+		Constructing COMMON block support for "usrocm"...
+		  pengygs,pengyes,pengyij,dgscart,descart,dijcart
+		Constructing COMMON block support for "usricm"...
+		  cart,anuzero,nulbl,nflag,nasurf,nder
+		Constructing COMMON block support for "pt1cm"...
+		  r,engygs,degsdr
+		Constructing COMMON block support for "pt3cm"...
+		  ezero
+		Constructing COMMON block support for "pt4cm"...
+		  engyes,deesdr
+		Constructing COMMON block support for "pt5cm"...
+		  engyij,deijdr
+		Constructing COMMON block support for "infocm"...
+		  cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+		Constructing COMMON block support for "asycm"...
+		  easyab,easybc,easyac
+		Constructing COMMON block support for "nstep"...
+		  step
+		Constructing COMMON block support for "potcm"...
+		  xbc,xab,cbc,abc,cab,aab,phi,bsp,de,beta,req,a,gamma,rbb,rhh,r1s,r2s,vsp,dbcoor,nphi
+		Constructing COMMON block support for "utilcm"...
+		  dgscartnu,descartnu,dijcartnu,cnvrtd,cnvrte,cnvrtde,ireorder,ksdiag,kediag,ksoffd,keoffd
+    Wrote C/API module "OH2_GEN_DIM1981" to file "/tmp/tmp46408p7m/src.linux-x86_64-3.11/OH2_GEN_DIM1981module.c"
+    Fortran 77 wrappers are saved to "/tmp/tmp46408p7m/src.linux-x86_64-3.11/OH2_GEN_DIM1981-f2pywrappers.f"
+INFO:   adding '/tmp/tmp46408p7m/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp46408p7m/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp46408p7m/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp46408p7m/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp46408p7m/src.linux-x86_64-3.11/OH2_GEN_DIM1981-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'OH2_GEN_DIM1981' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmp46408p7m/tmp
+creating /tmp/tmp46408p7m/tmp/tmp46408p7m
+creating /tmp/tmp46408p7m/tmp/tmp46408p7m/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp46408p7m/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmp46408p7m/src.linux-x86_64-3.11/OH2_GEN_DIM1981module.c
+INFO: gcc: /tmp/tmp46408p7m/src.linux-x86_64-3.11/fortranobject.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp46408p7m/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f77: OH2_GEN_DIM1981.f
+INFO: gfortran:f77: /tmp/tmp46408p7m/src.linux-x86_64-3.11/OH2_GEN_DIM1981-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp46408p7m/tmp/tmp46408p7m/src.linux-x86_64-3.11/OH2_GEN_DIM1981module.o /tmp/tmp46408p7m/tmp/tmp46408p7m/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp46408p7m/OH2_GEN_DIM1981.o /tmp/tmp46408p7m/tmp/tmp46408p7m/src.linux-x86_64-3.11/OH2_GEN_DIM1981-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./OH2_GEN_DIM1981.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp46408p7m

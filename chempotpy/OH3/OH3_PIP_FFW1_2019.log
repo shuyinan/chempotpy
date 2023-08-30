@@ -1,0 +1,268 @@
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "OH3_PIP_FFW1_2019" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmpet7or742/src.linux-x86_64-3.11/OH3_PIP_FFW1_2019module.c
+creating /tmp/tmpet7or742/src.linux-x86_64-3.11
+Reading fortran codes...
+	Reading file 'OH3_PIP_FFW1_2019.f90' (format:free)
+Post-processing...
+	Block: OH3_PIP_FFW1_2019
+			Block: pes
+			Block: u11_prepot_8
+			Block: u22_prepot_8
+			Block: u33_prepot_8
+			Block: d3bj_hh
+			Block: grad_d3bj_hh
+			Block: d3bj_oh
+			Block: grad_d3bj_oh
+			Block: hh
+			Block: grad_hh
+			Block: oh
+			Block: grad_oh
+			Block: ohstar
+			Block: grad_ohstar
+			Block: ev_pol_con_8
+			Block: grad_ev_pol_con_8
+			Block: u12_order10
+			Block: u13_order12
+			Block: u23_order10
+			Block: ev_pol_con_12
+			Block: ev_pol_con_10
+			Block: dsyevj3
+			Block: order
+			Block: u12_dvdx
+			Block: evu12o10dvdr
+			Block: evdrdx
+			Block: num_dtdx
+			Block: p_volume
+			Block: u13_dvdx
+			Block: evu13o10dvdr
+In: :OH3_PIP_FFW1_2019:OH3_PIP_FFW1_2019.f90:evu13o10dvdr
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+			Block: u23_dvdx
+			Block: evu23o10dvdr
+In: :OH3_PIP_FFW1_2019:OH3_PIP_FFW1_2019.f90:evu23o10dvdr
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "OH3_PIP_FFW1_2019"...
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "pes"...
+          p,g,d = pes(x,igrad)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u11_prepot_8"...
+          u11_prepot_8()
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u11_pot_8"...
+          u11_pot_8(xyz,v,dxyz)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u22_prepot_8"...
+          u22_prepot_8()
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u22_pot_8"...
+          u22_pot_8(xyz,v,dxyz)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u33_prepot_8"...
+          u33_prepot_8()
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u33_pot_8"...
+          u33_pot_8(xyz,v,dxyz)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "d3bj_hh"("d3bj_hh")...
+        Constructing wrapper function "d3bj_hh"...
+          d3bj_hh = d3bj_hh(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "grad_d3bj_hh"("grad_d3bj_hh")...
+        Constructing wrapper function "grad_d3bj_hh"...
+          grad_d3bj_hh = grad_d3bj_hh(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "d3bj_oh"("d3bj_oh")...
+        Constructing wrapper function "d3bj_oh"...
+          d3bj_oh = d3bj_oh(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "grad_d3bj_oh"("grad_d3bj_oh")...
+        Constructing wrapper function "grad_d3bj_oh"...
+          grad_d3bj_oh = grad_d3bj_oh(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "hh"("hh")...
+        Constructing wrapper function "hh"...
+          hh = hh(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "grad_hh"("grad_hh")...
+        Constructing wrapper function "grad_hh"...
+          grad_hh = grad_hh(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "oh"("oh")...
+        Constructing wrapper function "oh"...
+          oh = oh(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "grad_oh"("grad_oh")...
+        Constructing wrapper function "grad_oh"...
+          grad_oh = grad_oh(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "ohstar"("ohstar")...
+        Constructing wrapper function "ohstar"...
+          ohstar = ohstar(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+		Creating wrapper for Fortran function "grad_ohstar"("grad_ohstar")...
+        Constructing wrapper function "grad_ohstar"...
+          grad_ohstar = grad_ohstar(r)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "ev_pol_con_8"...
+          p = ev_pol_con_8(x)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "grad_ev_pol_con_8"...
+          dpdx1,dpdx2,dpdx3,dpdx4,dpdx5,dpdx6 = grad_ev_pol_con_8(x)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u12_order10"...
+          u12_order10()
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u12_dc_10"...
+          u12_dc_10(xyz,v,s)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u13_order12"...
+          u13_order12()
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u13_dc_12"...
+          u13_dc_12(xyz,v)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u23_order10"...
+          u23_order10()
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u23_dc_10"...
+          u23_dc_10(xyz,v,s)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "ev_pol_con_12"...
+          q = ev_pol_con_12(x)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "ev_pol_con_10"...
+          q = ev_pol_con_10(x)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "dsyevj3"...
+          dsyevj3(a,q,w)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "order"...
+          order(a,rv)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u12_dvdx"...
+          u12_dvdx(xyz,u12,s12,du12dx)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "evu12o10dvdr"...
+          evu12o10dvdr(coord,r,dvdr)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "evdrdx"...
+          evdrdx(coord,r,drdx)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "num_dtdx"...
+          num_dtdx(xyz,dtdx)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "p_volume"...
+          p_volume(xyz,volume)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u13_dvdx"...
+          u13_dvdx(xyz,u13,du13dx)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "evu13o10dvdr"...
+          evu13o10dvdr(coord,r,dvdr)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "u23_dvdx"...
+          u23_dvdx(xyz,u23,s23,du23dx)
+    Generating possibly empty wrappers"
+    Maybe empty "OH3_PIP_FFW1_2019-f2pywrappers.f"
+        Constructing wrapper function "evu23o10dvdr"...
+          evu23o10dvdr(coord,r,dvdr)
+    Wrote C/API module "OH3_PIP_FFW1_2019" to file "/tmp/tmpet7or742/src.linux-x86_64-3.11/OH3_PIP_FFW1_2019module.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpet7or742/src.linux-x86_64-3.11/OH3_PIP_FFW1_2019-f2pywrappers.f"
+INFO:   adding '/tmp/tmpet7or742/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpet7or742/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpet7or742/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpet7or742/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpet7or742/src.linux-x86_64-3.11/OH3_PIP_FFW1_2019-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer, pypa/build or
+        other standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'OH3_PIP_FFW1_2019' extension
+INFO: compiling C sources
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+
+creating /tmp/tmpet7or742/tmp
+creating /tmp/tmpet7or742/tmp/tmpet7or742
+creating /tmp/tmpet7or742/tmp/tmpet7or742/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpet7or742/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gcc: /tmp/tmpet7or742/src.linux-x86_64-3.11/OH3_PIP_FFW1_2019module.c
+INFO: gcc: /tmp/tmpet7or742/src.linux-x86_64-3.11/fortranobject.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpet7or742/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: gfortran:f90: OH3_PIP_FFW1_2019.f90
+INFO: gfortran:f77: /tmp/tmpet7or742/src.linux-x86_64-3.11/OH3_PIP_FFW1_2019-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpet7or742/tmp/tmpet7or742/src.linux-x86_64-3.11/OH3_PIP_FFW1_2019module.o /tmp/tmpet7or742/tmp/tmpet7or742/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpet7or742/OH3_PIP_FFW1_2019.o /tmp/tmpet7or742/tmp/tmpet7or742/src.linux-x86_64-3.11/OH3_PIP_FFW1_2019-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./OH3_PIP_FFW1_2019.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpet7or742

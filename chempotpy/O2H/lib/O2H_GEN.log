@@ -1,0 +1,5 @@
+O2H_GEN.f:177:20:
+
+  177 |       COMMON /PT2CM/ NSURF, NDER, NDUM(20)
+      |                    1
+Warning: Named COMMON block 'pt2cm' at (1) shall be of the same size as elsewhere (88 vs 92 bytes)

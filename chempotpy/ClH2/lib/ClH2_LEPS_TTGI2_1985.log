@@ -1,0 +1,15 @@
+ClH2_LEPS_TTGI2_1985.f:887:20:
+
+  887 |       COMMON /PT1CM/  R(N3ATOM), ENGYGS, DEGSDR(N3ATOM)
+      |                    1
+Warning: Named COMMON block 'pt1cm' at (1) shall be of the same size as elsewhere (1208 vs 56 bytes)
+ClH2_LEPS_TTGI2_1985.f:889:20:
+
+  889 |       COMMON /PT4CM/  ENGYES(ISURF),DEESDR(N3ATOM,ISURF)
+      |                    1
+Warning: Named COMMON block 'pt4cm' at (1) shall be of the same size as elsewhere (3040 vs 8 bytes)
+ClH2_LEPS_TTGI2_1985.f:890:20:
+
+  890 |       COMMON /PT5CM/  ENGYIJ(JSURF),DEIJDR(N3ATOM,JSURF)
+      |                    1
+Warning: Named COMMON block 'pt5cm' at (1) shall be of the same size as elsewhere (9120 vs 24 bytes)
