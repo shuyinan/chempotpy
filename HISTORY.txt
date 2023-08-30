@@ -9,7 +9,7 @@ ChemPotPy v1.0.0 (Aug. 4, 2023)
   YS, ZV, DGT
   Creation of ChemPotPy
 
-ChemPotPy v1.0.6 (Aug. 29, 2023)
+ChemPotPy v1.0.6 (Aug. 30, 2023)
   YS, ZV, DZ, DGT 
   Updated for compatability
   Added metaprogrammed chempotpy fortran subroutine
