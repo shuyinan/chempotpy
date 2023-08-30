@@ -45,6 +45,7 @@ One can use the meta programming script to automatically generate a
 fortran subroutine. 
 
   create a conda vitural environment as suggested in How to install
+
   get into the parent directory of chempotpy/chempotpy
 
        ./meta_chempotpy.script
