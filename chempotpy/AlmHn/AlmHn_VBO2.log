@@ -7,8 +7,8 @@ running build_src
 INFO: build_src
 INFO: building extension "AlmHn_VBO2" sources
 INFO: f2py options: []
-INFO: f2py:> /tmp/tmpoog9g1vt/src.linux-x86_64-3.11/AlmHn_VBO2module.c
-creating /tmp/tmpoog9g1vt/src.linux-x86_64-3.11
+INFO: f2py:> /tmp/tmppumlnwd7/src.linux-x86_64-3.11/AlmHn_VBO2module.c
+creating /tmp/tmppumlnwd7/src.linux-x86_64-3.11
 getstrlength: expected a signature of a string but got: {'typespec': 'character', 'charselector': {'*': '2'}, 'attrspec': [], 'dimension': ['maxatom'], 'depend': ['maxatom']}
 Reading fortran codes...
 	Reading file 'AlmHn_VBO2.f' (format:fix,strict)
@@ -53,20 +53,20 @@ Building modules...
     Maybe empty "AlmHn_VBO2-f2pywrappers.f"
         Constructing wrapper function "alhpot"...
           alhpot(x,y,z,v,natom,symbol,[maxatom])
-    Wrote C/API module "AlmHn_VBO2" to file "/tmp/tmpoog9g1vt/src.linux-x86_64-3.11/AlmHn_VBO2module.c"
-INFO:   adding '/tmp/tmpoog9g1vt/src.linux-x86_64-3.11/fortranobject.c' to sources.
-INFO:   adding '/tmp/tmpoog9g1vt/src.linux-x86_64-3.11' to include_dirs.
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpoog9g1vt/src.linux-x86_64-3.11
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpoog9g1vt/src.linux-x86_64-3.11
-INFO:   adding '/tmp/tmpoog9g1vt/src.linux-x86_64-3.11/AlmHn_VBO2-f2pywrappers.f' to sources.
+    Wrote C/API module "AlmHn_VBO2" to file "/tmp/tmppumlnwd7/src.linux-x86_64-3.11/AlmHn_VBO2module.c"
+INFO:   adding '/tmp/tmppumlnwd7/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmppumlnwd7/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmppumlnwd7/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmppumlnwd7/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmppumlnwd7/src.linux-x86_64-3.11/AlmHn_VBO2-f2pywrappers.f' to sources.
 INFO: build_src: building npy-pkg config files
-/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
 !!
 
         ********************************************************************************
         Please avoid running ``setup.py`` directly.
-        Instead, use pypa/build, pypa/installer, pypa/build or
-        other standards-based tools.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
 
         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
         ********************************************************************************
@@ -80,25 +80,25 @@ INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey',
 INFO: customize ArmFlangCompiler
 WARN: Could not locate executable armflang
 INFO: customize Gnu95FCompiler
-INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
 INFO: customize Gnu95FCompiler
 INFO: customize Gnu95FCompiler using build_ext
 INFO: building 'AlmHn_VBO2' extension
 INFO: compiling C sources
-INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
 
-creating /tmp/tmpoog9g1vt/tmp
-creating /tmp/tmpoog9g1vt/tmp/tmpoog9g1vt
-creating /tmp/tmpoog9g1vt/tmp/tmpoog9g1vt/src.linux-x86_64-3.11
-INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpoog9g1vt/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gcc: /tmp/tmpoog9g1vt/src.linux-x86_64-3.11/AlmHn_VBO2module.c
-INFO: gcc: /tmp/tmpoog9g1vt/src.linux-x86_64-3.11/fortranobject.c
+creating /tmp/tmppumlnwd7/tmp
+creating /tmp/tmppumlnwd7/tmp/tmppumlnwd7
+creating /tmp/tmppumlnwd7/tmp/tmppumlnwd7/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmppumlnwd7/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmppumlnwd7/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmppumlnwd7/src.linux-x86_64-3.11/AlmHn_VBO2module.c
 INFO: compiling Fortran sources
-INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
-Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
-INFO: compile options: '-I/tmp/tmpoog9g1vt/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gfortran:f77: /tmp/tmpoog9g1vt/src.linux-x86_64-3.11/AlmHn_VBO2-f2pywrappers.f
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmppumlnwd7/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmppumlnwd7/src.linux-x86_64-3.11/AlmHn_VBO2-f2pywrappers.f
 INFO: gfortran:f77: AlmHn_VBO2.f
-INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpoog9g1vt/tmp/tmpoog9g1vt/src.linux-x86_64-3.11/AlmHn_VBO2module.o /tmp/tmpoog9g1vt/tmp/tmpoog9g1vt/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpoog9g1vt/AlmHn_VBO2.o /tmp/tmpoog9g1vt/tmp/tmpoog9g1vt/src.linux-x86_64-3.11/AlmHn_VBO2-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./AlmHn_VBO2.cpython-311-x86_64-linux-gnu.so
-Removing build directory /tmp/tmpoog9g1vt
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmppumlnwd7/tmp/tmppumlnwd7/src.linux-x86_64-3.11/AlmHn_VBO2module.o /tmp/tmppumlnwd7/tmp/tmppumlnwd7/src.linux-x86_64-3.11/fortranobject.o /tmp/tmppumlnwd7/AlmHn_VBO2.o /tmp/tmppumlnwd7/tmp/tmppumlnwd7/src.linux-x86_64-3.11/AlmHn_VBO2-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./AlmHn_VBO2.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmppumlnwd7

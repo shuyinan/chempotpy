@@ -7,8 +7,8 @@ running build_src
 INFO: build_src
 INFO: building extension "CH2O2_PIPNN" sources
 INFO: f2py options: []
-INFO: f2py:> /tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c
-creating /tmp/tmpvporyelv/src.linux-x86_64-3.11
+INFO: f2py:> /tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c
+creating /tmp/tmpevygxkrs/src.linux-x86_64-3.11
 Reading fortran codes...
 	Reading file 'CH2O2_PIPNN.f90' (format:free)
 Post-processing...
@@ -140,23 +140,23 @@ getarrdims:warning: assumed shape array, using 0 instead of ':'
 getarrdims:warning: assumed shape array, using 0 instead of ':'
 getarrdims:warning: assumed shape array, using 0 instead of ':'
 getarrdims:warning: assumed shape array, using 0 instead of ':'
-    Wrote C/API module "CH2O2_PIPNN" to file "/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c"
-    Fortran 77 wrappers are saved to "/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers.f"
-    Fortran 90 wrappers are saved to "/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers2.f90"
-INFO:   adding '/tmp/tmpvporyelv/src.linux-x86_64-3.11/fortranobject.c' to sources.
-INFO:   adding '/tmp/tmpvporyelv/src.linux-x86_64-3.11' to include_dirs.
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpvporyelv/src.linux-x86_64-3.11
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpvporyelv/src.linux-x86_64-3.11
-INFO:   adding '/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers.f' to sources.
-INFO:   adding '/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers2.f90' to sources.
+    Wrote C/API module "CH2O2_PIPNN" to file "/tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers.f"
+    Fortran 90 wrappers are saved to "/tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers2.f90"
+INFO:   adding '/tmp/tmpevygxkrs/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpevygxkrs/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpevygxkrs/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpevygxkrs/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers.f' to sources.
+INFO:   adding '/tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers2.f90' to sources.
 INFO: build_src: building npy-pkg config files
-/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
 !!
 
         ********************************************************************************
         Please avoid running ``setup.py`` directly.
-        Instead, use pypa/build, pypa/installer, pypa/build or
-        other standards-based tools.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
 
         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
         ********************************************************************************
@@ -170,49 +170,33 @@ INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey',
 INFO: customize ArmFlangCompiler
 WARN: Could not locate executable armflang
 INFO: customize Gnu95FCompiler
-INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
 INFO: customize Gnu95FCompiler
 INFO: customize Gnu95FCompiler using build_ext
 INFO: building 'CH2O2_PIPNN' extension
 INFO: compiling C sources
-INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
 
-creating /tmp/tmpvporyelv/tmp
-creating /tmp/tmpvporyelv/tmp/tmpvporyelv
-creating /tmp/tmpvporyelv/tmp/tmpvporyelv/src.linux-x86_64-3.11
-INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpvporyelv/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gcc: /tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c
-INFO: gcc: /tmp/tmpvporyelv/src.linux-x86_64-3.11/fortranobject.c
-/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c: In function 'f2py_setup_nnparam1':
-/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c:1367:36: warning: assignment to 'f2py_init_func' {aka 'void (*)(int *, long int *, void (*)(char *, long int *), int *)'} from incompatible pointer type 'void (*)(int *, int *, void (*)(char *, int *), int *)' [-Wincompatible-pointer-types]
- 1367 |   f2py_nnparam1_def[i_f2py++].func = nodes3a1;
-      |                                    ^
-/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c:1368:36: warning: assignment to 'f2py_init_func' {aka 'void (*)(int *, long int *, void (*)(char *, long int *), int *)'} from incompatible pointer type 'void (*)(int *, int *, void (*)(char *, int *), int *)' [-Wincompatible-pointer-types]
- 1368 |   f2py_nnparam1_def[i_f2py++].func = weight3a1;
-      |                                    ^
-/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c:1369:36: warning: assignment to 'f2py_init_func' {aka 'void (*)(int *, long int *, void (*)(char *, long int *), int *)'} from incompatible pointer type 'void (*)(int *, int *, void (*)(char *, int *), int *)' [-Wincompatible-pointer-types]
- 1369 |   f2py_nnparam1_def[i_f2py++].func = bias3a1;
-      |                                    ^
-/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c:1370:36: warning: assignment to 'f2py_init_func' {aka 'void (*)(int *, long int *, void (*)(char *, long int *), int *)'} from incompatible pointer type 'void (*)(int *, int *, void (*)(char *, int *), int *)' [-Wincompatible-pointer-types]
- 1370 |   f2py_nnparam1_def[i_f2py++].func = pdel3a1;
-      |                                    ^
-/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c:1371:36: warning: assignment to 'f2py_init_func' {aka 'void (*)(int *, long int *, void (*)(char *, long int *), int *)'} from incompatible pointer type 'void (*)(int *, int *, void (*)(char *, int *), int *)' [-Wincompatible-pointer-types]
- 1371 |   f2py_nnparam1_def[i_f2py++].func = pavg3a1;
-      |                                    ^
+creating /tmp/tmpevygxkrs/tmp
+creating /tmp/tmpevygxkrs/tmp/tmpevygxkrs
+creating /tmp/tmpevygxkrs/tmp/tmpevygxkrs/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpevygxkrs/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmpevygxkrs/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.c
 INFO: compiling Fortran 90 module sources
-INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
-Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-INFO: compile options: '-I/tmp/tmpvporyelv/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-extra options: '-J/tmp/tmpvporyelv/ -I/tmp/tmpvporyelv/'
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpevygxkrs/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+extra options: '-J/tmp/tmpevygxkrs/ -I/tmp/tmpevygxkrs/'
 INFO: gfortran:f90: CH2O2_PIPNN.f90
 INFO: compiling Fortran sources
-INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
-Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-INFO: compile options: '-I/tmp/tmpvporyelv/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-extra options: '-J/tmp/tmpvporyelv/ -I/tmp/tmpvporyelv/'
-INFO: gfortran:f90: /tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers2.f90
-INFO: gfortran:f77: /tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers.f
-INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpvporyelv/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.o /tmp/tmpvporyelv/tmp/tmpvporyelv/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpvporyelv/CH2O2_PIPNN.o /tmp/tmpvporyelv/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers.o /tmp/tmpvporyelv/tmp/tmpvporyelv/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers2.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./CH2O2_PIPNN.cpython-311-x86_64-linux-gnu.so
-Removing build directory /tmp/tmpvporyelv
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpevygxkrs/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+extra options: '-J/tmp/tmpevygxkrs/ -I/tmp/tmpevygxkrs/'
+INFO: gfortran:f90: /tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers2.f90
+INFO: gfortran:f77: /tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpevygxkrs/tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNNmodule.o /tmp/tmpevygxkrs/tmp/tmpevygxkrs/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpevygxkrs/CH2O2_PIPNN.o /tmp/tmpevygxkrs/tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers.o /tmp/tmpevygxkrs/tmp/tmpevygxkrs/src.linux-x86_64-3.11/CH2O2_PIPNN-f2pywrappers2.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./CH2O2_PIPNN.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpevygxkrs

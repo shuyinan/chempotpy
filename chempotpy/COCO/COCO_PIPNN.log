@@ -7,40 +7,94 @@ running build_src
 INFO: build_src
 INFO: building extension "COCO_PIPNN" sources
 INFO: f2py options: []
-INFO: f2py:> /tmp/tmp98w3_k5e/src.linux-x86_64-3.11/COCO_PIPNNmodule.c
-creating /tmp/tmp98w3_k5e/src.linux-x86_64-3.11
-buildmodule: Expected interface block. Skipping.
-buildmodule: Expected interface block. Skipping.
-buildmodule: Could not find the body of interfaced routine "unknown_subroutine". Skipping.
-
+INFO: f2py:> /tmp/tmpxbpgcge_/src.linux-x86_64-3.11/COCO_PIPNNmodule.c
+creating /tmp/tmpxbpgcge_/src.linux-x86_64-3.11
 Reading fortran codes...
-	Reading file 'COCO_PIPNN.f90' (format:fix)
-Line #255 in COCO_PIPNN.f90:"      subroutine pip_ococ outine nnfit_ococ(ndim,ntot,r0,vx,idv,dv,path) icit none acter(len=1024), intent(in) :: path ger,intent(in) :: ndim,ntot *8,intent(in) :: r0(ndim,ntot) *8,intent(out) :: vx(ntot) ger,parameter :: s0=7,s1=45,s2=45 *8,save :: w1(s0,s1),b1(s1),w2(s1,s2),b2(s2),w3(s2),b3,rg(2,s0),vg(2) ger,intent(in) :: idv *8,intent(out) :: dv(ndim,ntot) ger :: i ger,save :: init=0 ger,save :: fid acter(len=1024) :: file_path1 _path1 = trim(path)//"/COCO/nn_ococ_w20.txt" dim.ne.s0) stop "ndim .ne. s0" init.eq.0) then it=1 d=870711 en(fid,file=file_path1,status='old',action='read') ad(fid,*) w1,b1,w2,b2,w3,b3,rg,vg ose(fid) f tot.ge.24) then ll nsimx(ntot,r0,vx,idv,dv,s0,s1,s2,rg,w1,b1,w2,b2,w3,b3,vg)   i=1,ntot ll nsim(r0(1,i),vx(i),idv,dv(:,i),s0,s1,s2,rg,w1,b1,w2,b2,w3,b3,vg) ddo f rn "
-	analyzeline: No name/args pattern found for line.
-Line #279 in COCO_PIPNN.f90:"      subroutine nnfit_ococ outine nsim(r0,v,idv,dv,n0,n1,n2,rg,w1,b1,w2,b2,w3,b3,vg) icit none ger,intent(in) :: n0,n1,n2,idv *8,intent(in)  :: r0(n0),rg(2,n0),vg(2) *8,intent(in)  :: w1(n0,n1),b1(n1) *8,intent(in)  :: w2(n1,n2),b2(n2) *8,intent(in)  :: w3(n2),b3 *8,intent(out) :: v,dv(n0) ger :: i,j,k *8  :: r(n0),rgg(n0),vgg,ax(n1),bx(n2),maxx(n1),w2maxx(n1,n2),w3mbxx(n2) *8  :: dvtm(n0,n2),rt1(n1),rt2(n2) *8,external :: ddot d0  vg(2)-vg(1) =1,n0 g(i)=rg(2,i)-rg(1,i) i)=2.d0*(r(i)-rg(1,i))/rgg(i)-1.d0 "
-	analyzeline: No name/args pattern found for line.
-Line #393 in COCO_PIPNN.f90:"      subroutine nsim outine nsimx(nt,r,v,idv,dv,n0,n1,n2,rg,w1,b1,w2,b2,w3,b3,vg) icit none ger,intent(in) :: nt,idv,n0,n1,n2 *8,intent(in) :: r(n0,nt) *8,intent(out) :: v(nt),dv(n0,nt) *8,intent(in) :: w1(n0,n1),b1(n1),w2(n1,n2),b2(n2),w3(n2),b3 *8,intent(in) :: rg(2,n0),vg(2) *8 :: x0(n0,nt),x1(nt,n1),x2(nt,n2),tmp,rgg(n0),vgg ger :: i,j,k,n d0 =1,n0 g(i)=rg(2,i)-rg(1,i) o vg(2)-vg(1)  =1,n0 (i,1:nt)=(x0(i,1:nt)-rg(1,i))/rgg(i)*2.d0-1.d0 o =1,n1 1:nt,i)=b1(i) o  dgemm('t','n',nt,n1,n0,1.d0,x0,n0,w1,n0,1.d0,x1,nt) tanh(x1) =1,n2 1:nt,i)=b2(i) o  dgemm('n','n',nt,n2,n1,1.d0,x1,nt,w2,n1,1.d0,x2,nt) tanh(x2) nt)=b3  dgemv('n',nt,n2,1.d0,x2,nt,w3,1,1.d0,v,1) +1.d0)/2.d0*vgg+vg(1) idv.ne.1) return .d0 =1,nt  i=1,n0 "
-	analyzeline: No name/args pattern found for line.
-Line #418 in COCO_PIPNN.f90:"      subroutine pes_ococ outine potco(r,v,dv) icit none *8,intent(in) :: r  *8,intent(out) :: v,dv  *8 :: x,y1j ger j ger,parameter :: ns=8 *8,parameter :: w1(ns)=[  2.5731334302226245d+00,& "
-	analyzeline: No name/args pattern found for line.
-crackline: groupcounter=7 groupname={0: '', 1: 'module', 2: 'subroutine', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine'}
-crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
-crackline: groupcounter=6 groupname={0: '', 1: 'module', 2: 'subroutine', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine'}
-crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
-crackline: groupcounter=5 groupname={0: '', 1: 'module', 2: 'subroutine', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine'}
-crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
-crackline: groupcounter=4 groupname={0: '', 1: 'module', 2: 'subroutine', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine'}
-crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
-crackline: groupcounter=3 groupname={0: '', 1: 'module', 2: 'subroutine', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine'}
-crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
-crackline: groupcounter=2 groupname={0: '', 1: 'module', 2: 'subroutine', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine'}
-crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
-crackline: groupcounter=1 groupname={0: '', 1: 'module', 2: 'subroutine', 3: 'subroutine', 4: 'subroutine', 5: 'subroutine', 6: 'subroutine', 7: 'subroutine'}
-crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+	Reading file 'COCO_PIPNN.f90' (format:free)
+Line #425 in COCO_PIPNN.f90:"  real*8,parameter :: w1(ns)=[  2.5731334302226245d+00,                               -4.1635475296365723d+00,                                6.2652688635816842d+00,                               -8.1228824615517947d+00,                                2.5634824563114837d+01,                               -1.6643878666848999d+00,                                1.2863481593265147d+01,                               -5.1395051186435685d+00] "
+	updatevars: no name pattern found for entity='-4.1635475296365723d+00'. Skipping.
+Line #425 in COCO_PIPNN.f90:"  real*8,parameter :: w1(ns)=[  2.5731334302226245d+00,                               -4.1635475296365723d+00,                                6.2652688635816842d+00,                               -8.1228824615517947d+00,                                2.5634824563114837d+01,                               -1.6643878666848999d+00,                                1.2863481593265147d+01,                               -5.1395051186435685d+00] "
+	updatevars: could not crack entity declaration "6.2652688635816842d+00". Ignoring.
+Line #425 in COCO_PIPNN.f90:"  real*8,parameter :: w1(ns)=[  2.5731334302226245d+00,                               -4.1635475296365723d+00,                                6.2652688635816842d+00,                               -8.1228824615517947d+00,                                2.5634824563114837d+01,                               -1.6643878666848999d+00,                                1.2863481593265147d+01,                               -5.1395051186435685d+00] "
+	updatevars: no name pattern found for entity='-8.1228824615517947d+00'. Skipping.
+Line #425 in COCO_PIPNN.f90:"  real*8,parameter :: w1(ns)=[  2.5731334302226245d+00,                               -4.1635475296365723d+00,                                6.2652688635816842d+00,                               -8.1228824615517947d+00,                                2.5634824563114837d+01,                               -1.6643878666848999d+00,                                1.2863481593265147d+01,                               -5.1395051186435685d+00] "
+	updatevars: could not crack entity declaration "2.5634824563114837d+01". Ignoring.
+Line #425 in COCO_PIPNN.f90:"  real*8,parameter :: w1(ns)=[  2.5731334302226245d+00,                               -4.1635475296365723d+00,                                6.2652688635816842d+00,                               -8.1228824615517947d+00,                                2.5634824563114837d+01,                               -1.6643878666848999d+00,                                1.2863481593265147d+01,                               -5.1395051186435685d+00] "
+	updatevars: no name pattern found for entity='-1.6643878666848999d+00'. Skipping.
+Line #425 in COCO_PIPNN.f90:"  real*8,parameter :: w1(ns)=[  2.5731334302226245d+00,                               -4.1635475296365723d+00,                                6.2652688635816842d+00,                               -8.1228824615517947d+00,                                2.5634824563114837d+01,                               -1.6643878666848999d+00,                                1.2863481593265147d+01,                               -5.1395051186435685d+00] "
+	updatevars: could not crack entity declaration "1.2863481593265147d+01". Ignoring.
+Line #425 in COCO_PIPNN.f90:"  real*8,parameter :: w1(ns)=[  2.5731334302226245d+00,                               -4.1635475296365723d+00,                                6.2652688635816842d+00,                               -8.1228824615517947d+00,                                2.5634824563114837d+01,                               -1.6643878666848999d+00,                                1.2863481593265147d+01,                               -5.1395051186435685d+00] "
+	updatevars: no name pattern found for entity='-5.1395051186435685d+00]'. Skipping.
+Line #433 in COCO_PIPNN.f90:"  real*8,parameter :: b1(ns)=[ -1.6421783363943476d+00,                                1.5364774081764951d+00,                               -1.1338455332512607d+00,                               -1.4448051810696709d+00,                                7.5217573991947644d+00,                               -1.4005229119446290d+00,                                1.1053854378210930d+01,                               -5.9299626180269485d+00] "
+	updatevars: could not crack entity declaration "1.5364774081764951d+00". Ignoring.
+Line #433 in COCO_PIPNN.f90:"  real*8,parameter :: b1(ns)=[ -1.6421783363943476d+00,                                1.5364774081764951d+00,                               -1.1338455332512607d+00,                               -1.4448051810696709d+00,                                7.5217573991947644d+00,                               -1.4005229119446290d+00,                                1.1053854378210930d+01,                               -5.9299626180269485d+00] "
+	updatevars: no name pattern found for entity='-1.1338455332512607d+00'. Skipping.
+Line #433 in COCO_PIPNN.f90:"  real*8,parameter :: b1(ns)=[ -1.6421783363943476d+00,                                1.5364774081764951d+00,                               -1.1338455332512607d+00,                               -1.4448051810696709d+00,                                7.5217573991947644d+00,                               -1.4005229119446290d+00,                                1.1053854378210930d+01,                               -5.9299626180269485d+00] "
+	updatevars: no name pattern found for entity='-1.4448051810696709d+00'. Skipping.
+Line #433 in COCO_PIPNN.f90:"  real*8,parameter :: b1(ns)=[ -1.6421783363943476d+00,                                1.5364774081764951d+00,                               -1.1338455332512607d+00,                               -1.4448051810696709d+00,                                7.5217573991947644d+00,                               -1.4005229119446290d+00,                                1.1053854378210930d+01,                               -5.9299626180269485d+00] "
+	updatevars: could not crack entity declaration "7.5217573991947644d+00". Ignoring.
+Line #433 in COCO_PIPNN.f90:"  real*8,parameter :: b1(ns)=[ -1.6421783363943476d+00,                                1.5364774081764951d+00,                               -1.1338455332512607d+00,                               -1.4448051810696709d+00,                                7.5217573991947644d+00,                               -1.4005229119446290d+00,                                1.1053854378210930d+01,                               -5.9299626180269485d+00] "
+	updatevars: no name pattern found for entity='-1.4005229119446290d+00'. Skipping.
+Line #433 in COCO_PIPNN.f90:"  real*8,parameter :: b1(ns)=[ -1.6421783363943476d+00,                                1.5364774081764951d+00,                               -1.1338455332512607d+00,                               -1.4448051810696709d+00,                                7.5217573991947644d+00,                               -1.4005229119446290d+00,                                1.1053854378210930d+01,                               -5.9299626180269485d+00] "
+	updatevars: could not crack entity declaration "1.1053854378210930d+01". Ignoring.
+Line #433 in COCO_PIPNN.f90:"  real*8,parameter :: b1(ns)=[ -1.6421783363943476d+00,                                1.5364774081764951d+00,                               -1.1338455332512607d+00,                               -1.4448051810696709d+00,                                7.5217573991947644d+00,                               -1.4005229119446290d+00,                                1.1053854378210930d+01,                               -5.9299626180269485d+00] "
+	updatevars: no name pattern found for entity='-5.9299626180269485d+00]'. Skipping.
+Line #441 in COCO_PIPNN.f90:"  real*8,parameter :: w2(ns)=[ -8.8664820626030757d-03,                                7.8571245473773067d-03,                               -3.6411047563733342d-03,                               -4.0358215533209145d-03,                                9.6640587889626451d-04,                               -1.4325782866595651d+00,                                1.2002568907875554d-02,                                8.3983298757280007d+00] "
+	updatevars: could not crack entity declaration "7.8571245473773067d-03". Ignoring.
+Line #441 in COCO_PIPNN.f90:"  real*8,parameter :: w2(ns)=[ -8.8664820626030757d-03,                                7.8571245473773067d-03,                               -3.6411047563733342d-03,                               -4.0358215533209145d-03,                                9.6640587889626451d-04,                               -1.4325782866595651d+00,                                1.2002568907875554d-02,                                8.3983298757280007d+00] "
+	updatevars: no name pattern found for entity='-3.6411047563733342d-03'. Skipping.
+Line #441 in COCO_PIPNN.f90:"  real*8,parameter :: w2(ns)=[ -8.8664820626030757d-03,                                7.8571245473773067d-03,                               -3.6411047563733342d-03,                               -4.0358215533209145d-03,                                9.6640587889626451d-04,                               -1.4325782866595651d+00,                                1.2002568907875554d-02,                                8.3983298757280007d+00] "
+	updatevars: no name pattern found for entity='-4.0358215533209145d-03'. Skipping.
+Line #441 in COCO_PIPNN.f90:"  real*8,parameter :: w2(ns)=[ -8.8664820626030757d-03,                                7.8571245473773067d-03,                               -3.6411047563733342d-03,                               -4.0358215533209145d-03,                                9.6640587889626451d-04,                               -1.4325782866595651d+00,                                1.2002568907875554d-02,                                8.3983298757280007d+00] "
+	updatevars: could not crack entity declaration "9.6640587889626451d-04". Ignoring.
+Line #441 in COCO_PIPNN.f90:"  real*8,parameter :: w2(ns)=[ -8.8664820626030757d-03,                                7.8571245473773067d-03,                               -3.6411047563733342d-03,                               -4.0358215533209145d-03,                                9.6640587889626451d-04,                               -1.4325782866595651d+00,                                1.2002568907875554d-02,                                8.3983298757280007d+00] "
+	updatevars: no name pattern found for entity='-1.4325782866595651d+00'. Skipping.
+Line #441 in COCO_PIPNN.f90:"  real*8,parameter :: w2(ns)=[ -8.8664820626030757d-03,                                7.8571245473773067d-03,                               -3.6411047563733342d-03,                               -4.0358215533209145d-03,                                9.6640587889626451d-04,                               -1.4325782866595651d+00,                                1.2002568907875554d-02,                                8.3983298757280007d+00] "
+	updatevars: could not crack entity declaration "1.2002568907875554d-02". Ignoring.
+Line #441 in COCO_PIPNN.f90:"  real*8,parameter :: w2(ns)=[ -8.8664820626030757d-03,                                7.8571245473773067d-03,                               -3.6411047563733342d-03,                               -4.0358215533209145d-03,                                9.6640587889626451d-04,                               -1.4325782866595651d+00,                                1.2002568907875554d-02,                                8.3983298757280007d+00] "
+	updatevars: could not crack entity declaration "8.3983298757280007d+00]". Ignoring.
 Post-processing...
 	Block: COCO_PIPNN
 			Block: pes
-		Block: unknown_subroutine
+			Block: evdrdx
+			Block: pes_ococ
+In: :COCO_PIPNN:COCO_PIPNN.f90:pes_ococ
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: potco
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{'typespec': 'real', 'kindselector': {'*': '8'}, 'attrspec': ['parameter']}
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters:parameter '6' does not have value?!
+{'typespec': 'real', 'kindselector': {'*': '8'}, 'attrspec': ['parameter']}
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters:parameter '2' does not have value?!
+{'typespec': 'real', 'kindselector': {'*': '8'}, 'attrspec': ['parameter']}
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters:parameter '1' does not have value?!
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{'typespec': 'real', 'kindselector': {'*': '8'}, 'attrspec': ['parameter']}
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters:parameter '7' does not have value?!
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{'typespec': 'real', 'kindselector': {'*': '8'}, 'attrspec': ['parameter']}
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters:parameter '9' does not have value?!
+{'typespec': 'real', 'kindselector': {'*': '8'}, 'attrspec': ['parameter']}
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters:parameter '8' does not have value?!
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :COCO_PIPNN:COCO_PIPNN.f90:potco
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
 Applying post-processing hooks...
   character_backward_compatibility_hook
 Post-processing (stage 2)...
@@ -50,20 +104,32 @@ Building modules...
     Maybe empty "COCO_PIPNN-f2pywrappers.f"
         Constructing wrapper function "pes"...
           p,g,d = pes(x,igrad,path)
-    Wrote C/API module "COCO_PIPNN" to file "/tmp/tmp98w3_k5e/src.linux-x86_64-3.11/COCO_PIPNNmodule.c"
-INFO:   adding '/tmp/tmp98w3_k5e/src.linux-x86_64-3.11/fortranobject.c' to sources.
-INFO:   adding '/tmp/tmp98w3_k5e/src.linux-x86_64-3.11' to include_dirs.
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp98w3_k5e/src.linux-x86_64-3.11
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp98w3_k5e/src.linux-x86_64-3.11
-INFO:   adding '/tmp/tmp98w3_k5e/src.linux-x86_64-3.11/COCO_PIPNN-f2pywrappers.f' to sources.
+    Generating possibly empty wrappers"
+    Maybe empty "COCO_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "evdrdx"...
+          evdrdx(x,r,drdx)
+    Generating possibly empty wrappers"
+    Maybe empty "COCO_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "pes_ococ"...
+          v,dvdr = pes_ococ(r,idv,path)
+    Generating possibly empty wrappers"
+    Maybe empty "COCO_PIPNN-f2pywrappers.f"
+        Constructing wrapper function "potco"...
+          v,dv = potco(r)
+    Wrote C/API module "COCO_PIPNN" to file "/tmp/tmpxbpgcge_/src.linux-x86_64-3.11/COCO_PIPNNmodule.c"
+INFO:   adding '/tmp/tmpxbpgcge_/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpxbpgcge_/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpxbpgcge_/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpxbpgcge_/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpxbpgcge_/src.linux-x86_64-3.11/COCO_PIPNN-f2pywrappers.f' to sources.
 INFO: build_src: building npy-pkg config files
-/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
 !!
 
         ********************************************************************************
         Please avoid running ``setup.py`` directly.
-        Instead, use pypa/build, pypa/installer, pypa/build or
-        other standards-based tools.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
 
         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
         ********************************************************************************
@@ -77,25 +143,25 @@ INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey',
 INFO: customize ArmFlangCompiler
 WARN: Could not locate executable armflang
 INFO: customize Gnu95FCompiler
-INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
 INFO: customize Gnu95FCompiler
 INFO: customize Gnu95FCompiler using build_ext
 INFO: building 'COCO_PIPNN' extension
 INFO: compiling C sources
-INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
 
-creating /tmp/tmp98w3_k5e/tmp
-creating /tmp/tmp98w3_k5e/tmp/tmp98w3_k5e
-creating /tmp/tmp98w3_k5e/tmp/tmp98w3_k5e/src.linux-x86_64-3.11
-INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp98w3_k5e/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gcc: /tmp/tmp98w3_k5e/src.linux-x86_64-3.11/COCO_PIPNNmodule.c
-INFO: gcc: /tmp/tmp98w3_k5e/src.linux-x86_64-3.11/fortranobject.c
+creating /tmp/tmpxbpgcge_/tmp
+creating /tmp/tmpxbpgcge_/tmp/tmpxbpgcge_
+creating /tmp/tmpxbpgcge_/tmp/tmpxbpgcge_/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpxbpgcge_/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmpxbpgcge_/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmpxbpgcge_/src.linux-x86_64-3.11/COCO_PIPNNmodule.c
 INFO: compiling Fortran sources
-INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
-Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-INFO: compile options: '-I/tmp/tmp98w3_k5e/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpxbpgcge_/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
 INFO: gfortran:f90: COCO_PIPNN.f90
-INFO: gfortran:f77: /tmp/tmp98w3_k5e/src.linux-x86_64-3.11/COCO_PIPNN-f2pywrappers.f
-INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp98w3_k5e/tmp/tmp98w3_k5e/src.linux-x86_64-3.11/COCO_PIPNNmodule.o /tmp/tmp98w3_k5e/tmp/tmp98w3_k5e/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp98w3_k5e/COCO_PIPNN.o /tmp/tmp98w3_k5e/tmp/tmp98w3_k5e/src.linux-x86_64-3.11/COCO_PIPNN-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./COCO_PIPNN.cpython-311-x86_64-linux-gnu.so
-Removing build directory /tmp/tmp98w3_k5e
+INFO: gfortran:f77: /tmp/tmpxbpgcge_/src.linux-x86_64-3.11/COCO_PIPNN-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpxbpgcge_/tmp/tmpxbpgcge_/src.linux-x86_64-3.11/COCO_PIPNNmodule.o /tmp/tmpxbpgcge_/tmp/tmpxbpgcge_/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpxbpgcge_/COCO_PIPNN.o /tmp/tmpxbpgcge_/tmp/tmpxbpgcge_/src.linux-x86_64-3.11/COCO_PIPNN-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./COCO_PIPNN.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpxbpgcge_

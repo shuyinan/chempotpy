@@ -7,8 +7,8 @@ running build_src
 INFO: build_src
 INFO: building extension "O3_2_5Ap" sources
 INFO: f2py options: []
-INFO: f2py:> /tmp/tmpixucuj7e/src.linux-x86_64-3.11/O3_2_5Apmodule.c
-creating /tmp/tmpixucuj7e/src.linux-x86_64-3.11
+INFO: f2py:> /tmp/tmplazfb0vb/src.linux-x86_64-3.11/O3_2_5Apmodule.c
+creating /tmp/tmplazfb0vb/src.linux-x86_64-3.11
 Reading fortran codes...
 	Reading file 'O3_2_5Ap.f' (format:fix,strict)
 Post-processing...
@@ -117,21 +117,21 @@ Building modules...
 		  dmsdr,dmdr,dpdr,dvdr,drdx,dbdr
 		Constructing COMMON block support for "msprmt"...
 		  a,ab,ra,rb
-    Wrote C/API module "O3_2_5Ap" to file "/tmp/tmpixucuj7e/src.linux-x86_64-3.11/O3_2_5Apmodule.c"
-    Fortran 77 wrappers are saved to "/tmp/tmpixucuj7e/src.linux-x86_64-3.11/O3_2_5Ap-f2pywrappers.f"
-INFO:   adding '/tmp/tmpixucuj7e/src.linux-x86_64-3.11/fortranobject.c' to sources.
-INFO:   adding '/tmp/tmpixucuj7e/src.linux-x86_64-3.11' to include_dirs.
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpixucuj7e/src.linux-x86_64-3.11
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpixucuj7e/src.linux-x86_64-3.11
-INFO:   adding '/tmp/tmpixucuj7e/src.linux-x86_64-3.11/O3_2_5Ap-f2pywrappers.f' to sources.
+    Wrote C/API module "O3_2_5Ap" to file "/tmp/tmplazfb0vb/src.linux-x86_64-3.11/O3_2_5Apmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmplazfb0vb/src.linux-x86_64-3.11/O3_2_5Ap-f2pywrappers.f"
+INFO:   adding '/tmp/tmplazfb0vb/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmplazfb0vb/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmplazfb0vb/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmplazfb0vb/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmplazfb0vb/src.linux-x86_64-3.11/O3_2_5Ap-f2pywrappers.f' to sources.
 INFO: build_src: building npy-pkg config files
-/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
 !!
 
         ********************************************************************************
         Please avoid running ``setup.py`` directly.
-        Instead, use pypa/build, pypa/installer, pypa/build or
-        other standards-based tools.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
 
         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
         ********************************************************************************
@@ -145,25 +145,25 @@ INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey',
 INFO: customize ArmFlangCompiler
 WARN: Could not locate executable armflang
 INFO: customize Gnu95FCompiler
-INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
 INFO: customize Gnu95FCompiler
 INFO: customize Gnu95FCompiler using build_ext
 INFO: building 'O3_2_5Ap' extension
 INFO: compiling C sources
-INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
 
-creating /tmp/tmpixucuj7e/tmp
-creating /tmp/tmpixucuj7e/tmp/tmpixucuj7e
-creating /tmp/tmpixucuj7e/tmp/tmpixucuj7e/src.linux-x86_64-3.11
-INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpixucuj7e/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gcc: /tmp/tmpixucuj7e/src.linux-x86_64-3.11/O3_2_5Apmodule.c
-INFO: gcc: /tmp/tmpixucuj7e/src.linux-x86_64-3.11/fortranobject.c
+creating /tmp/tmplazfb0vb/tmp
+creating /tmp/tmplazfb0vb/tmp/tmplazfb0vb
+creating /tmp/tmplazfb0vb/tmp/tmplazfb0vb/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmplazfb0vb/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmplazfb0vb/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmplazfb0vb/src.linux-x86_64-3.11/O3_2_5Apmodule.c
 INFO: compiling Fortran sources
-INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
-Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
-INFO: compile options: '-I/tmp/tmpixucuj7e/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gfortran:f77: /tmp/tmpixucuj7e/src.linux-x86_64-3.11/O3_2_5Ap-f2pywrappers.f
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmplazfb0vb/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmplazfb0vb/src.linux-x86_64-3.11/O3_2_5Ap-f2pywrappers.f
 INFO: gfortran:f77: O3_2_5Ap.f
 O3_2_5Ap.f:50:17:
 
@@ -175,5 +175,5 @@ O3_2_5Ap.f:50:22:
    50 |       call o3pes(tx,v,tg,igrad)
       |                      1
 Warning: Actual argument contains too few elements for dummy argument 'dvdx' (9/12) at (1)
-INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpixucuj7e/tmp/tmpixucuj7e/src.linux-x86_64-3.11/O3_2_5Apmodule.o /tmp/tmpixucuj7e/tmp/tmpixucuj7e/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpixucuj7e/O3_2_5Ap.o /tmp/tmpixucuj7e/tmp/tmpixucuj7e/src.linux-x86_64-3.11/O3_2_5Ap-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./O3_2_5Ap.cpython-311-x86_64-linux-gnu.so
-Removing build directory /tmp/tmpixucuj7e
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmplazfb0vb/tmp/tmplazfb0vb/src.linux-x86_64-3.11/O3_2_5Apmodule.o /tmp/tmplazfb0vb/tmp/tmplazfb0vb/src.linux-x86_64-3.11/fortranobject.o /tmp/tmplazfb0vb/O3_2_5Ap.o /tmp/tmplazfb0vb/tmp/tmplazfb0vb/src.linux-x86_64-3.11/O3_2_5Ap-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./O3_2_5Ap.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmplazfb0vb

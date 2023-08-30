@@ -7,10 +7,10 @@ running build_src
 INFO: build_src
 INFO: building extension "C2N_PIPNN_Ap" sources
 INFO: f2py options: []
-INFO: f2py:> /tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/C2N_PIPNN_Apmodule.c
-creating /tmp/tmpmbdnt6e8/src.linux-x86_64-3.11
+INFO: f2py:> /tmp/tmpbjvcaxho/src.linux-x86_64-3.11/C2N_PIPNN_Apmodule.c
+creating /tmp/tmpbjvcaxho/src.linux-x86_64-3.11
 Reading fortran codes...
-	Reading file 'C2N_PIPNN_Ap.f90' (format:fix)
+	Reading file 'C2N_PIPNN_Ap.f90' (format:free)
 Post-processing...
 	Block: C2N_PIPNN_Ap
 			Block: pes
@@ -74,20 +74,20 @@ Building modules...
     Maybe empty "C2N_PIPNN_Ap-f2pywrappers.f"
         Constructing wrapper function "evpoly"...
           p = evpoly(m)
-    Wrote C/API module "C2N_PIPNN_Ap" to file "/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/C2N_PIPNN_Apmodule.c"
-INFO:   adding '/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/fortranobject.c' to sources.
-INFO:   adding '/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11' to include_dirs.
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpmbdnt6e8/src.linux-x86_64-3.11
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpmbdnt6e8/src.linux-x86_64-3.11
-INFO:   adding '/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/C2N_PIPNN_Ap-f2pywrappers.f' to sources.
+    Wrote C/API module "C2N_PIPNN_Ap" to file "/tmp/tmpbjvcaxho/src.linux-x86_64-3.11/C2N_PIPNN_Apmodule.c"
+INFO:   adding '/tmp/tmpbjvcaxho/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpbjvcaxho/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpbjvcaxho/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpbjvcaxho/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpbjvcaxho/src.linux-x86_64-3.11/C2N_PIPNN_Ap-f2pywrappers.f' to sources.
 INFO: build_src: building npy-pkg config files
-/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
 !!
 
         ********************************************************************************
         Please avoid running ``setup.py`` directly.
-        Instead, use pypa/build, pypa/installer, pypa/build or
-        other standards-based tools.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
 
         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
         ********************************************************************************
@@ -101,25 +101,25 @@ INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey',
 INFO: customize ArmFlangCompiler
 WARN: Could not locate executable armflang
 INFO: customize Gnu95FCompiler
-INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
 INFO: customize Gnu95FCompiler
 INFO: customize Gnu95FCompiler using build_ext
 INFO: building 'C2N_PIPNN_Ap' extension
 INFO: compiling C sources
-INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
 
-creating /tmp/tmpmbdnt6e8/tmp
-creating /tmp/tmpmbdnt6e8/tmp/tmpmbdnt6e8
-creating /tmp/tmpmbdnt6e8/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11
-INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gcc: /tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/C2N_PIPNN_Apmodule.c
-INFO: gcc: /tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/fortranobject.c
+creating /tmp/tmpbjvcaxho/tmp
+creating /tmp/tmpbjvcaxho/tmp/tmpbjvcaxho
+creating /tmp/tmpbjvcaxho/tmp/tmpbjvcaxho/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpbjvcaxho/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmpbjvcaxho/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmpbjvcaxho/src.linux-x86_64-3.11/C2N_PIPNN_Apmodule.c
 INFO: compiling Fortran sources
-INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
-Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-INFO: compile options: '-I/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpbjvcaxho/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
 INFO: gfortran:f90: C2N_PIPNN_Ap.f90
-INFO: gfortran:f77: /tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/C2N_PIPNN_Ap-f2pywrappers.f
-INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpmbdnt6e8/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/C2N_PIPNN_Apmodule.o /tmp/tmpmbdnt6e8/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpmbdnt6e8/C2N_PIPNN_Ap.o /tmp/tmpmbdnt6e8/tmp/tmpmbdnt6e8/src.linux-x86_64-3.11/C2N_PIPNN_Ap-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./C2N_PIPNN_Ap.cpython-311-x86_64-linux-gnu.so
-Removing build directory /tmp/tmpmbdnt6e8
+INFO: gfortran:f77: /tmp/tmpbjvcaxho/src.linux-x86_64-3.11/C2N_PIPNN_Ap-f2pywrappers.f
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpbjvcaxho/tmp/tmpbjvcaxho/src.linux-x86_64-3.11/C2N_PIPNN_Apmodule.o /tmp/tmpbjvcaxho/tmp/tmpbjvcaxho/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpbjvcaxho/C2N_PIPNN_Ap.o /tmp/tmpbjvcaxho/tmp/tmpbjvcaxho/src.linux-x86_64-3.11/C2N_PIPNN_Ap-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./C2N_PIPNN_Ap.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpbjvcaxho

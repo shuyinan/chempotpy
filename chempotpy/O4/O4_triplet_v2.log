@@ -7,8 +7,8 @@ running build_src
 INFO: build_src
 INFO: building extension "O4_triplet_v2" sources
 INFO: f2py options: []
-INFO: f2py:> /tmp/tmph1_g_thx/src.linux-x86_64-3.11/O4_triplet_v2module.c
-creating /tmp/tmph1_g_thx/src.linux-x86_64-3.11
+INFO: f2py:> /tmp/tmpyz7y6nys/src.linux-x86_64-3.11/O4_triplet_v2module.c
+creating /tmp/tmpyz7y6nys/src.linux-x86_64-3.11
 Reading fortran codes...
 	Reading file 'O4_triplet_v2.f' (format:fix,strict)
 Post-processing...
@@ -117,21 +117,21 @@ Building modules...
 		  dmsdr,dmdr,dpdr,dvdr,drdx,dbdr
 		Constructing COMMON block support for "msprmt"...
 		  a,ab,ra,rb
-    Wrote C/API module "O4_triplet_v2" to file "/tmp/tmph1_g_thx/src.linux-x86_64-3.11/O4_triplet_v2module.c"
-    Fortran 77 wrappers are saved to "/tmp/tmph1_g_thx/src.linux-x86_64-3.11/O4_triplet_v2-f2pywrappers.f"
-INFO:   adding '/tmp/tmph1_g_thx/src.linux-x86_64-3.11/fortranobject.c' to sources.
-INFO:   adding '/tmp/tmph1_g_thx/src.linux-x86_64-3.11' to include_dirs.
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmph1_g_thx/src.linux-x86_64-3.11
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmph1_g_thx/src.linux-x86_64-3.11
-INFO:   adding '/tmp/tmph1_g_thx/src.linux-x86_64-3.11/O4_triplet_v2-f2pywrappers.f' to sources.
+    Wrote C/API module "O4_triplet_v2" to file "/tmp/tmpyz7y6nys/src.linux-x86_64-3.11/O4_triplet_v2module.c"
+    Fortran 77 wrappers are saved to "/tmp/tmpyz7y6nys/src.linux-x86_64-3.11/O4_triplet_v2-f2pywrappers.f"
+INFO:   adding '/tmp/tmpyz7y6nys/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmpyz7y6nys/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpyz7y6nys/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpyz7y6nys/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmpyz7y6nys/src.linux-x86_64-3.11/O4_triplet_v2-f2pywrappers.f' to sources.
 INFO: build_src: building npy-pkg config files
-/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
 !!
 
         ********************************************************************************
         Please avoid running ``setup.py`` directly.
-        Instead, use pypa/build, pypa/installer, pypa/build or
-        other standards-based tools.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
 
         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
         ********************************************************************************
@@ -145,25 +145,25 @@ INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey',
 INFO: customize ArmFlangCompiler
 WARN: Could not locate executable armflang
 INFO: customize Gnu95FCompiler
-INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
 INFO: customize Gnu95FCompiler
 INFO: customize Gnu95FCompiler using build_ext
 INFO: building 'O4_triplet_v2' extension
 INFO: compiling C sources
-INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
 
-creating /tmp/tmph1_g_thx/tmp
-creating /tmp/tmph1_g_thx/tmp/tmph1_g_thx
-creating /tmp/tmph1_g_thx/tmp/tmph1_g_thx/src.linux-x86_64-3.11
-INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmph1_g_thx/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gcc: /tmp/tmph1_g_thx/src.linux-x86_64-3.11/O4_triplet_v2module.c
-INFO: gcc: /tmp/tmph1_g_thx/src.linux-x86_64-3.11/fortranobject.c
+creating /tmp/tmpyz7y6nys/tmp
+creating /tmp/tmpyz7y6nys/tmp/tmpyz7y6nys
+creating /tmp/tmpyz7y6nys/tmp/tmpyz7y6nys/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpyz7y6nys/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmpyz7y6nys/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmpyz7y6nys/src.linux-x86_64-3.11/O4_triplet_v2module.c
 INFO: compiling Fortran sources
-INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
-Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
-INFO: compile options: '-I/tmp/tmph1_g_thx/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gfortran:f77: /tmp/tmph1_g_thx/src.linux-x86_64-3.11/O4_triplet_v2-f2pywrappers.f
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmpyz7y6nys/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmpyz7y6nys/src.linux-x86_64-3.11/O4_triplet_v2-f2pywrappers.f
 INFO: gfortran:f77: O4_triplet_v2.f
-INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmph1_g_thx/tmp/tmph1_g_thx/src.linux-x86_64-3.11/O4_triplet_v2module.o /tmp/tmph1_g_thx/tmp/tmph1_g_thx/src.linux-x86_64-3.11/fortranobject.o /tmp/tmph1_g_thx/O4_triplet_v2.o /tmp/tmph1_g_thx/tmp/tmph1_g_thx/src.linux-x86_64-3.11/O4_triplet_v2-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./O4_triplet_v2.cpython-311-x86_64-linux-gnu.so
-Removing build directory /tmp/tmph1_g_thx
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpyz7y6nys/tmp/tmpyz7y6nys/src.linux-x86_64-3.11/O4_triplet_v2module.o /tmp/tmpyz7y6nys/tmp/tmpyz7y6nys/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpyz7y6nys/O4_triplet_v2.o /tmp/tmpyz7y6nys/tmp/tmpyz7y6nys/src.linux-x86_64-3.11/O4_triplet_v2-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./O4_triplet_v2.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpyz7y6nys

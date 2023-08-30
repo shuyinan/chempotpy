@@ -7,8 +7,8 @@ running build_src
 INFO: build_src
 INFO: building extension "FH2_LEPS_M5_1991" sources
 INFO: f2py options: []
-INFO: f2py:> /tmp/tmpqiksmzob/src.linux-x86_64-3.11/FH2_LEPS_M5_1991module.c
-creating /tmp/tmpqiksmzob/src.linux-x86_64-3.11
+INFO: f2py:> /tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/FH2_LEPS_M5_1991module.c
+creating /tmp/tmp3n1l8wh1/src.linux-x86_64-3.11
 analyzeline: Failed to evaluate '4.0d0*pi*1.0d-07'. Ignoring: invalid decimal literal (<string>, line 1)
 analyzeline: Failed to evaluate '1.0d0/(cmu_0*clight**2)'. Ignoring: invalid decimal literal (<string>, line 1)
 Reading fortran codes...
@@ -416,21 +416,21 @@ Building modules...
 		  engyij,deijdr
 		Constructing COMMON block support for "utilcm"...
 		  dgscartnu,descartnu,dijcartnu,cnvrtd,cnvrte,cnvrtde,ireorder,ksdiag,kediag,ksoffd,keoffd
-    Wrote C/API module "FH2_LEPS_M5_1991" to file "/tmp/tmpqiksmzob/src.linux-x86_64-3.11/FH2_LEPS_M5_1991module.c"
-    Fortran 77 wrappers are saved to "/tmp/tmpqiksmzob/src.linux-x86_64-3.11/FH2_LEPS_M5_1991-f2pywrappers.f"
-INFO:   adding '/tmp/tmpqiksmzob/src.linux-x86_64-3.11/fortranobject.c' to sources.
-INFO:   adding '/tmp/tmpqiksmzob/src.linux-x86_64-3.11' to include_dirs.
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpqiksmzob/src.linux-x86_64-3.11
-copying /home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpqiksmzob/src.linux-x86_64-3.11
-INFO:   adding '/tmp/tmpqiksmzob/src.linux-x86_64-3.11/FH2_LEPS_M5_1991-f2pywrappers.f' to sources.
+    Wrote C/API module "FH2_LEPS_M5_1991" to file "/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/FH2_LEPS_M5_1991module.c"
+    Fortran 77 wrappers are saved to "/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/FH2_LEPS_M5_1991-f2pywrappers.f"
+INFO:   adding '/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11' to include_dirs.
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp3n1l8wh1/src.linux-x86_64-3.11
+copying /home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp3n1l8wh1/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/FH2_LEPS_M5_1991-f2pywrappers.f' to sources.
 INFO: build_src: building npy-pkg config files
-/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
 !!
 
         ********************************************************************************
         Please avoid running ``setup.py`` directly.
-        Instead, use pypa/build, pypa/installer, pypa/build or
-        other standards-based tools.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
 
         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
         ********************************************************************************
@@ -444,25 +444,25 @@ INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey',
 INFO: customize ArmFlangCompiler
 WARN: Could not locate executable armflang
 INFO: customize Gnu95FCompiler
-INFO: Found executable /home/truhlard/shuxx055/anaconda3/bin/gfortran
+INFO: Found executable /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran
 INFO: customize Gnu95FCompiler
 INFO: customize Gnu95FCompiler using build_ext
 INFO: building 'FH2_LEPS_M5_1991' extension
 INFO: compiling C sources
-INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/include -fPIC
+INFO: C compiler: gcc -pthread -B /home/truhlard/shuxx055/anaconda3/envs/test/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC -O2 -isystem /home/truhlard/shuxx055/anaconda3/envs/test/include -fPIC
 
-creating /tmp/tmpqiksmzob/tmp
-creating /tmp/tmpqiksmzob/tmp/tmpqiksmzob
-creating /tmp/tmpqiksmzob/tmp/tmpqiksmzob/src.linux-x86_64-3.11
-INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmpqiksmzob/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gcc: /tmp/tmpqiksmzob/src.linux-x86_64-3.11/FH2_LEPS_M5_1991module.c
-INFO: gcc: /tmp/tmpqiksmzob/src.linux-x86_64-3.11/fortranobject.c
+creating /tmp/tmp3n1l8wh1/tmp
+creating /tmp/tmp3n1l8wh1/tmp/tmp3n1l8wh1
+creating /tmp/tmp3n1l8wh1/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gcc: /tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/fortranobject.c
+INFO: gcc: /tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/FH2_LEPS_M5_1991module.c
 INFO: compiling Fortran sources
-INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
-Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
-Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
-INFO: compile options: '-I/tmp/tmpqiksmzob/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/include/python3.11 -c'
-INFO: gfortran:f77: /tmp/tmpqiksmzob/src.linux-x86_64-3.11/FH2_LEPS_M5_1991-f2pywrappers.f
+INFO: Fortran f77 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -fallow-argument-mismatch -std=legacy -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11 -I/home/truhlard/shuxx055/anaconda3/envs/test/lib/python3.11/site-packages/numpy/core/include -I/home/truhlard/shuxx055/anaconda3/envs/test/include/python3.11 -c'
+INFO: gfortran:f77: /tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/FH2_LEPS_M5_1991-f2pywrappers.f
 INFO: gfortran:f77: FH2_LEPS_M5_1991.f
-INFO: /home/truhlard/shuxx055/anaconda3/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpqiksmzob/tmp/tmpqiksmzob/src.linux-x86_64-3.11/FH2_LEPS_M5_1991module.o /tmp/tmpqiksmzob/tmp/tmpqiksmzob/src.linux-x86_64-3.11/fortranobject.o /tmp/tmpqiksmzob/FH2_LEPS_M5_1991.o /tmp/tmpqiksmzob/tmp/tmpqiksmzob/src.linux-x86_64-3.11/FH2_LEPS_M5_1991-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./FH2_LEPS_M5_1991.cpython-311-x86_64-linux-gnu.so
-Removing build directory /tmp/tmpqiksmzob
+INFO: /home/truhlard/shuxx055/anaconda3/envs/test/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp3n1l8wh1/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/FH2_LEPS_M5_1991module.o /tmp/tmp3n1l8wh1/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp3n1l8wh1/FH2_LEPS_M5_1991.o /tmp/tmp3n1l8wh1/tmp/tmp3n1l8wh1/src.linux-x86_64-3.11/FH2_LEPS_M5_1991-f2pywrappers.o -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/panfs/jay/groups/16/truhlard/shuxx055/anaconda3/envs/test/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lgfortran -o ./FH2_LEPS_M5_1991.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp3n1l8wh1
