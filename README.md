@@ -39,6 +39,21 @@ How to install
         make check
 
 
+Compile Chempotpy subroutine
+----------------------------
+One can use the meta programming script to automatically generate a 
+fortran subroutine. 
+
+  get into the parent directory of chempotpy/chempotpy
+
+       ./meta_chempotpy.script
+
+The meta program will generate a fortran subroutine called chempotpy. 
+One can interface this chempotpy subroutine with any dynamics code. 
+Notice that the meta program will also generate sub programs for each 
+surface that is located in chempotpy/chempotpy/system/lib/.
+
+
 Citation
 --------
 
