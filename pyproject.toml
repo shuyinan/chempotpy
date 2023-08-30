@@ -1,0 +1,24 @@
+[build-system]
+requires = [
+    "scikit-build-core",
+    "numpy>=1.21",
+    "charset_normalizer",
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "chempotpy"
+version = "1.0.8"
+description = "ChemPotPy is a library for analytic representation of single-state and multi-state potential energy surfaces and couplings"
+authors = [
+    {name = "Yinan Shu", email = "yinan.shu.0728@gmail.com"},
+    {name = "Zoltan Varga", email = "zoltan78varga@gmail.com"},
+    {name = "Dayou Zhang", email = "zhan6350@umn.edu"},
+    {name = "Donald G. Truhlar", email = "truhlar@umn.edu"},
+]
+requires-python = ">=3.7"
+dependencies = ["numpy>=1.21"]
+
+[tool.scikit-build]
+ninja.minimum-version = "1.10"
+cmake.minimum-version = "3.17.2"
