@@ -1,6 +1,8 @@
-chempotpy/__pycache__/
-chempotpy/**/__pycache__/
-
+__pycache__
 dist
 chempotpy.egg-info
 build
+*.mod
+*.log
+*.so
+*.o
