@@ -13,6 +13,7 @@
       double precision :: r(1,3), v(1)
       double precision :: u11(1), u12(1), u22(1)
       double precision :: u(nstates,nstates)
+      double precision :: t(nstates,nstates)
       logical, save :: first_time_data=.true.
       integer :: i, j, k, l
 

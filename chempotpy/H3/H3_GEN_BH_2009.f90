@@ -1,28 +1,3 @@
-C   System:          H3
-C   Functional form:
-C   Common name:     Born-Huang
-C   Number of derivatives: 1
-C   Number of bodies: 3
-C   Number of electronic surfaces: 1
-C   Interface: Section-2
-C   Data file:
-C
-C   References:  Steven L. Mielke, David W. Schwenke, George C. Schatz, Bruce C. Garrett, and Kirk A. Peterson, J. Phys. Chem. A 113, 4479 (2009).
-C                Steven L. Mielke, Bruce C. Garrett, and Kirk A. Peterson, J. Chem. Phys. 116, 4142 (2002).
-C
-C   Notes:  Version with analytical gradients. This is the Born-Oppenheimer diagonal correction PES published in
-C           Steven L. Mielke, David W. Schwenke, George C. Schatz, Bruce C. Garrett, and Kirk A. Peterson, J. Phys. 
-C           Chem. A, 2009, 113, 4479 combined with the CCI PES published in Steven L. Mielke, Bruce C. Garrett, 
-C           and Kirk A. Peterson, J. Chem. Phys. 116, 4142 (2002).  This version is set up for the HHH mass combination. 
-C           The Born-Huang PES is mass dependent and to select other mass combinations one should reset the parameters 
-C           xmass1, xmass2, and xmass3 with the nuclear masses of the desired isotopes.  
-C           Input and output is via the common block "common /potcm/ rvp,evp,dvp" where rvp(3) is a 3-vector, 
-C           (R1, R2, R3) of HH distances, evp is the energy, and dvp(3) is the gradient, all in atomic units.  
-C           R1 is the distance between mass1 and mass2, R2 is the distance between mass2 and mass3, and R3 is the 
-C           distance between mass1 and mass3.
-C
-C
-
       module zmasses
         implicit none
         double precision :: zmass1, zmass2
@@ -43,10 +18,9 @@ C
       double precision :: ccishift= 0.1744759989649372d0,ezero2
       double precision :: towave=219474.7d0  ! hartree to cm-1 conversion
 
-!   CASE for  H + H2
-      double precision :: xmass1=1836.15264d0, xmass2=1836.15264d0, 
+      double precision :: xmass1=1836.15264d0, xmass2=1836.15264d0, &
      &                    xmass3=1836.15264d0
-      save xmh, xmd, xmass1, xmass2, xmass3, icase, xmminv, ezero, 
+      save xmh, xmd, xmass1, xmass2, xmass3, icase, xmminv, ezero, &
      &     towave
 
 !     write(6,*)present(newmasses)
@@ -88,7 +62,7 @@ C
 
       ezero=ezero/towave+ezero2+ccishift
 
-      if( (xmass1.eq.xmd) .and. (xmass2.eq.xmh) 
+      if( (xmass1.eq.xmd) .and. (xmass2.eq.xmh) &
      &      .and. (xmass3.eq.xmh) )then
         icase=1  ! We are solving for D + H2 so we don't need to solve for amat
       else
@@ -165,10 +139,10 @@ C
       double precision :: e1body, xmd, xmh, hatom_bodc, bodc2body
       double precision :: round, ald, betad, beta, deldamp, rhodamp
       double precision :: bb2, bb3, bb4, bb5, v, rnought, towave
-      double precision :: xma, xmb, xmc, v1, v2, gtot, rsum,
+      double precision :: xma, xmb, xmc, v1, v2, gtot, rsum,&
      &                    betadsum, rdampsum, v3c
       double precision :: sum1, sum2, sum3, sum4, sum5, rprod
-      double precision :: bigq, slit, slitsq, damper, rpass(3),
+      double precision :: bigq, slit, slitsq, damper, rpass(3),&
      &                    sdamp, rdamp1, rdamp2, rdamp3
       double precision :: slit1, slit2, slit3, ddamper(1:3), dsdamp
       double precision :: dgtot(1:3),dbb2(1:3),dbb3(1:3)
@@ -748,7 +722,7 @@ C
       entry potbodcdh2(r1x,r2x,r3x,eee,dv)
 
       rsum=r1x+r2x+r3x
-      if((r1x.le.betad).or.(r2x.le.betad).or.(r3x.le.betad)
+      if((r1x.le.betad).or.(r2x.le.betad).or.(r3x.le.betad)&
      &    .or.(rsum.le.betadsum) )then
         damper=0.0d0
         ddamper(:)=0.0d0
@@ -770,14 +744,14 @@ C
            damper=exp(rdampsum+rdamp1+rdamp2+rdamp3+sdamp)
 
            dsdamp=sdamp/(deldamp-slit)
-           ddamper(1)= damper*(dsdamp*slit*r1x*
-     &          (4.0d0*slit1/slit3 - 2.0d0/bigq)
+           ddamper(1)= damper*(dsdamp*slit*r1x*&
+     &          (4.0d0*slit1/slit3 - 2.0d0/bigq)&
      &          +rdampsum/(betadsum-rsum)+rdamp1/(betad-r1x))
-           ddamper(2)=damper*(-dsdamp*slit*r2x*
-     &          (4.0d0*(r1x*r1x-2.0d0*r2x*r2x+r3x*r3x)/slit3+2.0d0/bigq)
+           ddamper(2)=damper*(-dsdamp*slit*r2x*&
+     &(4.0d0*(r1x*r1x-2.0d0*r2x*r2x+r3x*r3x)/slit3+2.0d0/bigq)&
      &          +rdampsum/(betadsum-rsum)+rdamp2/(betad-r2x))
-           ddamper(3)=damper*(-dsdamp*slit*r3x*
-     &          (4.0d0*(r1x*r1x+r2x*r2x-2.0d0*r3x*r3x)/slit3+2.0d0/bigq)
+           ddamper(3)=damper*(-dsdamp*slit*r3x*&
+     &(4.0d0*(r1x*r1x+r2x*r2x-2.0d0*r3x*r3x)/slit3+2.0d0/bigq)&
      &          +rdampsum/(betadsum-rsum)+rdamp3/(betad-r3x))
         endif
       endif
@@ -802,7 +776,7 @@ C
 
       e1body = (2.d0 + xmh/xmd) * hatom_bodc 
  
-      v = e1body + ((xmd+xmh)/(2.d0*xmd))*(bodc2body(r1x,dv1)
+      v = e1body + ((xmd+xmh)/(2.d0*xmd))*(bodc2body(r1x,dv1)&
      &     +bodc2body(r2x,dv2)) + bodc2body(r3x,dv3)
 
       dv(1) = ((xmd+xmh)/(2.d0*xmd))*dv1
@@ -865,7 +839,7 @@ C
       eee=v+damper*v3c
 
       do i = 1,3
-         dv(i)=dv(i) +ddamper(i)*v3c +damper*(sum2*dbb2(i)+sum3*dbb3(i)
+         dv(i)=dv(i) +ddamper(i)*v3c +damper*(sum2*dbb2(i)+sum3*dbb3(i)&
      &        +dsum1(i)+dsum2(i)*bb2+dsum3(i)*bb3)
       enddo
 
@@ -919,7 +893,6 @@ C
       integer :: mbig,mtop,n2,iind,jind,kind,ipar,maxi,maxi2
       integer :: l,l2,i,j,k,isum
       parameter (n2=5000)
-c     calculate the fitting indices for AB2 symmetry
       common /indy2/iind(n2),jind(n2),kind(n2),ipar(n2),maxi,maxi2
       l=0
       l2=0
@@ -928,7 +901,7 @@ c     calculate the fitting indices for AB2 symmetry
         do 30 k=j,min(mtop,mbig)
          isum=i+j+k
           if(isum.le.mbig)then
-           if(((isum-i).gt.0).and.((isum-j).gt.0).and.
+           if(((isum-i).gt.0).and.((isum-j).gt.0).and.&
      &        ((isum-k).gt.0))then     
             l2=l2+1
             l=l+1
@@ -981,10 +954,10 @@ c     calculate the fitting indices for AB2 symmetry
 
 !     WRITE (6,600) (D(I)*627.509552,I=1,3),Re,Beta,Sato
       RETURN
-600   FORMAT (//,10x,' LEPS Potential Energy Parameters',
-     & //,10x,' Bond',27x,'AB',8x,'BC',8x,'AC',/,10x,
-     & ' Diss. Energies (kcal/mol)',T40,3F10.5,/,10x,' Req (au)',
-     & T40,3F10.5,/,10x,' Morse Beta (au)',T40,3F10.5,/,10x,
+600   FORMAT (//,10x,' LEPS Potential Energy Parameters',&
+     & //,10x,' Bond',27x,'AB',8x,'BC',8x,'AC',/,10x,&
+     & ' Diss. Energies (kcal/mol)',T40,3F10.5,/,10x,' Req (au)',&
+     & T40,3F10.5,/,10x,' Morse Beta (au)',T40,3F10.5,/,10x,&
      & ' Sato Parameters',T40,3F10.5)
       END
 
@@ -1021,15 +994,15 @@ c     calculate the fitting indices for AB2 symmetry
          d2vs(i) = 2.0d0*d(i)*beta(i)*beta(i)*(2.d0*ex-1.0d0)*ex
          vt(i) = 0.5d0*d(i)*(ex + 2.0)*ex*(1.0-sato(i))/(1.0+sato(i))
          dvt(i) = -d(i)*beta(i)*(ex+1.0)*ex*(1.0-sato(i))/(1.0+sato(i))
-         d2vt(i) = d(i)*beta(i)*beta(i)*(2.0d0*ex+1.0)*ex
+         d2vt(i) = d(i)*beta(i)*beta(i)*(2.0d0*ex+1.0)*ex&
      &        *(1.0-sato(i))/(1.0+sato(i))
       end do
 !
 ! Construct 2x2 DIM Hamiltonian
-      h11 = d(2) + vs(2) + 0.25d0*(vs(1)+vs(3)) 
+      h11 = d(2) + vs(2) + 0.25d0*(vs(1)+vs(3)) &
      &   + 0.75d0*(vt(1)+vt(3))
       h12 = 0.25d0*rt3*(vs(1) - vs(3) - vt(1) + vt(3))
-      h22 = d(2) + vt(2) + 0.75*(vs(1)+vs(3)) 
+      h22 = d(2) + vt(2) + 0.75*(vs(1)+vs(3)) &
      &   + 0.25d0*(vt(1)+vt(3))
 
 !
@@ -1080,10 +1053,10 @@ c     calculate the fitting indices for AB2 symmetry
          if (rad.ne.0.0d0) then
             f12(i) = f12(i)/rad
             do j = 1,3
-               df12(i,j) = (0.25d0*(dh12(j)*dhdif(i)-dhdif(j)*dh12(i))
+               df12(i,j) = (0.25d0*(dh12(j)*dhdif(i)-dhdif(j)*dh12(i))&
      &          -f12(i)*drad(j))/rad
             enddo
-            df12(i,i) = df12(i,i) 
+            df12(i,i) = df12(i,i) &
      &       + 0.25d0*(h12*d2hdif(i)-hdif*d2h12(i))/rad
          endif
       enddo
@@ -1113,16 +1086,16 @@ c     calculate the fitting indices for AB2 symmetry
 
       do i = 1,3
 ! contribution from ga
-         dgtot(i) = 
-     &       (f12(1)*(df12(1,i) + dcos2(i)*f12(3) + cos2*df12(3,i))
+         dgtot(i) = &
+     &       (f12(1)*(df12(1,i) + dcos2(i)*f12(3) + cos2*df12(3,i))&
      &        + cos2*df12(1,i)*f12(3) + f12(3)*df12(3,i))/xma
 ! contribution from ga
-         dgtot(i) = dgtot(i) +
-     &       (f12(1)*(df12(1,i) + dcos3(i)*f12(2) + cos3*df12(2,i))
+         dgtot(i) = dgtot(i) +&
+     &       (f12(1)*(df12(1,i) + dcos3(i)*f12(2) + cos3*df12(2,i))&
      &        + cos3*df12(1,i)*f12(2) + f12(2)*df12(2,i))/xmb
 ! contribution from ga
-         dgtot(i) = dgtot(i) +
-     &       (f12(2)*(df12(2,i) + dcos1(i)*f12(3) + cos1*df12(3,i))
+         dgtot(i) = dgtot(i) +&
+     &       (f12(2)*(df12(2,i) + dcos1(i)*f12(3) + cos1*df12(3,i))&
      &        + cos1*df12(2,i)*f12(3) + f12(3)*df12(3,i))/xmc
       enddo
 
@@ -1503,7 +1476,6 @@ c     calculate the fitting indices for AB2 symmetry
       call singlet(r2x,es2,des2)
       call singlet(r3x,es3,des3)
 
-C      write (99,*) ' detrip,des=',detrip1,detrip2,detrip3,des1,des2,des3
 
       q1=0.5d0*(es1+etrip1)
       q2=0.5d0*(es2+etrip2)
@@ -1603,10 +1575,10 @@ C      write (99,*) ' detrip,des=',detrip1,detrip2,detrip3,des1,des2,des3
       eee=vlondon+v3c+eshift
 
       do i = 1,3
-         dv(i)=dvlon(i)
-     *        +ddamp(i)*v3c
-     *        +damper*(dsum1(i)+dbb(i)*(sum2+warp*sum4)+bb*dsum2(i)
-     *        +dwarp(i)*(sum3+bb*sum4)+warp*(dsum3(i)+bb*dsum4(i)))
+         dv(i)=dvlon(i)&
+     &        +ddamp(i)*v3c&
+     &        +damper*(dsum1(i)+dbb(i)*(sum2+warp*sum4)+bb*dsum2(i)&
+     &        +dwarp(i)*(sum3+bb*sum4)+warp*(dsum3(i)+bb*dsum4(i)))
       enddo
 
       return
@@ -1619,7 +1591,6 @@ C      write (99,*) ' detrip,des=',detrip1,detrip2,detrip3,des1,des2,des3
       integer :: n2,iind,jind,kind,ipar,maxi,maxi2
       integer :: l,l2,i,j,k,isum
       parameter (n2=5000)
-c     calculate the fitting indices for A3 symmetry
       common /indy/iind(n2),jind(n2),kind(n2),ipar(n2),maxi,maxi2
 
       l=maxi2
@@ -1630,7 +1601,7 @@ c     calculate the fitting indices for A3 symmetry
         do  k=j,min(mtop,mbig)
          isum=i+j+k
           if(isum.le.mbig)then
-           if(((isum-i).gt.0).and.((isum-j).gt.0).and.
+           if(((isum-i).gt.0).and.((isum-j).gt.0).and.&
      &        ((isum-k).gt.0))then     
             l2=l2+1
             l=l+1
@@ -1701,7 +1672,6 @@ c     calculate the fitting indices for A3 symmetry
 
 
       subroutine trip(r,v,dv)
-c     H2 triplet curve for FCI/CBS       
       implicit none
       integer          :: j
       double precision :: r,v,dv,t0,t1,t2,vlr,dvlr,vsr,dvsr
@@ -1742,29 +1712,25 @@ c     H2 triplet curve for FCI/CBS
          t1=1.0d0
          t2=0.0d0
          do j=1,17
-C            v=v+xlp(j)*(r-re)**(j-1)*prefac
             vsr=vsr+xlp(j)*t1*prefac
               dvsr=dvsr+(j-1)*xlp(j)*t2*prefac
             t2=t1
             t1=t1*t0
          enddo   
       else
-C         v=v+xlp(1)*prefac
          vsr=xlp(1)*prefac
          dvsr=xlp(2)*prefac
       endif
       dvsr=dvsr-alpha*vsr
 
-C      damp=1.d0-exp(-beta*r**2)
       t1 = r*r
       t2 = exp(-beta*t1)
       damp=1.d0-t2
       xd=damp/r  
       xd2=xd*xd
-C      v=c6*xd**6+c8*xd**8+c10*xd**10
       vlr=(c6+xd2*(c8+xd2*c10))*xd2**3
-      dvlr=-(6.0d0*c6+xd2*(8.0d0*c8+xd2*10.0d0*c10))*
-     *   ((1/r)-2.0d0*beta*t2/xd)*xd2**3
+      dvlr=-(6.0d0*c6+xd2*(8.0d0*c8+xd2*10.0d0*c10))*&
+     &   ((1/r)-2.0d0*beta*t2/xd)*xd2**3
 
       v=vlr+vsr
       dv=dvlr+dvsr
@@ -1773,7 +1739,6 @@ C      v=c6*xd**6+c8*xd**8+c10*xd**10
       end
 
       subroutine singlet(r,v,dv)
-c     H2 singlet potential for FCI/CBS
       implicit none
       integer          :: j
       double precision :: r,v,dv,t0,t1,t2,vsr,damp,xd,xd2,prefac
@@ -1801,16 +1766,14 @@ c     H2 singlet potential for FCI/CBS
         xlp(15)=1.278468948126147d-4
         xlp(16)=-1.157434070240206d-5
         xlp(17)=-2.609691840882097d-12
-C      damp=1.d0-exp(-beta*r**2)
       t1 = r*r
       t2 = exp(-beta*t1)
       damp=1.d0-t2
       xd=damp/r  
       xd2=xd*xd
-C      v=c6*xd**6+c8*xd**8+c10*xd**10
       v=(c6+xd2*(c8+xd2*c10))*xd2**3
-      dv=-(6.0d0*c6+xd2*(8.0d0*c8+xd2*10.0d0*c10))*
-     *   ((1/r)-2.0d0*beta*t2/xd)*xd2**3
+      dv=-(6.0d0*c6+xd2*(8.0d0*c8+xd2*10.0d0*c10))*&
+     &   ((1/r)-2.0d0*beta*t2/xd)*xd2**3
 
       t0=r-re
       prefac=exp(-alpha*t0)
@@ -1819,14 +1782,12 @@ C      v=c6*xd**6+c8*xd**8+c10*xd**10
          t1=1.0d0
          t2=0.0d0
          do j=1,17
-C            v=v+xlp(j)*(r-re)**(j-1)*prefac
             vsr=vsr+xlp(j)*t1*prefac
             dv=dv+(j-1)*xlp(j)*t2*prefac
             t2=t1
             t1=t1*t0
          enddo   
       else
-C         v=v+xlp(1)*prefac
          vsr=xlp(1)*prefac
          dv=dv+xlp(2)*prefac
       endif
@@ -1955,12 +1916,12 @@ C         v=v+xlp(1)*prefac
       enddo
       enddo
       ! input cartesian is HHH
-      r(1)=sqrt((x(1,1)-x(2,1))**2+(x(1,2)-x(2,2))**2
-     *          +(x(1,3)-x(2,3))**2)/0.529177211
-      r(2)=sqrt((x(2,1)-x(3,1))**2+(x(2,2)-x(3,2))**2
-     *          +(x(2,3)-x(3,3))**2)/0.529177211
-      r(3)=sqrt((x(1,1)-x(3,1))**2+(x(1,2)-x(3,2))**2
-     *          +(x(1,3)-x(3,3))**2)/0.529177211
+      r(1)=sqrt((x(1,1)-x(2,1))**2+(x(1,2)-x(2,2))**2&
+     &          +(x(1,3)-x(2,3))**2)/0.529177211
+      r(2)=sqrt((x(2,1)-x(3,1))**2+(x(2,2)-x(3,2))**2&
+     &          +(x(2,3)-x(3,3))**2)/0.529177211
+      r(3)=sqrt((x(1,1)-x(3,1))**2+(x(1,2)-x(3,2))**2&
+     &          +(x(1,3)-x(3,3))**2)/0.529177211
 
       r2=r*0.529177211
 

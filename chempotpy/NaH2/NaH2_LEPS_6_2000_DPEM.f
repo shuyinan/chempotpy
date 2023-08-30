@@ -10,6 +10,7 @@
       double precision, intent(out) :: ug(nstates,nstates,natoms,3)
 
       double precision :: nt, r(1,3), r2(3), v(1)
+      double precision :: p(nstates)
       double precision :: u11(1), u12(1), u22(1)
       double precision :: de_u11(3,1), de_u12(3,1), de_u22(3,1)
       double precision :: dudr(nstates,nstates,3)
