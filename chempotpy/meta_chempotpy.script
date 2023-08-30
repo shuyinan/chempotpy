@@ -44,7 +44,7 @@ echo "end subroutine chempotpy" >> code.f90
 
 echo "  " >> code.f90
 echo "subroutine adiabats_interface(system,surface,path,geom,nstates,natoms,igrad,p,g,d)" >> code.f90
-echo "  implicit none" >> ../code.f90
+echo "  implicit none" >> code.f90
 echo "  character(len=1024), intent(in) :: system, surface, path" >> code.f90
 echo "  integer, intent(in) :: nstates, natoms, igrad" >> code.f90
 echo "  double precision, intent(in) :: geom(natoms,3)" >> code.f90
@@ -120,7 +120,7 @@ echo "end subroutine adiabats_interface" >> code.f90
 
 echo "  " >> code.f90
 echo "subroutine dpem_interface(system,surface,path,geom,nstates,natoms,igrad,u,ug)" >> code.f90
-echo "  implicit none" >> ../code.f90
+echo "  implicit none" >> code.f90
 echo "  character(len=1024), intent(in) :: system, surface, path" >> code.f90
 echo "  integer, intent(in) :: nstates, natoms, igrad" >> code.f90
 echo "  double precision, intent(in) :: geom(natoms,3)" >> code.f90

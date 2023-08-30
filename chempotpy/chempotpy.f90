@@ -20,6 +20,7 @@ subroutine chempotpy(system,surface,path,geom,nstates,natoms,igrad,p,g,d,u,ug)
 end subroutine chempotpy
   
 subroutine adiabats_interface(system,surface,path,geom,nstates,natoms,igrad,p,g,d)
+  implicit none
   character(len=1024), intent(in) :: system, surface, path
   integer, intent(in) :: nstates, natoms, igrad
   double precision, intent(in) :: geom(natoms,3)
@@ -94,6 +95,7 @@ subroutine adiabats_interface(system,surface,path,geom,nstates,natoms,igrad,p,g,
 end subroutine adiabats_interface
   
 subroutine dpem_interface(system,surface,path,geom,nstates,natoms,igrad,u,ug)
+  implicit none
   character(len=1024), intent(in) :: system, surface, path
   integer, intent(in) :: nstates, natoms, igrad
   double precision, intent(in) :: geom(natoms,3)
