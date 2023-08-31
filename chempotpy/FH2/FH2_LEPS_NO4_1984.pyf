@@ -1,0 +1,108 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module FH2_LEPS_NO4_1984 ! in 
+    interface  ! in :FH2_LEPS_NO4_1984
+        subroutine pes(x,igrad,p,g,d) ! in :FH2_LEPS_NO4_1984:FH2_LEPS_NO4_1984.f
+            double precision dimension(3,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,3,3),intent(out) :: g
+            double precision dimension(1,1,3,3),intent(out) :: d
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(15) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,15) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision :: anuzero
+            integer dimension(25) :: nulbl
+            integer dimension(20) :: nflag
+            integer dimension(6,6) :: nasurf
+            integer :: nder
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+        end subroutine pes
+        block data ptpacm ! in :FH2_LEPS_NO4_1984:FH2_LEPS_NO4_1984.f
+            double precision dimension(6) :: ezero
+            double precision dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=3
+            integer, optional :: icartr=3
+            integer, optional :: mder=1
+            integer, optional :: msurf=0
+            character*75 dimension(5) :: ref
+            double precision dimension(25,3) :: cart
+            double precision, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=0
+            double precision :: easyab
+            double precision :: easybc
+            double precision :: easyac
+            double precision, optional,dimension(3) :: dm=141.196d0
+            double precision, optional,dimension(3) :: re=0.9170d0
+            double precision, optional,dimension(3) :: beta=2.2187d0
+            double precision dimension(3) :: z
+            double precision dimension(3) :: q
+            double precision dimension(3) :: xj
+            double precision dimension(3,3) :: dq
+            double precision dimension(3,3) :: dj
+            double precision dimension(3,3) :: dz
+            double precision dimension(3) :: rr
+            double precision, optional :: a1=0.094d0
+            double precision, optional :: a2=0.116d0
+            double precision, optional :: a=0.87d0
+            double precision, optional :: b=2.28d0
+            double precision, optional :: c=0.01056d0
+            double precision, optional :: d=                        -13.6221d0
+            double precision, optional :: f=2.70d0
+            double precision, optional :: g=0.2d0
+            double precision, optional :: bet=-0.09627d0
+            double precision, optional :: betp=-0.18075d0
+            double precision, optional :: zfh0=0.175d0
+            double precision, optional :: zhh0=                                     0.1146d0
+            double precision, optional :: zhhst=0.167065d0
+            double precision, optional :: deg1=10.0d0
+            double precision, optional :: deg2=20.0d0
+            double precision, optional :: deg3=60.0d0
+            double precision, optional :: deg4=90.0d0
+            double precision, optional :: deg3p=41.0d0
+            double precision, optional :: c1=1.15d-4
+            double precision, optional :: c2=-6.0d-6
+            double precision, optional :: c3=0.016d0
+            double precision, optional :: c4=0.0005d0
+            double precision, optional :: c5=0.00069d0
+            double precision, optional :: c6=                       3.308d-2
+            double precision, optional :: c3c=0.268340d0
+            double precision, optional :: alf=0.68d0
+            double precision, optional :: alfp=0.078d0
+            double precision, optional :: alft=2.5d0
+            double precision, optional :: p3c=                                  0.85d0
+            double precision, optional :: q3c=0.64d0
+            double precision :: zhhdif
+            double precision :: omp3c
+            double precision :: omq3c
+            double precision :: ha2
+            double precision :: g2
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            double precision, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            common /pt3cm/ ezero
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /asycm/ easyab,easybc,easyac
+            common /satocm/ dm,re,beta
+            common /precm/ z,q,xj,dq,dj,dz,rr,a1,a2,a,b,c,d,f,g,bet,betp,zfh0,zhh0,zhhst,deg1,deg2,deg3,deg4,deg3p,c1,c2,c3,c4,c5,c6,c3c,alf,alfp,alft,p3c,q3c,zhhdif,omp3c,omq3c,ha2,g2
+        end block data ptpacm
+    end interface 
+end python module FH2_LEPS_NO4_1984
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

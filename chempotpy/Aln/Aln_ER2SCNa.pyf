@@ -1,0 +1,19 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module Aln_ER2SCNa ! in 
+    interface  ! in :Aln_ER2SCNa
+        subroutine pes(xyz,natoms,igrad,p,g,d) ! in :Aln_ER2SCNa:Aln_ER2SCNa.f
+            double precision dimension(10000,3),intent(in) :: xyz
+            integer intent(in) :: natoms
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,natoms,3),intent(out),depend(natoms) :: g
+            double precision dimension(1,1,natoms,3),intent(out),depend(natoms) :: d
+        end subroutine pes
+    end interface 
+end python module Aln_ER2SCNa
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

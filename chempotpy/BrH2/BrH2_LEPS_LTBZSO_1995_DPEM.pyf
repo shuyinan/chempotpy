@@ -1,0 +1,106 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module BrH2_LEPS_LTBZSO_1995_DPEM ! in 
+    interface  ! in :BrH2_LEPS_LTBZSO_1995_DPEM
+        block data ptpacm ! in :BrH2_LEPS_LTBZSO_1995_DPEM:BrH2_LEPS_LTBZSO_1995_DPEM.f
+            double precision dimension(75) :: r
+            double precision :: engygs
+            double precision dimension(75) :: degsdr
+            double precision dimension(6) :: ezero
+            double precision :: easybc
+            double precision :: easyac
+            double precision :: easyba
+            double precision dimension(5) :: engyes
+            double precision dimension(75,5) :: deesdr
+            double precision dimension(4) :: engyij
+            double precision dimension(75,4) :: deijdr
+            double precision dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=3
+            integer, optional :: icartr=3
+            integer, optional :: mder=0
+            integer, optional :: msurf=1
+            character*75 dimension(5) :: ref
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(4) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,4) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=0
+            double precision, optional :: zhhp1=2.91230499d-1
+            double precision, optional :: zhhp2=4.99160974d0
+            double precision, optional :: zhbrp1=3.84262775d-3
+            double precision, optional :: zhbrp2=2.87642885d-3
+            double precision dimension(3) :: z
+            double precision dimension(3,3) :: dz
+            double precision, optional :: v3cp1=1.67457884d0
+            double precision, optional :: v3cp2=7.09518875d-1
+            double precision, optional :: v3cp3=1.87582679d-1
+            double precision, optional :: v3cp4=2.43517074d-1
+            double precision, optional :: v3cp5=2.04145206d-1
+            double precision, optional :: v3cp6=2.57833022d0
+            double precision :: v3c
+            double precision dimension(3) :: dv3c
+            double precision dimension(3) :: x
+            double precision dimension(3) :: coul
+            double precision dimension(3) :: exch
+            double precision :: rad
+            double precision dimension(3) :: zpo
+            double precision dimension(3) :: op3z
+            double precision dimension(3) :: zp3
+            double precision dimension(3) :: tzp3
+            double precision dimension(3) :: top3z
+            double precision dimension(3) :: do4z
+            double precision dimension(3,3) :: dxdr
+            double precision dimension(3) :: deq
+            double precision dimension(3) :: derad
+            double precision, optional,dimension(3) :: d11=90.4473d0
+            double precision dimension(3) :: de11
+            double precision, optional,dimension(3) :: re11=1.41443d0
+            double precision, optional,dimension(3) :: betaa11=1.81088d0
+            double precision, optional :: r211=1.41421356d0
+            double precision dimension(3) :: beta11
+            double precision, optional,dimension(3) :: d22=90.4473d0
+            double precision dimension(3) :: de22
+            double precision, optional,dimension(3) :: re22=1.41443d0
+            double precision, optional,dimension(3) :: betaa22=1.81088d0
+            double precision, optional :: r222=1.41421356d0
+            double precision, optional :: ccon=0.5d0
+            double precision dimension(3) :: beta22
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            double precision, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            double precision, parameter,optional :: cangau=0.52917706
+            double precision, parameter,optional :: charkc=627.5095
+            common /pt1cm/ r,engygs,degsdr
+            common /pt3cm/ ezero
+            common /asycm/ easybc,easyac,easyba
+            common /pt4cm/ engyes,deesdr
+            common /pt5cm/ engyij,deijdr
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /satocm/ zhhp1,zhhp2,zhbrp1,zhbrp2,z,dz
+            common /v3ccm/ v3cp1,v3cp2,v3cp3,v3cp4,v3cp5,v3cp6,v3c,dv3c
+            common /lengcm/ x,coul,exch,rad
+            common /lsatcm/ zpo,op3z,zp3,tzp3,top3z,do4z
+            common /ldercm/ dxdr,deq,derad
+            common /pre11cm/ d11,de11,re11,betaa11,r211,beta11
+            common /pre22cm/ d22,de22,re22,betaa22,r222,ccon,beta22
+        end block data ptpacm
+    end interface 
+end python module BrH2_LEPS_LTBZSO_1995_DPEM
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

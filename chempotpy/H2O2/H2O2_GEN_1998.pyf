@@ -1,0 +1,18 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module H2O2_GEN_1998 ! in 
+    interface  ! in :H2O2_GEN_1998
+        subroutine pes(x,igrad,p,g,d) ! in :H2O2_GEN_1998:H2O2_GEN_1998.f
+            double precision dimension(4,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,4,3),intent(out) :: g
+            double precision dimension(1,1,4,3),intent(out) :: d
+        end subroutine pes
+    end interface 
+end python module H2O2_GEN_1998
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

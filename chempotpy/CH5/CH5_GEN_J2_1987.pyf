@@ -1,0 +1,93 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module CH5_GEN_J2_1987 ! in 
+    interface  ! in :CH5_GEN_J2_1987
+        subroutine pes(x,igrad,p,g,d) ! in :CH5_GEN_J2_1987:CH5_GEN_J2_1987.f
+            double precision dimension(6,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,6,3),intent(out) :: g
+            double precision dimension(1,1,6,3),intent(out) :: d
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(15) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,15) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision :: anuzero
+            integer dimension(25) :: nulbl
+            integer dimension(20) :: nflag
+            integer dimension(6,6) :: nasurf
+            integer :: nder
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+        end subroutine pes
+        block data ptpacm ! in :CH5_GEN_J2_1987:CH5_GEN_J2_1987.f
+            double precision dimension(6) :: ezero
+            double precision dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=6
+            integer, optional :: icartr=1
+            integer, optional :: mder=1
+            integer, optional :: msurf=0
+            character*75 dimension(5) :: ref
+            double precision dimension(25,3) :: cart
+            double precision, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=1
+            double precision, optional,dimension(3) :: d1=4.8668d0
+            double precision, optional,dimension(3) :: d3=1.6840d0
+            double precision, optional,dimension(3) :: alph=0.939d0
+            double precision, optional,dimension(3) :: re=2.0673d0
+            double precision, optional,dimension(3) :: beta=0.939d0
+            double precision dimension(3) :: cc
+            double precision, optional,dimension(3) :: aa=0.0d0
+            double precision, optional,dimension(5) :: aparm=4.0d0
+            double precision, optional :: refv=0.71098329d0
+            double precision, optional :: tau=1.9105588d0
+            double precision, optional :: cp=0.080768d0
+            double precision, optional :: b1=3.00d0
+            double precision, optional :: c1=3.50d0
+            double precision, optional :: aphi=2.7982366d-1
+            double precision, optional :: bphi=5.937217d-2
+            double precision, optional :: cphi=3.6301534d0
+            double precision, optional :: pch4=1.9106d0
+            double precision, optional :: fch3=2.19d-2
+            double precision, optional :: hch3=4.38d-02
+            double precision, optional :: rnot=2.052d0
+            double precision, optional :: a3=2.102956d-2
+            double precision, optional :: b3=5.798533d-1
+            double precision, optional :: delt=0.1d0
+            double precision, optional :: dij=3.1190d0
+            double precision, optional :: a=-1.56944d+3
+            double precision, optional :: b=-1.12008d+3
+            double precision, optional :: c0=1.5786151d+3
+            double precision, optional :: d=2.67146d0
+            double precision, optional :: rex=1.18584d0
+            double precision, optional :: fk0=2.55d0
+            double precision, optional :: fa=0.8d0
+            double precision, optional :: ca=0.903d0
+            double precision, optional :: cb=0.072d0
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            double precision, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            common /pt3cm/ ezero
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /pdatcm/ d1,d3,alph,re,beta,cc,aa,aparm,refv,tau,cp,b1,c1
+            common /pdt2cm/ aphi,bphi,cphi,pch4,fch3,hch3,rnot,a3,b3,delt,dij,a,b,c0,d,rex
+            common /pdt3cm/ fk0,fa,ca,cb
+        end block data ptpacm
+    end interface 
+end python module CH5_GEN_J2_1987
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

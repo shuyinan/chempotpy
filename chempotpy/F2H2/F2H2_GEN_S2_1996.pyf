@@ -1,0 +1,339 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module F2H2_GEN_S2_1996 ! in 
+    interface  ! in :F2H2_GEN_S2_1996
+        subroutine pes(x,igrad,p,g,d) ! in :F2H2_GEN_S2_1996:F2H2_GEN_S2_1996.f
+            double precision dimension(4,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,4,3),intent(out) :: g
+            double precision dimension(1,1,4,3),intent(out) :: d
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(15) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,15) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision :: anuzero
+            integer dimension(25) :: nulbl
+            integer dimension(20) :: nflag
+            integer dimension(6,6) :: nasurf
+            integer :: nder
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+        end subroutine pes
+        block data ptpacm ! in :F2H2_GEN_S2_1996:F2H2_GEN_S2_1996.f
+            double precision dimension(6) :: ezero
+            double precision dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=4
+            integer, optional :: icartr=4
+            integer, optional :: mder=0
+            integer, optional :: msurf=0
+            character*75 dimension(5) :: ref
+            double precision dimension(25,3) :: cart
+            double precision, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=0
+            double precision dimension(135) :: a
+            double precision dimension(135) :: da
+            double precision dimension(9) :: fac
+            double precision dimension(401) :: fct
+            double precision dimension(401) :: efct
+            double precision dimension(5,5,9) :: ar
+            double precision dimension(3,5,5,9) :: ac
+            double precision dimension(5,5,9,5) :: g
+            double precision dimension(5,5) :: pf
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            double precision, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            integer, parameter,optional :: ma=135
+            double precision, optional :: a(1)=1558.0d0
+            double precision, optional :: da(1)=  0.0d0
+            double precision, optional :: a(2)=-202900000.0d0
+            double precision, optional :: da(2)=  0.0d0
+            double precision, optional :: a(3)=-3703000000.0d0
+            double precision, optional :: da(3)=  0.0d0
+            double precision, optional :: a(4)=-11350000000.0d0
+            double precision, optional :: da(4)=  0.0d0
+            double precision, optional :: a(5)=-1736693.094999999d0
+            double precision, optional :: da(5)=  0.0d0
+            double precision, optional :: a(6)=-4416487.722000003d0
+            double precision, optional :: da(6)=  0.0d0
+            double precision, optional :: a(7)=16012389.50999999d0
+            double precision, optional :: da(7)=  0.0d0
+            double precision, optional :: a(8)=-6389444.854999989d0
+            double precision, optional :: da(8)=  0.0d0
+            double precision, optional :: a(9)=-866.86737555133d0
+            double precision, optional :: da(9)=  117.5897899275601d0
+            double precision, optional :: a(10)=129789.3634701688d0
+            double precision, optional :: da(10)=  1937.563168749279d0
+            double precision, optional :: a(11)=0.0d0
+            double precision, optional :: da(11)=  0.0d0
+            double precision, optional :: a(12)=0.0d0
+            double precision, optional :: da(12)=  0.0d0
+            double precision, optional :: a(13)=2622184.756658763d0
+            double precision, optional :: da(13)=  29726.63014604442d0
+            double precision, optional :: a(14)=0.0d0
+            double precision, optional :: da(14)=  0.0d0
+            double precision, optional :: a(15)=0.0d0
+            double precision, optional :: da(15)=  0.0d0
+            double precision, optional :: a(16)=0.0d0
+            double precision, optional :: da(16)=  0.0d0
+            double precision, optional :: a(17)=184254701843.3105d0
+            double precision, optional :: da(17)=  17553092934.44629d0
+            double precision, optional :: a(18)=-320000.0d0
+            double precision, optional :: da(18)=  0.0d0
+            double precision, optional :: a(19)=3.326438943860243d-2
+            double precision, optional :: da(19)=  1.353645657747024d-3
+            double precision, optional :: a(20)=-4.576887206887037d-3
+            double precision, optional :: da(20)=  1.865017706495818d-4
+            double precision, optional :: a(21)=0.4097306660396534d0
+            double precision, optional :: da(21)=  2.777020547964315d-2
+            double precision, optional :: a(22)=32623551943283.75d0
+            double precision, optional :: da(22)=  3630087056915.047d0
+            double precision, optional :: a(23)=0.0d0
+            double precision, optional :: da(23)=  0.0d0
+            double precision, optional :: a(24)=71754497894202.0d0
+            double precision, optional :: da(24)=  2525041881368.016d0
+            double precision, optional :: a(25)=0.0d0
+            double precision, optional :: da(25)=  0.0d0
+            double precision, optional :: a(26)=5.032387872479127d-2
+            double precision, optional :: da(26)=  1.860431838521345d-3
+            double precision, optional :: a(27)=1.46832057915281d0
+            double precision, optional :: da(27)=  9.71324803167759d-2
+            double precision, optional :: a(28)=3384.631559286528d0
+            double precision, optional :: da(28)=  85.55678229458908d0
+            double precision, optional :: a(29)=0.0d0
+            double precision, optional :: da(29)=  0.0d0
+            double precision, optional :: a(30)=0.0d0
+            double precision, optional :: da(30)=  0.0d0
+            double precision, optional :: a(31)=-160267.101272529d0
+            double precision, optional :: da(31)=  4055.338776717705d0
+            double precision, optional :: a(32)=0.0d0
+            double precision, optional :: da(32)=  0.0d0
+            double precision, optional :: a(33)=0.0d0
+            double precision, optional :: da(33)=  0.0d0
+            double precision, optional :: a(34)=0.0d0
+            double precision, optional :: da(34)=  0.0d0
+            double precision, optional :: a(35)=0.0d0
+            double precision, optional :: da(35)=  0.0d0
+            double precision, optional :: a(36)=-16268.89465981041d0
+            double precision, optional :: da(36)=  541.1396773442175d0
+            double precision, optional :: a(37)=0.0d0
+            double precision, optional :: da(37)=  0.0d0
+            double precision, optional :: a(38)=0.0d0
+            double precision, optional :: da(38)=  0.0d0
+            double precision, optional :: a(39)=2802.576101972474d0
+            double precision, optional :: da(39)=  56.80382831682482d0
+            double precision, optional :: a(40)=0.0d0
+            double precision, optional :: da(40)=  0.0d0
+            double precision, optional :: a(41)=0.0d0
+            double precision, optional :: da(41)=  0.0d0
+            double precision, optional :: a(42)=0.0d0
+            double precision, optional :: da(42)=  0.0d0
+            double precision, optional :: a(43)=0.0d0
+            double precision, optional :: da(43)=  0.0d0
+            double precision, optional :: a(44)=0.0d0
+            double precision, optional :: da(44)=  0.0d0
+            double precision, optional :: a(45)=0.0d0
+            double precision, optional :: da(45)=  0.0d0
+            double precision, optional :: a(46)=2860.063943395988d0
+            double precision, optional :: da(46)=  44.36333848084973d0
+            double precision, optional :: a(47)=0.0d0
+            double precision, optional :: da(47)=  0.0d0
+            double precision, optional :: a(48)=0.0d0
+            double precision, optional :: da(48)=  0.0d0
+            double precision, optional :: a(49)=0.0d0
+            double precision, optional :: da(49)=  0.0d0
+            double precision, optional :: a(50)=0.0d0
+            double precision, optional :: da(50)=  0.0d0
+            double precision, optional :: a(51)=0.0d0
+            double precision, optional :: da(51)=  0.0d0
+            double precision, optional :: a(52)=509.1020221188392d0
+            double precision, optional :: da(52)=  18.73758800462167d0
+            double precision, optional :: a(53)=0.0d0
+            double precision, optional :: da(53)=  0.0d0
+            double precision, optional :: a(54)=0.0d0
+            double precision, optional :: da(54)=  0.0d0
+            double precision, optional :: a(55)=0.0d0
+            double precision, optional :: da(55)=  0.0d0
+            double precision, optional :: a(56)=0.0d0
+            double precision, optional :: da(56)=  0.0d0
+            double precision, optional :: a(57)=0.0d0
+            double precision, optional :: da(57)=  0.0d0
+            double precision, optional :: a(58)=0.0d0
+            double precision, optional :: da(58)=  0.0d0
+            double precision, optional :: a(59)=0.0d0
+            double precision, optional :: da(59)=  0.0d0
+            double precision, optional :: a(60)=0.0d0
+            double precision, optional :: da(60)=  0.0d0
+            double precision, optional :: a(61)=0.0d0
+            double precision, optional :: da(61)=  0.0d0
+            double precision, optional :: a(62)=0.0d0
+            double precision, optional :: da(62)=  0.0d0
+            double precision, optional :: a(63)=0.0d0
+            double precision, optional :: da(63)=  0.0d0
+            double precision, optional :: a(64)=0.0d0
+            double precision, optional :: da(64)=  0.0d0
+            double precision, optional :: a(65)=0.0d0
+            double precision, optional :: da(65)=  0.0d0
+            double precision, optional :: a(66)=0.0d0
+            double precision, optional :: da(66)=  0.0d0
+            double precision, optional :: a(67)=0.0d0
+            double precision, optional :: da(67)=  0.0d0
+            double precision, optional :: a(68)=-3467.234170178781d0
+            double precision, optional :: da(68)=  52.91056956195189d0
+            double precision, optional :: a(69)=0.0d0
+            double precision, optional :: da(69)=  0.0d0
+            double precision, optional :: a(70)=0.0d0
+            double precision, optional :: da(70)=  0.0d0
+            double precision, optional :: a(71)=0.0d0
+            double precision, optional :: da(71)=  0.0d0
+            double precision, optional :: a(72)=0.0d0
+            double precision, optional :: da(72)=  0.0d0
+            double precision, optional :: a(73)=2304.632858038298d0
+            double precision, optional :: da(73)=  44.02327215328341d0
+            double precision, optional :: a(74)=0.0d0
+            double precision, optional :: da(74)=  0.0d0
+            double precision, optional :: a(75)=0.0d0
+            double precision, optional :: da(75)=  0.0d0
+            double precision, optional :: a(76)=0.0d0
+            double precision, optional :: da(76)=  0.0d0
+            double precision, optional :: a(77)=0.0d0
+            double precision, optional :: da(77)=  0.0d0
+            double precision, optional :: a(78)=0.0d0
+            double precision, optional :: da(78)=  0.0d0
+            double precision, optional :: a(79)=0.0d0
+            double precision, optional :: da(79)=  0.0d0
+            double precision, optional :: a(80)=0.0d0
+            double precision, optional :: da(80)=  0.0d0
+            double precision, optional :: a(81)=0.0d0
+            double precision, optional :: da(81)=  0.0d0
+            double precision, optional :: a(82)=0.0d0
+            double precision, optional :: da(82)=  0.0d0
+            double precision, optional :: a(83)=0.0d0
+            double precision, optional :: da(83)=  0.0d0
+            double precision, optional :: a(84)=-644.8150830210325d0
+            double precision, optional :: da(84)=  18.1151965381963d0
+            double precision, optional :: a(85)=0.0d0
+            double precision, optional :: da(85)=  0.0d0
+            double precision, optional :: a(86)=0.0d0
+            double precision, optional :: da(86)=  0.0d0
+            double precision, optional :: a(87)=0.0d0
+            double precision, optional :: da(87)=  0.0d0
+            double precision, optional :: a(88)=0.0d0
+            double precision, optional :: da(88)=  0.0d0
+            double precision, optional :: a(89)=0.0d0
+            double precision, optional :: da(89)=  0.0d0
+            double precision, optional :: a(90)=0.0d0
+            double precision, optional :: da(90)=  0.0d0
+            double precision, optional :: a(91)=0.0d0
+            double precision, optional :: da(91)=  0.0d0
+            double precision, optional :: a(92)=0.0d0
+            double precision, optional :: da(92)=  0.0d0
+            double precision, optional :: a(93)=0.0d0
+            double precision, optional :: da(93)=  0.0d0
+            double precision, optional :: a(94)=0.0d0
+            double precision, optional :: da(94)=  0.0d0
+            double precision, optional :: a(95)=0.0d0
+            double precision, optional :: da(95)=  0.0d0
+            double precision, optional :: a(96)=0.0d0
+            double precision, optional :: da(96)=  0.0d0
+            double precision, optional :: a(97)=0.0d0
+            double precision, optional :: da(97)=  0.0d0
+            double precision, optional :: a(98)=0.0d0
+            double precision, optional :: da(98)=  0.0d0
+            double precision, optional :: a(99)=0.0d0
+            double precision, optional :: da(99)=  0.0d0
+            double precision, optional :: a(100)=0.0d0
+            double precision, optional :: da(100)=  0.0d0
+            double precision, optional :: a(101)=21489.15561258642d0
+            double precision, optional :: da(101)=  989.768118754484d0
+            double precision, optional :: a(102)=1895.153684423094d0
+            double precision, optional :: da(102)=  111.7819362295832d0
+            double precision, optional :: a(103)=0.0d0
+            double precision, optional :: da(103)=  0.0d0
+            double precision, optional :: a(104)=768.3954452456346d0
+            double precision, optional :: da(104)=  18.43253058647917d0
+            double precision, optional :: a(105)=-395.2301759253078d0
+            double precision, optional :: da(105)=  12.84348126946628d0
+            double precision, optional :: a(106)=2041.09421622329d0
+            double precision, optional :: da(106)=  246.1094667134039d0
+            double precision, optional :: a(107)=-2422.952146150754d0
+            double precision, optional :: da(107)=  70.83017811025411d0
+            double precision, optional :: a(108)=0.0d0
+            double precision, optional :: da(108)=  0.0d0
+            double precision, optional :: a(109)=0.0d0
+            double precision, optional :: da(109)=  0.0d0
+            double precision, optional :: a(110)=-297.3729718893483d0
+            double precision, optional :: da(110)=  19.35802742071735d0
+            double precision, optional :: a(111)=0.0d0
+            double precision, optional :: da(111)=  0.0d0
+            double precision, optional :: a(112)=0.0d0
+            double precision, optional :: da(112)=  0.0d0
+            double precision, optional :: a(113)=39.46815694764132d0
+            double precision, optional :: da(113)=  11.34523118392423d0
+            double precision, optional :: a(114)=0.0d0
+            double precision, optional :: da(114)=  0.0d0
+            double precision, optional :: a(115)=720.5552230122485d0
+            double precision, optional :: da(115)=  33.69084291038598d0
+            double precision, optional :: a(116)=0.0d0
+            double precision, optional :: da(116)=  0.0d0
+            double precision, optional :: a(117)=0.0d0
+            double precision, optional :: da(117)=  0.0d0
+            double precision, optional :: a(118)=0.0d0
+            double precision, optional :: da(118)=  0.0d0
+            double precision, optional :: a(119)=0.0d0
+            double precision, optional :: da(119)=  0.0d0
+            double precision, optional :: a(120)=0.0d0
+            double precision, optional :: da(120)=  0.0d0
+            double precision, optional :: a(121)=0.0d0
+            double precision, optional :: da(121)=  0.0d0
+            double precision, optional :: a(122)=0.0d0
+            double precision, optional :: da(122)=  0.0d0
+            double precision, optional :: a(123)=0.0d0
+            double precision, optional :: da(123)=  0.0d0
+            double precision, optional :: a(124)=0.0d0
+            double precision, optional :: da(124)=  0.0d0
+            double precision, optional :: a(125)=0.0d0
+            double precision, optional :: da(125)=  0.0d0
+            double precision, optional :: a(126)=0.0d0
+            double precision, optional :: da(126)=  0.0d0
+            double precision, optional :: a(127)=0.0d0
+            double precision, optional :: da(127)=  0.0d0
+            double precision, optional :: a(128)=0.0d0
+            double precision, optional :: da(128)=  0.0d0
+            double precision, optional :: a(129)=0.0d0
+            double precision, optional :: da(129)=  0.0d0
+            double precision, optional :: a(130)=0.0d0
+            double precision, optional :: da(130)=  0.0d0
+            double precision, optional :: a(131)=0.0d0
+            double precision, optional :: da(131)=  0.0d0
+            double precision, optional :: a(132)=0.0d0
+            double precision, optional :: da(132)=  0.0d0
+            double precision, optional :: a(133)=0.0d0
+            double precision, optional :: da(133)=  0.0d0
+            double precision, optional :: a(134)=0.0d0
+            double precision, optional :: da(134)=  0.0d0
+            double precision, optional :: a(135)=0.0d0
+            double precision, optional :: da(135)=  0.0d0
+            common /pt3cm/ ezero
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /potcm/ a,da,fac,fct,efct,ar,ac
+            common /ang/ g,pf
+        end block data ptpacm
+    end interface 
+end python module F2H2_GEN_S2_1996
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

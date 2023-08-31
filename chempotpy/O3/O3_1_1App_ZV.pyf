@@ -1,0 +1,42 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module O3_1_1App_ZV ! in 
+    interface  ! in :O3_1_1App_ZV
+        module o3_1_1app_zv_par ! in :O3_1_1App_ZV:O3_1_1App_ZV.f90
+            double precision, parameter,optional :: cconv=0.52917721092d0
+            double precision, parameter,optional :: econv=0.159360144d-2
+            double precision, parameter,optional :: gconv=0.843297564d-3
+            double precision dimension(3) :: r
+            double precision dimension(3) :: rms
+            double precision dimension(8) :: rm
+            double precision dimension(67) :: p
+            double precision dimension(56) :: b
+            double precision dimension(3,3) :: dmsdr
+            double precision dimension(3,8) :: dmdr
+            double precision dimension(3,67) :: dpdr
+            double precision dimension(3) :: dvdr
+            double precision dimension(3,9) :: drdx
+            double precision dimension(3,56) :: dbdr
+            double precision, parameter,optional :: a=0.83d0
+            double precision, parameter,optional :: ab=3.70d0
+            double precision, parameter,optional :: ra=1.25d0
+            double precision, parameter,optional :: rb=1.13d0
+            double precision, parameter,optional :: eref=-0.19172848d0
+            double precision, parameter,optional :: totdiss=240.486d0
+            double precision, parameter,optional,dimension(56) :: c=(/-0.128814549305d+03 , 0.104229418850d+04 , 0.811983220935d+03,-0.443324528752d+03 , 0.904506805268d+03 ,-0.501026918125d+04, 0.197209669844d+05 ,-0.251424247013d+05 ,-0.138013677810d+03, 0.169329202490d+05 , 0.352627837493d+05 ,-0.334337897178d+05, 0.720500009412d+05 , 0.116986232065d+05 ,-0.521801943104d+04,-0.332486978745d+05 ,-0.177870892015d+05 , 0.335720198273d+05, 0.268323174511d+05 ,-0.933618945467d+05 ,-0.592242307973d+04, 0.287777488764d+04 , 0.393607079595d+05 ,-0.330171644074d+04, 0.200362806379d+05 ,-0.975981166385d+04 ,-0.266133829509d+05, 0.746650532707d+05 , 0.120290055844d+05 ,-0.464904653691d+04, 0.244129022324d+04 ,-0.273870502550d+05 ,-0.122995471301d+05, 0.722408057250d+04 , 0.290562738593d+05 ,-0.212778140565d+05,-0.206522536997d+05 , 0.263237776823d+05 ,-0.370869661253d+05,-0.230814810543d+04 , 0.210942828415d+04 ,-0.177122132932d+04, 0.102466183681d+05 ,-0.556070962327d+03 , 0.150041418580d+05,-0.117657568996d+05 ,-0.442916346835d+04 , 0.140353851796d+05, 0.753137518090d+04 ,-0.911889476033d+04 , 0.816658803687d+04, 0.316234339832d+04 ,-0.202814305330d+04 , 0.791358291948d+03, 0.115450049995d+03 ,-0.158182849802d+04/)
+        end module o3_1_1app_zv_par
+        subroutine pes(x,igrad,potential,gradient,dvec) ! in :O3_1_1App_ZV:O3_1_1App_ZV.f90
+            use o3_1_1app_zv_par
+            double precision dimension(3,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: potential
+            double precision dimension(1,3,3),intent(out) :: gradient
+            double precision dimension(1,1,3,3),intent(out) :: dvec
+        end subroutine pes
+    end interface 
+end python module O3_1_1App_ZV
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

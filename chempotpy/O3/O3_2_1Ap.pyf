@@ -1,0 +1,96 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module O3_2_1Ap ! in 
+    interface  ! in :O3_2_1Ap
+        subroutine pes(x,igrad,p,g,d) ! in :O3_2_1Ap:O3_2_1Ap.f
+            double precision dimension(3,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,3,3),intent(out) :: g
+            double precision dimension(1,1,3,3),intent(out) :: d
+        end subroutine pes
+        block data prmt ! in :O3_2_1Ap:O3_2_1Ap.f
+            double precision dimension(3) :: r
+            double precision dimension(3) :: rms
+            double precision dimension(8) :: rm
+            double precision dimension(67) :: p
+            double precision dimension(56) :: c
+            double precision dimension(56) :: b
+            double precision dimension(3,3) :: dmsdr
+            double precision dimension(3,8) :: dmdr
+            double precision dimension(3,67) :: dpdr
+            double precision dimension(3) :: dvdr
+            double precision dimension(3,9) :: drdx
+            double precision dimension(3,56) :: dbdr
+            double precision, optional :: a=1.28d0
+            double precision, optional :: ab=0.92d0
+            double precision, optional :: ra=1.28d0
+            double precision, optional :: rb=1.05d0
+            double precision, optional :: c(   1)=0.434187508648d+03
+            double precision, optional :: c(   2)=0.601877868424d+04
+            double precision, optional :: c(   3)=-0.464660936314d+03
+            double precision, optional :: c(   4)=-0.243509245050d+05
+            double precision, optional :: c(   5)=0.950014957019d+04
+            double precision, optional :: c(   6)=-0.592848250717d+04
+            double precision, optional :: c(   7)=0.697932064786d+05
+            double precision, optional :: c(   8)=0.196833691662d+05
+            double precision, optional :: c(   9)=0.620333799425d+04
+            double precision, optional :: c(  10)=0.161329177106d+05
+            double precision, optional :: c(  11)=-0.193674344521d+06
+            double precision, optional :: c(  12)=-0.538497729426d+05
+            double precision, optional :: c(  13)=0.307977146576d+05
+            double precision, optional :: c(  14)=0.403726480782d+05
+            double precision, optional :: c(  15)=-0.108892707651d+06
+            double precision, optional :: c(  16)=-0.779096037457d+03
+            double precision, optional :: c(  17)=0.216579154261d+06
+            double precision, optional :: c(  18)=-0.300325527808d+05
+            double precision, optional :: c(  19)=-0.129080356773d+05
+            double precision, optional :: c(  20)=-0.738241261273d+05
+            double precision, optional :: c(  21)=0.143489436247d+05
+            double precision, optional :: c(  22)=0.190791768214d+06
+            double precision, optional :: c(  23)=-0.370029900769d+05
+            double precision, optional :: c(  24)=-0.652612717831d+05
+            double precision, optional :: c(  25)=-0.221944693403d+06
+            double precision, optional :: c(  26)=0.769784255864d+05
+            double precision, optional :: c(  27)=0.408455132075d+05
+            double precision, optional :: c(  28)=0.641594621798d+05
+            double precision, optional :: c(  29)=0.235567946536d+05
+            double precision, optional :: c(  30)=-0.893289391646d+05
+            double precision, optional :: c(  31)=-0.132904223603d+06
+            double precision, optional :: c(  32)=0.456228477004d+05
+            double precision, optional :: c(  33)=-0.635361323742d+05
+            double precision, optional :: c(  34)=0.698584128346d+05
+            double precision, optional :: c(  35)=-0.285994785632d+05
+            double precision, optional :: c(  36)=0.333522136629d+05
+            double precision, optional :: c(  37)=-0.662684575365d+05
+            double precision, optional :: c(  38)=0.340064804790d+04
+            double precision, optional :: c(  39)=-0.326330023790d+05
+            double precision, optional :: c(  40)=0.946186834969d+03
+            double precision, optional :: c(  41)=0.662931691589d+05
+            double precision, optional :: c(  42)=0.346863578454d+05
+            double precision, optional :: c(  43)=-0.211679798701d+05
+            double precision, optional :: c(  44)=0.110843144810d+04
+            double precision, optional :: c(  45)=0.572141564079d+05
+            double precision, optional :: c(  46)=-0.626260899288d+05
+            double precision, optional :: c(  47)=0.528829171664d+04
+            double precision, optional :: c(  48)=0.465447414881d+05
+            double precision, optional :: c(  49)=0.187198514117d+05
+            double precision, optional :: c(  50)=-0.130023471408d+05
+            double precision, optional :: c(  51)=0.831266742257d+04
+            double precision, optional :: c(  52)=-0.550716231464d+04
+            double precision, optional :: c(  53)=0.136134108119d+04
+            double precision, optional :: c(  54)=-0.167845982042d+05
+            double precision, optional :: c(  55)=-0.556894418697d+03
+            double precision, optional :: c(  56)=0.332719035097d+04
+            common /coord/ r
+            common /epot/ rms,rm,p,c,b
+            common /gradt/ dmsdr,dmdr,dpdr,dvdr,drdx,dbdr
+            common /msprmt/ a,ab,ra,rb
+        end block data prmt
+    end interface 
+end python module O3_2_1Ap
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

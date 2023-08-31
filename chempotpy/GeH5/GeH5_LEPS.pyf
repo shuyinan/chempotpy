@@ -1,0 +1,139 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module GeH5_LEPS ! in 
+    interface  ! in :GeH5_LEPS
+        subroutine pes(x,igrad,p,g,d) ! in :GeH5_LEPS:GeH5_LEPS.f
+            double precision dimension(6,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,6,3),intent(out) :: g
+            double precision dimension(1,1,6,3),intent(out) :: d
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(15) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,15) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision :: anuzero
+            integer dimension(25) :: nulbl
+            integer dimension(20) :: nflag
+            integer dimension(6,6) :: nasurf
+            integer :: nder
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+        end subroutine pes
+        block data ptpacm ! in :GeH5_LEPS:GeH5_LEPS.f
+            double precision dimension(6) :: ezero
+            double precision dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=6
+            integer, optional :: icartr=1
+            integer, optional :: mder=1
+            integer, optional :: msurf=0
+            character*75 dimension(5) :: ref
+            double precision dimension(25,3) :: cart
+            double precision, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=1
+            integer, optional :: nnc=2
+            integer, optional :: nnb=6
+            integer, optional,dimension(4) :: nnh=3
+            double precision, optional :: r0ch=1.52500d0
+            double precision, optional :: d1ch=84.000d0
+            double precision, optional :: d3ch=42.000d0
+            double precision, optional :: a1ch=1.38925d0
+            double precision, optional :: b1ch=0.13327d0
+            double precision, optional :: c1ch=2.0040d0
+            double precision, optional :: r0hh=0.74200d0
+            double precision, optional :: d1hh=108.058d0
+            double precision, optional :: d3hh=37.864d0
+            double precision, optional :: ahh=1.958d0
+            double precision, optional :: r0cb=1.52500d0
+            double precision, optional :: d1cb=49.458d0
+            double precision, optional :: d3cb=16.612d0
+            double precision, optional :: acb=1.453d0
+            double precision, optional :: a3s=0.2019147d0
+            double precision, optional :: b3s=-0.6000d0
+            double precision, optional :: aphi=0.5287903d0
+            double precision, optional :: bphi=0.40066381d0
+            double precision, optional :: cphi=0.9209937d0
+            double precision, optional :: atheta=0.9078714d0
+            double precision, optional :: btheta=0.3548859d0
+            double precision, optional :: ctheta=1.8915497d0
+            double precision, optional :: fch3=0.0157500d0
+            double precision, optional :: hch3=0.1915000d0
+            double precision, optional :: fkinf=0.3058900d0
+            double precision, optional :: ak=0.1260000d0
+            double precision, optional :: bk=50.7132d0
+            double precision, optional :: aa1=3.213952d0
+            double precision, optional :: aa2=1.599963d0
+            double precision, optional :: aa3=2.165953d0
+            double precision, optional :: aa4=11.569977d0
+            double precision dimension(4,4) :: theta0
+            double precision dimension(4,4,4) :: dtheta0
+            double precision :: rcb
+            double precision dimension(4) :: rch
+            double precision dimension(4) :: rbh
+            double precision dimension(3) :: tcb
+            double precision dimension(4,3) :: tch
+            double precision dimension(4,3) :: tbh
+            double precision dimension(4) :: fdelta
+            double precision dimension(4) :: hdelta
+            double precision dimension(4,4) :: dfdelta
+            double precision dimension(4,4) :: dhdelta
+            double precision dimension(4,4) :: fk0
+            double precision dimension(4) :: f1
+            double precision dimension(4,4,4) :: dfdc
+            double precision dimension(4,4,4) :: dfdh
+            double precision :: a1s
+            double precision :: b1s
+            double precision :: a2s
+            double precision :: b2s
+            double precision dimension(4) :: s1
+            double precision dimension(4) :: ds1
+            double precision dimension(4) :: s2
+            double precision dimension(4) :: ds2
+            integer dimension(3) :: nc
+            integer dimension(3) :: nhb
+            integer dimension(4,3) :: nh
+            double precision dimension(4) :: s3
+            double precision dimension(4) :: ds3
+            double precision dimension(150) :: q
+            double precision dimension(150) :: pdot
+            double precision dimension(4) :: sphi
+            double precision dimension(4) :: dsphi
+            double precision dimension(4) :: stheta
+            double precision dimension(4) :: dstheta
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            double precision, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            common /pt3cm/ ezero
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /potcm/ nnc,nnb,nnh,r0ch,d1ch,d3ch,a1ch,b1ch,c1ch,r0hh,d1hh,d3hh,ahh,r0cb,d1cb,d3cb,acb,a3s,b3s,aphi,bphi,cphi,atheta,btheta,ctheta,fch3,hch3,fkinf,ak,bk,aa1,aa2,aa3,aa4
+            common /angles/ theta0,dtheta0
+            common /bonds/ rcb,rch,rbh
+            common /coords/ tcb,tch,tbh
+            common /delta1/ fdelta,hdelta
+            common /delta2/ dfdelta,dhdelta
+            common /force1/ fk0,f1,dfdc,dfdh
+            common /fsw1/ a1s,b1s,a2s,b2s
+            common /ip1/ s1,ds1,s2,ds2
+            common /ndx/ nc,nhb,nh
+            common /op1/ s3,ds3
+            common /qpdot_pl/ q,pdot
+            common /switch1/ sphi,dsphi,stheta,dstheta
+        end block data ptpacm
+    end interface 
+end python module GeH5_LEPS
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

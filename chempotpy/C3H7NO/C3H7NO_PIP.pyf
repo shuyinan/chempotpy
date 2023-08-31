@@ -1,0 +1,23 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module C3H7NO_PIP ! in 
+    interface  ! in :C3H7NO_PIP
+        module pes_shell ! in :C3H7NO_PIP:C3H7NO_PIP.f90
+            real*8 dimension(8040) :: coeff
+        end module pes_shell
+        subroutine pes(x,igrad,path,potential,gradient_out,dvec) ! in :C3H7NO_PIP:C3H7NO_PIP.f90
+            use pes_shell
+            double precision dimension(12,3),intent(in) :: x
+            integer intent(in) :: igrad
+            character*1024 intent(in) :: path
+            double precision dimension(1),intent(out) :: potential
+            double precision dimension(1,12,3),intent(out) :: gradient_out
+            double precision dimension(1,1,12,3),intent(out) :: dvec
+        end subroutine pes
+    end interface 
+end python module C3H7NO_PIP
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e
