@@ -1,0 +1,182 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module FH2_GEN_5SECS2_1993 ! in 
+    interface  ! in :FH2_GEN_5SECS2_1993
+        subroutine pes(x,igrad,p,g,d) ! in :FH2_GEN_5SECS2_1993:FH2_GEN_5SECS2_1993.f
+            double precision dimension(3,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,3,3),intent(out) :: g
+            double precision dimension(1,1,3,3),intent(out) :: d
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(15) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,15) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision :: anuzero
+            integer dimension(25) :: nulbl
+            integer dimension(20) :: nflag
+            integer dimension(6,6) :: nasurf
+            integer :: nder
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+        end subroutine pes
+        block data ptpacm ! in :FH2_GEN_5SECS2_1993:FH2_GEN_5SECS2_1993.f
+            double precision dimension(6) :: ezero
+            double precision dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=3
+            integer, optional :: icartr=3
+            integer, optional :: mder=1
+            integer, optional :: msurf=0
+            character*75 dimension(5) :: ref
+            double precision dimension(25,3) :: cart
+            double precision, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=0
+            double precision :: easyab
+            double precision :: easybc
+            double precision :: easyac
+            double precision, optional,dimension(3) :: disse=0.224989335d0
+            double precision dimension(10) :: chh
+            double precision dimension(10) :: chf
+            double precision dimension(3) :: d
+            double precision dimension(3) :: a1
+            double precision dimension(3) :: a2
+            double precision dimension(3) :: a3
+            double precision dimension(3) :: gamma
+            double precision dimension(3) :: rm
+            double precision dimension(3) :: r0
+            double precision, optional :: alph0=2.59528d1
+            double precision, optional :: alph1=1.1868d0
+            double precision, optional :: bet0=1.57381d1
+            double precision, optional :: bet1=9.729d-2
+            double precision dimension(10) :: ck1
+            double precision dimension(10) :: ck2
+            double precision dimension(10) :: ck3
+            double precision dimension(10) :: ckp1
+            double precision dimension(10) :: ckp2
+            double precision dimension(10) :: ckp3
+            double precision, optional :: c3c=0.296668d0
+            double precision, optional :: alf=0.18d0
+            double precision, optional :: alfp= 0.078606d0
+            double precision, optional :: alft=2.14d0
+            double precision, optional :: p3c=0.95d0
+            double precision, optional :: q3c=1.0d0
+            double precision, optional :: betp=0.18d0
+            double precision, optional,dimension(5) :: bhh=0.448467d0
+            double precision, optional,dimension(5) :: bhf=0.9149555d0
+            double precision dimension(3) :: ro
+            double precision, optional,dimension(3) :: dec=2.0d0
+            double precision, optional,dimension(3) :: rb=6.80d0
+            double precision dimension(3) :: sw
+            double precision dimension(3,3) :: dsw
+            double precision, optional,dimension(3) :: xhh=-0.393828d0
+            double precision, optional,dimension(3) :: xhf=2.633449d0
+            double precision, optional,dimension(4) :: p=-0.071547d0
+            double precision dimension(10) :: eta1
+            double precision dimension(10) :: eta2
+            double precision dimension(10) :: eta3
+            double precision dimension(10) :: etap1
+            double precision dimension(10) :: etap2
+            double precision dimension(10) :: etap3
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            double precision, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            double precision, optional :: chh(6)=6.499027d0
+            double precision, optional :: chh(8)=1.243991d2
+            double precision, optional :: chh(10)=3.2858d3
+            double precision, optional :: chf(6)=6.68799d0
+            double precision, optional :: chf(8)=1.0289812d2
+            double precision, optional :: chf(10)=2.07391451d3
+            double precision, optional :: rm(1)=1.7329d0
+            double precision, optional :: rm(2)=1.4010d0
+            double precision, optional :: rm(3)=1.7329d0
+            double precision, optional :: r0(1)=5.9d0
+            double precision, optional :: r0(2)=6.9283d0
+            double precision, optional :: r0(3)=5.9d0
+            double precision, optional :: ro(1)=1.7329d0
+            double precision, optional :: ro(2)=1.449d0
+            double precision, optional :: ro(3)=1.7329d0
+            double precision, optional :: eta1(6)=0.9438421608d0
+            double precision, optional :: eta1(8)=0.9774440533d0
+            double precision, optional :: eta1(10)=                                    0.9452240321d0
+            double precision, optional :: eta2(6)=0.1085550150d1
+            double precision, optional :: eta2(8)=0.1117269260d1
+            double precision, optional :: eta2(10)=                                    0.1138536961d1
+            double precision, optional :: eta3(6)=0.9438421608d0
+            double precision, optional :: eta3(8)=0.9774440533d0
+            double precision, optional :: eta3(10)=                                    0.9452240321d0
+            double precision, optional :: etap1(6)=6.0d0
+            double precision, optional :: etap1(8)=6.0d0
+            double precision, optional :: etap1(10)=6.0d0
+            double precision, optional :: etap2(6)=6.0d0
+            double precision, optional :: etap2(8)=6.0d0
+            double precision, optional :: etap2(10)=6.0d0
+            double precision, optional :: etap3(6)=6.0d0
+            double precision, optional :: etap3(8)=6.0d0
+            double precision, optional :: etap3(10)=6.0d0
+            double precision, optional :: ck1(6)=-0.2610767389d-1
+            double precision, optional :: ck1(8)=-0.3428701964d-1
+            double precision, optional :: ck1(10)=                                -0.4858536634d-1
+            double precision, optional :: ck2(6)=-0.9709847270d-1
+            double precision, optional :: ck2(8)=-0.1248186655d 0
+            double precision, optional :: ck2(10)=                                -0.1426680807d 0
+            double precision, optional :: ck3(6)=-0.2610767389d-1
+            double precision, optional :: ck3(8)=-0.3428701964d-1
+            double precision, optional :: ck3(10)=                                -0.4858536634d-1
+            double precision, optional :: ckp1(6)=0.9438421608d 0
+            double precision, optional :: ckp1(8)=0.9774440533d 0
+            double precision, optional :: ckp1(10)=                                0.9452240321d 0
+            double precision, optional :: ckp2(6)=0.1085550150d 1
+            double precision, optional :: ckp2(8)=0.1117269260d 1
+            double precision, optional :: ckp2(10)=                                0.1138536961d 1
+            double precision, optional :: ckp3(6)=0.9438421608d 0
+            double precision, optional :: ckp3(8)=0.9774440533d 0
+            double precision, optional :: ckp3(10)=                                0.9452240321d 0
+            double precision, optional :: d(1)=0.19383609d 0
+            double precision, optional :: a1(1)=2.4822787d 0
+            double precision, optional :: a2(1)=                          1.5435337d 0
+            double precision, optional :: a3(1)=0.83093855d 0
+            double precision, optional :: gamma(1)=2.3992999d 0
+            double precision, optional :: d(2)=0.15796326d0
+            double precision, optional :: a1(2)=2.1977034d0
+            double precision, optional :: a2(2)=                            1.2932502d0
+            double precision, optional :: a3(2)=0.64375666d0
+            double precision, optional :: gamma(2)=2.1835071d0
+            double precision, optional :: d(3)=0.19383609d 0
+            double precision, optional :: a1(3)=2.4822787d 0
+            double precision, optional :: a2(3)=                          1.5435337d 0
+            double precision, optional :: a3(3)=0.83093855d 0
+            double precision, optional :: gamma(3)=2.3992999d 0
+            common /pt3cm/ ezero
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /asycm/ easyab,easybc,easyac
+            common /decm/ disse
+            common /atat/ chh,chf
+            common /diat/ d,a1,a2,a3,gamma
+            common /dist/ rm,r0
+            common /dispc/ alph0,alph1,bet0,bet1
+            common /kkp/ ck1,ck2,ck3,ckp1,ckp2,ckp3
+            common /local/ c3c,alf,alfp,alft,p3c,q3c,betp
+            common /par/ bhh,bhf
+            common /ref/ ro
+            common /swpar/ dec,rb,sw,dsw
+            common /tpar/ xhh,xhf,p
+            common /trial/ eta1,eta2,eta3,etap1,etap2,etap3
+        end block data ptpacm
+    end interface 
+end python module FH2_GEN_5SECS2_1993
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

@@ -1,0 +1,220 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module CH4OCl_VBMM_2023 ! in 
+    interface  ! in :CH4OCl_VBMM_2023
+        subroutine pes(x,igrad,p,g,d) ! in :CH4OCl_VBMM_2023:CH4OCl_VBMM_2023.f
+            double precision dimension(7,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,7,3),intent(out) :: g
+            double precision dimension(1,1,7,3),intent(out) :: d
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(15) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,15) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision :: anuzero
+            integer dimension(25) :: nulbl
+            integer dimension(20) :: nflag
+            integer dimension(6,6) :: nasurf
+            integer :: nder
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+        end subroutine pes
+        block data ptpacm ! in :CH4OCl_VBMM_2023:CH4OCl_VBMM_2023.f
+            double precision dimension(75) :: r
+            double precision :: engygs
+            double precision dimension(75) :: degsdr
+            double precision dimension(6) :: ezero
+            double precision dimension(5) :: engyes
+            double precision dimension(75,5) :: deesdr
+            double precision dimension(4) :: engyij
+            double precision dimension(75,4) :: deijdr
+            double precision dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=7
+            integer, optional :: icartr=1
+            integer, optional :: mder=1
+            integer, optional :: msurf=0
+            character*75 dimension(5) :: ref
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(4) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,4) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=1
+            integer, optional :: nnc1=1
+            integer, optional :: nnc2=2
+            integer, optional :: nnb=7
+            double precision, optional :: r0c1hr=1.09047d0
+            double precision, optional :: r0c1hp=1.08177d0
+            double precision, optional :: w3=1.0000d0
+            double precision, optional :: w4=1.09047d0
+            double precision, optional :: d1c1h=105.23000d0
+            double precision, optional :: d3c1h=27.30400d0
+            double precision, optional :: a1c1h=1.59300d0
+            double precision, optional :: b1c1h=0.52500d0
+            double precision, optional :: c1c1h=0.51404d0
+            double precision, optional :: r0c2hr=0.95897d0
+            double precision, optional :: r0c2hp=0.96077d0
+            double precision, optional :: w5=1.000d0
+            double precision, optional :: w6=0.96897d0
+            double precision, optional :: d1c2h=116.23000d0
+            double precision, optional :: d3c2h=37.00400d0
+            double precision, optional :: a1c2h=1.55300d0
+            double precision, optional :: b1c2h=1.42500d0
+            double precision, optional :: c1c2h=0.51404d0
+            double precision, optional :: r0ccr=1.42007d0
+            double precision, optional :: r0ccp=1.37500d0
+            double precision, optional :: w9=1.5000d0
+            double precision, optional :: w10=1.08507d0
+            double precision, optional :: d1cc=109.94900d0
+            double precision, optional :: acc=1.934d0
+            double precision, optional :: a1c=1.20997d0
+            double precision, optional :: a2c=1.949d0
+            double precision, optional :: r0h1h=1.29191d0
+            double precision, optional :: d1h1h=111.458d0
+            double precision, optional :: d3h1h=37.064d0
+            double precision, optional :: ah1h=1.9157d0
+            double precision, optional :: r0h2h=1.29191d0
+            double precision, optional :: d1h2h=109.458d0
+            double precision, optional :: d3h2h=26.064d0
+            double precision, optional :: ah2h=1.8057d0
+            double precision, optional :: r0c1b=2.05897d0
+            double precision, optional :: d1c1b=35.009d0
+            double precision, optional :: d3c1b=23.000d0
+            double precision, optional :: ac1b=3.1090285d0
+            double precision, optional :: r0c2b=1.74897d0
+            double precision, optional :: d1c2b=68.609d0
+            double precision, optional :: d3c2b=17.400d0
+            double precision, optional :: ac2b=1.0170285d0
+            double precision, optional :: aphi=0.528790d0
+            double precision, optional :: bphi=1.200664d0
+            double precision, optional :: cphi=1.420074d0
+            double precision, optional :: aphi1=0.19700d0
+            double precision, optional :: bphi1=1.20600d0
+            double precision, optional :: cphi1=1.08200d0
+            double precision, optional :: aphi2=0.19700d0
+            double precision, optional :: bphi2=1.20600d0
+            double precision, optional :: cphi2=0.96800d0
+            double precision, optional :: a3s=0.12770d0
+            double precision, optional :: b3s=1.08200d0
+            double precision, optional :: a3scc=0.297000d0
+            double precision, optional :: b3scc=1.420664d0
+            double precision, optional :: atheta=1.65781d0
+            double precision, optional :: btheta=0.950600d0
+            double precision, optional :: ctheta=1.08201d0
+            double precision, optional :: athetacc=1.45781d0
+            double precision, optional :: bthetacc=0.950600d0
+            double precision, optional :: cthetacc=1.42001d0
+            double precision, optional :: fch3=0.19770d0
+            double precision, optional :: hch3=0.09600d0
+            double precision, optional :: fkinf1=0.44770d0
+            double precision, optional :: ak1=0.12600d0
+            double precision, optional :: aa11=0.15501d0
+            double precision, optional :: aa21=1.59995d0
+            double precision, optional :: aa31=2.16996d0
+            double precision, optional :: aa41=11.56595d0
+            double precision, optional :: fkinf2=0.45770d0
+            double precision, optional :: aa12=0.05001d0
+            double precision, optional :: aa22=1.30095d0
+            double precision, optional :: aa32=1.49996d0
+            double precision, optional :: aa42=11.46595d0
+            double precision, optional :: v3=0.03000d0
+            double precision, optional :: w1=0.11000d0
+            double precision, optional :: w2=1.08697d0
+            double precision, optional :: w7=0.11000d0
+            double precision, optional :: w8=1.08367d0
+            double precision, optional :: a1s1=1.53137d0
+            double precision, optional :: a2s1=1.01474d0
+            double precision, optional :: b1s1=1.09463d0
+            double precision, optional :: b2s1=0.96898d0
+            double precision, optional :: a1s2=1.53137d0
+            double precision, optional :: a2s2=1.51474d0
+            double precision, optional :: b1s2=1.09463d0
+            double precision, optional :: b2s2=0.96898d0
+            double precision, optional :: a1scc=1.53137d0
+            double precision, optional :: a2scc=1.51474d0
+            double precision, optional :: b1scc=1.42003d0
+            double precision, optional :: b2scc=1.42008d0
+            integer, optional,dimension(3) :: nc1h=3
+            integer, optional,dimension(1) :: nc2h=6
+            double precision dimension(21) :: q
+            double precision dimension(21) :: pdot
+            integer dimension(3) :: nc1
+            integer dimension(1) :: nc2
+            integer dimension(3) :: nc
+            integer dimension(3) :: nhb
+            integer dimension(3,3) :: n1h
+            integer dimension(1,3) :: n2h
+            double precision dimension(3) :: tc1b
+            double precision dimension(3) :: tc2b
+            double precision dimension(3) :: tcc
+            double precision dimension(3,3) :: tc1h
+            double precision dimension(1,3) :: tc2h
+            double precision dimension(3,3) :: tb1h
+            double precision dimension(1,3) :: tb2h
+            double precision :: rc1b
+            double precision :: rc2b
+            double precision :: rcc
+            double precision dimension(3) :: rc1h
+            double precision dimension(1) :: rc2h
+            double precision dimension(3) :: rb1h
+            double precision dimension(1) :: rb2h
+            double precision :: r0c1h
+            double precision :: r0c2h
+            double precision :: r0cc
+            double precision dimension(3) :: thetahcch
+            double precision :: t2
+            double precision dimension(6,6) :: theta0
+            double precision dimension(6) :: sphi
+            double precision dimension(6) :: stheta
+            double precision dimension(4) :: fdelta
+            double precision dimension(4) :: hdelta
+            double precision dimension(6,6) :: fk0
+            double precision dimension(6) :: f1
+            double precision dimension(6) :: s1
+            double precision dimension(6) :: s2
+            double precision dimension(4) :: s3
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            double precision, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            common /pt1cm/ r,engygs,degsdr
+            common /pt3cm/ ezero
+            common /pt4cm/ engyes,deesdr
+            common /pt5cm/ engyij,deijdr
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /potcm/ nnc1,nnc2,nnb,r0c1hr,r0c1hp,w3,w4,d1c1h,d3c1h,a1c1h,b1c1h,c1c1h,r0c2hr,r0c2hp,w5,w6,d1c2h,d3c2h,a1c2h,b1c2h,c1c2h,r0ccr,r0ccp,w9,w10,d1cc,acc,a1c,a2c,r0h1h,d1h1h,d3h1h,ah1h,r0h2h,d1h2h,d3h2h,ah2h,r0c1b,d1c1b,d3c1b,ac1b,r0c2b,d1c2b,d3c2b,ac2b,aphi,bphi,cphi,aphi1,bphi1,cphi1,aphi2,bphi2,cphi2,a3s,b3s,a3scc,b3scc,atheta,btheta,ctheta,athetacc,bthetacc,cthetacc,fch3,hch3,fkinf1,ak1,aa11,aa21,aa31,aa41,fkinf2,aa12,aa22,aa32,aa42,v3,w1,w2,w7,w8,a1s1,a2s1,b1s1,b2s1,a1s2,a2s2,b1s2,b2s2,a1scc,a2scc,b1scc,b2scc
+            common /potcm2/ nc1h,nc2h
+            common /qpdot/ q,pdot
+            common /coord2/ nc1,nc2,nc,nhb,n1h,n2h
+            common /coord3/ tc1b,tc2b,tcc
+            common /coord4/ tc1h,tc2h,tb1h,tb2h
+            common /coord5/ rc1b,rc2b,rcc,rc1h,rc2h,rb1h,rb2h
+            common /coord6/ r0c1h,r0c2h,r0cc
+            common /torsion1/ thetahcch,t2
+            common /refangles1/ theta0,sphi,stheta
+            common /vop6/ fdelta,hdelta
+            common /ipforce1/ fk0,f1
+            common /switch1/ s1,s2,s3
+        end block data ptpacm
+    end interface 
+end python module CH4OCl_VBMM_2023
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

@@ -1,0 +1,23 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module NaFH_LEPS_TTYPP1_1998_DPEM ! in 
+    interface  ! in :NaFH_LEPS_TTYPP1_1998_DPEM
+        block data uonetwo ! in :NaFH_LEPS_TTYPP1_1998_DPEM:NaFH_LEPS_TTYPP1_1998_DPEM.f
+            double precision, optional :: ahf=3.0000d0
+            double precision, optional :: anaf=18.0000d-1
+            double precision, optional :: anah=16.0000d-1
+            double precision, optional :: r21=0.7000d0
+            double precision, optional :: r23=-3.3006d-1
+            double precision, optional :: r13=1.2431d0
+            double precision, optional,dimension(4) :: ccmf=3.9960d0
+            double precision, optional,dimension(4) :: ccmh=1.00d0
+            common /ucoupl/ ahf,anaf,anah,r21,r23,r13
+            common /ucoupl1/ ccmf,ccmh
+        end block data uonetwo
+    end interface 
+end python module NaFH_LEPS_TTYPP1_1998_DPEM
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

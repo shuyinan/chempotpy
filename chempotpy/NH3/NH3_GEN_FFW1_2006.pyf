@@ -1,0 +1,25 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module NH3_GEN_FFW1_2006 ! in 
+    interface  ! in :NH3_GEN_FFW1_2006
+        subroutine pes(x,igrad,p,g,d) ! in :NH3_GEN_FFW1_2006:NH3_GEN_FFW1_2006.f
+            double precision dimension(4,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(2),intent(out) :: p
+            double precision dimension(2,4,3),intent(out) :: g
+            double precision dimension(2,2,4,3),intent(out) :: d
+            integer :: nhcoeu1
+            integer :: nhcoeu2
+            integer :: nhcoeu12
+            integer :: nhindu1
+            integer :: nhindu2
+            integer :: nhindu12
+            common /c_nhcoe/ nhcoeu1,nhcoeu2,nhcoeu12,nhindu1,nhindu2,nhindu12
+        end subroutine pes
+    end interface 
+end python module NH3_GEN_FFW1_2006
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

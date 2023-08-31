@@ -1,0 +1,137 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module H3_GEN_DMBE_1987 ! in 
+    interface  ! in :H3_GEN_DMBE_1987
+        subroutine pes(x,igrad,p,g,d) ! in :H3_GEN_DMBE_1987:H3_GEN_DMBE_1987.f
+            double precision dimension(3,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(2),intent(out) :: p
+            double precision dimension(2,3,3),intent(out) :: g
+            double precision dimension(2,2,3,3),intent(out) :: d
+            double precision dimension(75) :: r
+            double precision :: engygs
+            double precision dimension(75) :: degsdr
+            double precision dimension(5) :: engyes
+            double precision dimension(75,5) :: deesdr
+            double precision dimension(15) :: engyij
+            double precision dimension(75,15) :: deijdr
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(15) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,15) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision :: anuzero
+            integer dimension(25) :: nulbl
+            integer dimension(20) :: nflag
+            integer dimension(6,6) :: nasurf
+            integer :: nder
+            common /pt1cm/ r,engygs,degsdr
+            common /pt4cm/ engyes,deesdr
+            common /pt5cm/ engyij,deijdr
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+        end subroutine pes
+        block data ptpacm ! in :H3_GEN_DMBE_1987:H3_GEN_DMBE_1987.f
+            double precision dimension(6) :: ezero
+            double precision dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=3
+            integer, optional :: icartr=3
+            integer, optional :: mder=1
+            integer, optional :: msurf=1
+            character*75 dimension(5) :: ref
+            double precision dimension(25,3) :: cart
+            double precision, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=0
+            double precision, optional :: alph2=4.735364d-1
+            double precision, optional :: alpha5=8.2433033d-03
+            double precision, optional :: alph0=25.9528d0
+            double precision, optional :: alph1=1.1868d0
+            double precision, optional :: al0=0.45024472d+01
+            double precision, optional :: al1=-0.62467617d+01
+            double precision, optional :: al2=0.40966542d+01
+            double precision, optional :: al3=                    0.21813012d+01
+            double precision, optional :: az2=4.453649d-4
+            double precision, optional :: beta1=0.53302897d0
+            double precision, optional :: beta2=0.39156612d-01
+            double precision, optional :: beta3=0.69996945d0
+            double precision, optional :: bet0=15.7381d0
+            double precision, optional :: bet1=0.09729d0
+            double precision, optional :: cd0=6.333404d-03
+            double precision, optional :: cd1=-1.726839d-03
+            double precision, optional,dimension(3) :: chh=6.499027d0
+            double precision, optional,dimension(3) :: ck0=-1.372843d-01
+            double precision, optional,dimension(3) :: ck1=1.011204d0
+            double precision dimension(3) :: dampa
+            double precision dimension(3) :: dampb
+            double precision, optional :: hfd=0.15796326d0
+            double precision, optional :: hfa1=2.1977034d0
+            double precision, optional :: hfa2=1.2932502d0
+            double precision, optional :: hfa3=0.64375666d0
+            double precision, optional :: hfgam=                2.1835071d0
+            double precision, optional :: h2rm=1.401d0
+            double precision, optional :: h2rmt= 7.82d0
+            double precision, optional :: h2r0= 6.928203d0
+            double precision, optional :: h2ta=0.448467d0
+            double precision, optional :: h2tb1=-0.056687d0
+            double precision, optional :: h2tb2=0.246831d0
+            double precision, optional :: h2tb3=-0.018419d0
+            double precision, optional :: h2tb4=                    0.000598d0
+            double precision, optional :: rhol=2.4848d0
+            double precision, optional :: sqrt3=1.73205080756887d0
+            double precision, optional,dimension(15) :: xpar=-0.9286579d-02
+            double precision :: per
+            double precision :: per2
+            double precision :: r12
+            double precision :: r22
+            double precision :: r32
+            double precision :: qcoord
+            double precision :: dq1
+            double precision :: dq2
+            double precision :: dq3
+            double precision :: rho
+            double precision :: drho1
+            double precision :: drho2
+            double precision :: drho3
+            double precision :: s
+            double precision :: s2
+            double precision :: ds1
+            double precision :: ds2
+            double precision :: ds3
+            double precision :: cphi3
+            double precision :: dcphi1
+            double precision :: dcphi2
+            double precision :: dcphi3
+            double precision dimension(3) :: corrs
+            double precision dimension(3) :: dcorrs
+            double precision dimension(3) :: corrt
+            double precision dimension(3) :: dcorrt
+            double precision dimension(3,3) :: damp
+            double precision dimension(3,3) :: ddamp
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            double precision, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            double precision, optional :: ezero(1)=0.174474112d0
+            double precision, optional :: ezero(2)=0.174474112d0
+            common /pt3cm/ ezero
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /h3dmcm/ alph2,alpha5,alph0,alph1,al0,al1,al2,al3,az2,beta1,beta2,beta3,bet0,bet1,cd0,cd1,chh,ck0,ck1,dampa,dampb,hfd,hfa1,hfa2,hfa3,hfgam,h2rm,h2rmt,h2r0,h2ta,h2tb1,h2tb2,h2tb3,h2tb4,rhol,sqrt3,xpar
+            common /h3cocm/ per,per2,r12,r22,r32,qcoord,dq1,dq2,dq3,rho,drho1,drho2,drho3,s,s2,ds1,ds2,ds3,cphi3,dcphi1,dcphi2,dcphi3
+            common /h3crcm/ corrs,dcorrs,corrt,dcorrt,damp,ddamp
+        end block data ptpacm
+    end interface 
+end python module H3_GEN_DMBE_1987
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

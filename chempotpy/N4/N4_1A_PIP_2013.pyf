@@ -1,0 +1,314 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module N4_1A_PIP_2013 ! in 
+    interface  ! in :N4_1A_PIP_2013
+        subroutine pes(x,igrad,p,g,d) ! in :N4_1A_PIP_2013:N4_1A_PIP_2013.f
+            double precision dimension(4,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,4,3),intent(out) :: g
+            double precision dimension(1,1,4,3),intent(out) :: d
+        end subroutine pes
+        block data prmt ! in :N4_1A_PIP_2013:N4_1A_PIP_2013.f
+            double precision dimension(6) :: r
+            double precision dimension(6) :: rms
+            double precision dimension(112) :: rm
+            double precision dimension(306) :: p
+            double precision dimension(276) :: c
+            double precision dimension(276) :: b
+            double precision dimension(6,6) :: dmsdr
+            double precision dimension(6,112) :: dmdr
+            double precision dimension(6,306) :: dpdr
+            double precision dimension(6) :: dvdr
+            double precision dimension(6,12) :: drdx
+            double precision dimension(6,276) :: dbdr
+            double precision, optional :: a=0.9d0
+            double precision, optional :: re=1.098d0
+            double precision, optional :: c(  1)=0.102403978367d+04
+            double precision, optional :: c(  2)=-0.329677065461d+04
+            double precision, optional :: c(  3)=0.563720430512d+04
+            double precision, optional :: c(  4)=-0.398579928313d+04
+            double precision, optional :: c(  5)=-0.385965542114d+04
+            double precision, optional :: c(  6)=0.388707170536d+04
+            double precision, optional :: c(  7)=0.313073995764d+04
+            double precision, optional :: c(  8)=0.448635322841d+04
+            double precision, optional :: c(  9)=0.145177478364d+05
+            double precision, optional :: c( 10)=-0.520482498458d+04
+            double precision, optional :: c( 11)=0.927577190398d+04
+            double precision, optional :: c( 12)=0.577514178728d+04
+            double precision, optional :: c( 13)=0.549924812055d+04
+            double precision, optional :: c( 14)=0.128789377708d+05
+            double precision, optional :: c( 15)=-0.123915284843d+05
+            double precision, optional :: c( 16)=-0.152516198607d+05
+            double precision, optional :: c( 17)=-0.311653729683d+05
+            double precision, optional :: c( 18)=0.241802095549d+04
+            double precision, optional :: c( 19)=0.552823062458d+04
+            double precision, optional :: c( 20)=-0.157606516638d+05
+            double precision, optional :: c( 21)=0.183999978622d+05
+            double precision, optional :: c( 22)=-0.730065813635d+04
+            double precision, optional :: c( 23)=-0.154254898066d+04
+            double precision, optional :: c( 24)=-0.270137001447d+05
+            double precision, optional :: c( 25)=-0.712833478072d+04
+            double precision, optional :: c( 26)=-0.157507777456d+05
+            double precision, optional :: c( 27)=0.150777397542d+03
+            double precision, optional :: c( 28)=-0.460118218767d+04
+            double precision, optional :: c( 29)=0.621757808397d+05
+            double precision, optional :: c( 30)=-0.387325947409d+05
+            double precision, optional :: c( 31)=0.956015975839d+05
+            double precision, optional :: c( 32)=0.598731286868d+05
+            double precision, optional :: c( 33)=0.184378520851d+05
+            double precision, optional :: c( 34)=0.118525258622d+05
+            double precision, optional :: c( 35)=-0.192034792924d+05
+            double precision, optional :: c( 36)=0.102203620381d+05
+            double precision, optional :: c( 37)=-0.358701539635d+04
+            double precision, optional :: c( 38)=0.174513120739d+05
+            double precision, optional :: c( 39)=0.620986763680d+05
+            double precision, optional :: c( 40)=0.382171290501d+05
+            double precision, optional :: c( 41)=0.372876912748d+04
+            double precision, optional :: c( 42)=0.458049260553d+04
+            double precision, optional :: c( 43)=0.974878688873d+05
+            double precision, optional :: c( 44)=0.182211600789d+05
+            double precision, optional :: c( 45)=-0.117103856781d+05
+            double precision, optional :: c( 46)=0.889576596375d+04
+            double precision, optional :: c( 47)=0.176322778899d+05
+            double precision, optional :: c( 48)=-0.292083982135d+05
+            double precision, optional :: c( 49)=0.394476552928d+04
+            double precision, optional :: c( 50)=-0.490908973766d+04
+            double precision, optional :: c( 51)=0.341307888032d+05
+            double precision, optional :: c( 52)=-0.186725715169d+05
+            double precision, optional :: c( 53)=0.147822633435d+05
+            double precision, optional :: c( 54)=-0.160310707626d+04
+            double precision, optional :: c( 55)=0.529073124595d+03
+            double precision, optional :: c( 56)=0.436589884373d+04
+            double precision, optional :: c( 57)=-0.275977248391d+05
+            double precision, optional :: c( 58)=0.916659840404d+05
+            double precision, optional :: c( 59)=0.797381187300d+04
+            double precision, optional :: c( 60)=-0.266127694396d+05
+            double precision, optional :: c( 61)=-0.366120071607d+05
+            double precision, optional :: c( 62)=0.302613610927d+05
+            double precision, optional :: c( 63)=-0.472403494286d+05
+            double precision, optional :: c( 64)=-0.437423663348d+04
+            double precision, optional :: c( 65)=-0.299548954583d+05
+            double precision, optional :: c( 66)=-0.650332702893d+05
+            double precision, optional :: c( 67)=0.710278406294d+05
+            double precision, optional :: c( 68)=-0.754784583336d+05
+            double precision, optional :: c( 69)=0.230385041533d+05
+            double precision, optional :: c( 70)=-0.371044004395d+05
+            double precision, optional :: c( 71)=-0.106153162568d+04
+            double precision, optional :: c( 72)=0.415993233011d+05
+            double precision, optional :: c( 73)=0.180415447082d+05
+            double precision, optional :: c( 74)=-0.181546212206d+05
+            double precision, optional :: c( 75)=0.133142608504d+04
+            double precision, optional :: c( 76)=0.190256765666d+05
+            double precision, optional :: c( 77)=-0.150450493013d+05
+            double precision, optional :: c( 78)=-0.920409716245d+05
+            double precision, optional :: c( 79)=-0.216561262057d+04
+            double precision, optional :: c( 80)=-0.171625055996d+05
+            double precision, optional :: c( 81)=0.153782282485d+05
+            double precision, optional :: c( 82)=0.158621441332d+04
+            double precision, optional :: c( 83)=-0.785674943671d+04
+            double precision, optional :: c( 84)=-0.209994189557d+05
+            double precision, optional :: c( 85)=-0.333435521700d+05
+            double precision, optional :: c( 86)=-0.224157355756d+05
+            double precision, optional :: c( 87)=0.182745060537d+05
+            double precision, optional :: c( 88)=-0.501427327882d+04
+            double precision, optional :: c( 89)=0.735584333269d+04
+            double precision, optional :: c( 90)=0.413504676578d+03
+            double precision, optional :: c( 91)=0.109674543527d+04
+            double precision, optional :: c( 92)=-0.186740710649d+04
+            double precision, optional :: c( 93)=0.359599299302d+04
+            double precision, optional :: c( 94)=0.721485422686d+04
+            double precision, optional :: c( 95)=-0.330055110073d+05
+            double precision, optional :: c( 96)=0.730992533723d+05
+            double precision, optional :: c( 97)=-0.799352299005d+04
+            double precision, optional :: c( 98)=0.112075241137d+05
+            double precision, optional :: c( 99)=-0.156320449278d+05
+            double precision, optional :: c(100)=-0.408715780841d+04
+            double precision, optional :: c(101)=0.268188694785d+06
+            double precision, optional :: c(102)=-0.102983762167d+06
+            double precision, optional :: c(103)=0.583699882510d+05
+            double precision, optional :: c(104)=0.260451292047d+05
+            double precision, optional :: c(105)=-0.177541637884d+05
+            double precision, optional :: c(106)=-0.203359237620d+05
+            double precision, optional :: c(107)=0.480058134079d+05
+            double precision, optional :: c(108)=-0.885961013155d+05
+            double precision, optional :: c(109)=0.409859892393d+05
+            double precision, optional :: c(110)=0.325921040295d+05
+            double precision, optional :: c(111)=-0.260852766104d+05
+            double precision, optional :: c(112)=0.370242414223d+05
+            double precision, optional :: c(113)=-0.664758905617d+04
+            double precision, optional :: c(114)=-0.275618526134d+05
+            double precision, optional :: c(115)=-0.107805359174d+06
+            double precision, optional :: c(116)=0.287387764086d+05
+            double precision, optional :: c(117)=0.666908326522d+05
+            double precision, optional :: c(118)=-0.156541620151d+05
+            double precision, optional :: c(119)=0.336154826289d+05
+            double precision, optional :: c(120)=-0.414314869617d+05
+            double precision, optional :: c(121)=0.176679423717d+04
+            double precision, optional :: c(122)=0.577289611931d+05
+            double precision, optional :: c(123)=0.302830113555d+05
+            double precision, optional :: c(124)=-0.807830452831d+04
+            double precision, optional :: c(125)=0.219029154199d+03
+            double precision, optional :: c(126)=-0.413421879006d+05
+            double precision, optional :: c(127)=-0.451799646223d+05
+            double precision, optional :: c(128)=-0.159295124884d+05
+            double precision, optional :: c(129)=-0.424907280397d+05
+            double precision, optional :: c(130)=-0.140611779798d+04
+            double precision, optional :: c(131)=0.568547939978d+03
+            double precision, optional :: c(132)=0.264987028493d+05
+            double precision, optional :: c(133)=-0.843157148611d+03
+            double precision, optional :: c(134)=0.275201914701d+05
+            double precision, optional :: c(135)=-0.105393958865d+05
+            double precision, optional :: c(136)=-0.169105249253d+05
+            double precision, optional :: c(137)=0.104932391725d+05
+            double precision, optional :: c(138)=0.119833997133d+05
+            double precision, optional :: c(139)=0.139893856185d+05
+            double precision, optional :: c(140)=-0.181001837340d+03
+            double precision, optional :: c(141)=0.153415246742d+05
+            double precision, optional :: c(142)=0.424481598925d+05
+            double precision, optional :: c(143)=-0.197444461986d+05
+            double precision, optional :: c(144)=0.490620372926d+04
+            double precision, optional :: c(145)=-0.148185485287d+04
+            double precision, optional :: c(146)=0.624665998166d+04
+            double precision, optional :: c(147)=0.245340563235d+05
+            double precision, optional :: c(148)=0.305015590467d+05
+            double precision, optional :: c(149)=-0.611332793065d+04
+            double precision, optional :: c(150)=-0.555190868114d+04
+            double precision, optional :: c(151)=0.130155396245d+04
+            double precision, optional :: c(152)=-0.455810219138d+05
+            double precision, optional :: c(153)=0.115493696632d+05
+            double precision, optional :: c(154)=0.888993953795d+04
+            double precision, optional :: c(155)=0.103815845402d+05
+            double precision, optional :: c(156)=0.562575679728d+04
+            double precision, optional :: c(157)=-0.346648114071d+04
+            double precision, optional :: c(158)=-0.240765749446d+04
+            double precision, optional :: c(159)=0.206433652571d+04
+            double precision, optional :: c(160)=-0.758049531330d+04
+            double precision, optional :: c(161)=0.171657661399d+05
+            double precision, optional :: c(162)=-0.260208297109d+04
+            double precision, optional :: c(163)=-0.372114666463d+04
+            double precision, optional :: c(164)=0.192848747262d+05
+            double precision, optional :: c(165)=-0.614612031387d+05
+            double precision, optional :: c(166)=0.284938866770d+04
+            double precision, optional :: c(167)=0.580215877101d+03
+            double precision, optional :: c(168)=-0.142884180958d+05
+            double precision, optional :: c(169)=0.164345541019d+05
+            double precision, optional :: c(170)=0.204700489332d+04
+            double precision, optional :: c(171)=0.232847535995d+06
+            double precision, optional :: c(172)=-0.215988386103d+06
+            double precision, optional :: c(173)=-0.543268059091d+06
+            double precision, optional :: c(174)=-0.291087990782d+06
+            double precision, optional :: c(175)=0.993671706214d+05
+            double precision, optional :: c(176)=-0.324811444690d+05
+            double precision, optional :: c(177)=-0.165451102346d+06
+            double precision, optional :: c(178)=0.503736859146d+05
+            double precision, optional :: c(179)=0.441027718212d+05
+            double precision, optional :: c(180)=0.427514011421d+05
+            double precision, optional :: c(181)=0.316984455059d+05
+            double precision, optional :: c(182)=-0.916644985736d+05
+            double precision, optional :: c(183)=-0.497678170749d+05
+            double precision, optional :: c(184)=-0.570481120151d+04
+            double precision, optional :: c(185)=0.392692240737d+05
+            double precision, optional :: c(186)=-0.636234723414d+05
+            double precision, optional :: c(187)=0.605343078929d+05
+            double precision, optional :: c(188)=-0.504945371764d+05
+            double precision, optional :: c(189)=-0.394790420088d+05
+            double precision, optional :: c(190)=-0.296012156034d+05
+            double precision, optional :: c(191)=-0.189032641400d+05
+            double precision, optional :: c(192)=0.315573783036d+05
+            double precision, optional :: c(193)=-0.123145782845d+05
+            double precision, optional :: c(194)=-0.183417710262d+05
+            double precision, optional :: c(195)=0.137514063372d+04
+            double precision, optional :: c(196)=0.282584683995d+05
+            double precision, optional :: c(197)=0.255488952485d+03
+            double precision, optional :: c(198)=-0.214177073532d+05
+            double precision, optional :: c(199)=-0.329389386184d+05
+            double precision, optional :: c(200)=0.326844593866d+05
+            double precision, optional :: c(201)=-0.268690289613d+05
+            double precision, optional :: c(202)=0.688737993203d+03
+            double precision, optional :: c(203)=-0.174784217735d+05
+            double precision, optional :: c(204)=0.592388749822d+04
+            double precision, optional :: c(205)=0.782006070657d+04
+            double precision, optional :: c(206)=0.182368489092d+05
+            double precision, optional :: c(207)=-0.195025918004d+05
+            double precision, optional :: c(208)=0.140155756116d+05
+            double precision, optional :: c(209)=0.411097619946d+05
+            double precision, optional :: c(210)=0.363810881096d+03
+            double precision, optional :: c(211)=-0.280890295507d+04
+            double precision, optional :: c(212)=-0.105569797133d+05
+            double precision, optional :: c(213)=0.380998787463d+04
+            double precision, optional :: c(214)=-0.360964430447d+04
+            double precision, optional :: c(215)=-0.986412341243d+04
+            double precision, optional :: c(216)=0.226662646459d+05
+            double precision, optional :: c(217)=-0.376753011539d+04
+            double precision, optional :: c(218)=0.578159426611d+03
+            double precision, optional :: c(219)=-0.121449139228d+05
+            double precision, optional :: c(220)=-0.750765164465d+04
+            double precision, optional :: c(221)=-0.140227007314d+05
+            double precision, optional :: c(222)=0.203120231276d+04
+            double precision, optional :: c(223)=0.118811735987d+05
+            double precision, optional :: c(224)=0.519651005890d+04
+            double precision, optional :: c(225)=0.947714025376d+04
+            double precision, optional :: c(226)=0.179018909494d+05
+            double precision, optional :: c(227)=0.121879281662d+05
+            double precision, optional :: c(228)=-0.126436586574d+05
+            double precision, optional :: c(229)=-0.452354749524d+04
+            double precision, optional :: c(230)=-0.684935604354d+04
+            double precision, optional :: c(231)=-0.174197586324d+04
+            double precision, optional :: c(232)=-0.238302572429d+04
+            double precision, optional :: c(233)=0.537465564700d+04
+            double precision, optional :: c(234)=-0.157114135550d+03
+            double precision, optional :: c(235)=-0.652324696358d+04
+            double precision, optional :: c(236)=-0.323096366831d+04
+            double precision, optional :: c(237)=0.296083943992d+04
+            double precision, optional :: c(238)=-0.122452541606d+04
+            double precision, optional :: c(239)=-0.593094058930d+04
+            double precision, optional :: c(240)=-0.379005180042d+04
+            double precision, optional :: c(241)=0.777078060474d+04
+            double precision, optional :: c(242)=0.193407389171d+04
+            double precision, optional :: c(243)=-0.251175830196d+04
+            double precision, optional :: c(244)=-0.342507311002d+05
+            double precision, optional :: c(245)=-0.817218571265d+04
+            double precision, optional :: c(246)=0.167151796682d+04
+            double precision, optional :: c(247)=0.140032630687d+04
+            double precision, optional :: c(248)=-0.108222853767d+04
+            double precision, optional :: c(249)=-0.289156752055d+04
+            double precision, optional :: c(250)=0.671923615356d+04
+            double precision, optional :: c(251)=-0.186517211143d+04
+            double precision, optional :: c(252)=-0.608928447848d+04
+            double precision, optional :: c(253)=-0.320885381491d+04
+            double precision, optional :: c(254)=0.168580430914d+03
+            double precision, optional :: c(255)=0.561938258944d+03
+            double precision, optional :: c(256)=0.178839575085d+04
+            double precision, optional :: c(257)=-0.127093039569d+02
+            double precision, optional :: c(258)=0.158954991882d+05
+            double precision, optional :: c(259)=-0.728671162222d+04
+            double precision, optional :: c(260)=0.273935428053d+03
+            double precision, optional :: c(261)=0.210205486354d+03
+            double precision, optional :: c(262)=-0.726829028390d+04
+            double precision, optional :: c(263)=0.234342832052d+04
+            double precision, optional :: c(264)=0.450306951911d+03
+            double precision, optional :: c(265)=-0.225605345434d+04
+            double precision, optional :: c(266)=0.146430478883d+04
+            double precision, optional :: c(267)=-0.502512737258d+04
+            double precision, optional :: c(268)=0.529554234299d+03
+            double precision, optional :: c(269)=0.665683392527d+03
+            double precision, optional :: c(270)=-0.446965631596d+04
+            double precision, optional :: c(271)=0.155396579789d+05
+            double precision, optional :: c(272)=-0.690692642506d+03
+            double precision, optional :: c(273)=0.128917160396d+04
+            double precision, optional :: c(274)=0.373090368655d+04
+            double precision, optional :: c(275)=-0.454736355855d+04
+            double precision, optional :: c(276)=-0.377918615671d+03
+            common /coord/ r
+            common /epot/ rms,rm,p,c,b
+            common /gradt/ dmsdr,dmdr,dpdr,dvdr,drdx,dbdr
+            common /msprmt/ a,re
+        end block data prmt
+    end interface 
+end python module N4_1A_PIP_2013
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

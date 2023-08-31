@@ -1,0 +1,111 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module OH2_GEN_POL1980 ! in 
+    interface  ! in :OH2_GEN_POL1980
+        subroutine pes(x,igrad,p,g,d) ! in :OH2_GEN_POL1980:OH2_GEN_POL1980.f
+            double precision dimension(3,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,3,3),intent(out) :: g
+            double precision dimension(1,1,3,3),intent(out) :: d
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(15) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,15) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision :: anuzero
+            integer dimension(25) :: nulbl
+            integer dimension(20) :: nflag
+            integer dimension(6,6) :: nasurf
+            integer :: nder
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+        end subroutine pes
+        block data ptpacm ! in :OH2_GEN_POL1980:OH2_GEN_POL1980.f
+            real*8 dimension(6) :: ezero
+            real*8 dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=3
+            integer, optional :: icartr=3
+            integer, optional :: mder=1
+            integer, optional :: msurf=0
+            character*75 dimension(5) :: ref
+            real*8 dimension(25,3) :: cart
+            real*8, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=0
+            real*8 :: easyab
+            real*8 :: easybc
+            real*8 :: easyac
+            real*8, optional :: de=106.56d0
+            real*8, optional :: beta=2.07942d0
+            real*8, optional,dimension(3) :: req=0.96966d0
+            real*8, optional :: a=0.26d0
+            real*8, optional :: gamma=0.4131d0
+            real*8, optional :: rbb=0.74144d0
+            real*8 :: rhh
+            real*8 dimension(2) :: dbcoor
+            real*8 dimension(4) :: junk
+            real*8 :: bcoor
+            real*8, optional :: d1inf=97.23777d0
+            real*8, optional :: r1einf=.75933d0
+            real*8, optional :: b1inf=2.01627d0
+            real*8, optional :: d2inf=98.81423d0
+            real*8, optional :: r2inf=.98712d0
+            real*8, optional :: b2inf=2.30153d0
+            real*8, optional :: a1inf=0.0d0
+            real*8, optional :: a2inf=-0.1d0
+            real*8, optional :: r1s=2.21208d0
+            real*8, optional :: r2s=2.21531d0
+            real*8, optional :: vsp=87.65999d0
+            real*8, optional :: alph1=1.0d0
+            real*8, optional :: alph2=1.0d0
+            real*8 dimension(4) :: v
+            real*8 dimension(20) :: phi
+            real*8 dimension(20,5) :: bsp
+            real*8 dimension(22,5) :: csp
+            real*8 :: d1dif
+            real*8 :: r1dif
+            real*8 :: b1dif
+            real*8 :: a1dif
+            real*8 :: d2dif
+            real*8 :: r2dif
+            real*8 :: b2dif
+            real*8 :: a2dif
+            real*8, optional :: step=0.000000010d0
+            real*8 :: d1
+            real*8 :: d2
+            real*8 :: r1e
+            real*8 :: r2e
+            real*8 :: b1
+            real*8 :: b2
+            real*8 :: a1
+            real*8 :: a2
+            integer, optional :: iayes=1
+            integer, optional :: nphi=11
+            integer, optional :: nv=3
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            real*8, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            common /pt3cm/ ezero
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /asycm/ easyab,easybc,easyac
+            common /ambpcm/ de,beta,req,a,gamma,rbb,rhh
+            common /precm/ dbcoor,junk,bcoor
+            common /pre2cm/ d1inf,r1einf,b1inf,d2inf,r2inf,b2inf,a1inf,a2inf,r1s,r2s,vsp,alph1,alph2,v,phi,bsp,csp,d1dif,r1dif,b1dif,a1dif,d2dif,r2dif,b2dif,a2dif,step,d1,d2,r1e,r2e,b1,b2,a1,a2,iayes,nphi,nv
+        end block data ptpacm
+    end interface 
+end python module OH2_GEN_POL1980
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e

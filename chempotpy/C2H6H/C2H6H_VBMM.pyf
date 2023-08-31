@@ -1,0 +1,191 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module C2H6H_VBMM ! in 
+    interface  ! in :C2H6H_VBMM
+        subroutine pes(x,igrad,p,g,d) ! in :C2H6H_VBMM:C2H6H_VBMM.f
+            double precision dimension(9,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(1),intent(out) :: p
+            double precision dimension(1,9,3),intent(out) :: g
+            double precision dimension(1,1,9,3),intent(out) :: d
+            double precision :: pengygs
+            double precision dimension(5) :: pengyes
+            double precision dimension(15) :: pengyij
+            double precision dimension(25,3) :: dgscart
+            double precision dimension(25,3,5) :: descart
+            double precision dimension(25,3,15) :: dijcart
+            double precision dimension(25,3) :: cart
+            double precision :: anuzero
+            integer dimension(25) :: nulbl
+            integer dimension(20) :: nflag
+            integer dimension(6,6) :: nasurf
+            integer :: nder
+            common /usrocm/ pengygs,pengyes,pengyij,dgscart,descart,dijcart
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+        end subroutine pes
+        block data ptpacm ! in :C2H6H_VBMM:C2H6H_VBMM.f
+            double precision dimension(6) :: ezero
+            double precision dimension(25,3) :: cartnu
+            integer dimension(25) :: indexes
+            integer :: irctnt
+            integer, optional :: natoms=9
+            integer, optional :: icartr=1
+            integer, optional :: mder=1
+            integer, optional :: msurf=0
+            character*75 dimension(5) :: ref
+            double precision dimension(25,3) :: cart
+            double precision, optional :: anuzero=0.0d0
+            integer, optional,dimension(25) :: nulbl=25*0
+            integer, optional,dimension(20) :: nflag=1
+            integer, optional,dimension(6,6) :: nasurf=1
+            integer, optional :: nder=1
+            integer, optional :: nnc1=1
+            integer, optional :: nnc2=2
+            integer, optional :: nnb=9
+            double precision, optional :: r0c1hr=1.08897d0
+            double precision, optional :: r0c1hp=1.07577d0
+            double precision, optional :: w3=1.00000d0
+            double precision, optional :: w4=1.08897d0
+            double precision, optional :: d1c1h=109.23000d0
+            double precision, optional :: d3c1h=45.00400d0
+            double precision, optional :: a1c1h=1.65300d0
+            double precision, optional :: b1c1h=0.12500d0
+            double precision, optional :: c1c1h=3.51404d0
+            double precision, optional :: r0c2hr=1.08897d0
+            double precision, optional :: r0c2hp=1.07577d0
+            double precision, optional :: w5=1.00000d0
+            double precision, optional :: w6=1.08897d0
+            double precision, optional :: d1c2h=109.23000d0
+            double precision, optional :: d3c2h=45.00400d0
+            double precision, optional :: a1c2h=1.65300d0
+            double precision, optional :: b1c2h=0.12500d0
+            double precision, optional :: c1c2h=3.51404d0
+            double precision, optional :: r0cc=1.50007d0
+            double precision :: rcc
+            double precision, optional :: d1cc=117.94900d0
+            double precision, optional :: acc=1.93400d0
+            double precision, optional :: a1c=0.90007d0
+            double precision, optional :: a2c=0.94900d0
+            double precision, optional :: r0hh=0.74241d0
+            double precision, optional :: d1hh=109.85800d0
+            double precision, optional :: d3hh=40.56400d0
+            double precision, optional :: ahh=1.95570d0
+            double precision, optional :: r0cb=1.09397d0
+            double precision, optional :: d1cb=46.60900d0
+            double precision, optional :: d3cb=15.10000d0
+            double precision, optional :: acb=1.1890285d0
+            double precision, optional :: a3s=1.8419147d0
+            double precision, optional :: b3s=1.0889300d0
+            double precision, optional :: aphi=1.0087903d0
+            double precision, optional :: bphi=1.2006638d0
+            double precision, optional :: cphi=1.0889937d0
+            double precision, optional :: atheta=1.2078714d0
+            double precision, optional :: btheta=0.3548859d0
+            double precision, optional :: ctheta=1.8915497d0
+            double precision, optional :: fch3=0.1357500d0
+            double precision, optional :: hch3=0.2615000d0
+            double precision, optional :: fkinf=0.2977000d0
+            double precision, optional :: ak=0.3060000d0
+            double precision, optional :: bk=0.2032000d0
+            double precision, optional :: aa1=3.800952d0
+            double precision, optional :: aa2=0.499963d0
+            double precision, optional :: aa3=6.465953d0
+            double precision, optional :: aa4=1.569977d0
+            double precision, optional :: v3=13.730000d0
+            double precision, optional :: w1=9.3548859d0
+            double precision, optional :: w2=0.913970d0
+            double precision, optional :: a1s=2.5313681d0
+            double precision, optional :: b1s=1.088625d0
+            double precision, optional :: a2s=2.0147402d0
+            double precision, optional :: b2s=1.088980d0
+            double precision, optional :: a1scc=2.5313681d0
+            double precision, optional :: b1scc=1.550070d0
+            double precision, optional :: a2scc=2.0147402d0
+            double precision, optional :: b2scc=1.550070d0
+            double precision, optional :: a3scc=0.531368d0
+            double precision, optional :: b3scc=1.550070d0
+            double precision dimension(8,8) :: theta0
+            double precision dimension(8,8,8) :: dtheta0
+            double precision :: r0c1h
+            double precision :: r0c2h
+            double precision dimension(3) :: rc1h
+            double precision dimension(3) :: rc2h
+            double precision dimension(6) :: rbh
+            double precision dimension(3,6) :: rhh
+            double precision :: rc1b
+            double precision :: rc2b
+            double precision dimension(3) :: tcb
+            double precision dimension(3,3) :: tc1h
+            double precision dimension(3,3) :: tc2h
+            double precision dimension(6,3) :: tbh
+            double precision dimension(3) :: tcc
+            double precision dimension(3,6,3) :: thh
+            double precision dimension(3) :: tc1b
+            double precision dimension(3) :: tc2b
+            double precision dimension(8) :: fdelta
+            double precision dimension(8) :: hdelta
+            double precision dimension(8,8) :: dfdelta
+            double precision dimension(8,8) :: dhdelta
+            double precision dimension(8,8) :: fk0
+            double precision dimension(8) :: f1
+            double precision dimension(8,8,8) :: dfdc
+            double precision dimension(8,8,8) :: dfdh
+            double precision dimension(8) :: s1
+            double precision dimension(8) :: ds1
+            double precision dimension(8) :: s2
+            double precision dimension(8) :: ds2
+            integer dimension(3) :: nc
+            integer dimension(3) :: nhb
+            integer dimension(8,3) :: nh
+            integer dimension(3) :: nc1
+            integer dimension(3) :: nc2
+            integer, optional,dimension(6) :: nnh=3
+            double precision dimension(8) :: s3
+            double precision dimension(8) :: ds3
+            double precision dimension(27) :: q
+            double precision dimension(27) :: pdot
+            double precision :: d1ch
+            double precision :: d3ch
+            double precision :: a1cc
+            double precision :: b1cc
+            double precision :: c1cc
+            double precision dimension(8) :: sphi
+            double precision dimension(8) :: dsphi
+            double precision dimension(8) :: stheta
+            double precision dimension(8) :: dstheta
+            double precision dimension(9) :: thetahcch
+            integer, parameter,optional :: n3atom=75
+            integer, parameter,optional :: isurf=5
+            integer, parameter,optional :: jsurf=15.0
+            double precision, parameter,optional :: pi=3.141592653589793
+            integer, parameter,optional :: natom=25
+            common /pt3cm/ ezero
+            common /infocm/ cartnu,indexes,irctnt,natoms,icartr,mder,msurf,ref
+            common /usricm/ cart,anuzero,nulbl,nflag,nasurf,nder
+            common /potcm/ nnc1,nnc2,nnb,r0c1hr,r0c1hp,w3,w4,d1c1h,d3c1h,a1c1h,b1c1h,c1c1h,r0c2hr,r0c2hp,w5,w6,d1c2h,d3c2h,a1c2h,b1c2h,c1c2h,r0cc,rcc,d1cc,acc,a1c,a2c,r0hh,d1hh,d3hh,ahh,r0cb,d1cb,d3cb,acb,a3s,b3s,aphi,bphi,cphi,atheta,btheta,ctheta,fch3,hch3,fkinf,ak,bk,aa1,aa2,aa3,aa4,v3,w1,w2,a1s,b1s,a2s,b2s,a1scc,b1scc,a2scc,b2scc,a3scc,b3scc
+            common /angles/ theta0,dtheta0
+            common /bonds/ r0c1h,r0c2h
+            common /bonds2/ rc1h,rc2h,rbh,rhh
+            common /bonds3/ rc1b,rc2b
+            common /coords1/ tcb,tc1h,tc2h,tbh
+            common /coords2/ tcc,thh
+            common /coords3/ tc1b,tc2b
+            common /delta1/ fdelta,hdelta
+            common /delta2/ dfdelta,dhdelta
+            common /force1/ fk0,f1,dfdc,dfdh
+            common /ip1/ s1,ds1,s2,ds2
+            common /ndx/ nc,nhb,nh
+            common /ndx2/ nc1,nc2,nnh
+            common /op1/ s3,ds3
+            common /qpdot/ q,pdot
+            common /stret1/ d1ch,d3ch,a1cc,b1cc,c1cc
+            common /switch1/ sphi,dsphi,stheta,dstheta
+            common /thetahcch/ thetahcch
+        end block data ptpacm
+    end interface 
+end python module C2H6H_VBMM
+
+! This file was auto-generated with f2py (version:1.24.4).
+! See:
+! https://web.archive.org/web/20140822061353/http://cens.ioc.ee/projects/f2py2e
