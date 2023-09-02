@@ -3,29 +3,6 @@
 
 python module H3ClO_PIPNN ! in 
     interface  ! in :H3ClO_PIPNN
-        module nnparam ! in :H3ClO_PIPNN:H3ClO_PIPNN.f90
-            real*8, parameter,optional :: alpha=1.0d0
-            real*8, parameter,optional :: pi=3.141592653589793238d0
-            real*8, parameter,optional,depend(pi) :: radian=pi/180.0d0
-            real*8, parameter,optional :: bohr=0.5291772d0
-            integer, parameter,optional :: natom=5
-            integer, parameter,optional :: npes=3
-            integer, parameter,optional :: nmorse=110
-            integer, parameter,optional,depend(natom) :: nbond=10.0
-            integer, parameter,optional :: ninput=230
-            integer :: noutput
-            integer :: nscale
-            integer :: nhid3
-            integer :: nlayer3
-            integer :: ifunc3
-            integer :: nwe3
-            integer :: nodemax3
-            integer, allocatable,dimension(:) :: nodes3a
-            real*8, allocatable,dimension(:,:,:,:) :: weight3a
-            real*8, allocatable,dimension(:,:,:) :: bias3a
-            real*8, allocatable,dimension(:,:) :: pdel3a
-            real*8, allocatable,dimension(:,:) :: pavg3a
-        end module nnparam
         subroutine pes(x,igrad,path,p,g,d) ! in :H3ClO_PIPNN:H3ClO_PIPNN.f90
             use nnparam
             double precision dimension(5,3),intent(in) :: x

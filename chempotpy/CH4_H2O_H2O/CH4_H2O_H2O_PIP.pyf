@@ -3,9 +3,6 @@
 
 python module CH4_H2O_H2O_PIP ! in 
     interface  ! in :CH4_H2O_H2O_PIP
-        module bemsa ! in :CH4_H2O_H2O_PIP:CH4_H2O_H2O_PIP.f90
-            real*8 dimension(5809) :: coeff
-        end module bemsa
         subroutine pes(x,igrad,path,p,gradient_out,d) ! in :CH4_H2O_H2O_PIP:CH4_H2O_H2O_PIP.f90
             double precision dimension(11,3),intent(in) :: x
             integer intent(in) :: igrad

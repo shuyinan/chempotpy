@@ -3,38 +3,6 @@
 
 python module N4_1A_PIPNN ! in 
     interface  ! in :N4_1A_PIPNN
-        module nnparam ! in :N4_1A_PIPNN:N4_1A_PIPNN.f90
-            real*8, parameter,optional :: alpha=1.0d0
-            real*8, parameter,optional :: pi=3.1415926d0
-            real*8, parameter,optional,depend(pi) :: radian=pi/180.0d0
-            integer, parameter,optional :: nbasis=306
-            integer, parameter,optional :: ndim=6
-            integer, parameter,optional :: natom=4
-            integer, parameter,optional :: nnew=276
-            integer, parameter,optional :: ninput=276
-            integer :: noutput
-            integer :: nhid
-            integer :: nlayer
-            integer :: ifunc
-            integer :: nwe
-            integer :: nodemax
-            integer dimension(306) :: nterm
-            integer dimension(306,1000,6) :: nindex
-            integer :: nscale
-            integer, allocatable,dimension(:) :: nodes
-            real*8, allocatable,dimension(:,:,:) :: weighta
-            real*8, allocatable,dimension(:,:) :: biasa
-            real*8, allocatable,dimension(:) :: pdela
-            real*8, allocatable,dimension(:) :: pavga
-            real*8, allocatable,dimension(:,:,:) :: weightb
-            real*8, allocatable,dimension(:,:) :: biasb
-            real*8, allocatable,dimension(:) :: pdelb
-            real*8, allocatable,dimension(:) :: pavgb
-            real*8, allocatable,dimension(:,:,:) :: weightc
-            real*8, allocatable,dimension(:,:) :: biasc
-            real*8, allocatable,dimension(:) :: pdelc
-            real*8, allocatable,dimension(:) :: pavgc
-        end module nnparam
         subroutine pes(x,igrad,path,p,g,d) ! in :N4_1A_PIPNN:N4_1A_PIPNN.f90
             use nnparam
             double precision dimension(4,3),intent(in) :: x

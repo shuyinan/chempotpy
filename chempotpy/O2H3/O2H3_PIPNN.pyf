@@ -3,28 +3,6 @@
 
 python module O2H3_PIPNN ! in 
     interface  ! in :O2H3_PIPNN
-        module nnparam ! in :O2H3_PIPNN:O2H3_PIPNN.f90
-            real*8, parameter,optional :: alpha=1.0d0
-            real*8, parameter,optional :: pi=3.1415926d0
-            real*8, parameter,optional,depend(pi) :: radian=pi/180.0d0
-            integer, parameter,optional :: nbasis=139
-            integer, parameter,optional :: ndim=10
-            integer, parameter,optional :: natom=5
-            real*8, parameter,optional :: vpesmin=-152.040123400851d0
-            integer, parameter,optional :: ninput=138
-            integer :: noutput
-            integer :: nhid
-            integer :: nlayer
-            integer :: ifunc
-            integer :: nwe
-            integer :: nodemax
-            integer :: nscale
-            integer, allocatable,dimension(:) :: nodes
-            real*8, allocatable,dimension(:,:,:) :: weighta
-            real*8, allocatable,dimension(:,:) :: biasa
-            real*8, allocatable,dimension(:) :: pdela
-            real*8, allocatable,dimension(:) :: pavga
-        end module nnparam
         subroutine pes(x,igrad,path,p,g,d) ! in :O2H3_PIPNN:O2H3_PIPNN.f90
             use nnparam
             double precision dimension(5,3),intent(in) :: x

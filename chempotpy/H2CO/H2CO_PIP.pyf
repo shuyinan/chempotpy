@@ -3,12 +3,6 @@
 
 python module H2CO_PIP ! in 
     interface  ! in :H2CO_PIP
-        module shell ! in :H2CO_PIP:H2CO_PIP.f90
-            real, parameter,optional :: total=8
-            integer, parameter,optional :: coff=1561
-            real*8 dimension(1561) :: cof
-            real*8 dimension(1561,6) :: power
-        end module shell
         subroutine pes(x,igrad,path,p,gradient_out,d) ! in :H2CO_PIP:H2CO_PIP.f90
             use shell
             double precision dimension(4,3),intent(in) :: x

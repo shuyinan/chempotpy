@@ -3,9 +3,6 @@
 
 python module C3H7NO_PIP ! in 
     interface  ! in :C3H7NO_PIP
-        module pes_shell ! in :C3H7NO_PIP:C3H7NO_PIP.f90
-            real*8 dimension(8040) :: coeff
-        end module pes_shell
         subroutine pes(x,igrad,path,potential,gradient_out,dvec) ! in :C3H7NO_PIP:C3H7NO_PIP.f90
             use pes_shell
             double precision dimension(12,3),intent(in) :: x

@@ -3,30 +3,6 @@
 
 python module H3S_PIPNN ! in 
     interface  ! in :H3S_PIPNN
-        module nnparam ! in :H3S_PIPNN:H3S_PIPNN.f90
-            real*8, parameter,optional :: alpha=1.0d0
-            real*8, parameter,optional :: pi=3.1415926d0
-            real*8, parameter,optional,depend(pi) :: radian=pi/180.0d0
-            real*8, parameter,optional :: para2=27.2116d0
-            integer, parameter,optional :: nbasis=23
-            integer, parameter,optional :: ndim=6
-            integer, parameter,optional :: natom=4
-            integer, parameter,optional :: ndata=33435
-            real*8, parameter,optional :: vpesmin=-399.45863953d0
-            integer, parameter,optional :: ninput=22
-            integer :: noutput
-            integer :: nhid
-            integer :: nlayer
-            integer :: ifunc
-            integer :: nwe
-            integer :: nodemax
-            integer :: nscale
-            integer, allocatable,dimension(:) :: nodes
-            real*8, allocatable,dimension(:,:,:) :: weighta
-            real*8, allocatable,dimension(:,:) :: biasa
-            real*8, allocatable,dimension(:) :: pdela
-            real*8, allocatable,dimension(:) :: pavga
-        end module nnparam
         subroutine pes(x,igrad,path,p,g,d) ! in :H3S_PIPNN:H3S_PIPNN.f90
             use nnparam
             double precision dimension(4,3),intent(in) :: x

@@ -3,30 +3,6 @@
 
 python module HClOH_PIPNN ! in 
     interface  ! in :HClOH_PIPNN
-        module nnparam ! in :HClOH_PIPNN:HClOH_PIPNN.f90
-            integer, parameter,optional :: ninput=17
-            integer :: noutput
-            integer :: nhid
-            integer :: nlayer
-            integer :: ifunc
-            integer :: nwe
-            integer :: nodemax
-            integer :: nscale
-            integer, allocatable,dimension(:) :: nodes
-            real*8, allocatable,dimension(:,:,:) :: weighta
-            real*8, allocatable,dimension(:,:) :: biasa
-            real*8, allocatable,dimension(:) :: pdela
-            real*8, allocatable,dimension(:) :: pavga
-            real*8, allocatable,dimension(:,:,:) :: weightb
-            real*8, allocatable,dimension(:,:) :: biasb
-            real*8, allocatable,dimension(:) :: pdelb
-            real*8, allocatable,dimension(:) :: pavgb
-            real*8, allocatable,dimension(:,:,:) :: weightc
-            real*8, allocatable,dimension(:,:) :: biasc
-            real*8, allocatable,dimension(:) :: pdelc
-            real*8, allocatable,dimension(:) :: pavgc
-            double precision, parameter,optional :: vpescut=5.0d0
-        end module nnparam
         subroutine pes(x,igrad,path,p,g,d) ! in :HClOH_PIPNN:HClOH_PIPNN.f90
             use nnparam
             double precision dimension(4,3),intent(in) :: x
