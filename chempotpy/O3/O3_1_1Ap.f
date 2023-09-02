@@ -48,11 +48,11 @@ C
 
       V=V/23.0609
       tg=tg/23.0609
-   
+
       do istate=1,nstates
         p(istate)=v
       enddo
- 
+
       do istate=1,nstates
         do iatom=1,natoms
           do idir=1,3
