@@ -3,53 +3,6 @@
 
 python module ClH2O_PIPNN ! in 
     interface  ! in :ClH2O_PIPNN
-        module nnparam ! in :ClH2O_PIPNN:ClH2O_PIPNN.f90
-            real*8, parameter,optional :: alpha=1.0d0
-            real*8, parameter,optional :: vpesmin=-536.01052952d0
-            real*8, parameter,optional :: vpescut=5.0d0
-            real*8, parameter,optional :: pi=3.141592653589793238d0
-            real*8, parameter,optional,depend(pi) :: radian=pi/180.0d0
-            real*8, parameter,optional :: bohr=0.5291772d0
-            integer, parameter,optional :: n0ho=20
-            integer, parameter,optional :: n0hcl=18
-            integer, parameter,optional :: nxho=18
-            integer, parameter,optional :: nxhcl=18
-            integer, parameter,optional :: n2n=100
-            real*8 dimension(20) :: dp0ho
-            real*8 dimension(18) :: dp0hcl
-            real*8 dimension(20) :: r0ho
-            real*8 dimension(18) :: r0hcl
-            real*8 dimension(18,18) :: exhohcl
-            real*8 dimension(18) :: rxho
-            real*8 dimension(18) :: rxhcl
-            real*8 dimension(100) :: dp0ho2
-            real*8 dimension(100) :: dp0hcl2
-            real*8 dimension(18,18) :: exhohcl2
-            integer, parameter,optional :: nbasis=18
-            integer, parameter,optional :: ninput=17
-            integer :: noutput
-            integer :: nhid
-            integer :: nlayer
-            integer :: ifunc
-            integer :: nwe
-            integer :: nodemax
-            integer dimension(18) :: nterm
-            integer dimension(18,100,6) :: nindex
-            integer :: nscale
-            integer, allocatable,dimension(:) :: nodes
-            real*8, allocatable,dimension(:,:,:) :: weighta
-            real*8, allocatable,dimension(:,:) :: biasa
-            real*8, allocatable,dimension(:) :: pdela
-            real*8, allocatable,dimension(:) :: pavga
-            real*8, allocatable,dimension(:,:,:) :: weightb
-            real*8, allocatable,dimension(:,:) :: biasb
-            real*8, allocatable,dimension(:) :: pdelb
-            real*8, allocatable,dimension(:) :: pavgb
-            real*8, allocatable,dimension(:,:,:) :: weightc
-            real*8, allocatable,dimension(:,:) :: biasc
-            real*8, allocatable,dimension(:) :: pdelc
-            real*8, allocatable,dimension(:) :: pavgc
-        end module nnparam
         subroutine pes(x,igrad,p,g,d) ! in :ClH2O_PIPNN:ClH2O_PIPNN.f90
             use nnparam
             double precision dimension(4,3),intent(in) :: x

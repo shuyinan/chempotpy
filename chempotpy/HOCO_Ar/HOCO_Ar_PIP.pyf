@@ -3,9 +3,6 @@
 
 python module HOCO_Ar_PIP ! in 
     interface  ! in :HOCO_Ar_PIP
-        module bemsa ! in :HOCO_Ar_PIP:HOCO_Ar_PIP.f90
-            real*8 dimension(1376) :: coeff
-        end module bemsa
         subroutine pes(x,igrad,path,p,gradient_out,d) ! in :HOCO_Ar_PIP:HOCO_Ar_PIP.f90
             use bemsa
             double precision dimension(5,3),intent(in) :: x

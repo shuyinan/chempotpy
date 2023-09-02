@@ -3,29 +3,6 @@
 
 python module O3_2_3Ap_ZV ! in 
     interface  ! in :O3_2_3Ap_ZV
-        module o3_2_3ap_zv_par ! in :O3_2_3Ap_ZV:O3_2_3Ap_ZV.f90
-            double precision, parameter,optional :: cconv=0.52917721092d0
-            double precision, parameter,optional :: econv=0.159360144d-2
-            double precision, parameter,optional :: gconv=0.843297564d-3
-            double precision dimension(3) :: r
-            double precision dimension(3) :: rms
-            double precision dimension(8) :: rm
-            double precision dimension(67) :: p
-            double precision dimension(56) :: b
-            double precision dimension(3,3) :: dmsdr
-            double precision dimension(3,8) :: dmdr
-            double precision dimension(3,67) :: dpdr
-            double precision dimension(3) :: dvdr
-            double precision dimension(3,9) :: drdx
-            double precision dimension(3,56) :: dbdr
-            double precision, parameter,optional :: a=0.87d0
-            double precision, parameter,optional :: ab=1.20d0
-            double precision, parameter,optional :: ra=0.95d0
-            double precision, parameter,optional :: rb=1.20d0
-            double precision, parameter,optional :: eref=-0.19172848d0
-            double precision, parameter,optional :: totdiss=240.486d0
-            double precision, parameter,optional,dimension(56) :: c=(/0.430640560176d+02 , 0.168630245033d+05 ,-0.398327275763d+03,-0.698228808827d+05 , 0.463558771517d+05 ,-0.541609166937d+04, 0.227287152986d+06 , 0.102904000583d+06 ,-0.141356202884d+06, 0.436186517096d+05 ,-0.260760138924d+06 ,-0.386083910463d+06, 0.620216754179d+05 , 0.506911283387d+06 , 0.109963687405d+06,-0.117270851770d+06 , 0.387498675202d+06 , 0.377611410150d+06, 0.371230344504d+06 ,-0.452318888755d+06 ,-0.643839803405d+06, 0.173829092404d+06 , 0.142880013279d+06 ,-0.131727979011d+06,-0.498958606422d+06 ,-0.139637666106d+06 ,-0.293260470997d+06, 0.726717932918d+06 , 0.333031320687d+06 , 0.598472969174d+06,-0.458922833333d+06 ,-0.700785923130d+05 ,-0.167439142793d+07, 0.787983185093d+06 ,-0.254362038559d+06 ,-0.757702471208d+06, 0.390394941503d+05 , 0.408032299714d+06 ,-0.591504214543d+06,-0.139212909371d+06 ,-0.311762874435d+06 , 0.351443206456d+06, 0.171468363996d+04 , 0.888339845839d+05 , 0.799305000868d+06,-0.838644955549d+06 , 0.385827976412d+04 , 0.937283438322d+06, 0.519645297397d+05 ,-0.267163929014d+06 , 0.204578223753d+06,-0.146697596827d+06 , 0.155655495371d+06 , 0.214899107033d+05,-0.818939923769d+05 , 0.500897122485d+04/)
-        end module o3_2_3ap_zv_par
         subroutine pes(x,igrad,potential,gradient,dvec) ! in :O3_2_3Ap_ZV:O3_2_3Ap_ZV.f90
             use o3_2_3ap_zv_par
             double precision dimension(3,3),intent(in) :: x

@@ -3,10 +3,6 @@
 
 python module H3_GEN_BH_2009 ! in 
     interface  ! in :H3_GEN_BH_2009
-        module zmasses ! in :H3_GEN_BH_2009:H3_GEN_BH_2009.f90
-            double precision :: zmass1
-            double precision :: zmass2
-        end module zmasses
         subroutine pes(x,igrad,p,g,d) ! in :H3_GEN_BH_2009:H3_GEN_BH_2009.f90
             double precision dimension(3,3),intent(in) :: x
             integer intent(in) :: igrad

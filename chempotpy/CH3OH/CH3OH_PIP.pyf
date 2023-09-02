@@ -3,9 +3,6 @@
 
 python module CH3OH_PIP ! in 
     interface  ! in :CH3OH_PIP
-        module pes_shell ! in :CH3OH_PIP:CH3OH_PIP.f90
-            real, parameter,optional :: auang=0.5291772083d0
-        end module pes_shell
         subroutine pes(x,igrad,path,p,g,d) ! in :CH3OH_PIP:CH3OH_PIP.f90
             use pes_shell
             double precision dimension(6,3),intent(in) :: x

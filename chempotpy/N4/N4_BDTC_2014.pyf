@@ -11,62 +11,6 @@ python module N4_BDTC_2014 ! in
             double precision dimension(1,4,3),intent(out) :: g
             double precision dimension(1,1,4,3),intent(out) :: d
         end subroutine pes
-        module falcons_vars_eval ! in :N4_BDTC_2014:N4_BDTC_2014.f90
-            real*8, allocatable,dimension(:,:) :: qi
-            real*8, allocatable,dimension(:,:) :: aji
-        end module falcons_vars_eval
-        module falcons_vars_main ! in :N4_BDTC_2014:N4_BDTC_2014.f90
-            integer :: i
-            integer :: j
-            integer :: k
-            integer :: l
-            integer :: nn
-            integer :: ind
-            integer :: n
-            integer :: m
-            integer :: eta
-            integer :: np
-            integer :: moltype
-            integer :: pesform
-            integer :: nma
-            integer :: nplmax
-            integer :: nall
-            integer :: nmincrc
-            integer :: mcrc
-            integer :: qps
-            integer :: pwonly
-            integer :: cgmeth
-            integer :: ntarmin
-            integer :: ntarmax
-            integer :: ntar
-            integer :: crcmult
-            integer :: nitcrc
-            integer dimension(6) :: sd
-            integer dimension(4,3) :: cmap
-            integer dimension(24,6) :: qp
-            real*8 :: pnu
-            real*8 :: epsnu
-            real*8 :: ps
-            real*8 :: pu
-            real*8 :: epsu
-            real*8 :: e
-            real*8 :: epw
-            real*8 :: systo
-            real*8 :: r
-            real*8 :: rwfa
-            real*8 :: rwfb
-            real*8 dimension(6) :: t
-            real*8 dimension(6) :: qr
-            real*8 dimension(6) :: qs
-            real*8 dimension(6) :: q
-            real*8 dimension(6) :: xr
-            real*8 dimension(6) :: x
-            real*8 dimension(6) :: aa
-            real*8 dimension(6) :: qeq
-            real*8 dimension(4,3) :: y
-            real*8 dimension(4,3) :: dedy
-            real*8, allocatable,dimension(:) :: crc
-        end module falcons_vars_main
     end interface 
 end python module N4_BDTC_2014
 

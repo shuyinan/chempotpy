@@ -3,29 +3,6 @@
 
 python module C2H2N2O_PIPNN ! in 
     interface  ! in :C2H2N2O_PIPNN
-        module nnparam1 ! in :C2H2N2O_PIPNN:C2H2N2O_PIPNN.f90
-            real*8, parameter,optional :: alpha=1.8d0
-            real*8, parameter,optional :: pi=3.141592653589793238d0
-            real*8, parameter,optional,depend(pi) :: radian=pi/180.0d0
-            real*8, parameter,optional :: bohr=0.5291772d0
-            real*8, parameter,optional :: para2=27.2114d0
-            integer, parameter,optional :: nbasis=2390
-            integer, parameter,optional :: natom=7
-            integer, parameter,optional :: nbond=21
-            integer, parameter,optional :: ninput1=456
-            integer :: noutput1
-            integer :: nscale1
-            integer :: nhid3
-            integer :: nlayer31
-            integer :: ifunc31
-            integer :: nwe3
-            integer :: nodemax31
-            integer, allocatable,dimension(:) :: nodes3a1
-            real*8, allocatable,dimension(:,:,:) :: weight3a1
-            real*8, allocatable,dimension(:,:) :: bias3a1
-            real*8, allocatable,dimension(:) :: pdel3a1
-            real*8, allocatable,dimension(:) :: pavg3a1
-        end module nnparam1
         subroutine pes(x,igrad,path,p,g,d) ! in :C2H2N2O_PIPNN:C2H2N2O_PIPNN.f90
             use nnparam1
             double precision dimension(7,3),intent(in) :: x
