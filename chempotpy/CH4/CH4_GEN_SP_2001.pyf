@@ -3,7 +3,7 @@
 
 python module CH4_GEN_SP_2001 ! in 
     interface  ! in :CH4_GEN_SP_2001
-        subroutine pes(x,igrad,path,p,g,d) ! in :CH4_GEN_SP_2001:CH4_GEN_SP_2001.f90
+        subroutine pes(x,igrad,path,p,g,d) ! in :CH4_GEN_SP_2001:CH4_GEN_SP_2001.f
             double precision dimension(5,3),intent(in) :: x
             integer intent(in) :: igrad
             character*1024 intent(in) :: path
