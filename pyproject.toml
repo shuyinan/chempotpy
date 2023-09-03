@@ -2,7 +2,6 @@
 requires = [
     "scikit-build-core",
     "numpy>=1.21",
-    "charset_normalizer",
 ]
 build-backend = "scikit_build_core.build"
 
