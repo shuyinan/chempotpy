@@ -1,71 +1,35 @@
-  module constants
-  implicit none
+module constants
+implicit none
 
-  ! Define the mass of different atoms
-  real,parameter::c_mass= 12.0000000  !21874.66
-  real,parameter::d_mass=  2.0135532127
-  real,parameter::h_mass=  1.0078250  !1837.15
-  real,parameter::o_mass= 15.9949146  !29156.95
-  real,parameter::pi=acos(-1.0)
+! Define the mass of different atoms
+double precision,parameter::c_mass= 12.0000000  !21874.66
+double precision,parameter::d_mass=  2.0135532127
+double precision,parameter::h_mass=  1.0078250  !1837.15
+double precision,parameter::o_mass= 15.9949146  !29156.95
+double precision,parameter::pi=acos(-1.0)
 
-  ! Define constants
-  real,parameter::auang=0.5291772083
-  real,parameter::aucm=219474.6313710
-  real,parameter::aukcal=627.51
+! Define constants
+double precision,parameter::auang=0.5291772083
+double precision,parameter::aucm=219474.6313710
+double precision,parameter::aukcal=627.51
 
-  real,parameter::emass=1822.88848
+double precision,parameter::emass=1822.88848
 
-  end module constants
+end module constants
 
-      subroutine pes(x,igrad,path,p,g,d)
-
-      implicit none
-      ! number of electronic state
-      integer, parameter :: nstates=1
-      integer, parameter :: natoms=6
-      integer, intent(in) :: igrad
-      character(len=1024), intent(in) :: path
-      double precision, intent(in) :: x(natoms,3)
-      double precision, intent(out) :: p(nstates), g(nstates,natoms,3)
-      double precision, intent(out) :: d(nstates,nstates,natoms,3)
-
-!     logical, save :: first_time_data=.true.
-      real :: tx(18)
-      real :: v
-      integer :: iatom, idir, j, istate
-      !initialize
-      v=0.d0
-      g=0.d0
-      d=0.d0
-
-      do iatom=1,natoms
-        do idir=1,3
-          j=(iatom-1)*3+idir
-          tx(j)=x(iatom, idir)/0.529177211
-        enddo
-      enddo
-
-!     if(first_time_data) then
-        call pes_init(path)
-!       first_time_data=.false.
-!     endif
-
-      if (igrad==0) then
-        call h4o2pot(tx, v)
-      else
-        write (*,*) 'Only energy is available'
-      endif
-
-      v=v*27.211386
-      do istate=1,nstates
-        p(istate)=v
-      enddo
-
-      endsubroutine
-
-
-
-
+module inv_mg42_t
+!..use and access
+implicit none
+integer, parameter, public :: &
+  mg42_nr=15, mg42_ngrp=48, mg42_ngen=3, &
+  mg42_dvp(0:9) = (/ 0, 3, 5, 3, 3, 0, 1, 0, 0, 0 /), &
+  mg42_ivp(0:9) = (/ 0, 3, 8, 11, 14, 14, 15, 15, 15, 15 /), &
+  mg42_dvs(0:9) = (/ 1, 0, 1, 10, 24, 47, 101, 195, 328, 489 /), &
+  mg42_ivs(0:9) = (/ 1, 1, 2, 12, 36, 83, 184, 379, 707, 1196 /), &
+  mg42_dvb(0:9) = (/ 1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180 /), &
+  mg42_ivb(0:9) = (/ 1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555 /)
+!..procedures
+end module inv_mg42_t
 
   !=================================================!
   ! Initializing HBB water potential                !
@@ -89,11 +53,11 @@
   subroutine h4o2pot(x,v)
     ! x(1:18) Cartesian coordinates in bohr, must in order H H H H O O
     ! f: potential in hartree
-    real,intent(in)::x(18)
-    real, intent(inout) :: v
+    double precision,intent(in)::x(18)
+    double precision, intent(inout) :: v
     ! ::::::::::::::::::::
-    real ,dimension(3,6)::xn
-    real ::pot
+    double precision ,dimension(3,6)::xn
+    double precision ::pot
 
     xn = reshape(x,(/3,6/))
     call calcpot(pot,xn)
@@ -137,7 +101,7 @@
 
         common/NCOE/ms,mr
         common/h4o2coef/dc0,dw0,coef
-        real :: V, cart(3,6)
+        double precision :: V, cart(3,6)
 
 
         double precision rvec(0:3),d0(0:5,0:5),r0(0:5,0:5),vec(0:ms+3*mr-1)
@@ -149,24 +113,10 @@
         return
         end subroutine calcpot
 
-module inv_mg42_t
-!..use and access
-implicit none
-integer, parameter, public :: &
-  mg42_nr=15, mg42_ngrp=48, mg42_ngen=3, &
-  mg42_dvp(0:9) = (/ 0, 3, 5, 3, 3, 0, 1, 0, 0, 0 /), &
-  mg42_ivp(0:9) = (/ 0, 3, 8, 11, 14, 14, 15, 15, 15, 15 /), &
-  mg42_dvs(0:9) = (/ 1, 0, 1, 10, 24, 47, 101, 195, 328, 489 /), &
-  mg42_ivs(0:9) = (/ 1, 1, 2, 12, 36, 83, 184, 379, 707, 1196 /), &
-  mg42_dvb(0:9) = (/ 1, 3, 12, 41, 137, 415, 1201, 3246, 8319, 20180 /), &
-  mg42_ivb(0:9) = (/ 1, 4, 16, 57, 194, 609, 1810, 5056, 13375, 33555 /)
-!..procedures
-end module inv_mg42_t
-
 subroutine getr0 (nk, xn, r0)
 implicit none
 integer nk
-real xn(0:2,0:nk-1), r0(0:nk-1,0:nk-1)
+double precision xn(0:2,0:nk-1), r0(0:nk-1,0:nk-1)
 integer i, j
 do i = 0, nk-1
  r0(i,i) = 0
@@ -185,9 +135,9 @@ implicit none
 ! version for X4Y2
 integer nk, m
 parameter (nk=6)
-real r(0:nk-1,0:nk-1), vec(0:m-1)
+double precision r(0:nk-1,0:nk-1), vec(0:m-1)
 integer i, j
-real x(0:2), r1(0:nk-1,0:nk-1), t0, t1
+double precision x(0:2), r1(0:nk-1,0:nk-1), t0, t1
 !-----------------------------------------------------------------------
 ! Test for compatibility
 if (.not.(m.eq.1.or.m.eq.4)) then
@@ -230,9 +180,9 @@ implicit none
 ! version for X4Y2
 integer nk, ms, mr
 parameter (nk=6)
-real xn(0:2,0:nk-1), vec(0:ms+3*mr-1)
+double precision xn(0:2,0:nk-1), vec(0:ms+3*mr-1)
 integer k, l, deg
-real rvec(0:3), x0(0:nk-1,0:nk-1), r0(0:nk-1,0:nk-1)
+double precision rvec(0:3), x0(0:nk-1,0:nk-1), r0(0:nk-1,0:nk-1)
 !-----------------------------------------------------------------------
 deg = -1
 do k = 9, 0, -1
@@ -259,7 +209,7 @@ end subroutine getvec
 subroutine getx0 (nk, r0, x0)
 implicit none
 integer nk
-real r0(0:nk-1,0:nk-1), x0(0:nk*(nk-1)/2-1)
+double precision r0(0:nk-1,0:nk-1), x0(0:nk*(nk-1)/2-1)
 integer i, j, k
 k = 0
 do j = 0, nk-1
@@ -274,8 +224,8 @@ end subroutine getx0
 subroutine inv_base (mxd, u, v, w)
 use inv_mg42_t
 integer, intent (in) :: mxd
-real, intent (in) :: u(0:mg42_ivp(mxd)-1), v(0:mg42_ivs(mxd)-1)
-real, intent (out) :: w(0:mg42_ivb(mxd)-1)
+double precision, intent (in) :: u(0:mg42_ivp(mxd)-1), v(0:mg42_ivs(mxd)-1)
+double precision, intent (out) :: w(0:mg42_ivb(mxd)-1)
 !-----------------------------------------------------------------------
 integer :: l(0:mxd,0:mg42_ivp(mxd)), ind, i, k, d, inc
 l(0,0:mg42_ivp(mxd)) = 0
@@ -296,104 +246,27 @@ do d = 1, mxd
 enddo
 end subroutine inv_base
 
-subroutine mg42_base (mxd, x, w)
-use inv_mg42_t
-integer, intent (in) :: mxd
-real , intent (in) :: x(0:mg42_nr-1)
-real , intent (out) :: w(0:mg42_ivb(mxd)-1)
-!-----------------------------------------------------------------------
-real :: u(0:mg42_nr-1), v(0:mg42_ivs(mxd)-1)
-call mg42_prims (x, u)
-call mg42_secs (mxd, x, v)
-call inv_base (mxd, u, v, w)
-end subroutine mg42_base
+module pes_basis
 
-subroutine mg42_gens (ind, x, y)
-use inv_mg42_t
-integer, intent (in) :: ind
-real , intent (in) :: x(0:mg42_nr-1)
-real , intent (out) :: y(0:mg42_nr-1)
-!-----------------------------------------------------------------------
-integer :: iord(0:mg42_nr-1)
-! Numbering (block revlex):
-! ( 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14)
-! (01, 02, 12, 03, 13, 23, 04, 14, 24, 34, 05, 15, 25, 35, 45)
-select case (ind)
-case (0, -1)
-! permutation (0,1)
- iord = (/ 0, 2, 1, 4, 3, 5, 7, 6, 8, 9, 11, 10, 12, 13, 14 /)
-case (1, -2)
-! permutation (0,1,2,3)
- iord = (/ 2, 4, 5, 0, 1, 3, 7, 8, 9, 6, 11, 12, 13, 10, 14 /)
-case (2, -3)
-! permutation (4,5)
- iord = (/ 0, 1, 2, 3, 4, 5, 10, 11, 12, 13, 6, 7, 8, 9, 14 /)
-case default
- stop 'mg42_gens: invalid index'
-end select
-if (0.le.ind) then
- y(iord(:)) = x(:)
-else
- y(:) = x(iord(:))
-endif
-return
-end subroutine mg42_gens
+implicit integer (i,j,m)
 
-subroutine mg42_prims (x, u)
-use inv_mg42_t
-real , intent (in) :: x(0:mg42_nr-1)
-real , intent (out) :: u(0:mg42_nr-1)
-!-----------------------------------------------------------------------
-integer, parameter :: m=4, n=2, m2=m*(m-1)/2, n2=n*(n-1)/2
-integer :: i, j
-real  :: x0(0:m2-1), x1(0:m*n-1), x2(0:n2-1), t0(0:m-1), &
-  e(0:m-1), f(0:n-1)
-x0 = x(0:m2-1)
-x1 = x(m2:m2+m*n-1)
-x2 = x(m2+m*n:m2+m*n+n2-1)
-t0(0) = (x0(0)+x0(1)+x0(3))/3
-t0(1) = (x0(0)+x0(2)+x0(4))/3
-t0(2) = (x0(1)+x0(2)+x0(5))/3
-t0(3) = (x0(3)+x0(4)+x0(5))/3
-do i = 0, m-1
- e(i) = sum(x1(i:i+m*(n-1):m))/n
-enddo
-do j = 0, n-1
- f(j) = sum(x1(m*j:m*(j+1)-1))/m
-enddo
-u(0) = sum(x0)/size(x0)
-u(1) = sum(x1)/size(x1)
-u(2) = sum(x2)/size(x2)
-u(3) = sum(t0**2)/size(t0)
-u(4) = sum(x0**2)/size(x0)
-u(5) = sum(e**2)/size(e)
-u(6) = sum(f**2)/size(f)
-u(7) = sum(x1**2)/size(x1)
-u(8) = sum(t0**3)/size(t0)
-u(9) = sum(x0**3)/size(x0)
-u(10) = sum(e**3)/size(e)
-u(11) = sum(t0**4)/size(t0)
-u(12) = sum(e**4)/size(e)
-u(13) = sum(x1**4)/size(x1)
-u(14) = sum(x1**6)/size(x1)
-return
-end subroutine mg42_prims
-
-subroutine mg42_secs (mxd, x, v)
-use inv_mg42_t
-integer, intent (in) :: mxd
-real , intent (in) :: x(0:mg42_nr-1)
-real , intent (out) :: v(0:mg42_ivs(mxd)-1)
-!! Note: We stop at degree 7 for now.
-!-----------------------------------------------------------------------
 integer, parameter :: m=4, n=2, nk=6, npv=107, &
   m2=m*(m-1), m3=m*(m-1)*(m-2), n2=n*(n-1), mn=m*n, m2n=m*(m-1)*n, &
   mn2=m*n*(n-1), m2n2=m2n*(n-1), m3n=m*(m-1)*(m-2)*n, &
   m3n2=m*(m-1)*(m-2)*n*(n-1)
 integer :: i0, i1, i2, j0, j1
-real  :: pv(0:npv-1), d(0:nk-1,0:nk-1), d2(0:nk-1,0:nk-1), &
+double precision  :: pv(0:npv-1), d(0:nk-1,0:nk-1), d2(0:nk-1,0:nk-1), &
   d3(0:nk-1,0:nk-1), d4(0:nk-1,0:nk-1), d5(0:nk-1,0:nk-1), &
   d6(0:nk-1,0:nk-1), d7(0:nk-1,0:nk-1)
+    contains
+
+subroutine mg42_secs (mxd, x, v)
+use inv_mg42_t
+integer, intent (in) :: mxd
+double precision , intent (in) :: x(0:mg42_nr-1)
+double precision , intent (out) :: v(0:mg42_ivs(mxd)-1)
+!! Note: We stop at degree 7 for now.
+!-----------------------------------------------------------------------
 call mg42_setd ()
 pv = 0
 do i0 = 0, m-1
@@ -811,8 +684,10 @@ if (8.le.mxd) then
 endif
 end subroutine mg42_secs
 subroutine mg42_setd ()
+ use inv_mg42_t, only : mg42_nr
  integer :: i, j, k, l0, l1
- integer, parameter, dimension(0:2) :: lb=(/ 0, m, m+n /)
+ integer, dimension(0:2) :: lb
+ lb = (/ 0, m, m+n /)
  k = 0
  do l1 = 0, 1
   do l0 = 0, l1
@@ -1013,3 +888,136 @@ end subroutine mg42_deg7_i2j0
 subroutine mg42_deg7_i2j1 ()
  pv(106) = pv(106)+d2(i0,i1)*d2(i0,i2)*d(i0,j0)*d(i1,j0)*d(i0,j1)/m3n2
 end subroutine mg42_deg7_i2j1
+
+end module pes_basis
+
+
+subroutine mg42_base (mxd, x, w)
+use inv_mg42_t
+use pes_basis, only : mg42_secs
+integer, intent (in) :: mxd
+double precision , intent (in) :: x(0:mg42_nr-1)
+double precision , intent (out) :: w(0:mg42_ivb(mxd)-1)
+!-----------------------------------------------------------------------
+double precision :: u(0:mg42_nr-1), v(0:mg42_ivs(mxd)-1)
+call mg42_prims (x, u)
+call mg42_secs (mxd, x, v)
+call inv_base (mxd, u, v, w)
+end subroutine mg42_base
+
+subroutine mg42_gens (ind, x, y)
+use inv_mg42_t
+integer, intent (in) :: ind
+double precision , intent (in) :: x(0:mg42_nr-1)
+double precision , intent (out) :: y(0:mg42_nr-1)
+!-----------------------------------------------------------------------
+integer :: iord(0:mg42_nr-1)
+! Numbering (block revlex):
+! ( 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14)
+! (01, 02, 12, 03, 13, 23, 04, 14, 24, 34, 05, 15, 25, 35, 45)
+select case (ind)
+case (0, -1)
+! permutation (0,1)
+ iord = (/ 0, 2, 1, 4, 3, 5, 7, 6, 8, 9, 11, 10, 12, 13, 14 /)
+case (1, -2)
+! permutation (0,1,2,3)
+ iord = (/ 2, 4, 5, 0, 1, 3, 7, 8, 9, 6, 11, 12, 13, 10, 14 /)
+case (2, -3)
+! permutation (4,5)
+ iord = (/ 0, 1, 2, 3, 4, 5, 10, 11, 12, 13, 6, 7, 8, 9, 14 /)
+case default
+ stop 'mg42_gens: invalid index'
+end select
+if (0.le.ind) then
+ y(iord(:)) = x(:)
+else
+ y(:) = x(iord(:))
+endif
+return
+end subroutine mg42_gens
+
+subroutine mg42_prims (x, u)
+use inv_mg42_t
+double precision , intent (in) :: x(0:mg42_nr-1)
+double precision , intent (out) :: u(0:mg42_nr-1)
+!-----------------------------------------------------------------------
+integer, parameter :: m=4, n=2, m2=m*(m-1)/2, n2=n*(n-1)/2
+integer :: i, j
+double precision  :: x0(0:m2-1), x1(0:m*n-1), x2(0:n2-1), t0(0:m-1), &
+  e(0:m-1), f(0:n-1)
+x0 = x(0:m2-1)
+x1 = x(m2:m2+m*n-1)
+x2 = x(m2+m*n:m2+m*n+n2-1)
+t0(0) = (x0(0)+x0(1)+x0(3))/3
+t0(1) = (x0(0)+x0(2)+x0(4))/3
+t0(2) = (x0(1)+x0(2)+x0(5))/3
+t0(3) = (x0(3)+x0(4)+x0(5))/3
+do i = 0, m-1
+ e(i) = sum(x1(i:i+m*(n-1):m))/n
+enddo
+do j = 0, n-1
+ f(j) = sum(x1(m*j:m*(j+1)-1))/m
+enddo
+u(0) = sum(x0)/size(x0)
+u(1) = sum(x1)/size(x1)
+u(2) = sum(x2)/size(x2)
+u(3) = sum(t0**2)/size(t0)
+u(4) = sum(x0**2)/size(x0)
+u(5) = sum(e**2)/size(e)
+u(6) = sum(f**2)/size(f)
+u(7) = sum(x1**2)/size(x1)
+u(8) = sum(t0**3)/size(t0)
+u(9) = sum(x0**3)/size(x0)
+u(10) = sum(e**3)/size(e)
+u(11) = sum(t0**4)/size(t0)
+u(12) = sum(e**4)/size(e)
+u(13) = sum(x1**4)/size(x1)
+u(14) = sum(x1**6)/size(x1)
+return
+end subroutine mg42_prims
+
+  subroutine pes(x,igrad,path,p,g,d)
+
+  implicit none
+  ! number of electronic state
+  integer, parameter :: nstates=1
+  integer, parameter :: natoms=6
+  integer, intent(in) :: igrad
+  character(len=1024), intent(in) :: path
+  double precision, intent(in) :: x(natoms,3)
+  double precision, intent(out) :: p(nstates), g(nstates,natoms,3)
+  double precision, intent(out) :: d(nstates,nstates,natoms,3)
+
+!     logical, save :: first_time_data=.true.
+  double precision :: tx(18)
+  double precision :: v
+  integer :: iatom, idir, j, istate
+  !initialize
+  v=0.d0
+  g=0.d0
+  d=0.d0
+
+  do iatom=1,natoms
+    do idir=1,3
+      j=(iatom-1)*3+idir
+      tx(j)=x(iatom, idir)/0.529177211
+    enddo
+  enddo
+
+!     if(first_time_data) then
+    call pes_init(path)
+!       first_time_data=.false.
+!     endif
+
+  if (igrad==0) then
+    call h4o2pot(tx, v)
+  else
+    write (*,*) 'Only energy is available'
+  endif
+
+  v=v*27.211386
+  do istate=1,nstates
+    p(istate)=v
+  enddo
+
+  endsubroutine
