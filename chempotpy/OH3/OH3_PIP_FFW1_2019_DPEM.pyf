@@ -2,6 +2,14 @@
 ! Note: the context of this file is case sensitive.
 
 python module OH3_PIP_FFW1_2019_DPEM ! in 
+    interface  ! in :OH3_PIP_FFW1_2019_DPEM
+        subroutine dpem(x,igrad,u,ug) ! in :OH3_PIP_FFW1_2019_DPEM:OH3_PIP_FFW1_2019_DPEM.f90
+            double precision dimension(4,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(3,3),intent(out) :: u
+            double precision dimension(3,3,4,3),intent(out) :: ug
+        end subroutine dpem
+    end interface 
 end python module OH3_PIP_FFW1_2019_DPEM
 
 ! This file was auto-generated with f2py (version:1.24.4).

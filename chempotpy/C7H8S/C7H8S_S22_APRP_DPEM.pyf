@@ -2,6 +2,14 @@
 ! Note: the context of this file is case sensitive.
 
 python module C7H8S_S22_APRP_DPEM ! in 
+    interface  ! in :C7H8S_S22_APRP_DPEM
+        subroutine dpem(x,igrad,u,ug) ! in :C7H8S_S22_APRP_DPEM:C7H8S_S22_APRP_DPEM.f90
+            double precision dimension(16,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(3,3),intent(out) :: u
+            double precision dimension(3,3,16,3),intent(out) :: ug
+        end subroutine dpem
+    end interface 
 end python module C7H8S_S22_APRP_DPEM
 
 ! This file was auto-generated with f2py (version:1.24.4).

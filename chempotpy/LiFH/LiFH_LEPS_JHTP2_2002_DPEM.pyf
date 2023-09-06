@@ -2,6 +2,14 @@
 ! Note: the context of this file is case sensitive.
 
 python module LiFH_LEPS_JHTP2_2002_DPEM ! in 
+    interface  ! in :LiFH_LEPS_JHTP2_2002_DPEM
+        subroutine dpem(x,igrad,u,ug) ! in :LiFH_LEPS_JHTP2_2002_DPEM:LiFH_LEPS_JHTP2_2002_DPEM.f
+            double precision dimension(3,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(2,2),intent(out) :: u
+            double precision dimension(2,2,3,3),intent(out) :: ug
+        end subroutine dpem
+    end interface 
 end python module LiFH_LEPS_JHTP2_2002_DPEM
 
 ! This file was auto-generated with f2py (version:1.24.4).

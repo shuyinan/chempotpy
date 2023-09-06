@@ -2,6 +2,14 @@
 ! Note: the context of this file is case sensitive.
 
 python module NaH2_LEPS_7LD_2000_DPEM ! in 
+    interface  ! in :NaH2_LEPS_7LD_2000_DPEM
+        subroutine dpem(x,igrad,u,ug) ! in :NaH2_LEPS_7LD_2000_DPEM:NaH2_LEPS_7LD_2000_DPEM.f
+            double precision dimension(3,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(2,2),intent(out) :: u
+            double precision dimension(2,2,3,3),intent(out) :: ug
+        end subroutine dpem
+    end interface 
 end python module NaH2_LEPS_7LD_2000_DPEM
 
 ! This file was auto-generated with f2py (version:1.24.4).

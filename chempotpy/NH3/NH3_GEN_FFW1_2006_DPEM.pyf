@@ -2,6 +2,21 @@
 ! Note: the context of this file is case sensitive.
 
 python module NH3_GEN_FFW1_2006_DPEM ! in 
+    interface  ! in :NH3_GEN_FFW1_2006_DPEM
+        subroutine dpem(x,igrad,u,ug) ! in :NH3_GEN_FFW1_2006_DPEM:NH3_GEN_FFW1_2006_DPEM.f
+            double precision dimension(4,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(2,2),intent(out) :: u
+            double precision dimension(2,2,4,3),intent(out) :: ug
+            integer :: nhcoeu1
+            integer :: nhcoeu2
+            integer :: nhcoeu12
+            integer :: nhindu1
+            integer :: nhindu2
+            integer :: nhindu12
+            common /c_nhcoe/ nhcoeu1,nhcoeu2,nhcoeu12,nhindu1,nhindu2,nhindu12
+        end subroutine dpem
+    end interface 
 end python module NH3_GEN_FFW1_2006_DPEM
 
 ! This file was auto-generated with f2py (version:1.24.4).

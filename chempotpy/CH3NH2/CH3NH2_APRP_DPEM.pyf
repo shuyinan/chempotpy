@@ -2,6 +2,14 @@
 ! Note: the context of this file is case sensitive.
 
 python module CH3NH2_APRP_DPEM ! in 
+    interface  ! in :CH3NH2_APRP_DPEM
+        subroutine dpem(x,igrad,u,ug) ! in :CH3NH2_APRP_DPEM:CH3NH2_APRP_DPEM.f
+            double precision dimension(7,3),intent(in) :: x
+            integer intent(in) :: igrad
+            double precision dimension(2,2),intent(out) :: u
+            double precision dimension(2,2,7,3),intent(out) :: ug
+        end subroutine dpem
+    end interface 
 end python module CH3NH2_APRP_DPEM
 
 ! This file was auto-generated with f2py (version:1.24.4).
