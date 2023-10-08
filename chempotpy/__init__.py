@@ -234,7 +234,8 @@ def manual():
           NaH2_LEPS_7LD_2000, NaH2_LEPS_6_2000, NaH2_LEPS_5G_1992,
           NaH2_LEPS_5F_1992
     NH3: NH3_GEN_FFW1_2006, NH3_GEN_FFW2_2007
-    O3: O3_14_3Ap_2022, O3_14_3Ap_2023, O3_6_5Ap_2023
+    O3: O3_14_3Ap_2022, O3_14_3Ap_2023, O3_6_5Ap_2023, O3_14_3Ap_2023a, 
+        O3_6_5Ap_2023a
     OH3: OH3_PIP_FFW1_2019, OH3_PIP_FFW2_2022
     MCH: MCHWL_LEPS_ModelSurface, MCHWB_LEPS_ModelSurface,    
          MCHSL_LEPS_ModelSurface, MCHSB_LEPS_ModelSurface, 
@@ -930,6 +931,10 @@ def manual():
     310. M2.  O3_6_5Ap_2023:        6-state, quintet, A' symmetry, P/G/D
     311. M3.  O3_14_3Ap_2023_DPEM:  14-state, triplet, A' symmetry, U/UG
     312. M4.  O3_6_5Ap_2023_DPEM:   6-state, quintet, A' symmetry, U/UG
+    342. M5.  O3_14_3Ap_2023a:      14-state, triplet, A' symmetry, P/G/D
+    343. M6.  O3_6_5Ap_2023a:       6-state, quintet, A' symmetry, P/G/D
+    344. M7.  O3_14_3Ap_2023a_DPEM: 14-state, triplet, A' symmetry, U/UG
+    345. M8.  O3_6_5Ap_2023a_DPEM:  6-state, quintet, A' symmetry, U/UG
 
     O4:
     313. Z1.  O4_singlet_ZV:       single-state, singlet, P/G
@@ -976,6 +981,7 @@ def manual():
     340. S1.  C2N_PIPNN_Ap:     single-state, P
     341. S1.  C2N_PIPNN_App:    single-state, P
 
+    Total Number of Surfaces [last index]: 345
 
     """)
 
@@ -1066,7 +1072,7 @@ multi_state_list=['C6H5SH_APRP_DPEM', 'PHOH_APRP_DPEM', 'C7H8S_APRP_DPEM', 'C7H8
 'O3_6_5Ap_2023_DPEM', 'OH3_PIP_FFW1_2019_DPEM', 'OH3_PIP_FFW2_2022_DPEM', 'MCHWL_LEPS_ModelSurface_DPEM',
 'MCHWB_LEPS_ModelSurface_DPEM', 'MCHSL_LEPS_ModelSurface_DPEM', 'MCHSB_LEPS_ModelSurface_DPEM',
 'MCHTL_LEPS_ModelSurface_DPEM', 'MXHWL_LEPS_ModelSurface_DPEM', 'MXHSL_LEPS_ModelSurface_DPEM',
-'MXHSB_LEPS_ModelSurface_DPEM', 'YRH_LEPS_ModelSurface_DPEM']
+'MXHSB_LEPS_ModelSurface_DPEM', 'YRH_LEPS_ModelSurface_DPEM', 'O3_14_3Ap_2023a_DPEM', 'O3_6_5Ap_2023a_DPEM']
 
 
 parent_path=get_script_dir()

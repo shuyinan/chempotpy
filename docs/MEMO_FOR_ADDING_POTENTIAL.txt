@@ -1,0 +1,47 @@
+This file records the steps need to be done to add a potential
+Y.S. Updated on Oct 8, 2023
+
+=============If the system exist:
+1. Go into the folder corresponds to the system
+2. Modify __init__.py, and add potentials
+3. If the potential is multi-state surface:
+   3.1. Add the surface to "====Systems Involve Multi-State Surfaces====" section in chempotpy/__init__.py
+   3.2. Add the surface to "====Systems Involve Multi-State Surfaces====" section in docs/Manual.txt
+4. If the potential has DPEM:
+   4.1. adds corresponding DPEM surface
+   4.2. Add the _DPEM name into the "multi_state_list" in chempotpy/__init__.py
+5. If the potential reads parameters from a file:
+   5.1. put that parameter file into the same folder where your potential locates, i.e. chempotpy/system/
+   5.2. add the surface to "requires_read_file_list" in chempotpy/__init__.py
+   5.3. add the surface to "List_of_surface_need_path" in chempotpy/meta_chempotpy.script 
+6. Add the surface entries to "====Full List of Surface Names for Each System===" in chempotpy/__init__.py
+   remember to update the last line "Total Number of Surfaces [last index]:" 
+7. Similar modification as done in step 6 to docs/List_of_potentials.txt, and docs/Manual.txt
+8. Update HISTORY.txt
+
+=============If the system does not exist:
+1. Create a new folder with system name in chempotpy/, and go into the folder corresponds to the system
+2. Create __init__.py, and add potentials
+3. Add the new system name to following places:
+   3.1. Update "List_of_system" in chempotpy/meta_chempotpy.script
+   3.2. Update "====Alphabetical List of Systems====" in BOTH def manual() and def system() in chempotpy/__init__.py
+   3.3. Update "====Full List of Surface Names for Each System===" in chempotpy/__init__.py
+   3.4. Update "====Alphabetical List of Systems====" in docs/Manual.txt
+   3.5. Update "====Full List of Surface Names for Each System===" in both docs/List_of_potentials.txt, and docs/Manual.txt
+4. If the potential is multi-state surface:
+   4.1. Add the surface to "====Systems Involve Multi-State Surfaces====" section in chempotpy/__init__.py
+   4.2. Add the surface to "====Systems Involve Multi-State Surfaces====" section in docs/Manual.txt
+5. If the potential has DPEM:
+   5.1. adds corresponding DPEM surface
+   5.2. Add the _DPEM name into the "multi_state_list" in chempotpy/__init__.py
+6. If the potential reads parameters from a file:
+   6.1. put that parameter file into the same folder where your potential locates, i.e. chempotpy/system/
+   6.2. add the surface to "requires_read_file_list" in chempotpy/__init__.py
+   6.3. add the surface to "List_of_surface_need_path" in chempotpy/meta_chempotpy.script
+7. Add the surface entries to "====Full List of Surface Names for Each System===" in chempotpy/__init__.py
+   remember to update the last line "Total Number of Surfaces [last index]:"
+8. Similar modification as done in step 6 to docs/List_of_potentials.txt, and docs/Manual.txt
+9. Update HISTORY.txt
+
+
+

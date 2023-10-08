@@ -15,8 +15,8 @@ def intro():
     For example: P/G means both potential energy and gradient are available. 
 
     Recommended Surfaces for Use:
-    M1.  O3_14_3Ap_2023:   multi-state surface of O3, triplet, A' symmetry 1-14 state,         P/G/D
-    M2.  O3_6_5Ap_2023:    multi-state surface of O3, quintet, A' symmetry 1-6 state,          P/G/D
+    M5.  O3_14_3Ap_2023a:  multi-state surface of O3, triplet, A' symmetry 1-14 state,         P/G/D
+    M6.  O3_6_5Ap_2023a:   multi-state surface of O3, quintet, A' symmetry 1-6 state,          P/G/D
     Z1.  O3_1_1Ap_ZV:      single-state surface of O3, singlet, A' symmetry ground state,      P/G
     Z2.  O3_1_1App_ZV:     single-state surface of O3, singlet, A'' symmetry ground state,     P/G
     Z3.  O3_1_3Ap_ZV:      single-state surface of O3, triplet, A' symmetry ground state,      P/G
@@ -67,6 +67,10 @@ def intro():
     M2.  O3_6_5Ap_2023:         multi-state surface of O3, quintet, A' symmetry 1-6 state,     P/G/D
     M3.  O3_14_3Ap_2023_DPEM:   multi-state surface of O3, triplet, A' symmetry 1-14 state,    U/UG
     M4.  O3_6_5Ap_2023_DPEM:    multi-state surface of O3, quintet, A' symmetry 1-6 state,     U/UG
+    M5.  O3_14_3Ap_2023a:       multi-state surface of O3, triplet, A' symmetry 1-14 state,    P/G/D
+    M6.  O3_6_5Ap_2023a:        multi-state surface of O3, quintet, A' symmetry 1-6 state,     P/G/D
+    M7.  O3_14_3Ap_2023a_DPEM:  multi-state surface of O3, triplet, A' symmetry 1-14 state,    U/UG
+    M8.  O3_6_5Ap_2023a_DPEM:   multi-state surface of O3, quintet, A' symmetry 1-6 state,     U/UG
 
 
         """)
@@ -263,15 +267,32 @@ def intro_detail():
                           availability: potential energy, gradient, nonadiabatic coupling
                           functional form: PM-DDNN 
                           corresponding surface in POTLIB: O3_14_3Ap_2023.f90 
-                          ref: 
-
+                          ref: F. B. Akher, Y. Shu, Z. Varga, S. Bhaumik, D. G. Truhlar,
+                               "Parametrically Managed Activation Function for Fitting a 
+                               Neural Network Potential with Physical Behavior Enforced 
+                               by a Low-Dimensional Potential",
+                               J. Phys. Chem. A 127, 5287 (2023) 
     ==================================================================================== 
     2.  O3_6_5Ap_2023:   multi-state surface of O3, quintet, A' symmetry 1-6 state, 
                          availability: potential energy, gradient, nonadiabatic coupling
                          functional form: PM-DDNN 
-                          corresponding surface in POTLIB: O3_6_5Ap_2023.f90
-                         ref:  
-
+                         corresponding surface in POTLIB: O3_6_5Ap_2023.f90
+                         ref: F. B. Akher, Y. Shu, Z. Varga, S. Bhaumik, D. G. Truhlar,
+                               "Semiclassical Multistate Dynamics for Six Coupled 5A′ States
+                                of O + O2",
+                               J. Chem. Theory Comput. 19, 4389 (2023) 
+    ====================================================================================     
+    3.  O3_14_3Ap_2023a:  improved multi-state surface of O3, triplet, A' symmetry 1-14 state,
+                          availability: potential energy, gradient, nonadiabatic coupling
+                          functional form: PM-DDNN 
+                          corresponding surface in POTLIB: N/A
+                          ref: 
+    ==================================================================================== 
+    4.  O3_6_5Ap_2023a:   improved multi-state surface of O3, quintet, A' symmetry 1-6 state, 
+                          availability: potential energy, gradient, nonadiabatic coupling
+                          functional form: PM-DDNN 
+                          corresponding surface in POTLIB: N/A
+                          ref:
 
 
         """)
