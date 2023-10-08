@@ -28,6 +28,7 @@ Y.S. Updated on Oct 8, 2023
    3.3. Update "====Full List of Surface Names for Each System===" in chempotpy/__init__.py
    3.4. Update "====Alphabetical List of Systems====" in docs/Manual.txt
    3.5. Update "====Full List of Surface Names for Each System===" in both docs/List_of_potentials.txt, and docs/Manual.txt
+   3.6. Update "SYSTEMS" in Makefile
 4. If the potential is multi-state surface:
    4.1. Add the surface to "====Systems Involve Multi-State Surfaces====" section in chempotpy/__init__.py
    4.2. Add the surface to "====Systems Involve Multi-State Surfaces====" section in docs/Manual.txt
