@@ -66,8 +66,7 @@ the potential energy surface subroutine:
 Shu, Y.; Varga, Z.; Truhlar, D. G.
 "ChemPotPy: A Python Library for Analytic Representation of Potential 
 Energy Surfaces and Diabatic Potential Energy Matrices"
-to be submitted
-
+accepted by J. Phys. Chem. A
 
 
 TO CONTRIBUTE YOUR POTENTIAL or report a bug
