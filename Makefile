@@ -49,6 +49,7 @@ clean:
                 rm -f *.so; \
                 rm -f *.log; \
                 rm -f *.o; \
+                rm -f *.mod; \
                 rm -f -r lib; \
                 cd ..; \
         done

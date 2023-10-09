@@ -81,10 +81,8 @@
     real*8, intent(inout) :: ug(ns,ns,n,3)
 
     ! layers and their sizes
-    real*8, save :: coeff_l0(3,21), coeff_l1(21,36), coeff_l2(36,56),
-coeff_l3(56,56), coeff_l4(56,21)
-    real*8, save :: bias_l0(21), bias_l1(36), bias_l2(56), bias_l3(56),
-bias_l4(21)
+    real*8, save :: coeff_l0(3,21), coeff_l1(21,36), coeff_l2(36,56), coeff_l3(56,56), coeff_l4(56,21)
+    real*8, save :: bias_l0(21), bias_l1(36), bias_l2(56), bias_l3(56), bias_l4(21)
     real*8 :: r(n*(n-1)/2)
     real*8 :: gr(ns,n*(n-1)/2)
     real*8 :: hr(ns,ns,n*(n-1)/2)
@@ -106,8 +104,7 @@ bias_l4(21)
 
     ! get ddnn coefficients and bias
     if(first_time_data) then
-      call
-assign_coeff_bias(coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4,bias_l0,bias_l1,bias_l2,bias_l3,bias_l4)
+      call assign_coeff_bias(coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4,bias_l0,bias_l1,bias_l2,bias_l3,bias_l4)
       first_time_data=.false.
     endif
     ! input x is in bohr
@@ -139,10 +136,8 @@ assign_coeff_bias(coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4,bias_l0,bias_l1,b
     real*8 :: r(n*(n-1)/2)
     real*8, intent(inout) :: e(ns), g(ns,n*(n-1)/2), h(ns,ns,n*(n-1)/2)
     real*8, intent(inout) :: t(ns,ns), u(ns,ns), ur(ns,ns,n*(n-1)/2)
-    real*8, intent(in) :: coeff_l0(3,21), coeff_l1(21,36), coeff_l2(36,56),
-coeff_l3(56,56), coeff_l4(56,21)
-    real*8, intent(in) :: bias_l0(21), bias_l1(36), bias_l2(56), bias_l3(56),
-bias_l4(21)
+    real*8, intent(in) :: coeff_l0(3,21), coeff_l1(21,36), coeff_l2(36,56), coeff_l3(56,56), coeff_l4(56,21)
+    real*8, intent(in) :: bias_l0(21), bias_l1(36), bias_l2(56), bias_l3(56), bias_l4(21)
 
     real*8 :: a0(21), a1(36), a2(56), a3(56), a4(21)
     real*8 :: z0(21), z1(36), z2(56), z3(56), z4(21)
