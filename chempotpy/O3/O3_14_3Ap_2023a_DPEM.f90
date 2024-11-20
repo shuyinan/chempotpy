@@ -169,24 +169,24 @@
     g4=0.0d0
 
     call mproduct(r,coeff_l0,z0,1,3,30)
-    z0=z0 !+bias_l0
+    z0=z0 +bias_l0
     call activation_gelu(z0,a0,30)
 
     call mproduct(a0,coeff_l1,z1,1,30,65)
-    z1=z1 !+bias_l1
+    z1=z1 +bias_l1
     call activation_gelu(z1,a1,65)
 
     call mproduct(a1,coeff_l2,z2,1,65,95)
-    z2=z2 !+bias_l2
+    z2=z2 +bias_l2
     call activation_gelu(z2,a2,95)
     
     call mproduct(a2,coeff_l3,z3,1,95,125)
-    z3=z3 !+bias_l3
+    z3=z3 +bias_l3
     call activation_gelu(z3,a3,125)
 
     !diabatic layer, use activation functional 
     call mproduct(a3,coeff_l4,z4,1,125,105)
-    z4=z4 !+bias_l4
+    z4=z4 +bias_l4
     call activation_functional_heviside(z4,a4,105,r,n*(n-1)/2)
 
     !construction many-body diabatic potential energy matrix (mb-dpem)
