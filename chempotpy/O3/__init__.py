@@ -71,6 +71,8 @@ def intro():
     M6.  O3_6_5Ap_2023a:        multi-state surface of O3, quintet, A' symmetry 1-6 state,     P/G/D
     M7.  O3_14_3Ap_2023a_DPEM:  multi-state surface of O3, triplet, A' symmetry 1-14 state,    U/UG
     M8.  O3_6_5Ap_2023a_DPEM:   multi-state surface of O3, quintet, A' symmetry 1-6 state,     U/UG
+    M9.  O3_14_3Ap_2024:        multi-state surface of O3, triplet, A' symmetry 1-14 state,    P/G/D
+    M10. O3_14_3Ap_2024_DPEM:   multi-state surface of O3, quintet, A' symmetry 1-6 state,     U/UG 
 
 
         """)
