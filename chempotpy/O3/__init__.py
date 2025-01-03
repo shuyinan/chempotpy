@@ -15,7 +15,7 @@ def intro():
     For example: P/G means both potential energy and gradient are available. 
 
     Recommended Surfaces for Use:
-    M5.  O3_14_3Ap_2023a:  multi-state surface of O3, triplet, A' symmetry 1-14 state,         P/G/D
+    M5.  O3_14_3Ap_2024:   multi-state surface of O3, triplet, A' symmetry 1-14 state,         P/G/D
     M6.  O3_6_5Ap_2023a:   multi-state surface of O3, quintet, A' symmetry 1-6 state,          P/G/D
     Z1.  O3_1_1Ap_ZV:      single-state surface of O3, singlet, A' symmetry ground state,      P/G
     Z2.  O3_1_1App_ZV:     single-state surface of O3, singlet, A'' symmetry ground state,     P/G
