@@ -21,6 +21,9 @@ def intro():
     1.  N2O_3Ap_PIP:         single-state surface of N2O, triplet, A' symmetry ground state,      P/G
     2.  N2O_3App_PIP:        single-state surface of N2O, triplet, A'' symmetry ground state,     P/G
 
+    Multi-State Surfaces:
+    M1. N2O_13_1Ap_2025:       multi-state surface of N2O, singlet, A' symmetry 1-13 state,    P/G/D
+    M2. N2O_13_1Ap_2025_DPEM:  multi-state surface of N2O, singlet, A' symmetry 1-13 state,    U/UG
 
         """)
 
@@ -66,7 +69,7 @@ def intro_detail():
                                   + N(4S) Reaction",
                                   J. Chem. Phys. 144, 024309 (2016).
     ============================================================================================
-    1.  N2O_3App_PIP:        single-state surface of N2O, triplet, A'' symmetry ground state,
+    2.  N2O_3App_PIP:        single-state surface of N2O, triplet, A'' symmetry ground state,
                              availability: potential energy, gradient
                              functional form: PIP
                              corresponding surface in POTLIB: PES_N2O_3App_umn_v1.f90
@@ -74,6 +77,13 @@ def intro_detail():
                                   "Potential Energy Surfaces for the N2(X 1Σ) + O(3P) → NO(X 2Π)
                                   + N(4S) Reaction",
                                   J. Chem. Phys. 144, 024309 (2016).
+
+    Multi-State Surfaces:
+    1.  N2O_13_1Ap_2025:     multi-state surface of N2O, singlet, A' symmetry 1-13 state,
+                             availability: potential energy, gradient, nonadiabatic coupling
+                             functional form: PM-DDNN
+                             corresponding surface in POTLIB: N/A
+                             ref:
 
 
         """)

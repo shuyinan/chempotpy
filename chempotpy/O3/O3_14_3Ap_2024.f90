@@ -142,13 +142,13 @@
 
 !===========================
 ! back propagation
-  subroutine backprop(r,n,ns,e,g,h,u,ur,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,&
+  subroutine backprop(r,n,ns,e,g,h,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,&
     &coeff_l4,bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b)
     implicit none
     integer, intent(in) :: n, ns
     real*8 :: r(n*(n-1)/2)
     real*8, intent(inout) :: e(ns), g(ns,n*(n-1)/2), h(ns,ns,n*(n-1)/2)
-    real*8, intent(inout) :: t(ns,ns), u(ns,ns), ur(ns,ns,n*(n-1)/2)
+    real*8, intent(inout) :: t(ns,ns)
     real*8, intent(in) :: coeff_l0(3,30), coeff_l1(30,65), coeff_l2(65,95), coeff_l3(95,125), coeff_l4(125,105)
     real*8, intent(in) :: bias_l0(30), bias_l1(65), bias_l2(95), bias_l3(125), bias_l4(105)
 
@@ -219,8 +219,6 @@
     do i=1,ns
       dpem(i,i)=dpem(i,i) + v2b(i)
     enddo
-
-    u=dpem
 
     ! diagonalize dpem
     call diagonalize(ns,dpem,e,t)
@@ -295,8 +293,6 @@
         dudr(j,i,:)=dudr(i,j,:)
      enddo
    enddo
-
-   ur=dudr
 
    h(:,:,:)=0.d0
    do i=1,3
