@@ -127,6 +127,14 @@ def check(system, surface, geom):
             for idir in range(3):
                 xyz[iatom][idir]=geom_ordered[iatom][idir+1]
 
+    #for N2O_13_1Ap_2025: input Cartesian should in order of NNO
+    if surface=='N2O_13_1Ap_2025' or 'N2O_13_1Ap_2025_DPEM':
+        geom_ordered=sorted(geom, key=lambda x: ("N", "O").index(x[0]))
+        rank_ordered=sorted(rank, key=lambda x: ("N", "O").index(x[0]))
+        for iatom in range(natoms):
+            for idir in range(3):
+                xyz[iatom][idir]=geom_ordered[iatom][idir+1]
+
     return xyz, rank_ordered
 
 def reverse_order(v, g, d, geom, rank_ordered):
@@ -151,3 +159,21 @@ def reverse_order(v, g, d, geom, rank_ordered):
 
 
     return v_ro, g_ro, d_ro
+
+def reverse_order_dpem(u, ug, geom, rank_ordered):
+
+    natoms=len(geom)
+    nstates=len(u)
+    u_ro=np.zeros((nstates,nstates))
+    ug_ro=np.zeros((nstates,nstates,natoms,3))
+
+    u_ro = u
+
+    for istate in range(nstates):
+        for jstate in range(nstates):
+            for iatom in range(natoms):
+                for idir in range(3):
+                    ug_ro[istate][jstate][int(rank_ordered[iatom][1])][idir]=ug[istate][jstate][iatom][idir]
+
+
+    return u_ro, ug_ro
