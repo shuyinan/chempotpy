@@ -288,14 +288,27 @@ def intro_detail():
                           availability: potential energy, gradient, nonadiabatic coupling
                           functional form: PM-DDNN 
                           corresponding surface in POTLIB: N/A
-                          ref: 
+                          ref: Y. Shu, F. B. Akher, H. Guo, D. G. Truhlar,
+                               "Parametrically Managed Activation Functions for Improved Global 
+                                Potential Energy Surfaces for Six Coupled 5A′ States and Fourteen 
+                                Coupled 3A′ States of O + O2",
+                               J. Phys. Chem. A 128, 1207 (2024)
     ==================================================================================== 
     4.  O3_6_5Ap_2023a:   improved multi-state surface of O3, quintet, A' symmetry 1-6 state, 
                           availability: potential energy, gradient, nonadiabatic coupling
                           functional form: PM-DDNN 
                           corresponding surface in POTLIB: N/A
+                          ref: Y. Shu, F. B. Akher, H. Guo, D. G. Truhlar,
+                               "Parametrically Managed Activation Functions for Improved Global 
+                                Potential Energy Surfaces for Six Coupled 5A′ States and Fourteen 
+                                Coupled 3A′ States of O + O2",
+                               J. Phys. Chem. A 128, 1207 (2024)
+    ==================================================================================== 
+    5.  O3_14_3Ap_2024:   improved multi-state surface of O3, triplet, A' symmetry 1-14 state,
+                              availability: potential energy, gradient, nonadiabatic coupling
+                          functional form: PM-DDNN
+                          corresponding surface in POTLIB: N/A
                           ref:
-
 
         """)
 

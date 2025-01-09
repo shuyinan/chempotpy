@@ -491,6 +491,8 @@
     343. M6.  O3_6_5Ap_2023a:       6-state, quintet, A' symmetry, P/G/D
     344. M7.  O3_14_3Ap_2023a_DPEM: 14-state, triplet, A' symmetry, U/UG
     345. M8.  O3_6_5Ap_2023a_DPEM:  6-state, quintet, A' symmetry, U/UG
+    346. M9.  O3_14_3Ap_2024:       14-state, triplet, A' symmetry, P/G/D
+    347. M10. O3_14_3Ap_2024_DPEM:  14-state, triplet, A' symmetry, U/UG
 
     O4:
     313. Z1.  O4_singlet_ZV:       single-state, singlet, P/G
