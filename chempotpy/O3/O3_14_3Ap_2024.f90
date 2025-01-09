@@ -73,7 +73,7 @@
 
       end
 
-  subroutine energy_gradient(x,e,g,h,t,u,ug,n,ns)
+  subroutine energy_gradient(x,e,g,h,t,n,ns)
     ! n    - number of atoms: 3
     ! ns   - number of states: 14
     ! x    - Cartesian coordinates
@@ -96,8 +96,6 @@
     real*8, intent(inout) :: g(ns,n,3)
     real*8, intent(inout) :: t(ns,ns)
     real*8, intent(inout) :: h(ns,ns,n,3)
-    real*8, intent(inout) :: u(ns,ns)
-    real*8, intent(inout) :: ug(ns,ns,n,3)
 
     ! layers and their sizes
     real*8, save :: coeff_l0(3,30), coeff_l1(30,65), coeff_l2(65,95), coeff_l3(95,125), coeff_l4(125,105)
@@ -106,7 +104,6 @@
     real*8 :: a
     real*8 :: gr(ns,n*(n-1)/2)
     real*8 :: hr(ns,ns,n*(n-1)/2)
-    real*8 :: ur(ns,ns,n*(n-1)/2)
     real*8 :: v2b(ns),g2b(ns,n*(n-1)/2)
     real*8 :: drdx(n*(n-1)/2,3*n)
     integer :: i,j,k,l,m
@@ -132,19 +129,15 @@
     ! calculate the two-body terms
     call ev2gm2m(r,v2b,g2b,4,1,n)
     ! forward propagate sfp to energy 
-    call backprop(r,n,ns,e,gr,hr,u,ur,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,&
-      &coeff_l4,bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b)
+    call backprop(r,n,ns,e,gr,hr,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4,bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b)
     ! convert from gradient_r to gradient_xyz
     call grad_r_to_xyz(g,drdx,gr,r,x,n,ns)
     call nac_r_to_xyz(h,drdx,hr,r,x,n,ns)
-    call nac_r_to_xyz(ug,drdx,ur,r,x,n,ns)
     ! convert energy from eV to hartree (1/27.2107=0.0367502)
     e(:)=e(:)*0.0367502d0
-    u(:,:)=u(:,:)*0.0367502d0
     ! convert grad and nac from eV/bohr to hartree/bohr (1/27.2107=0.0367502)
     g(:,:,:)=g(:,:,:)*0.0367502d0
-    ug(:,:,:,:)=ug(:,:,:,:)*0.0367502d0
-
+ 
   endsubroutine energy_gradient
 
 !===========================
