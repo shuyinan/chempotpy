@@ -17,12 +17,12 @@ How to install
 --------------
 * Create a conda virtual environment with gfortran and MKL:
     
-       conda create --name chempotpy 
+       conda create --name chempotpy
        conda activate chempotpy
-       conda install python
+       conda install python=3.11
        conda install mkl mkl-service
        conda install -c conda-forge gfortran
-       pip install numpy
+       pip install numpy "numpy>=1.26,<1.27"
        pip install charset_normalizer
 
 * Install stable release:
