@@ -2,7 +2,7 @@
 ChemPotPy, CHEMical library of POTential energy surfaces in PYthon 
 ==================================================================
 
-Aug. 30, 2023
+Jan. 17, 2025
 
 Authors: Yinan Shu, Zoltan Varga, Dayou Zhang, Donald G. Truhlar
 University of Minnesota, Minnesota, United States
