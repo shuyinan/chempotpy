@@ -103,7 +103,8 @@
     imollist(3)=3
     call ev2gm2m(r,v2b,g2b,imollist,1,n) !!!! 1 for gradient cal
     ! forward propagate sfp to energy 
-    call backprop(r,n,ns,e,gr,hr,u,ur,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4,bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b) !**********
+    call backprop(r,n,ns,e,gr,hr,u,ur,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4, &
+        bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b) !**********
     ! convert from gradient_r to gradient_xyz
     call grad_r_to_xyz(g,drdx,gr,r,x,n,ns)
     call nac_r_to_xyz(h,drdx,hr,r,x,n,ns)
@@ -114,7 +115,8 @@
 
 !===========================
 ! back propagation !!!!!!!!!!!!!!!!!!!!!!!!!!!*******************only change the number of dpem layer from 105 to 91 and coefficients
-  subroutine backprop(r,n,ns,e,g,h,u,ur,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4,bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b)      !!!!!!!!mb
+  subroutine backprop(r,n,ns,e,g,h,u,ur,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4, &
+          bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b)      !!!!!!!!mb
     implicit none
     integer, intent(in) :: n, ns
     real*8 :: r(n*(n-1)/2)
@@ -401,7 +403,8 @@
     Ar=0.5+0.5*tanh(af_f*(r_in-af_a))
     Br=0.5+0.5*tanh(af_f*(-r_in+af_b))
 
-    dfdr_in=af_f*(-0.25*tanh(af_f*(r_in-af_a))-0.25)/((cosh(af_f*(-r_in+af_b)))**2) + af_f*(0.25+0.25*tanh(af_f*(-r_in+af_b)))/((cosh(af_f*(r_in-af_a)))**2)
+    dfdr_in=af_f*(-0.25*tanh(af_f*(r_in-af_a))-0.25)/((cosh(af_f*(-r_in+af_b)))**2) &
+        + af_f*(0.25+0.25*tanh(af_f*(-r_in+af_b)))/((cosh(af_f*(r_in-af_a)))**2)
 
     dr_indr=0.d0
     do ibond=1,nbonds
@@ -32813,7 +32816,8 @@ del = 	5.5142
  !       v(i)=v(i)+disp  !!!
 
         ! Compute the gradient if needed
-        if (igrad.eq.1 .and. .not.((imol.eq.2 .and. i.eq.2) .or. (imol.eq.2 .and. i.eq.3) .or. (imol.eq.2 .and. i.eq.4) .or. &
+        if (igrad.eq.1 .and. .not.((imol.eq.2 .and. i.eq.2) .or. &
+                (imol.eq.2 .and. i.eq.3) .or. (imol.eq.2 .and. i.eq.4) .or. &
                 (imol.eq.3 .and. i.eq.5) .or. (imol.eq.3 .and. i.eq.6) .or. &
                 (imol.eq.3 .and. i.eq.7) .or. (imol.eq.3 .and. i.eq.8) .or. &
                 (imol.eq.3 .and. i.eq.9))) then
