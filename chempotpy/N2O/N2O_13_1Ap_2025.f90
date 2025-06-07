@@ -1,8 +1,14 @@
 !****************************************************************
 !   System:                     N2O
-!   Functional form:            permutation restrained diabatization by
-!                                deep neural network
-!   Common name:                N2_O_13_1Ap_2024 (13 singlet A' states)
+!   This potential is for 13 adiabatic states in the singlet A’ manifold.
+!   The adiabatic state are obtained by diagonalization of a CPEM.
+!   It was finalized on 06/06/2025
+!   The ground-state diatomic potential for N2 contains damped dispersion.
+!   In the coordinate array the first index is 1 for the first N, 2 for the second N, and 3 for O
+!
+!   Functional form:            parametrically managed compatibilization by 
+!                               deep neural network (PM-CDNN)
+!   Common name:                N2_O_13_1Ap_2025 (13 singlet A' states)
 !   Number of derivatives:      first derivatives of adiabatic surfaces
 !   Number of bodies:           3
 !   Number of surfaces:         13
@@ -10,15 +16,13 @@
 !                               -Compile the subroutine requires LAPACK
 !                                subroutine DSYEV
 ! 
-!   Input:                      Cartesian coordinates in bohr
-!   Output:                     Adiabatic energies (e) in hartrees,
+!   Input:                      Cartesian coordinates in angstrom
+!   Output:                     Adiabatic energies (e) in eV,
 !                               derivatives of adiabataic energies (g) in
-!                               hartrees/bohr, and NACs (h) in inverse bohrs.
+!                               eV/angstrom, and NACs (h) in inverse angstroms.
 !   Reference:
-!   **********XXXXXX*******, in preparation
+!   Q. Meng, Y. Shu, Z. Varga, D. Zhang, and D. G. Truhlar, to be published.
 !***********************************************************************
-!module load intel
-!module load gcc
 
       subroutine pes(x,igrad,p,g,d)
 

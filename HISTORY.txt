@@ -14,6 +14,15 @@ ChemPotPy v1.0.6 (Aug. 30, 2023)
   Updated for compatability
   Added metaprogrammed chempotpy fortran subroutine
 
+
+Current (no official version released):
   YS, Oct. 8, 2023, Add:
   O3_14_3Ap_2023a.f90, O3_14_3Ap_2023a_DPEM.f90, 
   O3_6_5Ap_2023a.f90, O3_6_5Ap_2023a_DPEM.f90
+
+  YS, Jan. 01, 2025, Add:
+  O3_14_3Ap_2024.f90, O3_14_3Ap_2024_DPEM.f90
+
+  YS/DZ, Jun. 06, 2025, Add:
+  N2O_13_1Ap_2025.f90
+

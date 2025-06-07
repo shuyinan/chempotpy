@@ -22,8 +22,7 @@ def intro():
     2.  N2O_3App_PIP:        single-state surface of N2O, triplet, A'' symmetry ground state,     P/G
 
     Multi-State Surfaces:
-    M1. N2O_13_1Ap_2025:       multi-state surface of N2O, singlet, A' symmetry 1-13 state,    P/G/D
-    M2. N2O_13_1Ap_2025_DPEM:  multi-state surface of N2O, singlet, A' symmetry 1-13 state,    U/UG
+    M1. N2O_13_1Ap_2025      multi-state surface of N2O, singlet, A' symmetry 1-13 state,    P/G/D
 
         """)
 
