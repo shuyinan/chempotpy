@@ -8,7 +8,7 @@
 !
 !   Functional form:            parametrically managed compatibilization by 
 !                               deep neural network (PM-CDNN)
-!   Common name:                N2_O_13_1Ap_2025 (13 singlet A' states)
+!   Common name:                N2O 13-states singlet A’  2025
 !   Number of derivatives:      first derivatives of adiabatic surfaces
 !   Number of bodies:           3
 !   Number of surfaces:         13
