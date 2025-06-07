@@ -1,25 +1,24 @@
 !****************************************************************
 !   System:                     N2O
 !   This potential is for 13 adiabatic states in the singlet A’ manifold.
-!   The adiabatic state are obtained by diagonalization of a CPEM.
+!   The adiabatic states are obtained by diagonalization of a CPEM.
 !   It was finalized on 06/06/2025
 !   The ground-state diatomic potential for N2 contains damped dispersion.
-!   In the coordinate array the first index is 1 for the first N, 2 for the second N, and 3 for O
+!   In the coordinate array the first index is 1 for the first N, 2 for the second N, and 3 for O.
 !
 !   Functional form:            parametrically managed compatibilization by 
 !                               deep neural network (PM-CDNN)
-!   Common name:                N2O 13-states singlet A’  2025
+!   Common name:                N2O 13-states singlet A’ 2025
 !   Number of derivatives:      first derivatives of adiabatic surfaces
 !   Number of bodies:           3
 !   Number of surfaces:         13
-!   Notes:                      -Diatomic potentials contain dispersion terms
-!                               -Compile the subroutine requires LAPACK
+!   Notes:                      -Compile the subroutine requires LAPACK
 !                                subroutine DSYEV
 ! 
 !   Input:                      Cartesian coordinates in angstrom
 !   Output:                     Adiabatic energies (e) in eV,
 !                               derivatives of adiabataic energies (g) in
-!                               eV/angstrom, and NACs (h) in inverse angstroms.
+!                               eV/angstrom.
 !   Reference:
 !   Q. Meng, Y. Shu, Z. Varga, D. Zhang, and D. G. Truhlar, to be published.
 !***********************************************************************
