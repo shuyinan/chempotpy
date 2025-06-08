@@ -200,8 +200,9 @@
     enddo
 
     ! diagonalize dpem
-    call diagonalize(ns,dpem,e,t)
-
+    call jacobi_diag(dpem, ns, e, t, 200, 1.d-12)
+    !call diagonalize(ns,dpem,e,t)
+ 
     ! cmpute dvdu 
     do i=1,ns
       do j=1,ns
@@ -444,43 +445,75 @@
 
 !==============================
 ! matrix diagonalization
-! subroutine diagonalize(n,A_ss,B_ss,U_ss)
-  subroutine diagonalize(n,A_ss,EV_s,U_ss)
+  subroutine jacobi_diag(A, n, eigvals, eigvecs, max_iter, tol)
     implicit none
-    ! parameters
-    integer, intent(in) :: n
-    real*8, intent(in) :: A_ss(n,n)
-!   real*8, intent(out) :: B_ss(n,n)
-    real*8, intent(out) :: U_ss(n,n)
-    ! internal variables
-!   real*8 :: EV_s(n)
-    real*8, intent(out) :: EV_s(n)
-    integer :: io,i
-    real*8,allocatable :: lapack_work_d(:)
-    integer, save :: lapack_lwork_d 
-    logical, save :: first_time_diag=.true.
+    integer, intent(in) :: n, max_iter
+    real(8), intent(inout) :: A(n, n)
+    real(8), intent(out) :: eigvals(n), eigvecs(n, n)
+    real(8), intent(in) :: tol
+    integer :: i, j, k, iter
+    integer :: p, q
+    real(8) :: theta, c, s, t
+    real(8) :: Apq, App, Aqq, phi, tmp
+    real(8) :: max_off
 
-    U_ss=A_ss
-    if (first_time_diag) then
-      lapack_lwork_d= -1
-      allocate( lapack_work_d(2) )
-      call dsyev('V','L',n,U_ss,n,EV_s,lapack_work_d,lapack_lwork_d,io)
-      lapack_lwork_d=int(lapack_work_d(1))
-      deallocate ( lapack_work_d )
-      first_time_diag=.false.
-    endif
-    allocate( lapack_work_d(lapack_lwork_d) )
-    call dsyev('V','L',n,U_ss,n,EV_s,lapack_work_d,lapack_lwork_d,io)
-    ! U_ss already holds the transformation matrix
-    ! now  building the diagonal matrix A_ss
-!   B_ss=0.d0
-!   do i=1,n
-!     B_ss(i,i)=EV_s(i)
-!   enddo
+    eigvecs = 0.0d0
+    do i = 1, n
+      eigvecs(i, i) = 1.0d0
+    end do
 
-    return
+    do iter = 1, max_iter
+      ! Find the largest off-diagonal element
+      max_off = 0.0d0
+      p = 1
+      q = 2
+      do i = 1, n - 1
+        do j = i + 1, n
+          if (abs(A(i, j)) > max_off) then
+            max_off = abs(A(i, j))
+            p = i
+            q = j
+          end if
+        end do
+      end do
 
-  end subroutine diagonalize
+      if (max_off < tol) exit
+
+      Apq = A(p, q)
+      App = A(p, p)
+      Aqq = A(q, q)
+      phi = 0.5d0 * atan2(2.0d0 * Apq, Aqq - App)
+      c = cos(phi)
+      s = sin(phi)
+
+      ! Rotate
+      do k = 1, n
+        if (k /= p .and. k /= q) then
+          tmp = A(k, p)
+          A(k, p) = c * tmp - s * A(k, q)
+          A(p, k) = A(k, p)
+          A(k, q) = s * tmp + c * A(k, q)
+          A(q, k) = A(k, q)
+        end if
+      end do
+
+      A(p, p) = c**2 * App - 2.0d0 * s * c * Apq + s**2 * Aqq
+      A(q, q) = s**2 * App + 2.0d0 * s * c * Apq + c**2 * Aqq
+      A(p, q) = 0.0d0
+      A(q, p) = 0.0d0
+
+      ! Update eigenvectors
+      do k = 1, n
+        tmp = eigvecs(k, p)
+        eigvecs(k, p) = c * tmp - s * eigvecs(k, q)
+        eigvecs(k, q) = s * tmp + c * eigvecs(k, q)
+      end do
+    end do
+
+    do i = 1, n
+      eigvals(i) = A(i, i)
+    end do
+  end subroutine
 
 !==========================
 ! convert de/dr to de/dxyz
