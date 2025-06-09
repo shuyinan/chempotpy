@@ -200,8 +200,8 @@
     enddo
 
     ! diagonalize dpem
-    call jacobi_diag(dpem, ns, e, t, 200, 1.d-12)
-    !call diagonalize(ns,dpem,e,t)
+    !call jacobi_diag(dpem, ns, e, t, 200, 1.d-12)
+    call diagonalize(ns,dpem,e,t)
  
     ! cmpute dvdu 
     do i=1,ns
@@ -445,6 +445,44 @@
 
 !==============================
 ! matrix diagonalization
+! subroutine diagonalize(n,A_ss,B_ss,U_ss)
+  subroutine diagonalize(n,A_ss,EV_s,U_ss)
+    implicit none
+    ! parameters
+    integer, intent(in) :: n
+    real*8, intent(in) :: A_ss(n,n)
+!   real*8, intent(out) :: B_ss(n,n)
+    real*8, intent(out) :: U_ss(n,n)
+    ! internal variables
+!   real*8 :: EV_s(n)
+    real*8, intent(out) :: EV_s(n)
+    integer :: io,i
+    real*8,allocatable :: lapack_work_d(:)
+    integer, save :: lapack_lwork_d
+    logical, save :: first_time_diag=.true.
+
+    U_ss=A_ss
+    if (first_time_diag) then
+      lapack_lwork_d= -1
+      allocate( lapack_work_d(2) )
+      call dsyev('V','L',n,U_ss,n,EV_s,lapack_work_d,lapack_lwork_d,io)
+      lapack_lwork_d=int(lapack_work_d(1))
+      deallocate ( lapack_work_d )
+      first_time_diag=.false.
+    endif
+    allocate( lapack_work_d(lapack_lwork_d) )
+    call dsyev('V','L',n,U_ss,n,EV_s,lapack_work_d,lapack_lwork_d,io)
+    ! U_ss already holds the transformation matrix
+    ! now  building the diagonal matrix A_ss
+!   B_ss=0.d0
+!   do i=1,n
+!     B_ss(i,i)=EV_s(i)
+!   enddo
+
+    return
+
+  end subroutine diagonalize
+
   subroutine jacobi_diag(A, n, eigvals, eigvecs, max_iter, tol)
     implicit none
     integer, intent(in) :: n, max_iter
