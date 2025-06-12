@@ -22,7 +22,10 @@ def intro():
     2.  N2O_3App_PIP:        single-state surface of N2O, triplet, A'' symmetry ground state,     P/G
 
     Multi-State Surfaces:
-    M1. N2O_13_1Ap_2025      multi-state surface of N2O, singlet, A' symmetry 1-13 state,    P/G/D
+    M1. N2O_13_1Ap_2025      multi-state surface of N2O, singlet, A' symmetry 1-13 state,         P/G
+
+    Used for Asymptotically Extended Dynamics:
+    A1. N2O_13_1Ap_AE_2025   multi-state surface of N2O, singlet, A' symmetry 1-13 state,         P/G       
 
         """)
 
@@ -80,7 +83,15 @@ def intro_detail():
     Multi-State Surfaces:
     1.  N2O_13_1Ap_2025:     multi-state surface of N2O, singlet, A' symmetry 1-13 state,
                              availability: potential energy, gradient, nonadiabatic coupling
-                             functional form: PM-DDNN
+                             functional form: PM-CDNN
+                             corresponding surface in POTLIB: N/A
+                             ref:
+
+
+    Used for Asymptotically Extended Dynamics:
+    1. N2O_13_1Ap_AE_2025:   multi-state surface of N2O, singlet, A' symmetry 1-13 state,
+                             availability: potential energy, gradient, nonadiabatic coupling
+                             functional form: PM-CDNN
                              corresponding surface in POTLIB: N/A
                              ref:
 

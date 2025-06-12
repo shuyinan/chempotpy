@@ -394,7 +394,8 @@
     243. Z2.  N2O_3App_ZV:       single-state, triplet, A'' symmetry, P/G
     244. S1.  N2O_3Ap_PIP:       single-state, triplet, A' symmetry,  P/G
     245. S2.  N2O_3App_PIP:      single-state, triplet, A'' symmetry, P/G
-    348. M1.  N2O_13_1Ap_2025:   14-state,     singlet, A' symmetry,  P/G/D
+    348. M1.  N2O_13_1Ap_2025:   14-state,     singlet, A' symmetry,  P/G
+    349. A1.  N2O_13_1Ap_AE_2025:14-state,     singlet, A' symmetry,  P/G
 
     N2O2:
     246. Z1.  N2O2_3A_ZV:        single-state, triplet, P/G
@@ -540,4 +541,4 @@
     340. S1.  C2N_PIPNN_Ap:     single-state, P
     341. S1.  C2N_PIPNN_App:    single-state, P
 
-    Total Number of Surfaces [last index]: 348
+    Total Number of Surfaces [last index]: 349

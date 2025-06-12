@@ -6,6 +6,8 @@
 !   The ground-state diatomic potential for N2 contains damped dispersion.
 !   In the coordinate array the first index is 1 for the first N, 2 for the second N, and 3 for O.
 !
+!   This subroutine is used for asymptotically extended dynamics!!
+!
 !   Functional form:            parametrically managed compatibilization by 
 !                               deep neural network (PM-CDNN)
 !   Common name:                N2O 13-states singlet A’ 2025
@@ -79,6 +81,7 @@
     real*8 :: gr(ns,n*(n-1)/2)
     real*8 :: hr(ns,ns,n*(n-1)/2)
     real*8 :: v2b(ns),g2b(ns,n*(n-1)/2)  !!!!
+    real*8 :: v2b_1(n*(n-1)/2,ns)
     real*8 :: drdx(n*(n-1)/2,3*n)
     integer :: i,j,k,l,m
     integer :: imollist(3)
@@ -103,22 +106,20 @@
     imollist(1)=2
     imollist(2)=3
     imollist(3)=3
-    call ev2gm2m(r,v2b,g2b,imollist,1,n) !!!! 1 for gradient cal
+    call ev2gm2m(r,v2b,v2b_1,g2b,imollist,1,n) !!!! 1 for gradient cal
     ! forward propagate sfp to energy 
     call backprop(r,n,ns,e,gr,hr,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4, &
-      &bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b)
+      &bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,v2b_1,g2b) !**********
     ! convert from gradient_r to gradient_xyz
     call grad_r_to_xyz(g,drdx,gr,r,x,n,ns)
     !call nac_r_to_xyz(h,drdx,hr,r,x,n,ns)
-
-    ! output is eV, eV/angstrom, and 1/angstrom
 
   endsubroutine energy_gradient
 
 !===========================
 ! back propagation !!!!!!!!!!!!!!!!!!!!!!!!!!!*******************only change the number of dpem layer from 105 to 91 and coefficients
-  subroutine backprop(r,n,ns,e,g,h,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4, &
-    &bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b)
+  subroutine backprop(r,n,ns,e,g,h,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4,&
+    &bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,v2b_1,g2b)
     implicit none
     integer, intent(in) :: n, ns
     real*8 :: r(n*(n-1)/2)
@@ -126,18 +127,31 @@
     real*8, intent(inout) :: t(ns,ns)
     real*8, intent(in) :: coeff_l0(3,30), coeff_l1(30,65), coeff_l2(65,95), coeff_l3(95,125), coeff_l4(125,91)
     real*8, intent(in) :: bias_l0(30), bias_l1(65), bias_l2(95), bias_l3(125), bias_l4(91)
+    real*8, intent(in) :: v2b(ns), v2b_1(n*(n-1)/2,ns)
+    real*8, intent(in) :: g2b(ns,n*(n-1)/2)
+!    real*8, intent(inout) :: mb(ns,ns) !!!****************
     real*8 :: a0(30), a1(65), a2(95), a3(125), a4(91)
     real*8 :: z0(30), z1(65), z2(95), z3(125), z4(91)
     real*8 :: g0(3,30), g1(3,65), g2(3,95), g3(3,125), g4(3,91), g4p(91,3)
     real*8 :: dpem(ns,ns), dvdu(ns,91)
     real*8 :: dudr(ns,ns,3), tmpmat(ns,ns)
+    integer :: map(3,13)
+    real*8 :: e_0(13), sum_dis, s_j
+
+    real*8 :: af_f=1.2, af_a=-2.0, af_b=4.0, order=4.0
     real*8 :: f, dfdr(n*(n-1)/2)
     real*8 :: dfdr_3b(ns,n*(n-1)/2), dfdr_2b(ns,n*(n-1)/2)
 
+    real*8 :: ag_f=1.2, ag_a=-2.0, ag_b=6.0
+    real*8 :: decay, ddecaydr(n*(n-1)/2)
+    real*8 :: ddecaydr_3b(ns,n*(n-1)/2), ddecaydr_2b(ns,n*(n-1)/2)    
+
     integer :: sum1
     integer :: i,j,k,l
-
-    real*8 :: v2b(ns),g2b(ns,n*(n-1)/2)
+ 
+    !real*8 :: v2b(ns),g2b(ns,n*(n-1)/2)
+    real*8 :: sum_v2b(ns), sum_g2b(ns,n*(n-1)/2)
+    real*8 :: reordered_v2b(ns),reordered_g2b(ns,n*(n-1)/2)
 
     a0=0.0d0
     a1=0.0d0
@@ -199,9 +213,8 @@
     enddo
 
     ! diagonalize dpem
-    !call jacobi_diag(dpem, ns, e, t, 200, 1.d-12)
     call diagonalize(ns,dpem,e,t)
- 
+
     ! cmpute dvdu 
     do i=1,ns
       do j=1,ns
@@ -258,8 +271,100 @@
 
    call mproduct(dvdu,g4p,g,ns,91,3)
 
-   h(:,:,:)=0.d0
+   ! compute re-ordered v2b
+   ! v2b_1(1,:) is NN diatomics, v2b_1(2/3,:) is NO diatomics
+   ! this map can be found in Table 3 of the N2O 1A' paper
 
+   map(1,1)=4
+   map(1,2)=2
+   map(1,3)=3
+   map(1,4)=8
+   map(1,5)=1
+   map(1,6)=9
+   map(1,7)=10
+   map(1,8)=11
+   map(1,9)=12
+   map(1,10)=13
+   map(1,11)=5
+   map(1,12)=6
+   map(1,13)=7
+
+   map(2,1)=6
+   map(2,2)=7
+   map(2,3)=8
+   map(2,4)=9
+   map(2,5)=5
+   map(2,6)=3
+   map(2,7)=11
+   map(2,8)=12
+   map(2,9)=1
+   map(2,10)=2
+   map(2,11)=4
+   map(2,12)=10
+   map(2,13)=13
+
+   map(3,:)=map(2,:) 
+
+   e_0(1)=0.d0
+   e_0(2)=1.97
+   e_0(3)=1.97
+   e_0(4)=1.97
+   do i=5,13
+     e_0(i)=2.38
+   enddo
+
+   sum_v2b=0.d0
+   sum_g2b=0.d0
+   reordered_v2b=0.d0
+   reordered_g2b=0.d0
+
+   do i=1,13
+     sum_v2b(i)=0.d0
+     do j=1,3
+       sum_v2b(i)=sum_v2b(i)+v2b_1(j,map(j,i))
+       sum_g2b(i,j)=g2b(map(j,i),j)
+     enddo
+   enddo
+
+   sum_dis=exp(-r(1))+exp(-r(2))+exp(-r(3))
+
+   do i=1,13
+     if (sum_dis>1.d-10) then
+       reordered_v2b(i)=sum_v2b(i)
+       do j=1,3
+         reordered_v2b(i)=reordered_v2b(i)+exp(-r(j))/sum_dis*e_0(map(j,i))
+       enddo
+     else
+       reordered_v2b(i)=e_0(i)
+     endif
+   enddo
+
+   do i=1,13
+     if (sum_dis>1.d-10) then
+       do j=1,3
+         s_j = exp(-r(j))/sum_dis
+         reordered_g2b(i,j)=sum_g2b(i,j) - s_j*(s_j-1.0)
+       enddo
+     else
+       reordered_g2b(i,:)=0.d0
+     endif
+   enddo
+
+   call decay_function_heviside(r, n*(n-1)/2, ag_f, ag_a, ag_b, order, decay)
+   call decay_function_heviside_derivative(r, n*(n-1)/2, ag_f, ag_a, ag_b, order, ddecaydr)   
+
+   ! asymptotic dynamics
+   do i=1,ns
+     do j=1,n*(n-1)/2
+       ddecaydr_3b(i,j)=e(i)*ddecaydr(j)
+       ddecaydr_2b(i,j)=reordered_v2b(i)*ddecaydr(j)     
+     enddo
+   enddo
+
+   e=decay*e+(1.0-decay)*reordered_v2b
+   g=decay*g+(1.0-decay)*reordered_g2b+ddecaydr_3b-ddecaydr_2b
+
+   h=0.d0
 
   endsubroutine backprop
 
@@ -370,8 +475,7 @@
     Ar=0.5+0.5*tanh(af_f*(r_in-af_a))
     Br=0.5+0.5*tanh(af_f*(-r_in+af_b))
 
-    dfdr_in=af_f*(-0.25*tanh(af_f*(r_in-af_a))-0.25)/((cosh(af_f*(-r_in+af_b)))**2) &
-        + af_f*(0.25+0.25*tanh(af_f*(-r_in+af_b)))/((cosh(af_f*(r_in-af_a)))**2)
+    dfdr_in=af_f*(-0.25*tanh(af_f*(r_in-af_a))-0.25)/((cosh(af_f*(-r_in+af_b)))**2) + af_f*(0.25+0.25*tanh(af_f*(-r_in+af_b)))/((cosh(af_f*(r_in-af_a)))**2)
 
     dr_indr=0.d0
     do ibond=1,nbonds
@@ -397,6 +501,104 @@
 
 
   end subroutine activation_functional_derivative_terms
+
+!=============================
+!decay function
+! A(r)*B(r)*dpem_layer
+! the f,a,b parameters are 2, -1, and 4.0
+! A(r)=0.5+0.5*tanh(2*(r+1))
+! B(r)=0.5+0.5*tanh(2*(-x+4.0))
+  subroutine decay_function_heviside(r, nbonds, af_f, af_a, af_b, order, f)
+    integer, intent(in) :: nbonds
+    real*8, intent(in) :: af_f, af_a, af_b, order
+    real*8, intent(in) :: r(nbonds)
+    real*8, intent(out) :: f
+
+    real*8 :: r_in, Ar, Br
+    integer :: max_index
+
+    integer :: npairs, ibond, jbond, ipair
+    real*8 :: pair_sum, bond_sum
+
+    pair_sum=0.d0
+    do ibond=1,nbonds
+    do jbond=ibond+1, nbonds
+      pair_sum=pair_sum+(r(ibond)+r(jbond))**order
+    enddo
+    enddo
+    pair_sum=pair_sum**(1/order)
+
+    bond_sum=0.d0
+    do ibond=1,nbonds
+      bond_sum=bond_sum+r(ibond)**order
+    enddo
+    bond_sum=bond_sum**(1/order)
+
+    r_in=pair_sum-bond_sum
+
+    Ar=0.5+0.5*tanh(af_f*(r_in-af_a))
+    Br=0.5+0.5*tanh(af_f*(-r_in+af_b))
+
+    f=Ar*Br
+  end subroutine decay_function_heviside
+
+
+!=============================
+!add activation functional derivative terms
+!call activation_functional_derivative_terms(g4,21,n*(n-1)/2,z4)
+  subroutine decay_function_heviside_derivative(r, nbonds, af_f, af_a, af_b, order, dfdr)
+    integer, intent(in) :: nbonds
+    real*8, intent(in) :: r(nbonds)
+    real*8, intent(in) :: af_f, af_a, af_b, order
+    real*8, intent(out) :: dfdr(nbonds)
+
+    real*8 :: r_in, Ar, Br
+    real*8 :: dfdr_in, dr_indr(nbonds)
+
+    integer :: npairs, ibond, jbond, ipair
+    real*8 :: r_in_num
+    real*8 :: pair_sum, bond_sum, pair_sum_num, bond_sum_num
+
+    real*8 :: gr_num(nbonds), r_num(nbonds), Ar1, Br1, Ar2, Br2
+    real*8 :: diff
+
+    pair_sum=0.d0
+    do ibond=1,nbonds
+    do jbond=ibond+1, nbonds
+      pair_sum=pair_sum+(r(ibond)+r(jbond))**order
+    enddo
+    enddo
+
+    bond_sum=0.d0
+    do ibond=1,nbonds
+      bond_sum=bond_sum+r(ibond)**order
+    enddo
+
+    r_in=pair_sum**(1/order)-bond_sum**(1/order)
+
+    Ar=0.5+0.5*tanh(af_f*(r_in-af_a))
+    Br=0.5+0.5*tanh(af_f*(-r_in+af_b))
+
+    dfdr_in=af_f*(-0.25*tanh(af_f*(r_in-af_a))-0.25)/((cosh(af_f*(-r_in+af_b)))**2) + af_f*(0.25+0.25*tanh(af_f*(-r_in+af_b)))/((cosh(af_f*(r_in-af_a)))**2)
+
+    dr_indr=0.d0
+    do ibond=1,nbonds
+      do jbond=1,nbonds
+      if (ibond.ne.jbond) then
+        dr_indr(ibond)=dr_indr(ibond)+1/order*((pair_sum)**(-(order-1.0)/order))*order*((r(ibond)+r(jbond))**(order-1.0))
+      endif
+      enddo
+    enddo
+
+    do ibond=1,nbonds
+      dr_indr(ibond)=dr_indr(ibond)-1/order*((bond_sum)**(-(order-1.0)/order))*order*(r(ibond)**(order-1.0))
+    enddo
+
+    do ibond=1,nbonds
+      dfdr(ibond)=dfdr_in*dr_indr(ibond)
+    enddo
+
+  end subroutine decay_function_heviside_derivative  
 
 !==============================
 ! used to compute index in DPEM
@@ -426,7 +628,7 @@
     real*8, intent(out) :: EV_s(n)
     integer :: io,i
     real*8,allocatable :: lapack_work_d(:)
-    integer, save :: lapack_lwork_d
+    integer, save :: lapack_lwork_d 
     logical, save :: first_time_diag=.true.
 
     U_ss=A_ss
@@ -450,76 +652,6 @@
     return
 
   end subroutine diagonalize
-
-  subroutine jacobi_diag(A, n, eigvals, eigvecs, max_iter, tol)
-    implicit none
-    integer, intent(in) :: n, max_iter
-    real(8), intent(inout) :: A(n, n)
-    real(8), intent(out) :: eigvals(n), eigvecs(n, n)
-    real(8), intent(in) :: tol
-    integer :: i, j, k, iter
-    integer :: p, q
-    real(8) :: theta, c, s, t
-    real(8) :: Apq, App, Aqq, phi, tmp
-    real(8) :: max_off
-
-    eigvecs = 0.0d0
-    do i = 1, n
-      eigvecs(i, i) = 1.0d0
-    end do
-
-    do iter = 1, max_iter
-      ! Find the largest off-diagonal element
-      max_off = 0.0d0
-      p = 1
-      q = 2
-      do i = 1, n - 1
-        do j = i + 1, n
-          if (abs(A(i, j)) > max_off) then
-            max_off = abs(A(i, j))
-            p = i
-            q = j
-          end if
-        end do
-      end do
-
-      if (max_off < tol) exit
-
-      Apq = A(p, q)
-      App = A(p, p)
-      Aqq = A(q, q)
-      phi = 0.5d0 * atan2(2.0d0 * Apq, Aqq - App)
-      c = cos(phi)
-      s = sin(phi)
-
-      ! Rotate
-      do k = 1, n
-        if (k /= p .and. k /= q) then
-          tmp = A(k, p)
-          A(k, p) = c * tmp - s * A(k, q)
-          A(p, k) = A(k, p)
-          A(k, q) = s * tmp + c * A(k, q)
-          A(q, k) = A(k, q)
-        end if
-      end do
-
-      A(p, p) = c**2 * App - 2.0d0 * s * c * Apq + s**2 * Aqq
-      A(q, q) = s**2 * App + 2.0d0 * s * c * Apq + c**2 * Aqq
-      A(p, q) = 0.0d0
-      A(q, p) = 0.0d0
-
-      ! Update eigenvectors
-      do k = 1, n
-        tmp = eigvecs(k, p)
-        eigvecs(k, p) = c * tmp - s * eigvecs(k, q)
-        eigvecs(k, q) = s * tmp + c * eigvecs(k, q)
-      end do
-    end do
-
-    do i = 1, n
-      eigvals(i) = A(i, i)
-    end do
-  end subroutine
 
 !==========================
 ! convert de/dr to de/dxyz
@@ -32558,7 +32690,7 @@
 endsubroutine assign_coeff_bias
 
 
-      subroutine ev2gm2m(dist,v2b,g2b,imollist,igrad,n)
+      subroutine ev2gm2m(dist,v2b,v2b_1,g2b,imollist,igrad,n)
 !Bohr
 
       implicit none
@@ -32566,7 +32698,7 @@ endsubroutine assign_coeff_bias
       integer,intent(in) :: imollist(3), igrad !igrad=0 /1
       integer,intent(in) :: n
       double precision,intent(in)  :: dist(n*(n-1)/2)
-      double precision,intent(out) :: v2b(13), g2b(13,3)
+      double precision,intent(out) :: v2b(13), v2b_1(3,13), g2b(13,3)
       double precision :: v(13), grad(13), disp
       double precision :: r
       integer :: i,j,imol
@@ -32591,12 +32723,14 @@ endsubroutine assign_coeff_bias
       v2b(12)   = 2.38
       v2b(13)   = 2.38
 
-      g2b = 0.0d0 
+      g2b = 0.0d0
+      v2b_1 = 0.d0 
       do i=1,n*(n-1)/2
         r=dist(i) !!!*0.529177d0    for Bohr
         imol=imollist(i)
 
         call ev2gm2(r,v,grad,imol,igrad,disp)
+        v2b_1(i,:)=v/23.061d0
         v2b = v2b + v/23.061d0
         if (igrad.eq.1) then
           do j=1,13
@@ -32853,8 +32987,7 @@ del = 	5.5142
  !       v(i)=v(i)+disp  !!!
 
         ! Compute the gradient if needed
-        if (igrad.eq.1 .and. .not.((imol.eq.2 .and. i.eq.2) .or. &
-                (imol.eq.2 .and. i.eq.3) .or. (imol.eq.2 .and. i.eq.4) .or. &
+        if (igrad.eq.1 .and. .not.((imol.eq.2 .and. i.eq.2) .or. (imol.eq.2 .and. i.eq.3) .or. (imol.eq.2 .and. i.eq.4) .or. &
                 (imol.eq.3 .and. i.eq.5) .or. (imol.eq.3 .and. i.eq.6) .or. &
                 (imol.eq.3 .and. i.eq.7) .or. (imol.eq.3 .and. i.eq.8) .or. &
                 (imol.eq.3 .and. i.eq.9))) then

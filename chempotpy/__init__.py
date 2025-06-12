@@ -234,7 +234,7 @@ def manual():
           NaH2_LEPS_7LD_2000, NaH2_LEPS_6_2000, NaH2_LEPS_5G_1992,
           NaH2_LEPS_5F_1992
     NH3: NH3_GEN_FFW1_2006, NH3_GEN_FFW2_2007
-    N2O: N2O_13_1Ap_2025
+    N2O: N2O_13_1Ap_2025, N2O_13_1Ap_AE_2025
     O3: O3_14_3Ap_2022, O3_14_3Ap_2023, O3_6_5Ap_2023, O3_14_3Ap_2023a, 
         O3_6_5Ap_2023a, O3_14_3Ap_2024
     OH3: OH3_PIP_FFW1_2019, OH3_PIP_FFW2_2022
@@ -839,7 +839,8 @@ def manual():
     243. Z2.  N2O_3App_ZV:       single-state, triplet, A'' symmetry, P/G
     244. S1.  N2O_3Ap_PIP:       single-state, triplet, A' symmetry,  P/G
     245. S2.  N2O_3App_PIP:      single-state, triplet, A'' symmetry, P/G
-    348. M1.  N2O_13_1Ap_2025:   14-state,     singlet, A' symmetry,  P/G/D
+    348. M1.  N2O_13_1Ap_2025:   14-state,     singlet, A' symmetry,  P/G
+    349. A1.  N2O_13_1Ap_AE_2025:14-state,     singlet, A' symmetry,  P/G
 
     N2O2:
     246. Z1.  N2O2_3A_ZV:        single-state, triplet, P/G
@@ -985,7 +986,7 @@ def manual():
     340. S1.  C2N_PIPNN_Ap:     single-state, P
     341. S1.  C2N_PIPNN_App:    single-state, P
 
-    Total Number of Surfaces [last index]: 348
+    Total Number of Surfaces [last index]: 349
 
     """)
 
