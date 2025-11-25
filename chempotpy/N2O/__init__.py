@@ -23,9 +23,11 @@ def intro():
 
     Multi-State Surfaces:
     M1. N2O_13_1Ap_2025      multi-state surface of N2O, singlet, A' symmetry 1-13 state,         P/G
+    M2. N2O_11_1App_2025     multi-state surface of N2O, singlet, A'' symmetry 1-11 state,        P/G
 
     Used for Asymptotically Extended Dynamics:
     A1. N2O_13_1Ap_AE_2025   multi-state surface of N2O, singlet, A' symmetry 1-13 state,         P/G       
+    A2. N2O_11_1App_AE_2025  multi-state surface of N2O, singlet, A'' symmetry 1-11 state,        P/G
 
         """)
 
@@ -82,7 +84,13 @@ def intro_detail():
 
     Multi-State Surfaces:
     1.  N2O_13_1Ap_2025:     multi-state surface of N2O, singlet, A' symmetry 1-13 state,
-                             availability: potential energy, gradient, nonadiabatic coupling
+                             availability: potential energy, gradient,
+                             functional form: PM-CDNN
+                             corresponding surface in POTLIB: N/A
+                             ref:
+    ============================================================================================
+    2.  N2O_11_1App_2025:    multi-state surface of N2O, singlet, A'' symmetry 1-11 state,
+                             availability: potential energy, gradient,
                              functional form: PM-CDNN
                              corresponding surface in POTLIB: N/A
                              ref:
@@ -90,11 +98,16 @@ def intro_detail():
 
     Used for Asymptotically Extended Dynamics:
     1. N2O_13_1Ap_AE_2025:   multi-state surface of N2O, singlet, A' symmetry 1-13 state,
-                             availability: potential energy, gradient, nonadiabatic coupling
+                             availability: potential energy, gradient,
                              functional form: PM-CDNN
                              corresponding surface in POTLIB: N/A
                              ref:
-
+    ============================================================================================
+    2. N2O_11_1App_AE_2025:  multi-state surface of N2O, singlet, A'' symmetry 1-11 state,
+                             availability: potential energy, gradient,
+                             functional form: PM-CDNN
+                             corresponding surface in POTLIB: N/A
+                             ref:
 
         """)
 
@@ -138,7 +151,7 @@ def check(system, surface, geom):
                 xyz[iatom][idir]=geom_ordered[iatom][idir+1]
 
     #for N2O_13_1Ap_2025: input Cartesian should in order of NNO
-    if surface=='N2O_13_1Ap_2025' or 'N2O_13_1Ap_2025_DPEM':
+    if surface=='N2O_13_1Ap_2025' or 'N2O_13_1Ap_2025_DPEM' or 'N2O_11_1App_2025' or 'N2O_11_1App_AE_2025_DPEM':
         geom_ordered=sorted(geom, key=lambda x: ("N", "O").index(x[0]))
         rank_ordered=sorted(rank, key=lambda x: ("N", "O").index(x[0]))
         for iatom in range(natoms):

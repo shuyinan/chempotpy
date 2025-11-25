@@ -26,3 +26,5 @@ Current (no official version released):
   YS/DZ, Jun. 12, 2025, Add:
   N2O_13_1Ap_2025.f90, N2O_13_1Ap_AE_2025.f90
 
+  YS, Nov. 24, 2025, Add:
+  N2O_11_1App_2025.f90, N2O_11_1App_AE_2025.f90
