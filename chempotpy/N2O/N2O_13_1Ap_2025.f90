@@ -20,7 +20,10 @@
 !                               derivatives of adiabataic energies (g) in
 !                               eV/angstrom.
 !   Reference:
-!   Q. Meng, Y. Shu, Z. Varga, D. Zhang, and D. G. Truhlar, to be published.
+!   Q. Meng, Y. Shu, Z. Varga, D. Zhang, D. G. Truhlar, 
+!   Automated Learning of a Dense Manifold of Electronic States and 
+!   Electronic Energy Transfer and Reactions in Singlet O Collisions 
+!   with N2, Research, 9, 0992 (2026).
 !***********************************************************************
 
       subroutine pes(x,igrad,p,g,d)
@@ -85,7 +88,7 @@
     logical, save :: first_time_data=.true.
 
     ! In this version we used the new activation functional 
-    ! So DPEM layer becomes:
+    ! So CPEM layer becomes:
     ! A(r)*B(r)*dpem_layer
     ! A(r)=0.5+0.5*tanh(2*(r+2)) !!
     ! B(r)=0.5+0.5*yanh(2*(-x+7.5))
@@ -116,7 +119,7 @@
   endsubroutine energy_gradient
 
 !===========================
-! back propagation !!!!!!!!!!!!!!!!!!!!!!!!!!!*******************only change the number of dpem layer from 105 to 91 and coefficients
+! back propagation
   subroutine backprop(r,n,ns,e,g,h,t,coeff_l0,coeff_l1,coeff_l2,coeff_l3,coeff_l4, &
     &bias_l0,bias_l1,bias_l2,bias_l3,bias_l4,v2b,g2b)
     implicit none
@@ -190,8 +193,6 @@
         dpem(j,i)=dpem(i,j)
       enddo
     enddo
-
-!    mb=dpem !!!!*************
 
     !adding the two-body terms to mb-dpem
     do i=1,ns

@@ -22,7 +22,10 @@
 !                               derivatives of adiabataic energies (g) in
 !                               eV/angstrom.
 !   Reference:
-!   Q. Meng, Y. Shu, Z. Varga, D. Zhang, and D. G. Truhlar, to be published.
+!   Q. Meng, Y. Shu, Z. Varga, D. Zhang, D. G. Truhlar, 
+!   Automated Learning of a Dense Manifold of Electronic States and 
+!   Electronic Energy Transfer and Reactions in Singlet O Collisions 
+!   with N2, Research, 9, 0992 (2026).
 !***********************************************************************
 
       subroutine pes(x,igrad,p,g,d)
