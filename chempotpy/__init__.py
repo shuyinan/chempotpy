@@ -237,7 +237,7 @@ def manual():
     N2O: N2O_13_1Ap_2025, N2O_13_1Ap_AE_2025, N2O_11_1App_2025, 
          N2O_11_1App_AE_2025
     O3: O3_14_3Ap_2022, O3_14_3Ap_2023, O3_6_5Ap_2023, O3_14_3Ap_2023a, 
-        O3_6_5Ap_2023a, O3_14_3Ap_2024
+        O3_6_5Ap_2023a, O3_14_3Ap_2024, O3_16_3App_2026, O3_16_3App_AE_2026
     OH3: OH3_PIP_FFW1_2019, OH3_PIP_FFW2_2022
     MCH: MCHWL_LEPS_ModelSurface, MCHWB_LEPS_ModelSurface,    
          MCHSL_LEPS_ModelSurface, MCHSB_LEPS_ModelSurface, 
@@ -943,6 +943,8 @@ def manual():
     345. M8.  O3_6_5Ap_2023a_DPEM:  6-state, quintet, A' symmetry, U/UG
     346. M9.  O3_14_3Ap_2024:       14-state, triplet, A' symmetry, P/G/D
     347. M10. O3_14_3Ap_2024_DPEM:  14-state, triplet, A' symmetry, U/UG
+    352. M11. O3_16_3App_2026:      16-state, triplet, A'' symmetry, P/G
+    353. M12. O3_16_3App_AE_2026:   16-state, triplet, A'' symmetry, P/G
 
     O4:
     313. Z1.  O4_singlet_ZV:       single-state, singlet, P/G
@@ -989,7 +991,7 @@ def manual():
     340. S1.  C2N_PIPNN_Ap:     single-state, P
     341. S1.  C2N_PIPNN_App:    single-state, P
 
-    Total Number of Surfaces [last index]: 351
+    Total Number of Surfaces [last index]: 353
 
     """)
 
@@ -1081,7 +1083,8 @@ multi_state_list=['C6H5SH_APRP_DPEM', 'PHOH_APRP_DPEM', 'C7H8S_APRP_DPEM', 'C7H8
 'MCHWB_LEPS_ModelSurface_DPEM', 'MCHSL_LEPS_ModelSurface_DPEM', 'MCHSB_LEPS_ModelSurface_DPEM',
 'MCHTL_LEPS_ModelSurface_DPEM', 'MXHWL_LEPS_ModelSurface_DPEM', 'MXHSL_LEPS_ModelSurface_DPEM',
 'MXHSB_LEPS_ModelSurface_DPEM', 'YRH_LEPS_ModelSurface_DPEM', 'O3_14_3Ap_2023a_DPEM', 'O3_6_5Ap_2023a_DPEM',
-'O3_14_3Ap_2024_DPEM']
+'O3_14_3Ap_2024_DPEM', 'N2O_13_1Ap_2025', 'N2O_11_1App_2025', 'N2O_13_1Ap_AE_2025', 'N2O_11_1App_AE_2025',
+'O3_16_3App_2026', 'O3_16_3App_AE_2026']
 
 
 parent_path=get_script_dir()

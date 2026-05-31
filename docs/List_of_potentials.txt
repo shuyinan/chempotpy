@@ -497,6 +497,8 @@
     345. M8.  O3_6_5Ap_2023a_DPEM:  6-state, quintet, A' symmetry, U/UG
     346. M9.  O3_14_3Ap_2024:       14-state, triplet, A' symmetry, P/G/D
     347. M10. O3_14_3Ap_2024_DPEM:  14-state, triplet, A' symmetry, U/UG
+    352. M11. O3_16_3App_2026:      16-state, triplet, A'' symmetry, P/G
+    353. M12. O3_16_3App_AE_2026:   16-state, triplet, A'' symmetry, P/G
 
     O4:
     313. Z1.  O4_singlet_ZV:       single-state, singlet, P/G
@@ -543,4 +545,4 @@
     340. S1.  C2N_PIPNN_Ap:     single-state, P
     341. S1.  C2N_PIPNN_App:    single-state, P
 
-    Total Number of Surfaces [last index]: 351
+    Total Number of Surfaces [last index]: 353
