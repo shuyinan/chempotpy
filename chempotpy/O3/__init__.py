@@ -75,9 +75,11 @@ def intro():
     M9.  O3_14_3Ap_2024:        multi-state surface of O3, triplet, A' symmetry 1-14 state,    P/G/D
     M10. O3_14_3Ap_2024_DPEM:   multi-state surface of O3, quintet, A' symmetry 1-6 state,     U/UG 
     M11. O3_16_3App_2026:       multi-state surface of O3, triplet, A'' symmetry 1-16 state,   P/G
+    M12. O3_6_5App_2026:        multi-state surface of O3, quintet, A'' symmetry 1-6 state,    P/G
 
     Used for Asymptotically Extended Dynamics:
     A1.  O3_16_3App_AE_2026:    multi-state surface of O3, triplet, A'' symmetry 1-16 state,   P/G
+    A2.  O3_6_5App_AE_2026:     multi-state surface of O3, quintet, A'' symmetry 1-6 state,    P/G
 
         """)
 
@@ -319,7 +321,7 @@ def intro_detail():
                                 of 3A′ States of O + O2",
                                J. Phys. Chem. a. 129, 3166 (2025)
     ==================================================================================== 
-    2.  O3_16_3App_2026:  ulti-state surface of O3, triplet, A'' symmetry 1-16 state,
+    2.  O3_16_3App_2026:  multi-state surface of O3, triplet, A'' symmetry 1-16 state,
                           availability: potential energy, gradient
                           functional form: PM-CDNN
                           corresponding surface in POTLIB: N/A
@@ -327,6 +329,14 @@ def intro_detail():
                                "Nonadiabatic Dynamics of O2 + O Collisions on Sixteen New Machine-
                                 Learned 3A′′ Global Potential Energy Surfaces",
                                submitted
+    ==================================================================================== 
+    3.  O3_6_5App_2026:  multi-state surface of O3, quintet, A'' symmetry 1-6 state,
+                         availability: potential energy, gradient
+                         functional form: PM-CDNN
+                         corresponding surface in POTLIB: N/A
+                         ref: Q. Meng, Y. Shu, Z. Varga, D. G. Truhlar,
+                              submitted
+
 
     Used for Asymptotically Extended Dynamics:
     1. O3_16_3App_AE_2026:   multi-state surface of O3, triplet, A'' symmetry 1-16 state,
@@ -337,6 +347,14 @@ def intro_detail():
                                "Nonadiabatic Dynamics of O2 + O Collisions on Sixteen New Machine-
                                 Learned 3A′′ Global Potential Energy Surfaces",
                                submitted
+    ==================================================================================== 
+    2. O3_6_5App_AE_2026:   multi-state surface of O3, quintet, A'' symmetry 1-6 state,
+                            availability: potential energy, gradient
+                            functional form: PM-CDNN
+                            corresponding surface in POTLIB: N/A
+                            ref: Q. Meng, Y. Shu, Z. Varga, D. G. Truhlar,
+                              submitted
+
 
         """)
 

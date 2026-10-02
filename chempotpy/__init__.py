@@ -237,7 +237,8 @@ def manual():
     N2O: N2O_13_1Ap_2025, N2O_13_1Ap_AE_2025, N2O_11_1App_2025, 
          N2O_11_1App_AE_2025
     O3: O3_14_3Ap_2022, O3_14_3Ap_2023, O3_6_5Ap_2023, O3_14_3Ap_2023a, 
-        O3_6_5Ap_2023a, O3_14_3Ap_2024, O3_16_3App_2026, O3_16_3App_AE_2026
+        O3_6_5Ap_2023a, O3_14_3Ap_2024, O3_16_3App_2026, O3_16_3App_AE_2026,
+        O3_6_5App_2026, O3_6_5App_AE_2026
     OH3: OH3_PIP_FFW1_2019, OH3_PIP_FFW2_2022
     MCH: MCHWL_LEPS_ModelSurface, MCHWB_LEPS_ModelSurface,    
          MCHSL_LEPS_ModelSurface, MCHSB_LEPS_ModelSurface, 
@@ -944,7 +945,9 @@ def manual():
     346. M9.  O3_14_3Ap_2024:       14-state, triplet, A' symmetry, P/G/D
     347. M10. O3_14_3Ap_2024_DPEM:  14-state, triplet, A' symmetry, U/UG
     352. M11. O3_16_3App_2026:      16-state, triplet, A'' symmetry, P/G
-    353. M12. O3_16_3App_AE_2026:   16-state, triplet, A'' symmetry, P/G
+    353. A1.  O3_16_3App_AE_2026:   16-state, triplet, A'' symmetry, P/G
+    354. M12. O3_6_5App_2026:       6-state, quintet, A' symmetry, P/G
+    355. A2.  O3_6_5App_AE_2026:    6-state, quintet, A' symmetry, P/G
 
     O4:
     313. Z1.  O4_singlet_ZV:       single-state, singlet, P/G
@@ -991,7 +994,7 @@ def manual():
     340. S1.  C2N_PIPNN_Ap:     single-state, P
     341. S1.  C2N_PIPNN_App:    single-state, P
 
-    Total Number of Surfaces [last index]: 353
+    Total Number of Surfaces [last index]: 355
 
     """)
 

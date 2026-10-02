@@ -18,7 +18,9 @@
 !                               derivatives of adiabataic energies (g) in
 !                               eV/angstrom.
 !   Reference:
-!   Q. Meng, Y. Shu, Z. Varga, and D. G. Truhlar, to be published.
+!   Q. Meng, Y. Shu, Z. Varga, and D. G. Truhlar,
+!   Nonadiabatic Dynamics of O₂ + O Collisions on Sixteen New Machine Learned 3A″ Global Potential Energy Surfaces
+!   JCTC 2026
 !***********************************************************************
 
       subroutine pes(x,igrad,p,g,d)
